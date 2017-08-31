@@ -339,12 +339,13 @@ $(function(){
         });
 
         $('.br-pm4 .br-ch-radio').on('ifChecked',function(){
+            $('.ch-hidden-block').show();
             $('.br-chdo-s2').hide();
             $('.br-chdo-s3').hide();
             $('.br-chdo-s4').addClass('hidden');
             $('.ch-next-f').hide();
             $('.ch-next-s').show();
-            $('#br-ch-5').show();
+            $('#br-ch-5').addClass('br-ch-changed');
             $('.br-chdo-s1').show();
             $('.br-ch-mspec').show();
             $('.be-chm5').on('click', function () {
@@ -354,8 +355,9 @@ $(function(){
                 $('#br-ch-6').addClass('super-active');
             });
         }).on('ifUnchecked',function(){
+            $('.ch-hidden-block').hide();
             $('.br-chdo-s4').removeClass('hidden');
-            $('#br-ch-5').hide();
+            $('#br-ch-5').removeClass('br-ch-changed');
             $('.br-chdo-s1').hide();
             $('.br-ch-mspec').hide();
             $('.ch-next-s').hide();
@@ -366,12 +368,13 @@ $(function(){
         });
 
         $('.br-pm3 .br-ch-radio').on('ifChecked',function(){
+            $('.ch-hidden-block').show();
             $('.br-chdo-s1').hide().addClass('hidden');
             $('.br-chdo-s2').addClass('hidden');
             $('.br-chdo-s3').addClass('hidden');
             $('.ch-next-f').hide();
             $('.ch-next-s').show();
-            $('#br-ch-5').show();
+            $('#br-ch-5').addClass('br-ch-changed');
             $('.br-chdo-s4').show();
             $('.br-ch-mspec').show();
             $('.be-chm5').on('click', function () {
@@ -381,10 +384,11 @@ $(function(){
                 $('#br-ch-6').addClass('super-active');
             });
         }).on('ifUnchecked',function(){
+            $('.ch-hidden-block').hide();
             $('.br-chdo-s1').removeClass('hidden');
             $('.br-chdo-s2').removeClass('hidden');
             $('.br-chdo-s3').removeClass('hidden');
-            $('#br-ch-5').hide();
+            $('#br-ch-5').removeClass('br-ch-changed');
             $('.br-chdo-s4').hide();
             $('.br-ch-mspec').hide();
             $('.ch-next-s').hide();
@@ -911,9 +915,8 @@ $(function(){
     $('.ch-next-f').on('click', function () {
         $('.br-ch-anchor.active').next().addClass('active');
         $('.br-ch-anchor.active').prev().removeClass('active');
-        $('.br-ch-fixed').removeClass('active');
-        $('.br-ch-menu').removeClass('active');
         if($('#br-ch-5').hasClass('active')){
+            $('#br-ch-6').addClass('super-active');
             $('.br-ch-alast').addClass('active');
         }else{
             $('.br-ch-alast').removeClass('active');

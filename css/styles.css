@@ -232,10 +232,6 @@ body:not(.br-page-blog) .br-container-gap .row
     margin-left: 0;
     margin-right: 0;
 }
-#br-ch-5
-{
-    display: none;
-}
 .col-gap-l, .col-gap-r
 {
     display: block !important;
@@ -263,6 +259,10 @@ body:not(.br-page-blog) .br-container-gap .br-flex > div
 .br-main .br-body-checkout
 {
     padding-bottom: 0 !important;
+}
+.ch-hidden-block
+{
+    display: none;
 }
 /*-----*/
 
@@ -6881,6 +6881,10 @@ body:not(.br-page-blog) .br-sf-rs a
 .br-ch-do > div
 {
     float: left;
+    width: 100%;
+}
+.br-ch-changed .br-ch-do > div
+{
     width: 50%;
 }
 .br-ch-do > div:first-child
@@ -6888,7 +6892,7 @@ body:not(.br-page-blog) .br-sf-rs a
     padding-right: 31px;
     border-right: 1px solid #e3e3e3;
 }
-.br-ch-do > div:last-child
+.br-ch-changed .br-ch-do > div:last-child
 {
     padding-left: 30px;
 }
@@ -6929,7 +6933,7 @@ body:not(.br-page-blog) .br-sf-rs a
     display: block;
     width: 100%;
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     color: red;
 }
 .br-ch-addj .br-fc-chs > label
@@ -7075,12 +7079,15 @@ body:not(.br-page-blog) .br-sf-rs a
 {
     display: none;
     width: 100% !important;
-    padding-top: 10px;
     color: green;
 }
 .br-ps-block .panel-group, .br-chdo-s2, .br-chdo-s3, .br-chdo-s4, .br-chdo-s2 .text-center button:last-child, .br-ch-addjs
 {
     display: none;
+}
+.br-chdo-s2 .br-ch-dot
+{
+    margin-bottom: 20px;
 }
 .br-chpd-f
 {
