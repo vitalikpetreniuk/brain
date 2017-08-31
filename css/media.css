@@ -159,7 +159,7 @@
     }
     .br-ci-in .br-ci-price
     {
-        margin-left: 31px;
+        margin-left: 39px;
     }
     .br-ch-products > div:first-child > div:last-child > div:last-child
     {
@@ -168,19 +168,19 @@
     }
     .br-ch-products > div:first-child > div:first-child
     {
-        width: 345px;
+        width: 318px;
     }
     .br-ch-products > div:first-child > div:last-child
     {
-        width: calc(100% - 345px);
+        width: calc(100% - 318px);
     }
     .br-ci-in > div:first-child
     {
-        width: 325px;
+        width: 298px;
     }
     .br-ci-in > div:last-child
     {
-        width: calc(100% - 325px);
+        width: calc(100% - 298px);
     }
     .br-ch-block
     {
@@ -1641,6 +1641,14 @@
         font-weight: normal;
         padding: 0 15px 15px 0;
         border-bottom: 1px solid #e3e3e3;
+        margin-bottom: 0;
+    }
+    .br-of-modal .modal-header h3
+    {
+        border: none !important;
+        color: #333;
+        font-weight: 700;
+        font-size: 16px;
     }
     .br-cities-ms
     {

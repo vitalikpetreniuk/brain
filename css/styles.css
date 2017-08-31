@@ -4454,6 +4454,11 @@ body:not(.br-page-blog) .br-stitle
     border: none;
     position: relative;
 }
+.br-of-modal .modal-header
+{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
 .br-modal .modal-header h3
 {
     font-size: 20px;
@@ -4716,6 +4721,15 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
 {
     padding-right: 13px !important;
     background-position: right center !important;
+}
+.br-of-modal a
+{
+    text-decoration: underline;
+    color: #1973ff
+}
+.br-of-modal a:hover
+{
+    text-decoration: none;
 }
 /*-----*/
 
@@ -5392,7 +5406,7 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     line-height: 36px;
     position: relative;
     border: none;
-    background: #d1e3ff;
+    background: transparent;
     text-align: center;
     padding: 0;
     -webkit-transition: none;
@@ -6248,7 +6262,7 @@ body:not(.br-page-blog) .br-sf-rs a
 }
 .br-ci-in > div:first-child
 {
-    width: 555px;
+    width: 535px;
     text-align: left;
     display: flex;
     display: -ms-flexbox;
@@ -6283,7 +6297,7 @@ body:not(.br-page-blog) .br-sf-rs a
 .br-ci-in .br-ci-q
 {
     display: block;
-    margin-left: 75px;
+    margin-left: 58px;
 }
 .br-ci-q.disabled
 {
@@ -6301,14 +6315,20 @@ body:not(.br-page-blog) .br-sf-rs a
 }
 .br-ci-in .br-ci-price
 {
-    margin-left: 40px;
+    margin-left: 29px;
     text-align: right;
+}
+.br-ci-in .br-ci-price > span
+{
+    display: block;
+    white-space: nowrap;
 }
 .br-ci-pm
 {
     color: #777;
     font-size: 14px;
     font-weight: 500;
+    white-space: nowrap;
 }
 .br-ci-gift
 {
@@ -6331,6 +6351,10 @@ body:not(.br-page-blog) .br-sf-rs a
 .br-ci-gift .br-ci-img a img
 {
     max-width: 100%;
+}
+.br-ci-gift .br-ci-q
+{
+    margin-left: 0 !important;
 }
 .br-cii-f
 {
@@ -6399,6 +6423,10 @@ body:not(.br-page-blog) .br-sf-rs a
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+.br-ci-set-in .br-ci-q button
+{
+    display: none !important;
 }
 .br-ch-up
 {
@@ -6641,12 +6669,15 @@ body:not(.br-page-blog) .br-sf-rs a
     margin-right: 4px;
     font-weight: normal;
 }
-.br-ch-agr .br-fsquare a
+.br-ch-agr .br-fsquare button
 {
+    background: none;
+    padding: 0;
+    border: none;
     color: #1972fd;
     text-decoration: underline;
 }
-.br-ch-agr .br-fsquare a:hover
+.br-ch-agr .br-fsquare button:hover
 {
     text-decoration: none;
 }
@@ -7219,6 +7250,7 @@ body:not(.br-page-blog) .br-sf-rs a
 .br-ch-oblock label
 {
     font-weight: normal;
+    white-space: nowrap;
 }
 .br-ch-oblock .br-csquare
 {
