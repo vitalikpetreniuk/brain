@@ -1517,6 +1517,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 {
     display: block;
     position: relative;
+    max-width: 220px;
 }
 .br-bh-menu-top > ul > li.more > a > span:after
 {
