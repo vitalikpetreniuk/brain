@@ -1297,6 +1297,8 @@ body:not(.br-page-blog) .br-dropdown-remove
 .br-ci-img
 {
     margin-right: 16px;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
 }
 .br-ci-img a
 {
@@ -1517,7 +1519,8 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 {
     display: block;
     position: relative;
-    max-width: 220px;
+    max-width: 150px;
+    line-height: 1.2;
 }
 .br-bh-menu-top > ul > li.more > a > span:after
 {
@@ -1525,7 +1528,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
     width: 5px;
     height: 8px;
     position: absolute;
-    right: -16px;
+    right: -10px;
     top: 50%;
     margin-top: -3px;
     background: url("../images/br-ar-b.png") center no-repeat;
