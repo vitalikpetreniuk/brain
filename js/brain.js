@@ -130,6 +130,10 @@ $(function(){
         $('.bt-tm-m').toggle('fast');
     });
 
+    $('.br-search-form input[type="text"]').on('click', function(){
+        $(this).siblings('.br-search-click').slideDown('fast');
+    });
+
     $(window).on("load resize", function () {
         if($('.br-fb-widget').length)
         {

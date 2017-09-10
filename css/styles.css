@@ -436,6 +436,28 @@ body:not(.br-page-blog) .br-chc .br-dropdown
     border: none;
     padding: 0;
 }
+.br-search-click
+{
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    top: 42px;
+    left: 0;
+    width: 100% !important;
+    border-top: 2px solid #1973ff;
+    -webkit-box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
+    display: none;
+}
+.br-search-click a
+{
+    white-space: normal !important;
+    color: #1166e9 !important;
+}
+.br-search-click a:hover
+{
+    color: #555 !important;
+}
 body:not(.br-page-blog) .br-chc .br-dropdown:before
 {
     left: 110px;
