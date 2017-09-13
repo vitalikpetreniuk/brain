@@ -115,7 +115,6 @@ $(function(){
     });
 
     $('.br-sbutton').on('click', function(){
-        console.log('hi!');
         $('.br-sform').addClass('open');
         $('.br-bh-in').addClass('closed');
     });

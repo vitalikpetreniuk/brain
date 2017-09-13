@@ -619,6 +619,28 @@
 }
 @media(max-width: 1011px)
 {
+    body:not(.br-page-blog) .br-sfs
+    {
+        padding: 0 !important;
+    }
+    body:not(.br-page-blog) .br-sfs h2
+    {
+        text-align: center;
+        padding: 30px 25px;
+    }
+    body:not(.br-page-blog) .br-sfs h2 span
+    {
+        display: block;
+    }
+    body:not(.br-page-blog) .br-sfs > div > *, body:not(.br-page-blog) .br-sfs input
+    {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+    body:not(.br-page-blog) .br-sfs > div
+    {
+        display: block;
+    }
     .br-ch-dc > div:nth-child(2)
     {
         justify-content: center;

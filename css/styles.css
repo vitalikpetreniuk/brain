@@ -3553,7 +3553,7 @@ body:not(.br-page-blog) .br-ppl .br-pp-top
 {
     width: 36.5px;
 }
-body:not(.br-page-blog) .br-pp-min .br-pp-img, .br-pp-min .br-pp-pb
+body:not(.br-page-blog) .br-pp-min .br-pp-img
 {
     margin-bottom: 5px;
 }
@@ -5897,7 +5897,7 @@ body:not(.br-page-blog) .br-sf-fw .br-sf-ib
     padding: 0 0 0 63px;
     background-position: left 5px;
 }
-body:not(.br-page-blog) .br-sub-form input[type='text']
+body:not(.br-page-blog) .br-sub-form input[type='text'], body:not(.br-page-blog) .br-sub-form input[type='email'], body:not(.br-page-blog) .br-sub-form input[type='tel']
 {
     border: none;
     padding: 0;
@@ -5908,25 +5908,58 @@ body:not(.br-page-blog) .br-sub-form input[type='text']
     font-weight: 700;
     color: #000;
 }
-body:not(.br-page-blog) .br-sub-form input[type='text']::-webkit-input-placeholder
+body:not(.br-page-blog) .br-sub-form input[type='text']::-webkit-input-placeholder, body:not(.br-page-blog) .br-sub-form input[type='email']::-webkit-input-placeholder, body:not(.br-page-blog) .br-sub-form input[type='tel']::-webkit-input-placeholder
 {
     color: #000;
 }
-body:not(.br-page-blog) .br-sub-form input[type='text']::-moz-placeholder
+body:not(.br-page-blog) .br-sub-form input[type='text']::-moz-placeholder, body:not(.br-page-blog) .br-sub-form input[type='email']::-moz-placeholder, body:not(.br-page-blog) .br-sub-form input[type='tel']::-moz-placeholder
 {
     color: #000;
 }
-body:not(.br-page-blog) .br-sub-form input[type='text']:-ms-input-placeholder
+body:not(.br-page-blog) .br-sub-form input[type='text']:-ms-input-placeholder, body:not(.br-page-blog) .br-sub-form input[type='email']:-ms-input-placeholder, body:not(.br-page-blog) .br-sub-form input[type='tel']:-ms-input-placeholder
 {
     color: #000;
 }
-body:not(.br-page-blog) .br-sub-form input[type='text']:-moz-placeholder
+body:not(.br-page-blog) .br-sub-form input[type='text']:-moz-placeholder, body:not(.br-page-blog) .br-sub-form input[type='email']:-moz-placeholder, body:not(.br-page-blog) .br-sub-form input[type='tel']:-moz-placeholder
 {
     color: #000;
 }
-body:not(.br-page-blog) .br-sf-fw input[type='text']
+body:not(.br-page-blog) .br-sf-fw input[type='text'], body:not(.br-page-blog) .br-sf-fw input[type='email'], body:not(.br-page-blog) .br-sf-fw input[type='tel']
 {
     width: 100%;
+}
+body:not(.br-page-blog) .br-sfs
+{
+    display: block;
+}
+body:not(.br-page-blog) .br-sfs h2
+{
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin-bottom: 0;
+}
+body:not(.br-page-blog) .br-sfs h2 span
+{
+    text-transform: lowercase;
+    font-weight: 400;
+}
+body:not(.br-page-blog) .br-sfs > div
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    padding: 25px;
+}
+body:not(.br-page-blog) .br-sfs > div > *
+{
+    width: 25% !important;
 }
 body:not(.br-page-blog) .br-sub-form input[type='submit']
 {
@@ -5941,6 +5974,14 @@ body:not(.br-page-blog) .br-sub-form input[type='submit']
     font-weight: 700;
     border: none;
     padding: 0;
+}
+body:not(.br-page-blog) .br-sfs input
+{
+    width: 90%;
+}
+body:not(.br-page-blog) .br-sfs input[type='submit']
+{
+    margin: 0;
 }
 body:not(.br-page-blog) .br-sf-fw input[type='submit']
 {
