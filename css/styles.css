@@ -616,17 +616,13 @@ body:not(.br-page-blog) .br-dropdown ul
 {
     border-bottom: 1px solid #e3e3e3;
 }
-body:not(.br-page-blog) .br-dropdown li
+body:not(.br-page-blog) .br-dropdown li + li
 {
-    margin-bottom: 12px;
+    margin-top: 12px;
 }
 body:not(.br-page-blog) .br-dropdown li.active
 {
     color: #1973ff;
-}
-body:not(.br-page-blog) .br-dropdown li:last-child
-{
-    margin-bottom: 0;
 }
 body:not(.br-page-blog) .br-dropdown a
 {
