@@ -619,6 +619,10 @@
 }
 @media(max-width: 1011px)
 {
+    .col-gap-l, .col-gap-r
+    {
+        padding: 0 !important;
+    }
     body:not(.br-page-blog) .br-sfs
     {
         padding: 0 !important;
@@ -2222,7 +2226,7 @@
     }
     .container, body:not(.br-page-blog) .br-topmenu
     {
-        width: 295px;
+        width: 392px;
     }
     .br-pc-ct, .br-pcu, .br-pc-block button
     {
@@ -2249,6 +2253,13 @@
     .br-pc, .br-pc > div:last-child, .br-cont.br-fwidth .br-pc, .br-cont.br-fwidth .br-pc > div:last-child
     {
         margin-left: 10px;
+    }
+}
+@media(max-width: 410px)
+{
+    .container, body:not(.br-page-blog) .br-topmenu
+    {
+        width: 295px;
     }
 }
 @media(max-width: 380px)

@@ -1686,8 +1686,6 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
     padding: 20px 35px 0;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
     -webkit-box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
     box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
 }
@@ -1695,6 +1693,8 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 {
     opacity: 1;
     visibility: visible;
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
 }
 .br-bh-menu-top > ul > li > ul > li
 {
@@ -7478,9 +7478,12 @@ body:not(.br-page-blog) .br-sf-rs a
     justify-content: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
+    position: relative;
 }
 .br-ch-fixed div button
 {
+    position: absolute;
+    left: 0;
     width: 100%;
     background: #d1e3ff;
     color: #1972fd;
@@ -7495,10 +7498,10 @@ body:not(.br-page-blog) .br-sf-rs a
     padding: 0;
     border: none;
 }
-.br-ch-fixed div button.ch-next-s
-{
-    display: none;
-}
+/*.br-ch-fixed div button.ch-next-s*/
+/*{*/
+    /*display: none;*/
+/*}*/
 .br-ch-menu
 {
     position: fixed;
