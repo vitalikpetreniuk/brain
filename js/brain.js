@@ -536,6 +536,11 @@ $(function(){
         $(this).siblings('.br-bbb-s').show().addClass('active');
     });
 
+    if($('.br-sib-c').outerHeight() > 27){
+        $('.br-sib-c').addClass('high');
+        $('.br-show-c').show();
+    }
+
     $('.br-show-c').on('click', function(){
         $('.br-sib-c').toggleClass('active');
     });
