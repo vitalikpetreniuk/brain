@@ -672,12 +672,11 @@ $(function(){
             }
         }
     });
+
     owl.on('changed.owl.carousel', function(event) {
-        $('.br-pr-set').each(function () {
-            var productValue = parseInt($(this).find('.br-pr-set-product strong').text());
-            var setValue = parseInt($(this).find('.owl-item.active .hidden').text());
-            $(this).find('.br-pr-set-price strong').text(productValue + setValue);
-        });
+        var productValue = parseInt($(this).closest('.br-pr-set').find('.br-pr-set-product strong').text());
+        var setValue = parseInt($(this).find('.owl-item.active .hidden').text());
+        $(this).closest('.br-pr-set').find('.br-pr-set-price strong').text(productValue + setValue);
     });
 
     if($('.br-slider-range').length)
