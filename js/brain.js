@@ -1134,6 +1134,14 @@ $(function(){
         $(this).closest('div').find('.inactive').toggle('fast');
     });
 
+    $('.br-category-block-sa button').on('click', function () {
+        $(this).closest('.br-category-block-bottom').next('.br-category-block').addClass('active');
+    });
+
+    $('.br-category-block .br-category-block button').on('click', function () {
+        $(this).closest('.br-category-block').removeClass('active');
+    });
+
     $('.br-pr-about + button').on('click', function () {
         $(this).find('span:first-child').toggle('fast');
         $(this).find('span:last-child').toggle('fast');

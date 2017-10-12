@@ -556,6 +556,10 @@
     {
         padding-top: 0;
     }
+    .br-row-gt .br-sort-menu
+    {
+        display: none;
+    }
     .br-sort-menu-fixed
     {
         display: block;
@@ -2418,6 +2422,10 @@
 }
 @media(max-width: 680px)
 {
+    .col-xxs-12
+    {
+        width: 100%;
+    }
     .br-promo-block-icons
     {
         margin-bottom: 0;
