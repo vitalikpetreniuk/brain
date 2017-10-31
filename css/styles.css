@@ -8185,9 +8185,9 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
     line-height: 16px;
     font-weight: 300;
     padding: 12px 16px;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all .2s ease;
@@ -10727,21 +10727,22 @@ header .br-pt-menu-in
 .br-cl-pf > div > span > span
 {
     position: absolute;
-    top: calc(100% + 10px);
-    right: -6px;
+    top: calc(100% + 12px);
+    right: -9px;
     width: 280px;
-    background: #cfe9fc;
     line-height: 16px;
     font-weight: 300;
     padding: 12px 16px;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     z-index: 5;
+    background: #b7e6fe;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+    color: #333;
 }
 .br-cl-pf > div > span:hover > span
 {
@@ -10753,12 +10754,10 @@ header .br-pt-menu-in
     content: '';
     position: absolute;
     right: 5px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 9px 9px 9px;
-    border-color: transparent transparent #cfe9fc transparent;
+    top: -12px;
+    width: 26px;
+    height: 12px;
+    background: url(../images/br-gs.jpg) center no-repeat;
 }
 .be-mcr-cs-in > div:last-child button
 {
