@@ -12047,6 +12047,10 @@ body:not(.br-page-blog) .br-body .br-container-c
 {
     position: relative;
 }
+.br-fback-dropdown-first
+{
+    z-index: 3;
+}
 .br-fback-dropdown > button
 {
     padding: 0 14px 0 0;

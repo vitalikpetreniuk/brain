@@ -853,6 +853,16 @@ $(function(){
         $(this).next('.br-dropdown').toggle('fast');
     });
 
+    $('.br-fback-dropdown-first > button').on('click', function(){
+        $('.br-fback-dropdown-second > button').removeClass('open');
+        $('.br-fback-dropdown-second > button').next('.br-dropdown').slideUp('fast');
+    });
+
+    $('.br-fback-dropdown-second > button').on('click', function(){
+        $('.br-fback-dropdown-first > button').removeClass('open');
+        $('.br-fback-dropdown-first > button').next('.br-dropdown').slideUp('fast');
+    });
+
     $('.br-bbb-f').on('click', function(){
         $(this).hide();
         $(this).siblings('.br-bbb-s').show().addClass('active');
@@ -963,6 +973,7 @@ $(function(){
             container2 = $(".br-theader-menu .folder"),
             container3 = $(".br-th-login"),
             container4 = $(".br-order-call");
+            container5 = $(".br-fback-dropdown");
 
         if (container1.has(e.target).length === 0){
             $(".br-chc button.active").trigger('click');
@@ -978,6 +989,10 @@ $(function(){
 
         if (container4.has(e.target).length === 0){
             $(".br-order-call button.active").trigger('click');
+        }
+
+        if (container5.has(e.target).length === 0){
+            $(".br-fback-dropdown > button.open").trigger('click');
         }
     });
 
