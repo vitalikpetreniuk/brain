@@ -1902,6 +1902,16 @@
 }
 @media(max-width: 766px)
 {
+    .br-modal-t-block .br-cl-pf > div > span > span
+    {
+        right: auto;
+        left: calc(50% + 10px);
+        transform: translate(-50%, 0);
+    }
+    .br-modal-t-block .br-cl-pf > div > span > span:before
+    {
+        display: none;
+    }
     .br-product-tabs .tab-pane.active > div, .br-product-tabs .tab-pane.active > ul
     {
         width: 100%;

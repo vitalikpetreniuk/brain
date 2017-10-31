@@ -10685,7 +10685,7 @@ header .br-pt-menu-in
     line-height: 1;
     color: #000;
 }
-.br-cl-pf-price span
+.br-cl-pf-price > span
 {
     position: relative;
     text-transform: uppercase;
@@ -10701,6 +10701,7 @@ header .br-pt-menu-in
     border-radius: 50%;
     font-weight: 700;
     text-align: center;
+    position: relative;
 }
 .be-mcr-cs-in > div:last-child
 {
@@ -10722,6 +10723,42 @@ header .br-pt-menu-in
     font-size: 11px;
     line-height: 13px;
     margin-bottom: 0;
+}
+.br-cl-pf > div > span > span
+{
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -6px;
+    width: 280px;
+    background: #cfe9fc;
+    line-height: 16px;
+    font-weight: 300;
+    padding: 12px 16px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    z-index: 5;
+}
+.br-cl-pf > div > span:hover > span
+{
+    opacity: 1;
+    visibility: visible;
+}
+.br-cl-pf > div > span > span:before
+{
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 9px 9px;
+    border-color: transparent transparent #cfe9fc transparent;
 }
 .be-mcr-cs-in > div:last-child button
 {
