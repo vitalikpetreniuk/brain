@@ -151,6 +151,24 @@
         margin: 0;
         position: relative;
     }
+    .br-fback-block form > div
+    {
+        display: block;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .br-fback-t
+    {
+        position: static !important;
+    }
+    .br-fback-block .br-pt-lc-submit
+    {
+        position: static !important;
+    }
+    .br-fback-block form > div + div
+    {
+        margin-top: 15px;
+    }
     .br-pt-lc form > div > *
     {
         width: 100%;

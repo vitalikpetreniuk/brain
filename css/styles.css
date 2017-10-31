@@ -11106,6 +11106,10 @@ header .br-pt-menu-in
     width: calc(100% - 630px);
     text-align: right;
 }
+.br-credit-hidden-list.scroll-content > div > div:last-child
+{
+    width: 100%;
+}
 .br-credit-hidden-list.scroll-content select
 {
     width: 104px;
@@ -12000,6 +12004,88 @@ body:not(.br-page-blog) .br-body .br-container-c
     left: auto;
     right: 0;
 }
+
+/*Стили BRAIN - отзыв*/
+.br-fback-block form
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.br-fback-block form > div:first-child, .br-fback-block form > div:nth-child(2)
+{
+    width: calc(50% - 7.5px);
+}
+.br-fback-block form > div:last-child
+{
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+.br-fback-block form > div
+{
+    width: 100%;
+}
+.br-fback-block form > div > div + div
+{
+    margin-top: 15px;
+}
+.br-fback-block .br-theme-fontawesome-stars .br-widget a + a {
+    margin-left: 8px;
+}
+.br-fback-block .br-pt-lc-submit
+{
+    width: auto;
+    padding: 0 15px;
+}
+.br-fback-dropdown
+{
+    position: relative;
+}
+.br-fback-dropdown > button
+{
+    padding: 0 14px 0 0;
+    border: none;
+    font-weight: 700;
+    background: url(../images/br-adb.png) right 9px no-repeat;
+}
+.br-fback-dropdown > button.open
+{
+    background-image: url("../images/br-adt.png");
+}
+.br-fback-dropdown .br-scroll-wrapper
+{
+    padding-top: 0 !important;
+}
+.br-fback-dropdown .br-dropdown
+{
+    min-width: 285px;
+    right: 0;
+    left: auto;
+}
+.br-fback-dropdown .br-dropdown:before
+{
+    left: 54px;
+}
+.br-fback-dropdown .br-search-form
+{
+    margin: 0 20px;
+}
+.br-fback-text
+{
+    border-top: 1px solid #e3e3e3;
+    padding-top: 20px;
+}
+.br-fback-text h5
+{
+    margin: 0 0 10px;
+}
+/*-----*/
 
 
 
