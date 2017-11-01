@@ -3910,8 +3910,11 @@
                                     <input type="tel" placeholder="+38(___)-___-__-__">
                                     <button type="submit">Ok</button>
                                 </div>
-                                <button type="submit">
+                                <button type="button"  data-toggle="modal" class="br-pr-buy-first">
                                     <span>Купить</span>
+                                </button>
+                                <button type="button" class="br-pr-buy-second" data-toggle="modal" data-target=".br-checkout-modal">
+                                    <span>Оформить</span>
                                 </button>
                             </form>
                         </div>
@@ -4817,7 +4820,183 @@
                     <div id="br-pr-9" class="br-pt-bc br-pr-tblock">
                         <h3>Наиболее полезные отзывы</h3>
                         <div class="br-pt-bc-list">
-                            <div class="br-pt-bc-item">
+                            <div class="br-pt-bc-item br-ct-bc-item-out br-pt-bc-item-in">
+                                <div>
+                                    <div class="br-pt-bc-name">Константин</div>
+                                    <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
+                                    <div class="br-pt-bc-rating">
+                                        <img src="images/star.svg" alt="img">
+                                        <img src="images/star.svg" alt="img">
+                                        <img src="images/star.svg" alt="img">
+                                        <img src="images/star.svg" alt="img">
+                                        <img src="images/star-g.svg" alt="img">
+                                    </div>
+                                </div>
+                                <p>
+                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                </p>
+                                <div>
+                                    <button type="button" class="br-rc-c">
+                                        <span>Ответить</span>
+                                        <span>Закрыть</span>
+                                    </button>
+                                    <div class="br-pt-bc-wh">
+                                        <div>Был ли полезен вам этот отзыв?</div>
+                                        <div>
+                                            <div>
+                                                <button type="button">
+                                                    <img src="images/like.png" alt="like">
+                                                </button>
+                                                <span>(1)</span>
+                                            </div>
+                                            <div>
+                                                <button type="button">
+                                                    <img src="images/dislike.png" alt="dislike">
+                                                </button>
+                                                <span>(1)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="br-rc-button">
+                                        <span>Читать комментарий</span>
+                                        <span>Скрыть</span>
+                                    </button>
+                                </div>
+                                <form class="br-pr-rcm">
+                                    <div>
+                                        <div>
+                                            <label for="test1">Ваше имя:</label>
+                                            <input id="test1" type="text">
+                                        </div>
+                                        <div>
+                                            <label for="test2">Ваше e-mail:</label>
+                                            <input id="test2" type="email">
+                                        </div>
+                                    </div>
+                                    <textarea></textarea>
+                                    <button type="submit">Отправить</button>
+                                </form>
+                                <div class="br-pt-bc-list-in">
+                                    <div class="br-pt-bc-item">
+                                        <div>
+                                            <div class="br-pt-bc-name">Константин</div>
+                                            <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
+                                            <div class="br-pt-bc-rating">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star-g.svg" alt="img">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                        </p>
+                                        <div>
+                                            <button type="button" class="br-rc-c">
+                                                <span>Ответить</span>
+                                                <span>Закрыть</span>
+                                            </button>
+                                            <div class="br-pt-bc-wh">
+                                                <div>Был ли полезен вам этот отзыв?</div>
+                                                <div>
+                                                    <div>
+                                                        <button type="button">
+                                                            <img src="images/like.png" alt="like">
+                                                        </button>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button">
+                                                            <img src="images/dislike.png" alt="dislike">
+                                                        </button>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="br-rc-button">
+                                                <span>Читать комментарий</span>
+                                                <span>Скрыть</span>
+                                            </button>
+                                        </div>
+                                        <form class="br-pr-rcm">
+                                            <div>
+                                                <div>
+                                                    <label for="test999">Ваше имя:</label>
+                                                    <input id="test999" type="text">
+                                                </div>
+                                                <div>
+                                                    <label for="test888">Ваше e-mail:</label>
+                                                    <input id="test888" type="email">
+                                                </div>
+                                            </div>
+                                            <textarea></textarea>
+                                            <button type="submit">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="br-pt-bc-item">
+                                        <div>
+                                            <div class="br-pt-bc-name">Константин</div>
+                                            <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
+                                            <div class="br-pt-bc-rating">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star-g.svg" alt="img">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                        </p>
+                                        <div>
+                                            <button type="button" class="br-rc-c">
+                                                <span>Ответить</span>
+                                                <span>Закрыть</span>
+                                            </button>
+                                            <div class="br-pt-bc-wh">
+                                                <div>Был ли полезен вам этот отзыв?</div>
+                                                <div>
+                                                    <div>
+                                                        <button type="button">
+                                                            <img src="images/like.png" alt="like">
+                                                        </button>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button">
+                                                            <img src="images/dislike.png" alt="dislike">
+                                                        </button>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="br-rc-button">
+                                                <span>Читать комментарий</span>
+                                                <span>Скрыть</span>
+                                            </button>
+                                        </div>
+                                        <form class="br-pr-rcm">
+                                            <div>
+                                                <div>
+                                                    <label for="test999">Ваше имя:</label>
+                                                    <input id="test999" type="text">
+                                                </div>
+                                                <div>
+                                                    <label for="test888">Ваше e-mail:</label>
+                                                    <input id="test888" type="email">
+                                                </div>
+                                            </div>
+                                            <textarea></textarea>
+                                            <button type="submit">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="br-pt-bc-item br-ct-bc-item-out">
                                 <div>
                                     <div class="br-pt-bc-name">Константин</div>
                                     <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
@@ -4875,65 +5054,7 @@
                                     <button type="submit">Отправить</button>
                                 </form>
                             </div>
-                            <div class="br-pt-bc-item">
-                                <div>
-                                    <div class="br-pt-bc-name">Константин</div>
-                                    <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
-                                    <div class="br-pt-bc-rating">
-                                        <img src="images/star.svg" alt="img">
-                                        <img src="images/star.svg" alt="img">
-                                        <img src="images/star.svg" alt="img">
-                                        <img src="images/star.svg" alt="img">
-                                        <img src="images/star-g.svg" alt="img">
-                                    </div>
-                                </div>
-                                <p>
-                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
-                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
-                                </p>
-                                <div>
-                                    <button type="button" class="br-rc-c">
-                                        <span>Ответить</span>
-                                        <span>Закрыть</span>
-                                    </button>
-                                    <div class="br-pt-bc-wh">
-                                        <div>Был ли полезен вам этот отзыв?</div>
-                                        <div>
-                                            <div>
-                                                <button type="button">
-                                                    <img src="images/like.png" alt="like">
-                                                </button>
-                                                <span>(1)</span>
-                                            </div>
-                                            <div>
-                                                <button type="button">
-                                                    <img src="images/dislike.png" alt="dislike">
-                                                </button>
-                                                <span>(1)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="br-rc-button">
-                                        <span>Читать комментарий</span>
-                                        <span>Скрыть</span>
-                                    </button>
-                                </div>
-                                <form class="br-pr-rcm">
-                                    <div>
-                                        <div>
-                                            <label for="test1">Ваше имя:</label>
-                                            <input id="test1" type="text">
-                                        </div>
-                                        <div>
-                                            <label for="test2">Ваше e-mail:</label>
-                                            <input id="test2" type="email">
-                                        </div>
-                                    </div>
-                                    <textarea></textarea>
-                                    <button type="submit">Отправить</button>
-                                </form>
-                            </div>
-                            <div class="br-pt-bc-item">
+                            <div class="br-pt-bc-item br-ct-bc-item-out">
                                 <div>
                                     <div class="br-pt-bc-name">Константин</div>
                                     <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
@@ -4995,7 +5116,185 @@
                         <div class="br-pt-bcl-slider">
                             <div class="br-pr-set-slider owl-carousel">
                                 <div class="item">
-                                    <div class="br-pt-bc-item">
+                                    <div class="br-pt-bc-item br-ct-bc-item-out br-pt-bc-item-in">
+                                        <div>
+                                            <div class="br-pt-bc-name">Константин</div>
+                                            <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
+                                            <div class="br-pt-bc-rating">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star.svg" alt="img">
+                                                <img src="images/star-g.svg" alt="img">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                        </p>
+                                        <div>
+                                            <button type="button" class="br-rc-c">
+                                                <span>Ответить</span>
+                                                <span>Закрыть</span>
+                                            </button>
+                                            <div class="br-pt-bc-wh">
+                                                <div>Был ли полезен вам этот отзыв?</div>
+                                                <div>
+                                                    <div>
+                                                        <button type="button">
+                                                            <img src="images/like.png" alt="like">
+                                                        </button>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button">
+                                                            <img src="images/dislike.png" alt="dislike">
+                                                        </button>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="br-rc-button">
+                                                <span>Читать комментарий</span>
+                                                <span>Скрыть</span>
+                                            </button>
+                                        </div>
+                                        <form class="br-pr-rcm">
+                                            <div>
+                                                <div>
+                                                    <label for="test1">Ваше имя:</label>
+                                                    <input id="test1" type="text">
+                                                </div>
+                                                <div>
+                                                    <label for="test2">Ваше e-mail:</label>
+                                                    <input id="test2" type="email">
+                                                </div>
+                                            </div>
+                                            <textarea></textarea>
+                                            <button type="submit">Отправить</button>
+                                        </form>
+                                        <div class="br-pt-bc-list-in">
+                                            <div class="br-pt-bc-item">
+                                                <div>
+                                                    <div class="br-pt-bc-name">Константин</div>
+                                                    <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
+                                                    <div class="br-pt-bc-rating">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star-g.svg" alt="img">
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                                </p>
+                                                <div>
+                                                    <button type="button" class="br-rc-c">
+                                                        <span>Ответить</span>
+                                                        <span>Закрыть</span>
+                                                    </button>
+                                                    <div class="br-pt-bc-wh">
+                                                        <div>Был ли полезен вам этот отзыв?</div>
+                                                        <div>
+                                                            <div>
+                                                                <button type="button">
+                                                                    <img src="images/like.png" alt="like">
+                                                                </button>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button">
+                                                                    <img src="images/dislike.png" alt="dislike">
+                                                                </button>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="br-rc-button">
+                                                        <span>Читать комментарий</span>
+                                                        <span>Скрыть</span>
+                                                    </button>
+                                                </div>
+                                                <form class="br-pr-rcm">
+                                                    <div>
+                                                        <div>
+                                                            <label for="test999">Ваше имя:</label>
+                                                            <input id="test999" type="text">
+                                                        </div>
+                                                        <div>
+                                                            <label for="test888">Ваше e-mail:</label>
+                                                            <input id="test888" type="email">
+                                                        </div>
+                                                    </div>
+                                                    <textarea></textarea>
+                                                    <button type="submit">Отправить</button>
+                                                </form>
+                                            </div>
+                                            <div class="br-pt-bc-item">
+                                                <div>
+                                                    <div class="br-pt-bc-name">Константин</div>
+                                                    <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
+                                                    <div class="br-pt-bc-rating">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star.svg" alt="img">
+                                                        <img src="images/star-g.svg" alt="img">
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                                    Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
+                                                </p>
+                                                <div>
+                                                    <button type="button" class="br-rc-c">
+                                                        <span>Ответить</span>
+                                                        <span>Закрыть</span>
+                                                    </button>
+                                                    <div class="br-pt-bc-wh">
+                                                        <div>Был ли полезен вам этот отзыв?</div>
+                                                        <div>
+                                                            <div>
+                                                                <button type="button">
+                                                                    <img src="images/like.png" alt="like">
+                                                                </button>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button">
+                                                                    <img src="images/dislike.png" alt="dislike">
+                                                                </button>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="br-rc-button">
+                                                        <span>Читать комментарий</span>
+                                                        <span>Скрыть</span>
+                                                    </button>
+                                                </div>
+                                                <form class="br-pr-rcm">
+                                                    <div>
+                                                        <div>
+                                                            <label for="test999">Ваше имя:</label>
+                                                            <input id="test999" type="text">
+                                                        </div>
+                                                        <div>
+                                                            <label for="test888">Ваше e-mail:</label>
+                                                            <input id="test888" type="email">
+                                                        </div>
+                                                    </div>
+                                                    <textarea></textarea>
+                                                    <button type="submit">Отправить</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="br-pt-bc-item br-ct-bc-item-out">
                                         <div>
                                             <div class="br-pt-bc-name">Константин</div>
                                             <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
@@ -5055,67 +5354,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="br-pt-bc-item">
-                                        <div>
-                                            <div class="br-pt-bc-name">Константин</div>
-                                            <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
-                                            <div class="br-pt-bc-rating">
-                                                <img src="images/star.svg" alt="img">
-                                                <img src="images/star.svg" alt="img">
-                                                <img src="images/star.svg" alt="img">
-                                                <img src="images/star.svg" alt="img">
-                                                <img src="images/star-g.svg" alt="img">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
-                                            Ноутбук Apple MacBook Pro A1398 Retina (Z0RG00050) – это совершенно новый подход к технике. Он создан, не опираясь на все предыдущие разработки. Благодаря ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolorum earum eius eos fuga hic ipsum iste magnam, nihil quibusdam...
-                                        </p>
-                                        <div>
-                                            <button type="button" class="br-rc-c">
-                                                <span>Ответить</span>
-                                                <span>Закрыть</span>
-                                            </button>
-                                            <div class="br-pt-bc-wh">
-                                                <div>Был ли полезен вам этот отзыв?</div>
-                                                <div>
-                                                    <div>
-                                                        <button type="button">
-                                                            <img src="images/like.png" alt="like">
-                                                        </button>
-                                                        <span>(1)</span>
-                                                    </div>
-                                                    <div>
-                                                        <button type="button">
-                                                            <img src="images/dislike.png" alt="dislike">
-                                                        </button>
-                                                        <span>(1)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button type="button" class="br-rc-button">
-                                                <span>Читать комментарий</span>
-                                                <span>Скрыть</span>
-                                            </button>
-                                        </div>
-                                        <form class="br-pr-rcm">
-                                            <div>
-                                                <div>
-                                                    <label for="test1">Ваше имя:</label>
-                                                    <input id="test1" type="text">
-                                                </div>
-                                                <div>
-                                                    <label for="test2">Ваше e-mail:</label>
-                                                    <input id="test2" type="email">
-                                                </div>
-                                            </div>
-                                            <textarea></textarea>
-                                            <button type="submit">Отправить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="br-pt-bc-item">
+                                    <div class="br-pt-bc-item br-ct-bc-item-out">
                                         <div>
                                             <div class="br-pt-bc-name">Константин</div>
                                             <div class="br-pt-bc-date"><span>25.12.2015</span> в <span>10:45</span></div>
@@ -6819,8 +7058,11 @@
         <div class="br-prf-price">
             39 824 <span>грн</span>
         </div>
-        <button type="button">
+        <button type="button" class="br-pr-fixed-buy br-pr-fixed-buy-first">
             Купить
+        </button>
+        <button type="button" class="br-pr-fixed-buy br-pr-fixed-buy-second" data-toggle="modal" data-target=".br-checkout-modal">
+            Оформить
         </button>
     </div>
     <div class="br-pr-menu">
@@ -8821,7 +9063,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3>
-                        Время доставки вашего заказа
+                        Товар добавлен в корзину
                         <span>
                             <button type="button">
                                 Перейти в корзину
@@ -9505,6 +9747,227 @@
                                 <div class="tab-pane" id="dt33">
                                     <div class="br-dt-c">
                                         Курьер будет готов доставить вам товар сегодня 18.05 с 14:00 до 18:00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="br-modal-slider-block">
+                            <h3>
+                                Используйте вашу технику на 100% мощности
+                            </h3>
+                            <div class="br-sm-sort">
+                                <ul>
+                                    <li class="active">
+                                        <a href="#tab6" data-toggle="tab">Ноутбуки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab7" data-toggle="tab">Акустические системы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab8" data-toggle="tab">Зарядное устройство</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div id="tab6" class="tab-pane active br-tab-first">
+                                    <div class="br-modal-slider owl-carousel">
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n1.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n2.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n3.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab7" class="tab-pane active">
+                                    <div class="br-modal-slider owl-carousel">
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n4.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n5.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n6.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab8" class="tab-pane active">
+                                    <div class="br-modal-slider owl-carousel">
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n7.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n8.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="br-modal-slider-item">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/n1.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="br-msi-price">
+                                                        <span>32 326</span><span>грн</span>
+                                                    </div>
+                                                    <button type="button">Купить</button>
+                                                </div>
+                                                <div class="br-msi-name">
+                                                    <a href="#">
+                                                        Ноутбук HP Envy 13-d002ur lop
+                                                        (P0F48EA)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

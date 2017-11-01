@@ -67,6 +67,10 @@
 }
 @media(max-width: 1354px)
 {
+    .br-pt-bc-list-in
+    {
+        padding-left: 30px;
+    }
     .br-pr-set-item + .br-pr-set-item:before
     {
         width: 18px;
@@ -125,6 +129,10 @@
     {
         padding-top: 22px;
     }
+    .br-prt-wide .br-pt-ur
+    {
+        padding-top: 0;
+    }
     .br-pt-lc textarea
     {
         height: 125px;
@@ -134,6 +142,10 @@
         position: absolute;
         left: 0;
         bottom: 0;
+    }
+    .br-prt-wide .br-pt-lc .br-pt-lc-submit, .br-prt-wide .br-pt-lc div
+    {
+        position: static !important;
     }
     .br-pt-lc form > div
     {
@@ -291,6 +303,10 @@
     .br-prt-f
     {
         width: 33.33333%;
+    }
+    .br-prt-wide
+    {
+        width: 66.66666%;
     }
     .br-chpd-f
     {
@@ -932,6 +948,26 @@
 }
 @media(max-width: 1011px)
 {
+    .br-flex-sm
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    }
+    .br-flex-sm > div:first-child
+    {
+        width: 276px;
+    }
+    .br-flex-sm > div:last-child
+    {
+        width: calc(100% - 306px);
+    }
     .br-promo-block-soc
     {
         justify-content: space-between;
@@ -1016,6 +1052,10 @@
     .br-prt-f
     {
         width: 50%;
+    }
+    .br-prt-wide
+    {
+        width: 100%;
     }
     .br-pr-chr-item span:first-child
     {
@@ -1102,9 +1142,13 @@
     {
         width: 306px;
     }
-    .br-prt-f.col-md-4.col-sm-12 > div:last-child, .br-wmore
+    .br-prt-f.col-md-4.col-sm-12 > div:last-child
     {
         width: calc(100% - 336px);
+    }
+    .br-wmore
+    {
+        width: calc(100% - 306px);
     }
     .br-prt-f.col-sm-12
     {
@@ -1901,6 +1945,14 @@
 }
 @media(max-width: 766px)
 {
+    .br-flex-sm > div, .br-prt-wide .br-pt-lc form > div
+    {
+        width: 100% !important;
+    }
+    .br-flex-sm > div + div, .br-prt-wide .br-pt-lc form > div + div
+    {
+        margin-top: 15px;
+    }
     .br-modal-t-block .br-cl-pf > div > span > span
     {
         right: auto;
@@ -2574,6 +2626,10 @@
         -ms-flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
     }
+    .br-pt-bc-list-in
+    {
+        padding-left: 50px;
+    }
     .br-checkout-modal .modal-dialog
     {
         display: none;
@@ -2709,7 +2765,7 @@
     {
         margin-bottom: 0;
     }
-    .br-checkout-modal .br-cart-items
+    body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     {
         height: 240px;
     }
@@ -2717,7 +2773,7 @@
     {
         position: static;
     }
-    .br-checkout-modal .br-cart-items
+    body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     {
         padding-left: 0;
     }
@@ -2948,6 +3004,10 @@
 }
 @media(max-width: 550px)
 {
+    .br-pt-bc-list-in
+    {
+        padding-left: 20px;
+    }
     .br-pr-rcm > div div
     {
         width: 100%;
@@ -3371,9 +3431,28 @@
     {
         display: block;
     }
+    .br-prf-price
+    {
+        font-size: 23px;
+        line-height: 39px;
+    }
+    .br-prf-price span
+    {
+        font-size: 20px;
+        top: -8px;
+    }
 }
 @media(max-width: 359px)
 {
+    .br-pt-bc-list-in .br-pt-bc-wh
+    {
+        display: block;
+    }
+    .br-pt-bc-list-in .br-pt-bc-wh > div:first-child
+    {
+        margin-bottom: 10px;
+        max-width: none;
+    }
     .br-promo-htgc tr
     {
         padding: 7px 20px;
@@ -3405,16 +3484,6 @@
     {
         position: static;
         margin-top: 20px;
-    }
-    .br-prf-price
-    {
-        font-size: 25px;
-        line-height: 42px;
-    }
-    .br-prf-price span
-    {
-        font-size: 20px;
-        top: -8px;
     }
     .br-pr-price
     {
@@ -3928,7 +3997,7 @@
     {
         padding: 0;
     }
-    .br-page-blog .br-flex > div, .br-prt-f.col-md-4.col-sm-12 > div:last-child, .br-wmore
+    .br-page-blog .br-flex > div, .br-prt-f.col-md-4.col-sm-12 > div:last-child, .br-wmore, .br-prt-wide
     {
         width: 100%;
     }
