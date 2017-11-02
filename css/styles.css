@@ -6816,23 +6816,23 @@ body:not(.br-page-blog) .br-sf-rs a
     -ms-flex-pack: justify;
     margin-bottom: 15px;
 }
-.br-ch-up > div:first-child
+.br-ch-up-ic
 {
     font-size: 20px;
     color: #777;
 }
-.br-ch-up > div:first-child span
+.br-ch-up-ic span
 {
     color: #333;
     font-weight: 700;
 }
-.br-ch-up > div:nth-child(2)
+.br-ch-up-bu
 {
     font-size: 18px;
     color: #777;
     padding: 3px 0 0 100px;
 }
-.br-ch-up > div:nth-child(2) > span
+.br-ch-up-bu > span
 {
     color: #333;
     font-size: 14px;
@@ -6844,16 +6844,16 @@ body:not(.br-page-blog) .br-sf-rs a
     background-size: auto 20px;
     margin-left: 5px;
 }
-.br-ch-up > div:last-child
+.br-ch-up-pc
 {
     font-size: 20px;
 }
-.br-ch-up > div:last-child span:first-child
+.br-ch-up-op
 {
     display: inline-block;
     position: relative;
 }
-.br-ch-up > div:last-child span:first-child:after
+.br-ch-up-op:after
 {
     content: '';
     position: absolute;
@@ -6863,7 +6863,7 @@ body:not(.br-page-blog) .br-sf-rs a
     width: 100%;
     background: #1972fd;
 }
-.br-ch-up > div:last-child span:last-child
+.br-ch-up-np
 {
     font-weight: 700;
     display: block;
@@ -12051,9 +12051,9 @@ body:not(.br-page-blog) .br-body .br-container-c
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all .2s ease;
