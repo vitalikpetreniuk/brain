@@ -9457,7 +9457,6 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
     letter-spacing: 2px;
     height: 24px;
     padding: 0 5px 0 7px;
-    width: 102px;
 }
 .br-rc-c span:first-child, .br-rc-c.open span:last-child
 {
@@ -12014,7 +12013,7 @@ body:not(.br-page-blog) .br-body .br-container-c
 .br-category-block .br-category-block
 {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 1330px;
@@ -12222,7 +12221,6 @@ body:not(.br-page-blog) .br-body .br-container-c
     height: 124px;
 }
 /*-----*/
-
 
 
 
