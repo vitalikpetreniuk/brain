@@ -1196,12 +1196,22 @@ $(function(){
         $('.br-pr-menu').addClass('active');
     });
 
+    $('.br-quick-category-btn').on('click', function () {
+        $(this).addClass('active');
+        $('.br-quick-category-menu').addClass('active');
+    });
+
+    $('.br-quick-category-menu > button').on('click', function () {
+        $('.br-quick-category-menu').removeClass('active');
+        $('.br-quick-category-btn').removeClass('active');
+    });
+
     $('.br-category-block-sa button').on('click', function () {
-        $(this).closest('.br-category-block-bottom').next('.br-category-block').addClass('active');
+        $(this).closest('.br-category-block-bottom').siblings('.br-category-block').addClass('active');
     });
 
     $('.br-category-block .br-category-block button').on('click', function () {
-        $(this).closest('.br-category-block').removeClass('active');
+        $(this).closest('.br-category-block-right').find('.br-category-block').removeClass('active');
     });
 
     $('.br-pr-menu a').on('click', function(){
@@ -1209,6 +1219,14 @@ $(function(){
         $('.br-pr-menu').removeClass('active');
         var target = $(this).attr('href');
         $('html, body').animate({scrollTop: $(target).offset().top - 80}, 800);
+        return false;
+    });
+
+    $('.br-quick-category-menu a').on('click', function(){
+        $('.br-quick-category-menu').removeClass('active');
+        $('.br-quick-category-btn').removeClass('active');
+        var targetCat = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(targetCat).offset().top - 80}, 800);
         return false;
     });
 
@@ -1381,6 +1399,19 @@ $(function(){
             }
         }
 
+    });
+
+    $(window).on('scroll resize load', function () {
+
+        var wHeights = $(window).height();
+
+        if($(window).scrollTop() + wHeights >= $('footer').offset().top) {
+            $('.br-quick-category-btn').addClass('stuck');
+        }
+        else
+        {
+            $('.br-quick-category-btn').removeClass('stuck');
+        }
     });
 
     $('.ch-next-f').on('click', function () {
