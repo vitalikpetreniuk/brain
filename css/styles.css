@@ -5090,7 +5090,7 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
 {
     margin-bottom: 0;
 }
-.br-sl-tl button
+.br-sl-tl button, .br-address-radio
 {
     font-size: 14px;
     line-height: 17px;
@@ -5102,15 +5102,42 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     background-color: transparent;
     background-position: left 3px;
 }
-.br-sl-tl button span
+.br-address-radio
+{
+    position: relative;
+}
+.br-address-radio input
+{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.br-address-radio label
+{
+    font-weight: 400;
+    cursor: pointer;
+    padding-left: 20px;
+    background: url("../images/br-cg.png") left 3px no-repeat;
+}
+.br-address-radio input:checked + label
+{
+    background-image: url("../images/br-cb.png");
+}
+.br-sl-tl button span, .br-address-radio span
 {
     display: block;
 }
-.br-sl-tl button span:last-child
+.br-sl-tl button span:last-child, .br-address-radio span:last-child
 {
     color: #777;
 }
-.br-sl-tl .active button span:first-child
+.br-sl-tl .active button span:first-child, .br-address-radio input:checked + label span:first-child
 {
     color: #1973ff;
     font-weight: 700;
@@ -7110,7 +7137,8 @@ body:not(.br-page-blog) .br-sf-rs a
 .br-ch-map
 {
     float: left;
-    width: calc(100% - 430px);
+    width: calc(100% - 440px);
+    margin-left: 10px;
     height: 180px;
     border: 1px solid #dfdfdf;
     border-radius: 4px;
