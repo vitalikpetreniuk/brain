@@ -8554,6 +8554,7 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
 {
     width: 100%;
     height: 40px;
+    line-height: 1.2;
     border: 1px solid #1973ff;
     background: transparent;
     font-size: 14px;
