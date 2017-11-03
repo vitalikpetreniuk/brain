@@ -11547,6 +11547,16 @@ body:not(.br-page-blog) .br-slider-product .br-pp-img img
 {
     width: auto;
 }
+body:not(.br-page-blog) .br-slider-product .br-pp h3
+{
+    max-height: 57px;
+    overflow: hidden;
+}
+body:not(.br-page-blog) .br-slider-product .br-pp .br-pp-i
+{
+    height: 96px;
+    overflow: hidden;
+}
 .br-container-gt
 {
     overflow: hidden !important;
