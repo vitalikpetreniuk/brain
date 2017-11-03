@@ -1206,6 +1206,12 @@ $(function(){
         $('.br-quick-category-btn').removeClass('active');
     });
 
+    $('.br-address-radio label').on('click', function () {
+        var radioName = $(this).attr('class');
+        console.log(radioName);
+        $('input' + "." + radioName).trigger('click')
+    });
+
     $('.br-category-block-sa button').on('click', function () {
         $(this).closest('.br-category-block-bottom').siblings('.br-category-block').addClass('active');
     });

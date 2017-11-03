@@ -5124,6 +5124,8 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     cursor: pointer;
     padding-left: 20px;
     background: url("../images/br-cg.png") left 3px no-repeat;
+    position: relative;
+    z-index: 3;
 }
 .br-address-radio input:checked + label
 {
