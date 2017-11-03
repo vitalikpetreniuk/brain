@@ -7858,12 +7858,38 @@ body:not(.br-page-blog) .br-sf-rs a
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
+.br-pr-menu .br-scroll, .br-ch-menu .br-scroll
+{
+    height: calc(100vh - 82px);
+}
+.br-pr-menu .br-scroll .scroll-element.scroll-y, .br-ch-menu .br-scroll .scroll-element.scroll-y
+{
+    width: 5px;
+}
+.br-pr-menu .br-scroll .scroll-element.scroll-y, .br-ch-menu .br-scroll .scroll-element.scroll-y
+{
+    right: 0;
+}
+.br-pr-menu .br-scroll .scroll-element .scroll-element_track, .br-ch-menu .br-scroll .scroll-element .scroll-element_track
+{
+    display: none;
+}
+.br-pr-menu .br-scroll .scroll-element .scroll-bar, .br-ch-menu .br-scroll .scroll-element .scroll-bar
+{
+    border-radius: 0;
+    background: #cecece;
+    opacity: 1;
+}
+.br-pr-menu .br-scroll .scroll-element .scroll-element_outer, .br-ch-menu .br-scroll .scroll-element .scroll-element_outer
+{
+    border-radius: 0;
+}
 .br-ch-menu.active, .br-pr-menu.active
 {
     opacity: 1;
     visibility: visible;
 }
-.br-ch-menu div, .br-pr-menu div
+.br-ch-menu-in div, .br-pr-menu-in div
 {
     display: flex;
     display: -ms-flexbox;
@@ -7873,14 +7899,14 @@ body:not(.br-page-blog) .br-sf-rs a
     -ms-flex-align: center;
     padding-left: 15px;
 }
-.br-ch-menu h3, .br-pr-menu h3
+.br-ch-menu-in h3, .br-pr-menu-in h3
 {
     text-transform: uppercase;
     font-size: 18px;
     width: calc(100% - 50px);
     margin: 0;
 }
-.br-ch-menu div button, .br-pr-menu div button
+.br-ch-menu-in div button, .br-pr-menu-in div button
 {
     width: 50px;
     height: 46px;
@@ -7888,11 +7914,11 @@ body:not(.br-page-blog) .br-sf-rs a
     padding: 0;
     border: none;
 }
-.br-ch-menu ul, .br-pr-menu ul
+.br-ch-menu-in ul, .br-pr-menu-in ul
 {
     padding: 0 15px;
 }
-.br-ch-menu ul button, .br-pr-menu ul a
+.br-ch-menu-in ul button, .br-pr-menu-in ul a
 {
     display: block;
     width: 100%;
@@ -7902,7 +7928,7 @@ body:not(.br-page-blog) .br-sf-rs a
     padding: 13px 15px 14px 0;
     background: url(../images/br-adr.png) right center no-repeat;
 }
-.br-ch-menu li:first-child button, .br-pr-menu li:first-child a
+.br-ch-menu-in li:first-child button, .br-pr-menu-in li:first-child a
 {
     border-top: 1px solid #e3e3e3;
 }
