@@ -11922,25 +11922,10 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     margin-top: 0 !important;
 }
-body:not(.br-page-blog) .br-body .br-container-c
-{
-    overflow: hidden !important;
-}
-.br-container-c .br-flex
-{
-    margin-left: -5px !important;
-    margin-right: -5px !important;
-}
-.br-container-c .br-flex > div
-{
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-}
 .br-category-block
 {
     background: #fff;
     padding: 0 20px 15px;
-    margin-bottom: 10px;
     position: relative;
 }
 .br-category-block-top
@@ -12175,18 +12160,14 @@ body:not(.br-page-blog) .br-body .br-container-c
 {
     background-image: url("../images/delete_small_b.svg");
 }
-.br-category-list > div
-{
-    margin-bottom: 0 !important;
-}
 .br-category-list > div:nth-child(4n+2) .br-category-block .br-category-block
 {
-    left: calc(-100% - 10px);
+    left: calc(-100% - 6px);
 }
 .br-category-list > div:nth-child(4n+3) .br-category-block .br-category-block
 {
     left: auto;
-    right: calc(-100% - 10px);
+    right: calc(-100% - 6px);
 }
 .br-category-list > div:nth-child(4n+4) .br-category-block .br-category-block
 {
@@ -12334,7 +12315,7 @@ body:not(.br-page-blog) .br-body .br-container-c
 /*Стили BRAIN - категории*/
 .br-category-list-product > div
 {
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;
 }
 .br-category-list-product > div > .br-category-block
 {
@@ -12377,7 +12358,7 @@ body:not(.br-page-blog) .br-body .br-container-c
 }
 .br-category-list-product > div:nth-child(3n+2) .br-category-block .br-category-block
 {
-    left: -450px !important;
+    left: -444px !important;
     right: auto !important;
 }
 .br-category-list-product > div:nth-child(3n+3) .br-category-block .br-category-block
@@ -12410,21 +12391,6 @@ body:not(.br-page-blog) .br-body .br-container-c
 {
     margin-top: 0 !important;
     padding-top: 15px !important;
-}
-
-.br-body .br-container-cs
-{
-    overflow: hidden !important;
-}
-.br-container-cs .br-flex
-{
-    margin-left: -10px !important;
-    margin-right: -10px !important;
-}
-.br-container-cs .br-flex > div
-{
-    padding-left: 10px !important;
-    padding-right: 10px !important;
 }
 .br-container-higher
 {

@@ -994,6 +994,13 @@ $(function(){
         if (container5.has(e.target).length === 0){
             $(".br-fback-dropdown > button.open").trigger('click');
         }
+
+        $(".br-category-block").each(function () {
+            categoryBlock = $(this);
+            if (categoryBlock.has(e.target).length === 0){
+                $(this).find(".br-category-block button").trigger('click');
+            }
+        });
     });
 
     $('.br-q-checkout').on('click', function(){
@@ -1208,7 +1215,6 @@ $(function(){
 
     $('.br-address-radio label').on('click', function () {
         var radioName = $(this).attr('class');
-        console.log(radioName);
         $('input' + "." + radioName).trigger('click')
     });
 
