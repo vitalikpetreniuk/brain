@@ -12145,7 +12145,7 @@ body:not(.br-page-blog) .br-body .br-container-c
 .br-category-block .br-category-block > div + div
 {
     padding-left: 20px;
-    padding-top: 33px;
+    padding-top: 55px;
 }
 .br-category-block .br-category-block > div:last-child
 {
@@ -12159,7 +12159,6 @@ body:not(.br-page-blog) .br-body .br-container-c
 }
 .br-category-block .br-category-block button
 {
-    background: none;
     border: none;
     position: absolute;
     right: 0;
@@ -12167,10 +12166,18 @@ body:not(.br-page-blog) .br-body .br-container-c
     z-index: 3;
     font-size: 18px;
     font-weight: bold;
+    background: url("../images/delete_small.svg") center no-repeat;
+    width: 48px;
+    height: 48px;
+    padding: 0;
 }
 .br-category-block .br-category-block button:hover
 {
-    color: #1973ff;
+    background-image: url("../images/delete_small_b.svg");
+}
+.br-category-list > div
+{
+    margin-bottom: 0 !important;
 }
 .br-category-list > div:nth-child(4n+2) .br-category-block .br-category-block
 {
@@ -12567,6 +12574,11 @@ body:not(.br-page-blog) .br-body .br-container-c
 {
     width: 70px;
 }
+.br-quick-category-menu-icon li img
+{
+    width: auto;
+    height: 45px;
+}
 .br-quick-category-menu li span
 {
     width: calc(100% - 70px);
@@ -12579,7 +12591,6 @@ body:not(.br-page-blog) .br-body .br-container-c
 {
     height: 100%;
 }
-
 .br-quick-category-menu .br-scroll .scroll-element.scroll-y
 {
     width: 5px;
@@ -12601,6 +12612,257 @@ body:not(.br-page-blog) .br-body .br-container-c
 .br-quick-category-menu .br-scroll .scroll-element .scroll-element_outer
 {
     border-radius: 0;
+}
+.br-fixed-buttons-out
+{
+    height: 42px;
+}
+.br-fixed-ct-buttons
+{
+    position: fixed;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.br-fixed-ct-buttons button
+{
+    width: 50%;
+    height: 42px;
+    background: #1973ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+.br-fixed-ct-buttons button:first-child
+{
+    border-right: 1px solid #fff;
+}
+.br-fixed-ct-menu
+{
+    position: fixed;
+    z-index: 102;
+    bottom: 0;
+    top: 20px;
+    left: 0;
+    width: 512px;
+    background: #fff;
+    padding: 13px 15px 15px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.br-popular-category-menu
+{
+    left: auto;
+    right: 0;
+}
+.br-fixed-ct-menu.open
+{
+    opacity: 1;
+    visibility: visible;
+}
+.br-fixed-ct-menu .br-scroll
+{
+    height: calc(100vh - 100px);
+}
+.br-fixed-ct-menu .br-scroll .scroll-element.scroll-y
+{
+    width: 5px;
+}
+.br-fixed-ct-menu .br-scroll .scroll-element.scroll-y
+{
+    right: 0;
+}
+.br-fixed-ct-menu .br-scroll .scroll-element .scroll-element_track
+{
+    display: none;
+}
+.br-fixed-ct-menu .br-scroll .scroll-element .scroll-bar
+{
+    border-radius: 0;
+    background: #cecece;
+    opacity: 1;
+}
+.br-fixed-ct-menu .br-scroll .scroll-element .scroll-element_outer
+{
+    border-radius: 0;
+}
+.br-fixed-ct-menu > button
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: none;
+    background: url("../images/delete_small.svg") center no-repeat;
+}
+.br-fixed-ct-menu > button:hover
+{
+    background-image: url("../images/delete_small_b.svg");
+}
+.br-fixed-ct-menu h3
+{
+    font-size: 31px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+.br-fixed-ct-menu-in
+{
+    padding-right: 20px;
+}
+.br-fixed-ct-menu-in > ul > li
+{
+    border-bottom: 1px solid #e3e3e3;
+}
+.br-fixed-ct-menu-in > ul > li > button
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    height: 80px;
+    border: none;
+    background: url("../images/br-ar-b.png") right center no-repeat;
+    padding: 0 15px 0 0;
+    width: 100%;
+    text-align: left;
+    transition: none
+}
+.br-fixed-ct-menu-in > ul > li > button.open
+{
+    background-image: url("../images/br-ab-b.png");
+}
+.br-ct-menu-img
+{
+    width: 60px;
+}
+.br-ct-menu-img img
+{
+    display: block;
+    width: 100%;
+}
+.br-ct-menu-img + .br-ct-menu-title
+{
+    width: calc(100% - 80px);
+}
+.br-ct-menu-title
+{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.br-ct-menu-second, .br-ct-menu-third
+{
+    display: none;
+    width: 100% !important;
+}
+.br-ct-menu-second
+{
+    position: relative;
+}
+.br-ct-menu-second > img
+{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.br-ct-menu-second > .br-ct-menu-third
+{
+    display: block;
+}
+.br-ct-menu-second > div
+{
+    margin-left: 80px;
+    position: relative;
+    border-top: 1px solid #e3e3e3;
+}
+.br-ct-menu-second > div > button
+{
+    border: none;
+    background: url("../images/br-ar-b.png") right center no-repeat;
+    padding: 0;
+    height: 50px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1973ff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    transition: none;
+    padding-right: 15px;
+}
+.br-ct-menu-second > div > button.open
+{
+    background-image: url("../images/br-ab-b.png");
+}
+.br-ct-menu-show-all
+{
+    display: none;
+    text-align: right;
+    padding: 6px 0 15px;
+    width: 100% !important;
+}
+.br-ct-menu-show-all > *
+{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #1973ff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    border: none;
+    background: none;
+}
+.br-ct-menu-show-all i
+{
+    margin-left: 3px;
+}
+.br-ct-menu-show-all > *:hover
+{
+    text-decoration: underline;
+    color: #1973ff;
+}
+.br-ct-menu-third li + li
+{
+    margin-top: 4px;
+}
+.br-ct-menu-third a
+{
+    display: block;
+    padding-right: 15px;
+    background: url("../images/br-ar-b.png") right center no-repeat;
+    font-size: 14px;
+}
+.br-ct-menu-third a:hover
+{
+    color: #1973ff;
 }
 /*-----*/
 
