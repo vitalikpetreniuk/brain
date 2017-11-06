@@ -1658,7 +1658,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 }
 .br-mbm
 {
-    position: absolute;
+    position: absolute !important;
     right: 0;
     bottom: 0;
 }
@@ -12829,6 +12829,32 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-ct-menu-third a:hover
 {
     color: #1973ff;
+}
+/*-----*/
+
+/*Стили BRAIN - банннер акции в меню*/
+#catb1
+{
+    background-image: url("../images/menu-banner2.jpg");
+}
+.br-m-with-a
+{
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.br-m-with-a-link
+{
+    width: 100%;
+    position: relative;
+    left: -35px;
+}
+.br-m-with-a-link a
+{
+    display: block;
+}
+.br-m-with-a-link img
+{
+    width: calc(100% + 70px);
 }
 /*-----*/
 

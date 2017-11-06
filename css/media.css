@@ -71,6 +71,14 @@
 }
 @media(max-width: 1354px)
 {
+    .br-m-with-a
+    {
+        background-image: none !important;
+    }
+    .br-m-with-a-link
+    {
+        display: none !important;
+    }
     .br-category-list > div:nth-child(3n+1) .br-category-block .br-category-block
     {
         left: 0 !important;
