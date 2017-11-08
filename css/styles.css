@@ -1556,18 +1556,48 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 {
     border: none;
 }
-.br-mbm-imgs
+.br-mbm-imgs > div
 {
+    display: none;
     position: absolute !important;
+    right: -35px;
+    left: -35px;
+    bottom: 0;
+    z-index: 1 !important;
+}
+.br-mbm-imgs > div.active
+{
+    display: block;
+}
+.br-mbm-imgs > div > img
+{
+    position: absolute;
     right: 15px;
     bottom: 15px;
     z-index: 1 !important;
 }
-.br-mbm-imgs img
+.br-menu-action-banner
 {
-    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
 }
-.br-mbm-imgs img.active
+.br-menu-action-link
+{
+    position: relative;
+    z-index: 2;
+}
+.br-menu-action-link a
 {
     display: block;
 }
@@ -1685,6 +1715,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
     visibility: hidden;
     -webkit-box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
     box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
+    overflow: hidden;
 }
 .br-bh-menu-top > ul > li:hover > ul
 {
@@ -1785,6 +1816,10 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
     top: 50%;
     margin-top: -3px;
     background: url(../images/br-ar-b.png) center no-repeat;
+}
+.br-m-with-i > li:first-child
+{
+    z-index: 3 !important;
 }
 .br-m-with-i ul:nth-child(9), .br-m-with-i ul:nth-child(13), .br-m-with-i ul:nth-child(17), .br-m-with-i ul:nth-child(21), .br-m-with-i ul:nth-child(25), .br-m-with-i ul:nth-child(29), .br-m-with-i ul:nth-child(33)
 {
@@ -8091,6 +8126,48 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
     height: 34px;
     width: 100%;
 }
+.br-pr-lpp
+{
+    margin-top: 20px;
+}
+.br-pr-lpp > *
+{
+    width: 100%;
+    background: #1972fd url("../images/pd.svg") 17px center no-repeat;
+    background-size: 24px auto;
+    border: none;
+    height: 34px;
+    line-height: 13px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 15px 0 50px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+}
+.br-pr-lpp > *:hover, .br-pr-lpp > *:focus
+{
+    color: #fff;
+    opacity: .7;
+}
+.br-pr-lpp-out
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+.br-pr-lpp-out .br-pr-lpp
+{
+    margin: 0 0 22px;
+}
 .br-pr-slider
 {
     display: flex;
@@ -12829,32 +12906,6 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-ct-menu-third a:hover
 {
     color: #1973ff;
-}
-/*-----*/
-
-/*Стили BRAIN - банннер акции в меню*/
-#catb1
-{
-    background-image: url("../images/menu-banner2.jpg");
-}
-.br-m-with-a
-{
-    background-position: right bottom;
-    background-repeat: no-repeat;
-}
-.br-m-with-a-link
-{
-    width: 100%;
-    position: relative;
-    left: -35px;
-}
-.br-m-with-a-link a
-{
-    display: block;
-}
-.br-m-with-a-link img
-{
-    width: calc(100% + 70px);
 }
 /*-----*/
 
