@@ -9562,6 +9562,7 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
     font-weight: 700;
     width: 140px;
     padding-right: 15px;
+    word-wrap: break-word;
 }
 .br-pt-bc-date
 {
