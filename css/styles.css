@@ -8160,9 +8160,9 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
-    justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
 }
 .br-pr-lpp-out .br-pr-lpp
 {
