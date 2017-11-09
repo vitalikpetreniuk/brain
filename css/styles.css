@@ -7165,12 +7165,6 @@ body:not(.br-page-blog) .br-sf-rs a
     display: block;
     clear: both;
 }
-.br-ps-block .br-dt-abs > .tab-content > .tab-pane:first-child .br-sl-tl > div:first-child
-{
-    float: left;
-    width: 430px;
-    padding-right: 15px;
-}
 .br-ch-map
 {
     float: left;
@@ -12918,6 +12912,14 @@ div:nth-last-child(-3+n) > .br-action-item
     color: #1973ff;
 }
 /*-----*/
+
+
+
+
+
+
+
+
 
 
 
