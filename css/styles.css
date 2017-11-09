@@ -5362,6 +5362,10 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
 {
     margin-bottom: 0;
 }
+.br-ps-block .br-dt-abs > ul a
+{
+    padding-right: 20px;
+}
 .br-ps-block .br-dt1 a
 {
     background-position: 46px 11px;
@@ -12924,6 +12928,7 @@ div:nth-last-child(-3+n) > .br-action-item
     color: #1973ff;
 }
 /*-----*/
+
 
 
 
