@@ -1,28 +1,5 @@
 $(function(){
 
-    // var tItem = 0;
-    // while (tItem < 20) {
-    //     setTimeout(function(){
-    //         $('.br-theader-menu ul').append('<li>test</li>');
-    //     }, 5000);
-    //     setTimeout(function(){
-    //         $('.br-theader-menu ul').append('<li>test2</li>');
-    //     }, 6000);
-    //     setTimeout(function(){
-    //         $('.br-theader-menu ul').append('<li>test3</li>');
-    //     }, 7000);
-    //     setTimeout(function(){
-    //         $('.br-theader-menu ul').append('<li>test4</li>');
-    //     }, 8000);
-    //     setTimeout(function(){
-    //         $('.br-theader-menu ul').append('<li>test5</li>');
-    //     }, 9000);
-    //     setTimeout(function(){
-    //         $('.br-theader-menu ul').append('<li>test6</li>');
-    //     }, 10000);
-    //     tItem++;
-    // }
-
     if($('.br-pt-lc').length){
         $('.br-pt-lc select').barrating({
             theme: 'fontawesome-stars'
@@ -432,9 +409,12 @@ $(function(){
         $('.br-p-cats ul').toggle('fast');
     });
 
-    $('.br-bh-menu-top > ul > li > ul > li > ul').mouseenter(function(){
-        var testIndex = $('.br-bh-menu-top > ul > li > ul > li > ul').index(this);
-        $('.br-mbm-imgs img').removeClass('active').eq(testIndex).addClass('active');
+    $('.br-m-with-i > li:first-child > ul').mouseenter(function () {
+        var listClass = $(this).attr('data-id');
+        $(this).closest('.br-m-with-i').find('div').removeClass('active');
+        $(this).closest('.br-m-with-i').find('div' + '.' + listClass).addClass('active');
+    }).mouseleave(function () {
+        $(this).closest('.br-m-with-i').find('div').removeClass('active');
     });
 
     if($('.br-pr-scroll').length)
@@ -1215,7 +1195,11 @@ $(function(){
 
     $('.br-address-radio label').on('click', function () {
         var radioName = $(this).attr('class');
-        $('input' + "." + radioName).trigger('click')
+        $('input' + "." + radioName).trigger('click');
+    });
+    $('.br-address-radio input').on('click', function () {
+        $(this).closest('.br-sl-tl').find('.br-fc-dt').hide();
+        $(this).closest('.br-address-radio').siblings('.br-fc-dt').show();
     });
 
     $('.br-category-block-sa button').on('click', function () {
