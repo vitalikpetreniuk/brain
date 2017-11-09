@@ -11562,6 +11562,16 @@ header .br-pt-menu-in
 {
     margin-bottom: 50px;
 }
+.br-slider-product .owl-stage, .br-slider-product .owl-item, .br-slider-product .item
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.br-slider-product .item, .br-slider-product .item > div
+{
+    width: 100%;
+}
 .br-slider-product .owl-nav > div
 {
     position: absolute;
@@ -12908,7 +12918,6 @@ div:nth-last-child(-3+n) > .br-action-item
     color: #1973ff;
 }
 /*-----*/
-
 
 
 
