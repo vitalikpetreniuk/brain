@@ -125,7 +125,6 @@ $(function(){
         });
     }
 
-
     if($('.br-tslider').length)
     {
         var $frame = $('.br-tslider');
@@ -1196,10 +1195,6 @@ $(function(){
     $('.br-address-radio label').on('click', function () {
         var radioName = $(this).attr('class');
         $('input' + "." + radioName).trigger('click');
-    });
-    $('.br-address-radio input').on('click', function () {
-        $(this).closest('.br-sl-tl').find('.br-fc-dt').hide();
-        $(this).closest('.br-address-radio').siblings('.br-fc-dt').show();
     });
 
     $('.br-category-block-sa button').on('click', function () {

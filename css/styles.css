@@ -6447,13 +6447,10 @@ body:not(.br-page-blog) .br-sf-rs a
 {
     width: 500px;
 }
-.br-sl-tl .br-fc-dt
-{
-    display: none;
-}
 .br-sl-tl .br-fc-dt, .br-sl-tl .br-fc-dt select
 {
-    width: auto !important;
+    width: auto;
+    background: transparent;
 }
 .br-fc-price
 {
