@@ -125,6 +125,42 @@ $(function(){
         });
     }
 
+    if($('.br-shop-gallery').length)
+    {
+        $('.br-shop-gallery').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            asNavFor: '.br-shop-gallery-big'
+        });
+    }
+
+    if($('.br-shop-gallery-big').length)
+    {
+        $('.br-shop-gallery-big').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            arrows: false,
+            fade: true
+        });
+    }
+
+    $('.br-modal-p').on('shown.bs.modal', function (e) {
+        $('.slick-slider').resize();
+        setTimeout(function(){
+            $('.slick-slider').removeClass('br-loading-modal');
+        }, 500);
+    });
+
+    $(window).on('resize', function () {
+        if($(window).width() < 680)
+        {
+           $('.br-modal-p .close').trigger('click');
+        }
+    });
+
+
     if($('.br-tslider').length)
     {
         var $frame = $('.br-tslider');
@@ -275,6 +311,18 @@ $(function(){
                 titleSrc: function(item) {
                     return '<a class="br-modal-buy" href="#" target="_blank">Купить</a>';
                 }
+            }
+
+        });
+    }
+
+    if($('.br-shops-imgs').length)
+    {
+        $('.br-shops-imgs').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled:true
             }
 
         });
@@ -835,6 +883,17 @@ $(function(){
         $('.br-oc-dropdown').toggle('fast');
     });
 
+    $('.br-shops-head > button').on('click', function(){
+        $(this).toggleClass('open');
+        $('.br-shops-area').toggleClass('open');
+    });
+
+    $('.br-shops-area a').on('click', function () {
+        var shopArea = $(this).text();
+        $('.br-shops-head button.open').trigger('click');
+        $(this).closest('.br-shops-head').find('button span:last-child').text(shopArea);
+    });
+
     $('.br-fback-dropdown > button').on('click', function(){
         $(this).toggleClass('open');
         $(this).next('.br-dropdown').toggle('fast');
@@ -966,6 +1025,7 @@ $(function(){
             container3 = $(".br-th-login"),
             container4 = $(".br-order-call");
             container5 = $(".br-fback-dropdown");
+            container6 = $(".br-shops-head");
 
         if (container1.has(e.target).length === 0){
             $(".br-chc button.active").trigger('click');
@@ -985,6 +1045,10 @@ $(function(){
 
         if (container5.has(e.target).length === 0){
             $(".br-fback-dropdown > button.open").trigger('click');
+        }
+
+        if (container6.has(e.target).length === 0){
+            $(".br-shops-head > button.open").trigger('click');
         }
 
         $(".br-dropdown-group").each(function () {
@@ -1266,6 +1330,18 @@ $(function(){
 
     $('.br-all-category-button').on('click', function () {
         $('.br-all-category-menu').toggleClass('open');
+    });
+
+    $('.br-btn-fixed').on('click', function () {
+        $(this).addClass('open');
+        $('.br-fx-menu').addClass('active');
+    });
+
+    $('.br-fx-menu-in > div > button, .br-fx-menu a').on('click', function () {
+        $('.br-btn-fixed').removeClass('open');
+        $('.br-fx-menu').removeClass('active');
+        var shopTab = $(this).text();
+        $('.br-shops-head').find('button span:last-child').text(shopTab);
     });
 
     $('.br-ct-popular-category-button').on('click', function () {

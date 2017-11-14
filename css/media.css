@@ -1044,6 +1044,71 @@
 }
 @media(max-width: 1011px)
 {
+    .br-shops-main-block .br-scroll
+    {
+        max-height: 345px;
+    }
+    .br-shops-main-block-in > div + div
+    {
+        margin-top: 30px;
+        padding-top: 24px;
+        border-top: 1px solid #e3e3e3;
+    }
+    .br-shops-item + .br-shops-item
+    {
+        margin-top: 28px;
+    }
+    .br-shops-item
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-shop-address
+    {
+        width: 345px;
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+    .br-shop-info
+    {
+        width: calc(100% - 345px);
+        padding-left: 0;
+        position: relative;
+        top: -2px;
+    }
+    .br-shops-show
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+    .br-shops-show button
+    {
+        display: block;
+    }
+    .br-shops-item .br-shop-gallery
+    {
+        display: none;
+    }
+    .br-shops-map .tab-pane
+    {
+        height: 385px;
+        padding: 0 10px 10px
+    }
+    .br-shops-main-block
+    {
+        position: static;
+        width: 100%;
+        padding: 5px 0 25px 10px;
+        border: none;
+    }
+    .br-shops-main-block-in
+    {
+        padding-right: 15px;
+    }
     .br-ab-main h2
     {
         font-size: 20px;
@@ -2135,22 +2200,59 @@
 }
 @media(min-width: 767px)
 {
-    .br-ch-fixed, .br-pr-fixed, .br-quick-category-btn, .br-quick-category-menu
+    .br-ch-fixed, .br-pr-fixed, .br-quick-category-btn, .br-quick-category-menu, .br-btn-fixed, .br-quick-cetegory-btn
     {
         display: none;
     }
-    .br-ch-menu.active, .br-pr-menu.active
+    .br-ch-menu.active, .br-pr-menu.active, .br-fx-menu.active
     {
         opacity: 0;
         visibility: hidden;
     }
-    .br-quick-cetegory-btn
-    {
-        display: none;
-    }
 }
 @media(max-width: 766px)
 {
+    .br-shops-block .br-shops-body > .active
+    {
+        padding: 5px;
+    }
+    .br-shops-main-block
+    {
+        padding: 5px 0 20px 10px;
+    }
+    .br-shops-main-block .br-scroll
+    {
+        max-height: 220px;
+    }
+    .br-shops-show button
+    {
+        display: none;
+    }
+    .br-shops-show
+    {
+        margin: 0;
+        padding-left: 30px;
+    }
+    .br-shop-info
+    {
+        display: block;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .br-shop-info > div + div
+    {
+        margin-top: 5px;
+    }
+    .br-shop-address
+    {
+        width: 100%;
+        margin-bottom: 8px;
+        padding-right: 0;
+    }
+    .br-shops-item
+    {
+        display: block;
+    }
     .br-blog-top-block .br-dropdown-group.invisible
     {
         display: block;
@@ -3476,6 +3578,10 @@
 }
 @media(max-width: 450px)
 {
+    .br-shops-map .tab-pane
+    {
+        height: 205px;
+    }
     .br-pr-del-type > div:first-child
     {
         padding-right: 0;

@@ -12946,6 +12946,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-shops-head
 {
     position: relative;
+    z-index: 3;
     margin-bottom: 25px;
 }
 .br-shops-head button
@@ -13043,13 +13044,24 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     display: block !important;
 }
+.br-shops-block .br-shops-body > .tab-pane
+{
+    display: block !important;
+    height: 0;
+    overflow-y: hidden;
+    padding: 0;
+}
+.br-shops-block .br-shops-body > .active
+{
+    height: auto;
+    padding: 10px;
+    border-bottom: 4px solid #d5e2f6;
+}
 .br-shops-body > .tab-pane
 {
     background: #fff;
-    padding: 10px;
-    border-radius: 0 0 15px 0;
-    border-bottom: 4px solid #d5e2f6;
     position: relative;
+    border-radius: 0 0 15px 0;
 }
 .br-shops-map
 {
@@ -13067,6 +13079,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-shops-main-block
 {
     position: absolute;
+    z-index: 2;
     left: 20px;
     top: 20px;
     width: 395px;
@@ -13132,6 +13145,15 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     padding-left: 30px;
 }
+.br-loading-modal
+{
+    overflow: hidden !important;
+}
+.br-shop-gallery.br-loading, .br-shop-gallery.br-loading-modal
+{
+    height: 60px;
+    opacity: 0.0000001;
+}
 .br-shop-gallery .slick-track
 {
     margin: 0;
@@ -13141,7 +13163,7 @@ div:nth-last-child(-3+n) > .br-action-item
     margin-right: 20px;
     cursor: pointer;
 }
-.br-shop-gallery a
+.br-shop-gallery a, .br-shop-gallery span
 {
     display: block;
     position: relative;
@@ -13149,7 +13171,7 @@ div:nth-last-child(-3+n) > .br-action-item
     height: 60px;
     overflow: hidden;
 }
-.br-shop-gallery a:before
+.br-shop-gallery a:before, .br-shop-gallery span:before
 {
     content: '';
     position: absolute;
@@ -13162,7 +13184,7 @@ div:nth-last-child(-3+n) > .br-action-item
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
-.br-shop-gallery a:hover:before
+.br-shop-gallery a:hover:before, .br-shop-gallery span:hover:before, .br-shop-gallery .slick-current a:before, .br-shop-gallery .slick-current span:before
 {
     opacity: 1;
 }
@@ -13197,18 +13219,177 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-shops-show
 {
     margin: 10px 0 0 30px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
 }
-.br-shops-show a
+.br-shops-show *
 {
     display: inline-block;
+    border: none;
     border-bottom: 1px dotted #1973ff;
     color: #1973ff;
     font-size: 14px;
+    padding: 0;
+    background: none;
 }
-.br-shops-show a:hover, .br-shops-show a:focus
+.br-shops-show button
+{
+    display: none;
+}
+.br-shops-show *:hover, .br-shops-show *:focus
 {
     color: #1973ff;
     border-color: transparent;
+}
+.br-shop-gallery-big img
+{
+    width: 100%;
+}
+.br-modal-p .modal-header
+{
+    padding: 25px 0 15px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.br-modal-p .modal-header .close
+{
+    right: -10px;
+}
+.br-modal-p .modal-body
+{
+    padding: 20px;
+}
+.br-modal-p .br-shop-gallery
+{
+    margin: 0 0 20px 15px;
+    padding: 0 10px;
+    width: 320px;
+}
+.br-modal-p .br-shop-gallery .slick-prev
+{
+    left: -15px;
+}
+.br-modal-p .br-shop-gallery .slick-next
+{
+    right: 0;
+}
+.br-btn-fixed button
+{
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: #1973ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+}
+.br-btn-fixed button.open
+{
+    opacity: 0;
+    visibility: hidden;
+}
+.br-fx-menu
+{
+    position: fixed;
+    z-index: 99;
+    top: 82px;
+    width: calc(100% - 30px);
+    left: 15px;
+    bottom: 0;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.br-fx-menu .br-scroll
+{
+    height: calc(100vh - 82px);
+}
+.br-fx-menu .br-scroll .scroll-element.scroll-y
+{
+    width: 5px;
+}
+.br-fx-menu .br-scroll .scroll-element.scroll-y
+{
+    right: 0;
+}
+.br-fx-menu .br-scroll .scroll-element .scroll-element_track
+{
+    display: none;
+}
+.br-fx-menu .br-scroll .scroll-element .scroll-bar
+{
+    border-radius: 0;
+    background: #cecece;
+    opacity: 1;
+}
+.br-fx-menu .br-scroll .scroll-element .scroll-element_outer
+{
+    border-radius: 0;
+}
+.br-fx-menu.active
+{
+    opacity: 1;
+    visibility: visible;
+}
+.br-fx-menu-in div
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    padding-left: 15px;
+}
+.br-fx-menu-in h3
+{
+    text-transform: uppercase;
+    font-size: 18px;
+    width: calc(100% - 50px);
+    margin: 0;
+}
+.br-fx-menu-in div button
+{
+    width: 50px;
+    height: 46px;
+    background: none;
+    padding: 0;
+    border: none;
+}
+.br-fx-menu-in ul
+{
+    padding: 0 15px;
+}
+.br-fx-menu-in ul a
+{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 13px 15px 14px 0;
+    background: url(../images/br-adr.png) right center no-repeat;
+}
+.br-fx-menu-in li:first-child a
+{
+    border-top: 1px solid #e3e3e3;
 }
 /*-----*/
 
