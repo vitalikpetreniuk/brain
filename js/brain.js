@@ -1539,6 +1539,21 @@ $(function(){
 
     });
 
+    $('.panel a').on('click', function () {
+        if($(window).width() < 680)
+        {
+            var tabId = $(this).attr('data-id');
+            $('.br-dt-abs a[data-id="' + tabId + '"' + ']').trigger('click');
+        }
+    });
+    $('.br-dt-abs a').on('click', function () {
+        if($(window).width() >= 766)
+        {
+            var tabId = $(this).attr('data-id');
+            $('.panel a[data-id="' + tabId + '"' + ']').trigger('click');
+        }
+    });
+
     $(window).on('scroll resize load', function () {
 
         var wHeights = $(window).height();
