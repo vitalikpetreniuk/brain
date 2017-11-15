@@ -14566,3 +14566,24 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 }
 /*-----*/
 /*-----*/
+
+
+/*Уцененные товары - карточка*/
+.br-ut
+{
+    width: 58px;
+    height: 64px;
+    line-height: 17px;
+    background: url("../images/pdb.svg") center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*-----*/

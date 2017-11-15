@@ -2212,6 +2212,12 @@
 }
 @media(max-width: 766px)
 {
+    .br-ut
+    {
+        right: auto;
+        left: 0;
+        bottom: 20px;
+    }
     .br-shops-block .br-shops-body > .active
     {
         padding: 5px;
@@ -3827,6 +3833,14 @@
 }
 @media(min-width: 360px) and (max-width: 460px)
 {
+    .br-ut
+    {
+        width: 45px;
+        height: 51px;
+        font-size: 8px;
+        top: 40px;
+        bottom: auto;
+    }
     body:not(.br-page-blog) .br-pp h3
     {
         min-height: 57px;
@@ -3940,6 +3954,12 @@
 }
 @media(max-width: 359px)
 {
+    .br-ut
+    {
+        left: auto;
+        right: 25px;
+        bottom: 0;
+    }
     .br-pt-bc-list-in .br-pt-bc-wh
     {
         display: block;
