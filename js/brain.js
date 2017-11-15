@@ -617,8 +617,37 @@ $(function(){
 
         $('.br-pm-list .br-ch-radio').on('ifChecked',function(){
             $(this).closest('.br-fsquare').addClass('active');
+            var checkClass = $(this).closest('li').attr('class');
+            if($(window).width() < 767)
+            {
+                $('.br-ch-bps ' + '.' + checkClass + ' input').iCheck('check');
+            }
+            else
+            {
+                $('.visible-xs ' + '.' + checkClass + ' input').iCheck('check');
+            }
         }).on('ifUnchecked',function(){
             $(this).closest('.br-fsquare').removeClass('active');
+        });
+
+        $('.br-ch-oblock .br-ch-checkbox').on('ifChecked',function(){
+            if($(window).width() < 767)
+            {
+                $('#br-ch-5 .br-ch-oblock .br-ch-checkbox').iCheck('check');
+            }
+            else
+            {
+                $('#br-ch-6 .br-ch-oblock .br-ch-checkbox').iCheck('check');
+            }
+        }).on('ifUnchecked',function(){
+            if($(window).width() < 767)
+            {
+                $('#br-ch-5 .br-ch-oblock .br-ch-checkbox').iCheck('uncheck');
+            }
+            else
+            {
+                $('#br-ch-6 .br-ch-oblock .br-ch-checkbox').iCheck('uncheck');
+            }
         });
 
         $('.br-pm4 .br-ch-radio').on('ifChecked',function(){
@@ -931,7 +960,7 @@ $(function(){
     });
 
     $('.br-addc-o').on('click', function(){
-        $(this).closest('.br-ch-oblock').siblings('.br-ch-comment').toggle('fast');
+        $('.br-ch-comment').toggle('fast');
     });
 
     $('.br-ch-comment button').on('click', function(){
