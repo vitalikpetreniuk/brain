@@ -71,6 +71,10 @@
 }
 @media(max-width: 1354px)
 {
+    .br-slider-product .br-pp:hover .br-ut
+    {
+        bottom: 30px;
+    }
     .br-search-wide
     {
         width: calc(100% - 245px);
@@ -1402,7 +1406,7 @@
     {
         width: 306px;
     }
-    .br-prt-f.col-md-4.col-sm-12 > div:last-child
+    .br-prt-f.col-md-4.col-sm-12 > div:last-child, .br-prt-s .br-wmore
     {
         width: calc(100% - 336px);
     }
@@ -1431,6 +1435,10 @@
     .br-prs-s
     {
         height: 365px;
+    }
+    .br-markdown .br-prs-s
+    {
+        height: 330px;
     }
     .br-prs-s div
     {
@@ -2209,9 +2217,23 @@
         opacity: 0;
         visibility: hidden;
     }
+    #br-ch-6.super-active
+    {
+        display: none !important;
+    }
+    #br-ch-5.active
+    {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+    }
 }
 @media(max-width: 766px)
 {
+    .br-wmore
+    {
+        width: 100% !important;
+    }
     .br-ut
     {
         right: auto;
@@ -3040,6 +3062,44 @@
 }
 @media(max-width: 680px)
 {
+    .br-modal-md .text-center
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .br-modal-md .text-center > *
+    {
+        width: 100%;
+    }
+    .br-modal-md .text-center > * + *
+    {
+        margin: 0 0 15px;
+    }
+    .br-slider-md
+    {
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
+    .br-modal-md .modal-header
+    {
+        margin-bottom: 15px;
+    }
+    .br-modal-md .modal-header h3
+    {
+        padding: 0 10px 0 40px !important;
+        color: #333 !important;
+        border: none !important;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+    }
+    .br-slider-md-current
+    {
+        width: calc(100% - 70px);
+        height: auto;
+    }
     .col-xxs-12
     {
         width: 100%;
@@ -3427,6 +3487,22 @@
 }
 @media(max-width: 620px)
 {
+    .br-markdown-sticker
+    {
+        right: 0;
+    }
+    .br-markdown .br-prs-s
+    {
+        width: calc(100% - 70px);
+        height: auto;
+    }
+    .br-markdown .br-pr-slider
+    {
+        padding: 35px 0 0;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
     .br-promo-block-soc > div:first-child
     {
         margin-right: 0;
@@ -3495,8 +3571,40 @@
         display: none;
     }
 }
+@media(min-height: 650px)
+{
+    .br-modal-md .modal-dialog
+    {
+        height: 100vh;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    }
+}
 @media(max-width: 550px)
 {
+    .br-pr-bbuttons
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .br-pr-bbuttons > *
+    {
+        width: 150px;
+    }
+    .br-pr-bbuttons > * + *
+    {
+        margin-top: 10px;
+    }
     .br-search-wide .br-search-results
     {
         width: 100% !important;
@@ -3954,10 +4062,31 @@
 }
 @media(max-width: 359px)
 {
+    body:not(.br-page-blog) .br-slider-product .br-bb-b
+    {
+        z-index: 6;
+    }
+    body:not(.br-page-blog) .br-slider-product .br-bb-bi > span > span:last-child, body:not(.br-page-blog) .br-slider-product .br-bb-bf > span > span:last-child
+    {
+        top: auto;
+        bottom: calc(100% + 10px);
+    }
+    body:not(.br-page-blog) .br-slider-product .br-bb-bi > span > span:first-child:after, body:not(.br-page-blog) .br-slider-product .br-bb-bf > span > span:first-child:after
+    {
+        top: auto;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        margin-left: -13px;
+        bottom: calc(100% + 21px);
+    }
     .br-ut
     {
         left: auto;
         right: 25px;
+        bottom: 0;
+    }
+    .br-slider-product .br-pp:hover .br-ut
+    {
         bottom: 0;
     }
     .br-pt-bc-list-in .br-pt-bc-wh

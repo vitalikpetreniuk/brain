@@ -125,6 +125,50 @@ $(function(){
         });
     }
 
+    if($('.br-slider-md').length)
+    {
+        $('.br-slider-md-nav').slick({
+            asNavFor: '.br-slider-md-current',
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            verticalSwiping: true,
+            centerPadding:100,
+            centerMode: true,
+            focusOnSelect: true
+        });
+        $('.br-slider-md-current').slick({
+            asNavFor: '.br-slider-md-nav',
+            arrows: false,
+            fade: true
+        });
+    }
+
+    if($('.popup-modal').length)
+    {
+
+        $('.popup-modal').magnificPopup({
+            type: 'inline',
+            closeOnBgClick: true,
+            preloader: false,
+            modal: false,
+            callbacks: {
+                open: function() {
+                    $('.br-slider-md-current').resize();
+                    setTimeout(function(){
+                        $('.slick-slider').removeClass('br-loading-modal');
+                    }, 500);
+                    $('.br-modal-md').parent('.mfp-content').addClass('br-slider-outer');
+                }
+            }
+        });
+        $(document).on('click', '.popup-modal-dismiss', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    }
+
+
     if($('.br-shop-gallery').length)
     {
         $('.br-shop-gallery').slick({
@@ -1353,6 +1397,13 @@ $(function(){
         return false;
     });
 
+    $('.br-pr-lpp a').on('click', function(){
+        var target = $(this).attr('href');
+        $('.br-markdown-hidden').removeClass('br-markdown-hidden');
+        $('html, body').animate({scrollTop: $(target).offset().top - 100}, 800);
+        return false;
+    });
+
     $('.br-fixed-ct-menu > button').on('click', function () {
         $(this).parent('.br-fixed-ct-menu').removeClass('open');
     });
@@ -1415,7 +1466,7 @@ $(function(){
 
     $('.br-pr-buy-first').on('click', function () {
         $(this).hide();
-        $('.br-pr-buy-second').addClass('active')
+        $(this).next('.br-pr-buy-second').addClass('active')
     });
 
     $('.br-pr-fixed-buy-first').on('click', function () {
