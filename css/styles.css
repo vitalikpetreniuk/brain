@@ -11790,7 +11790,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     bottom: 0;
     left: 0;
     width: 100%;
