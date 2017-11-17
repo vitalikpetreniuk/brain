@@ -11865,8 +11865,8 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-promo-block-ch > div
 {
-    height: 15px;
-    line-height: 13px;
+    height: 18px;
+    line-height: 18px;
     color: #555;
 }
 .br-promo-block-ch > div + div
@@ -11878,12 +11878,18 @@ div:nth-last-child(-3+n) > .br-action-item
     height: 100%;
     display: block;
     padding-left: 25px;
-    background: url("../images/bubble.svg") left top no-repeat;
+    background: url("../images/bubble.svg") left center no-repeat;
 }
 .br-promo-block-hits
 {
     padding-left: 27px;
-    background: url("../images/eye.svg") left top no-repeat;
+    background: url("../images/eye.svg") left center no-repeat;
+}
+.br-promo-block-term
+{
+    padding-left: 21px;
+    line-height: 18px;
+    background: url(../images/calendar.svg) left center no-repeat;
 }
 .br-promo-countdown-block
 {

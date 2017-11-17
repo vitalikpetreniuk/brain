@@ -3088,6 +3088,13 @@
 }
 @media(max-width: 680px)
 {
+    .br-promo-block-top > div:first-child
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
     .br-promo-countdown-block
     {
 
@@ -3139,7 +3146,7 @@
     }
     .br-promo-block-icons
     {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .br-promo-block-top > div:first-child
     {
