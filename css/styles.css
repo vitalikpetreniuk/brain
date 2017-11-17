@@ -11885,6 +11885,21 @@ div:nth-last-child(-3+n) > .br-action-item
     padding-left: 27px;
     background: url("../images/eye.svg") left top no-repeat;
 }
+.br-promo-countdown-block
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+}
+.br-promo-countdown-block > div:first-child
+{
+    line-height: 18px;
+    font-weight: 500;
+    margin-right: 20px;
+}
 .br-promo-block-img img
 {
     width: 100%;

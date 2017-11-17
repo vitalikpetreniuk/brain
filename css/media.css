@@ -71,6 +71,18 @@
 }
 @media(max-width: 1354px)
 {
+    .br-promo-countdown-block
+    {
+        display: block;
+    }
+    .br-promo-countdown-block > div:first-child
+    {
+        margin: 0 0 5px;
+    }
+    .br-promo-countdown-block > div:first-child br
+    {
+        display: none;
+    }
     .br-slider-product .br-pp:hover .br-ut
     {
         bottom: 30px;
@@ -1048,6 +1060,20 @@
 }
 @media(max-width: 1011px)
 {
+    .br-promo-countdown-block
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    .br-promo-countdown-block > div:first-child
+    {
+        margin: 0 20px 0 0;
+    }
+    .br-promo-countdown-block > div:first-child br
+    {
+        display: inline;
+    }
     .br-shops-main-block .br-scroll
     {
         max-height: 345px;
@@ -3062,6 +3088,13 @@
 }
 @media(max-width: 680px)
 {
+    .br-promo-countdown-block
+    {
+
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    }
     .br-modal-md .text-center
     {
         -webkit-box-orient: vertical;
@@ -3692,6 +3725,19 @@
 }
 @media(max-width: 450px)
 {
+    .br-promo-countdown-block
+    {
+        display: inline-block;
+    }
+    .br-promo-countdown-block > div:first-child
+    {
+        margin: 0 0 5px;
+        text-align: left;
+    }
+    .br-promo-countdown-block > div:first-child br
+    {
+        display: none;
+    }
     .br-shops-map .tab-pane
     {
         height: 205px;
