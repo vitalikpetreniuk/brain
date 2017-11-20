@@ -4505,6 +4505,8 @@
     .br-hlogo
     {
         width: 140px;
+        position: relative;
+        top: -6px;
     }
     .br-pr-del-type
     {
