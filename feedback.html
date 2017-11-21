@@ -281,57 +281,9 @@
                                 </button>
                             </div>
                             <div class="br-th-login">
-                                <button type="button" class="active">
-                                    <span>
-                                        Константин
-                                    </span>
+                                <button type="button" data-toggle="modal" data-target=".br-modal-login-r">
+                                    <span>Войти</span>
                                 </button>
-                                <div class="br-cabinet br-dropdown">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                Мой кабинет
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <strong>
-                                                    Мои BrainUp <span>(4)</span>
-                                                </strong>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Личные данные
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Мои заказы <span>(4)</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Мои предзаказы <span>(1)</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Избранные товары
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Просмотренные товары <span>(5)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div>
-                                        <a href="#">
-                                            Выйти из кабинета
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1089,10 +1041,8 @@
                                 </button>
                             </div>
                                 <div class="br-th-login">
-                                    <button type="button" class="active">
-                                        <span>
-                                            Константин
-                                        </span>
+                                    <button type="button" data-toggle="modal" data-target=".br-modal-login-r">
+                                        <span>Войти</span>
                                     </button>
                                     <div class="br-cabinet br-dropdown">
                                         <ul>
@@ -3498,10 +3448,8 @@
                 <div class="br-nm-block">
                     <div>
                         <div class="br-th-login">
-                            <button type="button" class="active">
-                                <span>
-                                    Константин
-                                </span>
+                            <button type="button" data-toggle="modal" data-target=".br-modal-login-r">
+                                <span>Войти</span>
                             </button>
                             <div class="br-cabinet br-dropdown">
                                 <ul>
@@ -4959,7 +4907,7 @@
                                             <span>Бесплатно</span>
                                         </a>
                                     </div>
-                                    <div id="collapseOnes1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOnes1">
+                                    <div id="collapseOnes1" class="panel-collapse collapse in" aria-labelledby="headingOnes1">
                                         <div class="panel-body">
                                             <div class="br-dt-sub br-dts-f">
                                                 <div>
@@ -5035,7 +4983,7 @@
                                             <span>Бесплатно</span>
                                         </a>
                                     </div>
-                                    <div id="collapseTwos1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwos1">
+                                    <div id="collapseTwos1" class="panel-collapse collapse" aria-labelledby="headingTwos1">
                                         <div class="panel-body">
                                             <div class="br-dt-sub">
                                                 <div>
@@ -5231,7 +5179,7 @@
                                             <span>Бесплатно</span>
                                         </a>
                                     </div>
-                                    <div id="collapseThrees1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThrees1">
+                                    <div id="collapseThrees1" class="panel-collapse collapse" aria-labelledby="headingThrees1">
                                         <div class="panel-body">
                                             <div class="br-dt-c">
                                                 Курьер будет готов доставить вам товар сегодня 18.05 с 14:00 до 18:00
@@ -5262,6 +5210,145 @@
         </div>
     </div>
 
+    <div class="modal fade br-modal br-modal-login br-modal-login-r" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Ласкаво просимо!</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="images/delete_small.svg" alt="img">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="br-login-tabs">
+                        <ul>
+                            <li class="active"><a href="#login" role="tab" data-toggle="tab">Вхід</a></li>
+                            <li><a href="#registration" role="tab" data-toggle="tab">Реєстрація</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="login">
+                                <div class="br-login-q">
+                                    <span>Вже купували в Brain?</span>
+                                    <button type="button">i</button>
+                                    <div>
+                                        Вже купували в Brain?<br>
+                                        Проскто вкажіть номер телефону для входу.
+                                        Потім вам буде запропоновано ввести
+                                        постійний пароль.
+                                    </div>
+                                </div>
+                                <form class="br-login-form-first">
+                                    <div class="form-group">
+                                        <label for="login-ep">E-mail або телефон:</label>
+                                        <input type="text" id="login-ep" name="email_phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="login-pass">Пароль:</label>
+                                        <input class="br-login-pass-field" type="password" id="login-pass" name="password">
+                                        <span toggle="#login-pass" class="br-toggle-password"></span>
+                                    </div>
+                                    <div class="form-flex">
+                                        <div class="form-check">
+                                            <input id="login-check" type="checkbox">
+                                            <label for="login-check">Чужой компьютер</label>
+                                        </div>
+                                        <button type="button" data-dismiss="modal" class="br-login-button-toggle">Нагадати пароль</button>
+                                        <button type="button" data-toggle="modal" data-target=".br-modal-password" class="br-login-button-hidden"></button>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="br-login-submit">
+                                            Увійти
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="registration">
+                                <form class="br-login-form-second">
+                                    <div class="form-group">
+                                        <label for="reg-ep" class="required">E-mail або телефон:</label>
+                                        <input type="text" id="reg-ep" name="email_phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reg-pass" class="required">Пароль:</label>
+                                        <input class="br-login-pass-field success" type="password" id="reg-pass" name="password">
+                                        <span toggle="#reg-pass" class="br-toggle-password"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="required">Повторити пароль:</label>
+                                        <input class="br-login-pass-field success" type="password" id="reg-pass-more" name="confirm_password">
+                                        <span toggle="#reg-pass-more" class="br-toggle-password"></span>
+                                    </div>
+                                    <div class="text-center text-center-s">
+                                        <button type="submit" class="br-login-submit">
+                                            Зареєструватись
+                                        </button>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="br-login-link"><span>Для корпоративних клієнтів</span></a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="br-login-link"><span>Для партнерів та ділерів</span></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-login-social">
+                        <a href="#" class="br-login-fb"><span><i class="fa fa-facebook"></i></span></a>
+                        <a href="#" class="br-login-twitter"><span><i class="fa fa-twitter"></i></span></a>
+                        <a href="#" class="br-login-gp"><span><i class="fa fa-google-plus"></i></span></a>
+                    </div>
+                    <div class="br-login-agreement">
+                        Здійснюючи вхід, або реєструючись, ви приймаєте умови <a href="#">Публічної оферти</a> і даєте згоду на обробку персональних даних
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade br-modal br-modal-login br-modal-password" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Нагадати пароль</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="images/delete_small.svg" alt="img">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="br-logit-top-text">Укажіть, будьласка, електрону адресу або номер телефону, на які було вказано під час реєстрації. Вам будуе надіслано інструкції з відновлення паролю.</div>
+                    <form class="br-login-form-third">
+                        <div class="form-group">
+                            <label for="pass-ep" class="required">E-mail або телефон:</label>
+                            <input type="text" id="pass-ep" name="email_phone">
+                        </div>
+                        <div class="br-login-no-email">
+                            Якщо ви не маєте доступу до електроної адреси,<br>
+                            або телефону, зв’яжіться із <a href="#">службою підтримки</a>.
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="br-login-submit">
+                                Надіслати
+                            </button>
+                        </div>
+                        <div class="form-flex">
+                            <button type="button" data-dismiss="modal" class="br-login-button-toggle">Я згадав пароль, увійти</button>
+                            <button type="button" data-toggle="modal" data-target=".br-modal-login-r" class="br-login-button-hidden"></button>
+                        </div>
+                    </form>
+                    <div class="br-login-social">
+                        <a href="#" class="br-login-fb"><span><i class="fa fa-facebook"></i></span></a>
+                        <a href="#" class="br-login-twitter"><span><i class="fa fa-twitter"></i></span></a>
+                        <a href="#" class="br-login-gp"><span><i class="fa fa-google-plus"></i></span></a>
+                    </div>
+                    <div class="br-login-agreement">
+                        Здійснюючи вхід, або реєструючись, ви приймаєте умови <a href="#">Публічної оферти</a> і даєте згоду на обробку персональних даних
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -5279,6 +5366,7 @@
     <script src="js/jquery.scrollbar.min.js"></script>
     <script src="js/jquery.barrating.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/brain.js"></script>
     <!--scripts end-->
 

@@ -1033,7 +1033,7 @@ $(function(){
         $('.br-sort-menu-fixed').toggleClass('active');
     });
 
-    $('.br-th-login button').on('click', function(){
+    $('.br-th-login button.active').on('click', function(){
         $(this).toggleClass('open');
         $(this).siblings().toggle('fast');
     });
@@ -1052,6 +1052,159 @@ $(function(){
         $(this).toggleClass('active');
         $(this).siblings().toggle('fast');
     });
+
+    $('.br-modal-login .form-flex button').on('click', function(){
+        $('body').addClass('br-o-hidden');
+    });
+
+    $('.br-modal-login .close').on('click', function(){
+        $('body').removeClass('br-o-hidden');
+    });
+
+    $('.br-modal-login-r .br-login-button-toggle').on('click', function () {
+        setTimeout(function () {
+            $('.br-modal-login-r .br-login-button-hidden').trigger('click');
+        }, 400)
+    });
+
+    $('.br-modal-password .br-login-button-toggle').on('click', function () {
+        setTimeout(function () {
+            $('.br-modal-password .br-login-button-hidden').trigger('click');
+        }, 400)
+    });
+
+    $('.br-toggle-password').on('click', function () {
+
+        $(this).toggleClass('active');
+        var input = $($(this).attr('toggle'));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+
+    });
+
+    if($('.br-login-form-first').length)
+    {
+        $(".br-login-form-first").validate({
+            rules:
+                {
+                    email_phone:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    password:
+                        {
+                            required: true
+
+                        }
+                },
+            messages:
+                {
+                    email_phone:
+                        {
+                            required: "Поле «E-mail або телефон» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    password:
+                        {
+                            required: "Поле «Пароль» обов’язкове до заповнення"
+                        }
+                }
+        });
+    }
+
+    if($('.br-login-form-second').length)
+    {
+
+        jQuery.validator.addMethod("password_check",
+            function(value, element, param) {
+                if (this.optional(element)) {
+                    return true;
+                } else if (!/[A-Z]/.test(value)) {
+                    return false;
+                } else if (!/[a-z]/.test(value)) {
+                    return false;
+                } else if (!/[0-9]/.test(value)) {
+                    return false;
+                }
+
+                return true;
+            },
+            "Пароль має містити мінімум одну заголовну літеру, цифри 0-9 та літери латинської абетки");
+
+        jQuery.validator.addMethod("alphanumeric", function(value, element) {
+            return this.optional(element) || /^\w+$/i.test(value);
+        }, "Заборонено використання спеціальнихсимволів (!@#$^&-+=;:,.?|`~<>', а також пробілів");
+
+
+        $(".br-login-form-second").validate({
+            rules:
+                {
+                    email_phone:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    password:
+                        {
+                            required: true,
+                            minlength: 6,
+                            password_check: true,
+                            alphanumeric: true
+
+                        },
+                    confirm_password:
+                        {
+                            equalTo: '#reg-pass'
+                        }
+                },
+            messages:
+                {
+                    email_phone:
+                        {
+                            required: "Поле «E-mail або телефон» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    password:
+                        {
+                            required: "Поле «Пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів"
+                        },
+                    confirm_password:
+                        {
+                            required: "Поле «Повторити пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів",
+                            equalTo: "Паролі не співпадають"
+                        }
+                }
+        });
+    }
+
+    if($('.br-login-form-third').length)
+    {
+
+        $(".br-login-form-third").validate({
+            rules:
+                {
+                    email_phone:
+                        {
+                            required: true,
+                            minlength: 8
+                        }
+                },
+            messages:
+                {
+                    email_phone:
+                        {
+                            required: "Поле «E-mail або телефон» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        }
+                }
+        });
+    }
 
     $('.br-ch-ajp button').on('click', function(){
         $('.br-chdo-s1').hide();

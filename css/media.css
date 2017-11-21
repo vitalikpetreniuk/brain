@@ -2254,6 +2254,28 @@
         display: -ms-flexbox !important;
     }
 }
+@media(min-height: 770px)
+{
+    .br-modal-login .modal-dialog
+    {
+        margin: 0 auto;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .br-modal-login .modal-content
+    {
+        width: 360px;
+    }
+}
 @media(max-width: 766px)
 {
     .br-wmore
@@ -3389,6 +3411,10 @@
     {
         padding: 0 15px 20px;
     }
+    .br-modal-login .modal-body
+    {
+        padding: 0;
+    }
     .br-modal .modal-header .close
     {
         top: 7px;
@@ -3398,6 +3424,10 @@
     {
         padding: 13px 15px 0;
         position: relative;
+    }
+    .br-modal-login .modal-header
+    {
+        padding: 0 0 15px;
     }
     .br-modal .modal-header h3 strong span
     {
@@ -3433,6 +3463,14 @@
         padding: 0 15px 15px 0;
         border-bottom: 1px solid #e3e3e3;
         margin-bottom: 0;
+    }
+    .br-modal-login .modal-header h3
+    {
+        font-weight: 700;
+        color: #333;
+        font-size: 20px;
+        border: none;
+        padding: 0;
     }
     .br-of-modal .modal-header h3
     {
@@ -4246,6 +4284,18 @@
 }
 @media(max-width: 480px)
 {
+    .br-modal-login .modal-dialog
+    {
+        width: 320px;
+    }
+    .br-login-q div
+    {
+        right: 0;
+    }
+    .br-login-q div:before
+    {
+        left: 96px;
+    }
     .br-row > div.br-sidebar, .br-row-gt .br-sidebar
     {
         width: 100% !important;

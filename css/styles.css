@@ -14903,3 +14903,465 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     top: 1px;
 }
 /*-----*/
+
+/*Регистрация/Вход - попап*/
+.br-modal-login .modal-dialog
+{
+    width: 360px;
+}
+.br-modal-login .modal-content
+{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    border-bottom: 4px solid #d5e2f6;
+    border-radius: 0 0 12px 0;
+    padding: 15px 20px;
+}
+.br-modal-login .modal-header
+{
+    padding: 0 0 15px;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.br-modal-login .modal-header .close
+{
+    right: -10px !important;
+    top: -5px !important;
+}
+.br-modal-login .modal-body
+{
+    padding: 0;
+}
+.br-login-tabs
+{
+    margin-bottom: 20px;
+}
+.br-login-tabs > ul
+{
+    overflow: hidden;
+}
+.br-login-tabs > ul li
+{
+    float: left;
+    width: 50%;
+    border-bottom: 1px solid #00b1eb;
+}
+.br-login-tabs > ul a
+{
+    height: 46px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    border-bottom: 7px solid transparent;
+    font-size: 20px;
+    font-weight: 700;
+}
+.br-login-tabs > ul a:hover
+{
+    color: #00b1eb;
+}
+.br-login-tabs > ul .active a
+{
+    border-color: #00b1eb;
+    color: #00b1eb;
+}
+.br-modal-login .tab-content
+{
+    margin-bottom: 0;
+}
+.br-modal-login form
+{
+    padding: 15px 0 20px;
+    border-bottom:  1px solid #e3e3e3;
+}
+.br-modal-login .form-group
+{
+    position: relative;
+}
+.br-modal-login .form-group label
+{
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.br-modal-login .form-group label.required:after
+{
+    content: '*';
+    color: #dd2c00;
+}
+.br-modal-login .form-group input
+{
+    display: block;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #999;
+}
+.br-modal-login .form-group input.error
+{
+    border-color: #d50000;
+}
+.br-modal-login .form-group input.valid
+{
+    border-color: #00c853;
+}
+.br-modal-login input:-webkit-autofill, .br-modal-login input
+{
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+.br-modal-login label.error
+{
+    color: #d50000;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 8px 0 0 26px;
+    min-height: 24px;
+    background: url("../images/error.png") left 8px no-repeat;
+}
+.br-login-pass-field
+{
+    padding-right: 50px !important;
+}
+.br-toggle-password
+{
+    position: absolute;
+    right: 19px;
+    top: 26px;
+    cursor: pointer;
+    width: 21px;
+    height: 38px;
+    background: url("../images/show-password.png") center no-repeat;
+}
+.br-toggle-password.active
+{
+    background-image: url("../images/hide-password.png");
+}
+.br-modal-login .form-flex
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.br-login-button-hidden
+{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.form-check
+{
+    position: relative;
+}
+.form-check input
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    margin: 0;
+}
+.form-check label
+{
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 34px;
+    line-height: 18px;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+}
+.form-check label:before, .form-check label:after
+{
+    content: '';
+    position: absolute;
+}
+.form-check label:before
+{
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dfdfdf;
+}
+.form-check label:after
+{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: #00b1eb;
+    opacity: 0;
+}
+.form-check input:checked + label:before
+{
+    border-color: #00b1eb;
+}
+.form-check input:checked + label:after
+{
+    opacity: 1;
+}
+.br-modal-login .form-flex
+{
+    margin-bottom: 20px;
+}
+.br-modal-login .form-flex button, .br-login-link span
+{
+    padding: 0;
+    background: none;
+    border: none;
+    color: #00b1eb;
+    border-bottom: 1px dotted #00b1eb;
+}
+.br-modal-login .form-flex button:hover, .br-login-link:hover span
+{
+    border-color: transparent;
+}
+.br-login-link
+{
+    display: block;
+    margin: auto;
+    width: 185px;
+    text-align: left;
+    background: url("../images/br-ar-lb.png") right center no-repeat;
+}
+.br-login-link span
+{
+    display: inline-block;
+}
+.br-modal-login .text-center
+{
+    margin-top: 16px;
+}
+.br-modal-login .text-center-s
+{
+    margin-top: 20px;
+}
+.br-login-submit
+{
+    height: 53px;
+    background: #00b1eb;
+    letter-spacing: 2px;
+    padding: 0;
+    width: 185px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+.br-login-submit:hover
+{
+    opacity: .8;
+}
+.br-login-social
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    margin: 20px 0 16px;
+}
+.br-login-social > *
+{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+}
+.br-login-social > *:hover
+{
+    opacity: .5;
+}
+.br-login-social > * + *
+{
+    margin-left: 20px;
+}
+.br-login-social span
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    font-size: 16px;
+}
+.br-login-fb
+{
+    background: #0d47a1;
+}
+.br-login-fb i
+{
+    color: #0d47a1;
+}
+.br-login-twitter
+{
+    background: #00b0ff;
+}
+.br-login-twitter i
+{
+    color: #00b0ff;
+}
+.br-login-gp
+{
+    background: #d50000;
+}
+.br-login-gp i
+{
+    color: #d50000;
+}
+.br-login-agreement
+{
+    padding-left: 43px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #999;
+    background: url("../images/agreement.png") left center no-repeat;
+}
+.br-login-agreement a
+{
+    color: #00b1eb;
+    text-decoration: underline;
+}
+.br-login-agreement a:hover
+{
+    text-decoration: none;
+}
+.br-login-q
+{
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+}
+.br-login-q span
+{
+    font-size: 11px;
+    color: #999;
+    margin-right: 12px;
+}
+.br-login-q button
+{
+    border-radius: 50% !important;
+    border: none;
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    color: #fff;
+    background: #d5e2f6;
+    font-weight: 700;
+    text-align: center;
+}
+.br-login-q div
+{
+    position: absolute;
+    z-index: 2;
+    right: -34px;
+    top: 32px;
+    background: #d5e2f6;
+    color: #344151;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 6px 10px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    width: 252px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.br-login-q button:hover + div
+{
+    opacity: 1;
+    visibility: visible;
+}
+.br-login-q div:before
+{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 11px 11px 11px;
+    border-color: transparent transparent #d5e2f6 transparent;
+    position: absolute;
+    left: 23px;
+    top: -11px;
+}
+.br-logit-top-text
+{
+    font-size: 14px;
+    line-height: 17px;
+    color: #344151;
+    margin-top: 15px;
+}
+.br-login-no-email
+{
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    color: #999;
+}
+.br-login-no-email a
+{
+    color: #00b1eb;
+    text-decoration: underline;
+}
+.br-login-no-email a:hover
+{
+    text-decoration: none;
+}
+.br-modal-password > span
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.br-modal-password .form-flex
+{
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    margin: 15px 0 0;
+}
+.br-modal-password .modal-dialog
+{
+    z-index: 10;
+}
+/*-----*/
