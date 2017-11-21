@@ -4,12 +4,12 @@
 	 viewBox="0 0 28 26.7" style="enable-background:new 0 0 28 26.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#1973FF;}
-	.st2{fill:#FFFFFF;stroke:#1973FF;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:#BEBEBE;stroke:#1973FF;stroke-miterlimit:10;}
-	.st4{stroke:#1973FF;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;stroke:#1973FF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st6{fill:#FFFFFF;stroke:#1973FF;stroke-width:2;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st1{fill:#10b1e8;}
+	.st2{fill:#FFFFFF;stroke:#10b1e8;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:#BEBEBE;stroke:#10b1e8;stroke-miterlimit:10;}
+	.st4{stroke:#10b1e8;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#10b1e8;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;stroke:#10b1e8;stroke-width:2;stroke-linejoin:bevel;stroke-miterlimit:10;}
 </style>
 <g>
 	<path class="st0" d="M2.7,25.6c-0.9,0-1.7-0.8-1.7-1.7V5.3c0-0.9,0.8-1.7,1.7-1.7H24c0.9,0,1.7,0.8,1.7,1.7v7.2H27v4.9h-1.4v6.5

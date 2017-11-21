@@ -3152,7 +3152,7 @@
     .br-modal-md .modal-header h3
     {
         padding: 0 10px 0 40px !important;
-        color: #333 !important;
+        color: #344150 !important;
         border: none !important;
         font-size: 20px !important;
         font-weight: 700 !important;
@@ -3450,7 +3450,7 @@
     .br-modal .modal-header h3 strong
     {
         font-weight: 700;
-        color: #333;
+        color: #344150;
     }
     .br-modal .modal-header h3
     {
@@ -3467,7 +3467,7 @@
     .br-modal-login .modal-header h3
     {
         font-weight: 700;
-        color: #333;
+        color: #344150;
         font-size: 20px;
         border: none;
         padding: 0;
@@ -3475,7 +3475,7 @@
     .br-of-modal .modal-header h3
     {
         border: none !important;
-        color: #333;
+        color: #344150;
         font-weight: 700;
         font-size: 16px;
     }
@@ -3549,7 +3549,7 @@
     }
     .br-hsearch form > input[type='submit']
     {
-        background: #1973ff;
+        background: #10b1e8;
         text-indent: 0;
         width: 68px !important;
     }
