@@ -453,7 +453,7 @@ body:not(.br-page-blog) .br-chc .br-dropdown
 .br-search-click a
 {
     white-space: normal !important;
-    color: #1166e9 !important;
+    color: #10b1e8 !important;
 }
 .br-search-click a:hover
 {
@@ -786,6 +786,10 @@ body:not(.br-page-blog) .br-dropdown a
     transition: none;
     color: #fff;
     text-transform: uppercase;
+}
+.br-hsearch form > input[type='submit']:hover
+{
+    background-image: url("../images/search_new_b.svg");
 }
 .br-hsearch form > input[type='text']:focus + input
 {
