@@ -71,6 +71,10 @@
 }
 @media(max-width: 1354px)
 {
+    .br-reviews-block .br-psm
+    {
+        margin-bottom: 35px;
+    }
     .br-promo-countdown-block
     {
         display: block;
@@ -314,6 +318,10 @@
     .br-prt-c
     {
         width: 66.66666%;
+    }
+    .br-pt-lc.br-fback-block form > div:nth-child(1), .br-pt-lc.br-fback-block form > div:nth-child(2)
+    {
+        width: calc(50% - 7.5px) !important;
     }
     .br-pr-set-price
     {
@@ -1060,6 +1068,20 @@
 }
 @media(max-width: 1011px)
 {
+    .br-ri-rb .br-pt-bc-wh
+    {
+        margin-bottom: 10px;
+    }
+    .br-ri-rb
+    {
+        display: block;
+    }
+    .br-pt-lc.br-fback-block form
+    {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+    }
     .br-promo-countdown-block
     {
         display: flex;
@@ -2278,6 +2300,15 @@
 }
 @media(max-width: 766px)
 {
+    .br-reviews-block .br-psm
+    {
+        text-align: center;
+        display: block;
+    }
+    .br-reviews-block .br-psm .br-smore
+    {
+        display: inline-block;
+    }
     .br-wmore
     {
         width: 100% !important;
@@ -2576,7 +2607,7 @@
     {
         display: none !important;
     }
-    .br-wrap-block
+    .br-wrap-block, .br-reviews-list .br-wrap-block
     {
         padding: 15px 12px;
     }
@@ -3038,6 +3069,15 @@
 }
 @media(max-width: 730px)
 {
+    .br-ri-rating
+    {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .br-ri-rating-item
+    {
+        margin-bottom: 10px;
+    }
     .br-hsearch form
     {
         width: 260px;
@@ -3563,8 +3603,112 @@
         width: 100%;
     }
 }
+@media(min-width: 621px)
+{
+    .br-ri-right .br-ri-lb
+    {
+        display: none;
+    }
+}
 @media(max-width: 620px)
 {
+    .br-ri-rating
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    .br-ri-rb
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-ri-left .br-ri-lb
+    {
+        display: none !important;
+    }
+    .br-reviews-item, .br-reviews-top
+    {
+        display: block;
+    }
+    .br-reviews-top .br-reviews-sort + .br-reviews-sort
+    {
+        margin-left: 0;
+    }
+    .br-ri-left
+    {
+        padding: 0 0 20px;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid #e3e3e3;
+        display: block;
+    }
+    .br-ri-lc, .br-ri-lt
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    }
+    .br-ri-date
+    {
+        width: 125px;
+        text-align: right;
+        margin-bottom: 6px;
+        line-height: 22px;
+        position: relative;
+        top: 1px;
+    }
+    .br-ri-name
+    {
+        max-width: calc(100% - 130px);
+    }
+    .br-ri-lc
+    {
+        margin: 20px 0 0;
+    }
+    .br-ri-right
+    {
+        padding-left: 0;
+    }
+    .br-ri-left, .br-ri-right
+    {
+        width: 100%;
+    }
+    .br-ri-bottom
+    {
+        max-width: 50%;
+    }
+    .br-ri-bottom:first-child
+    {
+        padding-right: 15px;
+    }
+    .br-ri-bottom + .br-ri-bottom
+    {
+        margin-top: 0;
+    }
+    .br-pt-lc.br-fback-block form
+    {
+        display: block !important;
+    }
+    .br-pt-lc.br-fback-block form > div:first-child, .br-pt-lc.br-fback-block form > div:nth-child(2)
+    {
+        width: 100% !important;
+    }
+    .br-fback-dropdown .br-dropdown
+    {
+        left: 0;
+    }
+    .br-fback-dropdown .br-dropdown:before
+    {
+        left: 12px;
+    }
     .br-markdown-sticker
     {
         right: 0;
@@ -3766,6 +3910,25 @@
     .br-pr-set-five .br-pr-set-item:nth-child(4):before
     {
         display: none;
+    }
+}
+@media(max-width: 480px)
+{
+    .br-ri-rating, .br-ri-lt
+    {
+        display: block;
+    }
+    .br-ri-date
+    {
+        width: auto;
+        text-align: left;
+        margin-bottom: 0;
+        position: static;
+        line-height: normal;
+    }
+    .br-ri-name
+    {
+        max-width: none;
     }
 }
 @media(max-width: 450px)
@@ -4153,6 +4316,19 @@
 }
 @media(max-width: 359px)
 {
+    .br-rc-c
+    {
+        letter-spacing: normal;
+        padding: 0 5px;
+    }
+    .br-ri-lc
+    {
+        display: block;
+    }
+    .br-ri-bottom + .br-ri-bottom
+    {
+        margin-top: 18px;
+    }
     body:not(.br-page-blog) .br-slider-product .br-bb-b
     {
         z-index: 6;

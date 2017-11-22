@@ -1472,7 +1472,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
     left: 0;
     bottom: -5px;
     display: block;
-    border-bottom: 4px solid rgba(16,177,232,.5);
+    border-bottom: 4px solid rgba(16,177,232,.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -12346,8 +12346,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-fback-dropdown .br-dropdown
 {
     min-width: 285px;
-    right: 0;
-    left: auto;
+    left: -42px;
 }
 .br-fback-dropdown .br-dropdown:before
 {
@@ -12365,6 +12364,269 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-fback-text h5
 {
     margin: 0 0 10px;
+}
+.br-reviews-top
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    margin-bottom: 15px;
+}
+.br-reviews-top .br-reviews-sort + .br-reviews-sort
+{
+    margin-left: 35px;
+}
+.br-reviews-sort
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.br-reviews-sort button
+{
+    margin-left: 4px;
+    background: url("../images/br-ab-b.png") right center no-repeat;
+    padding: 0 16px 0 0;
+    color: #10b1e8;
+    border: none;
+}
+.br-reviews-sort button.active
+{
+    background-image: url("../images/br-at-b.png");
+}
+.br-reviews-list .br-wrap-block
+{
+    padding: 20px;
+    margin-bottom: 0;
+}
+.br-reviews-list .br-wrap-block + .br-wrap-block
+{
+    margin-top: 20px;
+}
+.br-reviews-list .br-pt-bc-list-in
+{
+    margin-top: 20px;
+}
+.br-reviews-list .br-pt-bc-list-in .br-pt-bc-item
+{
+    display: none;
+}
+.br-reviews-list .br-pt-bc-list-in .br-pt-bc-item:last-child
+{
+    border-bottom: none;
+}
+.br-reviews-list .br-pt-bc-list-in .br-pt-bc-item:nth-child(-n+3)
+{
+    display: block !important;
+}
+.br-reviews-show
+{
+    text-align: center;
+}
+.br-reviews-show button
+{
+    background: transparent;
+    border: 2px solid #10b1e8;
+    color: #10b1e8;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    height: 24px;
+    padding: 0 5px 0 7px;
+}
+.br-reviews-show button:hover
+{
+    background: #10b1e8;
+    color: #fff;
+}
+.br-reviews-show button span:first-child, .br-reviews-show .open span:last-child
+{
+    display: block;
+}
+.br-reviews-show button span:last-child, .br-reviews-show .open span:first-child
+{
+    display: none;
+}
+.br-reviews-item
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    font-size: 14px;
+}
+.br-ri-left
+{
+    width: 225px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    border-right: 1px solid #e3e3e3;
+    padding-right: 15px;
+}
+.br-ri-name
+{
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.br-ri-date
+{
+    color: #999;
+}
+.br-ri-lc
+{
+    margin: 10px 0;
+}
+.br-ri-bottom
+{
+    line-height: 16px;
+}
+.br-ri-bottom + .br-ri-bottom
+{
+    margin-top: 18px;
+}
+.br-ri-bottom > div:first-child
+{
+    color: #999;
+}
+.br-ri-right
+{
+    width: calc(100% - 225px);
+    padding-left: 20px;
+}
+.br-ri-rating
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    margin-bottom: 24px;
+}
+.br-ri-rating-item > span
+{
+    display: block;
+    color: #999;
+}
+.br-ri-rating-item div
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.br-ri-rating-item div span
+{
+    width: 16px;
+    height: 16px;
+    background: url("../images/star-g.svg") center no-repeat;
+    background-size: 100%;
+}
+.br-ri-rating-item div span + span
+{
+    margin-left: 4px;
+}
+.br-ri-rating-item .filled
+{
+    background-image: url("../images/star.svg");
+}
+.br-ri-review
+{
+    font-size: 13px;
+    line-height: 16px;
+    overflow: hidden;
+    max-height: 80px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.br-ri-review.open
+{
+    max-height: 500px;
+}
+.br-ri-rb
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    margin-top: 20px;
+}
+.br-ri-rb .br-pt-bc-wh
+{
+    font-size: 13px;
+}
+.br-ri-rb .br-pt-bc-wh > div:first-child
+{
+    margin-right: 12px;
+}
+.br-ri-rb .br-pt-bc-wh div div + div
+{
+    margin-left: 12px;
+}
+.br-ri-read
+{
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px dotted #10b1e8;
+    color: #10b1e8;
+}
+.br-ri-read:hover
+{
+    border-color: transparent;
+}
+.br-ri-read span:last-child, .br-ri-read.open span:first-child
+{
+    display: none;
+}
+.br-ri-read.open span:last-child
+{
+    display: block;
+}
+.br-reviews-block .br-psm
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    margin-bottom: 0;
+}
+.br-reviews-block .br-psm .br-smore
+{
+    position: static;
+    transform: none;
+    -webkit-transform: none;
 }
 /*-----*/
 
@@ -13964,7 +14226,7 @@ body:not(.br-page-blog) .br-dropdown-group .br-dropdown
 }
 .br-body-blog .br-fb-widget
 {
-    background: #e0e9ff;
+    background: #10b1e8;
     padding: 0 30px;
     display: flex;
     display: -webkit-flex;
