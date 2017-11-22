@@ -11989,7 +11989,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-promo-htgc tr:nth-child(2n+1)
 {
-    background: #d5e2f6;
+    background: rgba(16,177,232,.5);
 }
 .br-promo-htgc td
 {
