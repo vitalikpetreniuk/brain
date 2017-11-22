@@ -3657,7 +3657,7 @@ body:not(.br-page-blog) .br-cont-item .tab-content > .active
 /*Стили BRAIN - подвал сайта*/
 body:not(.br-page-blog) footer
 {
-    background: #555;
+    background: #344150;
     padding: 40px 0 20px;
     color: #fff;
 }
