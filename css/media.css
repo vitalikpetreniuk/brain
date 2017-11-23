@@ -3113,6 +3113,11 @@
 }
 @media(min-width: 681px)
 {
+    .br-checkout-modal .br-ci-img + div
+    {
+        width: calc(100% - 76px);
+        padding-right: 10px;
+    }
     .be-hsearch-button
     {
         display: none;
@@ -3369,6 +3374,16 @@
         top: auto;
         bottom: 0;
     }
+    .br-cart-item-drop .br-ci-price
+    {
+        bottom: auto;
+        top: 38px;
+    }
+    .br-checkout-modal .br-ci-set-in
+    {
+        padding: 30px 0 0 !important;
+        width: 100% !important;
+    }
     .br-ci-in > div:last-child > div
     {
         width: 90px !important;
@@ -3394,11 +3409,23 @@
         margin-right: 15px;
         width: 60px !important;
     }
-    .br-cart-item, .br-checkout-modal .br-cart-item
+    .br-cart-item, .br-checkout-modal .br-cart-items > .br-cart-item
     {
         padding: 0 0 0 18px;
         margin: 0 8px 30px 0;
         border: none;
+    }
+    .br-checkout-modal .br-ci-in > div:first-child, .br-checkout-modal  .br-ci-in > div:last-child
+    {
+        width: 100%;
+    }
+    .br-checkout-modal  .br-ci-in > div:first-child
+    {
+        margin-bottom: 0;
+    }
+    .br-checkout-modal  .br-ci-in > div:last-child
+    {
+        padding-left: 76px;
     }
     .br-checkout-modal .br-c-checkouts button:first-child
     {

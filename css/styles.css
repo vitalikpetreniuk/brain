@@ -1342,6 +1342,10 @@ body:not(.br-page-blog) .br-dropdown-remove
     font-size: 16px;
     font-weight: 700;
 }
+.br-checkout-modal .br-ci-price > span
+{
+    display: block;
+}
 .br-ci-q
 {
     display: flex;
@@ -4710,11 +4714,23 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     padding-bottom: 0;
     border-bottom: none;
 }
+.br-checkout-modal .br-ci-gift
+{
+    width: 15px;
+    position: relative;
+    top: -6px;
+    padding: 0;
+}
 .br-checkout-modal .br-ci-q
 {
     position: absolute;
     right: 135px;
     top: 0;
+}
+.br-checkout-modal .br-ci-set-in .br-ci-q
+{
+    right: auto;
+    margin-left: 0;
 }
 .br-ci-bonus
 {
@@ -6678,9 +6694,17 @@ body:not(.br-page-blog) .br-sf-rs a
     display: -ms-flexbox;
     display: -webkit-flex;
 }
+.br-checkout-modal .br-ci-in > div:first-child
+{
+    width: 289px;
+}
 .br-ci-in > div:first-child .br-ci-img
 {
     margin-right: 40px;
+}
+.br-checkout-modal .br-ci-in > div:first-child .br-ci-img
+{
+    margin-right: 16px;
 }
 .br-ci-in > div:last-child
 {
@@ -6691,6 +6715,10 @@ body:not(.br-page-blog) .br-sf-rs a
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
+}
+.br-checkout-modal  .br-ci-in > div:last-child
+{
+    width: calc(100% - 289px);
 }
 .br-ci-in > div:last-child > div
 {
@@ -6794,13 +6822,13 @@ body:not(.br-page-blog) .br-sf-rs a
     max-width: 48%;
     max-height: 50%;
 }
-.br-ci-set .br-ci-name button
+.br-ci-set .br-ci-name button, .br-checkout-modal .br-ci-name button
 {
     padding: 0 25px 0 0;
     border: none;
     background: url("../images/br-adb.png") right center no-repeat;
 }
-.br-ci-set .br-ci-name button.active
+.br-ci-set .br-ci-name button.active, .br-checkout-modal .br-ci-name button.active
 {
     background-image: url("../images/br-adt.png");
 }
@@ -6827,10 +6855,30 @@ body:not(.br-page-blog) .br-sf-rs a
     padding-top: 30px;
     padding-left: 100px !important;
 }
+.br-checkout-modal .br-ci-set-in
+{
+    padding: 30px 0 0 76px !important;
+    width: 580px !important;
+    overflow: visible !important;
+}
 .br-ci-set-in .br-cart-item
 {
     padding: 0 0 20px;
     margin-bottom: 20px;
+}
+.br-checkout-modal .br-cart-items > .br-cart-item
+{
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.br-checkout-modal .br-cart-item .br-cart-item
+{
+    margin-right: 0;
+}
+.br-checkout-modal .br-cart-item .br-cart-item .br-ci-in
+{
+    width: 100%;
 }
 .br-ci-set-in .br-cart-item:last-child
 {
