@@ -952,11 +952,6 @@
 {
     .br-promo-htgc
     {
-        background: none;
-        border: none;
-        border-radius: 0;
-        padding: 0;
-        overflow: hidden;
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -966,23 +961,26 @@
         justify-content: space-between;
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
+        position: relative;
     }
-    .br-promo-htgc-top
+    .br-promo-htgc h4
     {
-        background: #fff;
-        margin-bottom: 25px;
-        border-bottom: 4px solid #d5e2f6;
-        border-bottom-right-radius: 12px;
-        padding: 14px 20px 20px;
+        position: absolute;
+        left: 20px;
+        top: 14px;
+    }
+    .br-promo-htgc h4, .br-promo-htgc ul
+    {
         width: calc(45% - 15px);
+    }
+    .br-promo-htgc ul
+    {
+        padding-top: 31px;
+        margin-bottom: 25px;
     }
     .br-promo-htgc table
     {
         width: calc(55% - 15px);
-        padding: 20px;
-        border-bottom: 4px solid #d5e2f6;
-        border-bottom-right-radius: 12px;
-        background: #fff;
     }
     .br-promo-block-img
     {

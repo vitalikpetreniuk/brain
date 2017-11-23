@@ -6944,7 +6944,7 @@ body:not(.br-page-blog) .br-sf-rs a
     position: absolute;
     top: calc(100% + 16px);
     right: 0;
-    background: rgba(16,177,232,.5);
+    background: #d5e2f6 ;
     padding: 10px;
     opacity: 0;
     visibility: hidden;
@@ -7030,7 +7030,7 @@ body:not(.br-page-blog) .br-sf-rs a
     color: #fff;
     font-weight: 700;
     border: none;
-    background: #d5e2f6;
+    background: #10b1e8;
 }
 /*-----*/
 
@@ -11953,13 +11953,10 @@ div:nth-last-child(-3+n) > .br-action-item
     font-size: 13px;
     margin-bottom: 12px;
 }
-.br-promo-htgc-top
-{
-    margin-bottom: 15px;
-}
-.br-promo-htgc-top ul
+.br-promo-htgc ul
 {
     line-height: 15px;
+    margin-bottom: 15px;
 }
 .br-promo-htgc ul li + li
 {
