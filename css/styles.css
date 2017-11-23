@@ -11811,7 +11811,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-row-gt .br-sidebar form > button
 {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     bottom: 0;
     left: 0;
