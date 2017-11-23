@@ -6827,6 +6827,7 @@ body:not(.br-page-blog) .br-sf-rs a
     padding: 0 25px 0 0;
     border: none;
     background: url("../images/br-adb.png") right center no-repeat;
+    text-align: left;
 }
 .br-ci-set .br-ci-name button.active, .br-checkout-modal .br-ci-name button.active
 {
@@ -12001,10 +12002,15 @@ div:nth-last-child(-3+n) > .br-action-item
     font-size: 13px;
     margin-bottom: 12px;
 }
-.br-promo-htgc-block
+.br-promo-htgc ul, .br-promo-htgc div, .br-promo-htgc p, .br-promo-htgc img
 {
+    display: block;
     line-height: 15px;
     margin-bottom: 15px;
+}
+.br-promo-htgc img
+{
+    max-width: 100%;
 }
 .br-promo-htgc ul li + li
 {

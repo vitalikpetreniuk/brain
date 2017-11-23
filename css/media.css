@@ -948,83 +948,6 @@
         bottom: 40px;
     }
 }
-@media(max-width: 1354px) and (min-width: 1012px)
-{
-    .br-promo-htgc
-    {
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        align-items: flex-start;
-        -ms-flex-align: start;
-        -webkit-align-items: flex-start;
-        justify-content: space-between;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        position: relative;
-    }
-    .br-promo-htgc h4
-    {
-        position: absolute;
-        left: 20px;
-        top: 14px;
-    }
-    .br-promo-htgc h4, .br-promo-htgc-block
-    {
-        width: calc(45% - 15px);
-    }
-    .br-promo-htgc-block
-    {
-        padding-top: 31px;
-        margin-bottom: 25px;
-    }
-    .br-promo-htgc table
-    {
-        width: calc(55% - 15px);
-    }
-    .br-promo-block-img
-    {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        width: 60%;
-    }
-    .br-promo-block-top
-    {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-        width: 40%;
-        display: block;
-        padding-left: 30px;
-    }
-    .br-promo-block-top > div:first-child
-    {
-        margin-bottom: 42px;
-    }
-    .br-promo-block-soc
-    {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 40%;
-        padding-left: 30px;
-        display: block;
-    }
-    .br-promo-block-soc > div:first-child
-    {
-        margin: 0 0 20px;
-    }
-    .br-promo-block
-    {
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-    }
-}
 @media(min-width: 1012px)
 {
     .col-md-1-5
@@ -3379,6 +3302,13 @@
         bottom: auto;
         top: 38px;
     }
+    .br-checkout-modal .br-cart-item-drop > .br-ci-price
+    {
+        position: relative;
+        top: -48px;
+        margin-bottom: -48px;
+        float: right;
+    }
     .br-checkout-modal .br-ci-set-in
     {
         padding: 30px 0 0 !important;
@@ -3414,6 +3344,12 @@
         padding: 0 0 0 18px;
         margin: 0 8px 30px 0;
         border: none;
+    }
+    .br-checkout-modal .br-cart-items > .br-cart-item
+    {
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
     }
     .br-checkout-modal .br-ci-in > div:first-child, .br-checkout-modal  .br-ci-in > div:last-child
     {
