@@ -969,11 +969,11 @@
         left: 20px;
         top: 14px;
     }
-    .br-promo-htgc h4, .br-promo-htgc ul
+    .br-promo-htgc h4, .br-promo-htgc-block
     {
         width: calc(45% - 15px);
     }
-    .br-promo-htgc ul
+    .br-promo-htgc-block
     {
         padding-top: 31px;
         margin-bottom: 25px;

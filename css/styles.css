@@ -11953,7 +11953,7 @@ div:nth-last-child(-3+n) > .br-action-item
     font-size: 13px;
     margin-bottom: 12px;
 }
-.br-promo-htgc ul
+.br-promo-htgc-block
 {
     line-height: 15px;
     margin-bottom: 15px;
