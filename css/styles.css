@@ -6891,6 +6891,68 @@ body:not(.br-page-blog) .br-sf-rs a
 {
     display: none !important;
 }
+.br-ch-del
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 15px;
+}
+.br-ch-del span
+{
+    font-weight: 700;
+    margin-left: 4px;
+    color: #344150;
+}
+.br-ch-promocode
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #777;
+}
+.br-ch-promocode > div
+{
+    max-width: calc(100% - 20px);
+}
+.br-ch-promocode span
+{
+    color: #344150;
+}
+.br-ch-promocode button
+{
+    background: none;
+    padding: 0;
+    border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+}
+.br-ch-promocode button:hover
+{
+    opacity: .7;
+}
 .br-ch-up
 {
     display: flex;
