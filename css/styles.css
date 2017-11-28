@@ -988,7 +988,7 @@ body:not(.br-page-blog) .br-dropdown a
     -ms-flex-align: center;
     position: relative;
 }
-.br-order-call button
+.br-order-call button, .br-order-call ul a
 {
     border: none;
     padding: 0;
@@ -1000,8 +1000,25 @@ body:not(.br-page-blog) .br-dropdown a
     align-items: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    padding-right: 16px;
+}
+.br-order-call button
+{
     background: url("../images/br-adb.png") right 11px no-repeat;
+    padding-right: 16px;
+}
+.br-oc-close
+{
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .br-order-call .br-oc-dropdown button
 {
@@ -1015,7 +1032,6 @@ body:not(.br-page-blog) .br-dropdown a
 }
 .br-oc-dropdown
 {
-    display: none;
     position: absolute;
     z-index: 100;
     background: #fff;
@@ -1027,6 +1043,15 @@ body:not(.br-page-blog) .br-dropdown a
     white-space: nowrap;
     width: auto !important;
     height: auto !important;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.br-oc-dropdown.open
+{
+    opacity: 1;
+    visibility: visible;
 }
 .br-oc-dropdown ul, .br-oc-dropdown li
 {
