@@ -71,6 +71,10 @@
 }
 @media(max-width: 1354px)
 {
+    .br-prof-qty-first
+    {
+        width: auto;
+    }
     .br-prof-info-chain > div:first-child
     {
         text-align: left;
@@ -242,13 +246,17 @@
         padding: 0 8px;
         font-size: 11px;
     }
+    .br-prof-qty-list, .br-prof-qty-last
+    {
+        display: none;
+    }
     .br-prof-table-order
     {
         width: 100px;
     }
     .br-prof-table-qty
     {
-        width: 206px;
+        width: 180px;
     }
     .br-prof-table-date
     {
@@ -256,7 +264,7 @@
     }
     .br-prof-table-amount
     {
-        width: 78px;
+        width: 106px;
     }
     .br-prof-table-status
     {
@@ -1240,7 +1248,7 @@
     }
     .br-prof-table-qty
     {
-        width: 208px;
+        width: 184px;
     }
     .br-prof-table-date
     {
@@ -1248,7 +1256,7 @@
     }
     .br-prof-table-amount
     {
-        width: 86px;
+        width: 110px;
     }
     .br-prof-table-status
     {
