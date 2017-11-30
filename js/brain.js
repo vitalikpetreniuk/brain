@@ -106,11 +106,6 @@ $(function(){
         });
     }
 
-
-    // $(".br-bheader").stick_in_parent({
-    //     parent: 'body'
-    // });
-
     if($('.br-pr-slider').length)
     {
         $('.br-prs-f').slick({
