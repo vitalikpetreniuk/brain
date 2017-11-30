@@ -564,6 +564,11 @@ $(function(){
         });
     }
 
+    $('.br-gc-scale-wrap').each(function () {
+        var gHeight = $(this).height();
+        $(this).siblings('h3').css('top', gHeight);
+    });
+
     $('.br-bh-menu-top > ul > li > ul > li:first-child').each(function () {
         var iSize = $(this).children().size();
 
@@ -572,6 +577,19 @@ $(function(){
             $(this).siblings('.br-mbm-imgs').hide();
             $(this).addClass('active');
         }
+    });
+
+    var imgTime;
+    $('.br-psp-in > div').on('mouseenter', function () {
+        console.log('test');
+        imgTime =  setInterval(function() {
+            var imgActive = $('.br-psp-backs').children('.active');
+            var imgNext = ($('.br-psp-backs').children('.active').next().length > 0) ? $('.br-psp-backs').children('.active').next() : $('.br-psp-backs').children('img:first-child');
+            imgActive.removeClass('active');
+            imgNext.addClass('active');
+        }, 200);
+    }).on('mouseleave', function () {
+        clearInterval(imgTime);
     });
 
     if($('.br-pcode').length)
@@ -969,12 +987,11 @@ $(function(){
     });
 
     $('.br-order-call > div:first-child button').on('click', function(){
-        $(this).toggleClass('active');
-        $('.br-oc-dropdown').toggle('fast');
+        $('.br-oc-dropdown').addClass('open');
     });
 
     $('.br-oc-dropdown button').on('click', function(){
-        $('.br-oc-dropdown').toggle('fast');
+        $(this).closest('.br-oc-dropdown').removeClass('open');
     });
 
     $('.br-shops-head > button').on('click', function(){
@@ -1296,7 +1313,7 @@ $(function(){
         }
 
         if (container4.has(e.target).length === 0){
-            $(".br-order-call button.active").trigger('click');
+            $(".br-oc-dropdown button").trigger('click');
         }
 
         if (container5.has(e.target).length === 0){
@@ -1399,6 +1416,11 @@ $(function(){
 
     $('.br-prof-delete').on('click', function () {
         $(this).closest('.br-prof-form-address').remove();
+    });
+
+    $('.br-dropdown-s > button').on('click', function () {
+        $(this).parent().toggleClass('open');
+        $(this).parent().siblings().removeClass('open');
     });
 
     $('.modal .close').on('click', function(){
