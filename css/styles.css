@@ -17372,7 +17372,7 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     opacity: 1;
     visibility: visible;
 }
-.br-prof-fixed.active
+.br-fx-open.active
 {
     opacity: 0;
     visibility: hidden;
@@ -17494,8 +17494,8 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 .br-dropdown-s > div
 {
     max-height: 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
     overflow: hidden;
 }
 .br-dropdown-s.open > div
@@ -17529,8 +17529,8 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 .br-dropdown-s ul
 {
     padding-top: 20px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
     position: relative;
     bottom: -100px;
     opacity: 0;
@@ -17598,13 +17598,24 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     -ms-flex-pack: justify;
     margin-bottom: 60px;
 }
+.br-gc-blocks:after
+{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #f6f6f6;
+}
 .br-gc-blocks > div
 {
     position: relative;
     height: 385px;
     overflow: hidden;
     padding: 35px 30px;
-    margin-bottom: 1px;
+    margin: 0 1px 1px 0;
 }
 .br-gc-blocks > div:after
 {
@@ -17665,7 +17676,7 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-.br-gc-blocks > div:hover h3
+.br-gc-blocks > div:hover h3, .br-gc-block-in h3.open
 {
     top: 0 !important;
     padding-bottom: 10px;
@@ -17684,6 +17695,12 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     transform: scale(.8);
     -webkit-transform: scale(.8);
     opacity: 0;
+}
+.br-gc-scale-wrap .open
+{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 .br-gc-blocks > div:hover .br-gc-scale-wrap div
 {
@@ -17797,5 +17814,102 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 .br-gc-articles .br-ai
 {
     margin: 0 0 25px
+}
+.br-fx-open
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    opacity: 1;
+    visibility: visible;
+}
+.br-prof-fixed.active
+{
+    opacity: 0;
+    visibility: hidden;
+}
+.br-fx-open button
+{
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: #10b1e8;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    padding: 0;
+}
+.br-fx-sidebar
+{
+    position: fixed;
+    z-index: 102;
+    top: 20px;
+    width: 370px;
+    left: 15px;
+    bottom: 0;
+    background: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+.br-fx-sidebar.active
+{
+    opacity: 1;
+    visibility: visible;
+}
+.br-fx-sidebar .br-scroll
+{
+    height: calc(100vh - 20px);
+}
+.br-fx-sidebar .br-scroll .scroll-element.scroll-y
+{
+    width: 5px;
+}
+.br-fx-sidebar .br-scroll .scroll-element.scroll-y
+{
+    right: 0;
+}
+.br-fx-sidebar .br-scroll .scroll-element .scroll-element_track
+{
+    display: none;
+}
+.br-fx-sidebar .br-scroll .scroll-element .scroll-bar
+{
+    border-radius: 0;
+    background: #cecece;
+    opacity: 1;
+}
+.br-fx-sidebar .br-scroll .scroll-element .scroll-element_outer
+{
+    border-radius: 0;
+}
+.br-fx-in
+{
+    padding: 50px 15px 120px;
+    position: relative;
+}
+.br-fx-in > button
+{
+    background: none;
+    padding: 0;
+    border: none;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.br-fx-in > button img
+{
+    position: relative;
+    top: -1px;
 }
 /*-----*/

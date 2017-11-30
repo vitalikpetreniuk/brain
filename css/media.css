@@ -1,6 +1,6 @@
 @media(min-width: 1355px)
 {
-    .br-fixed-ct-buttons-out
+    .br-fixed-ct-buttons-out, .br-fx-open, .br-fx-sidebar
     {
         display: none;
     }
@@ -1225,7 +1225,7 @@
     }
     .br-gc-block-4
     {
-        width: calc(50% - .5px)
+        width: calc(50% - 1px)
     }
     .br-prof-same
     {
@@ -4409,7 +4409,7 @@
 }
 @media(max-width: 450px)
 {
-    .br-prof-sidebar-fixed
+    .br-prof-sidebar-fixed, .br-fx-sidebar
     {
         width: calc(100% - 30px);
     }
