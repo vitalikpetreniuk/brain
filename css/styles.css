@@ -5652,6 +5652,13 @@ body:not(.br-page-blog) .br-checkout-modal .br-cart-items
     text-align: center;
     width: 100% !important;
 }
+.br-alert.invisible
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
 .br-alert-in
 {
     position: relative;
