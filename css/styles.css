@@ -526,7 +526,7 @@ body:not(.br-page-blog) .br-l-menu a
 /*Меню в верхней части хедера*/
 .br-theader-menu
 {
-    margin-right: 140px;
+    margin-right: 52px;
 }
 .br-theader-menu > ul:after
 {
@@ -1553,6 +1553,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
     position: relative;
     z-index: 999;
     background: #fff;
+    overflow: visible !important;
 }
 .br-bh-menu-top.hiddenm
 {
