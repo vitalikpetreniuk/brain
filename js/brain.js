@@ -1830,8 +1830,7 @@ $(function(){
                     $('.br-bheader-in').addClass('active');
                     $('.br-ceader-in').addClass('active');
                     $('.br-alert').addClass('invisible');
-                    console.log(aHeight);
-                    $('body').css('padding-top', hsHeight + 65 - aHeight);
+                    $('body').css('padding-top', hsHeight + 65 + aHeight);
                     $('.br-body-p').css('padding-top', hsHeight + aHeight);
                     $('header').addClass('fixed')
                 }
