@@ -13551,6 +13551,14 @@ div:nth-last-child(-3+n) > .br-action-item
     position: relative;
     border-radius: 0 0 15px 0;
 }
+.br-shops-body > .tab-pane > p
+{
+    margin-bottom: 0;
+}
+.br-shops-body > .tab-pane > p + p
+{
+    margin-top: 10px;
+}
 .br-shops-map
 {
     position: relative;
@@ -17920,5 +17928,355 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 {
     position: relative;
     top: -1px;
+}
+/*-----*/
+
+
+
+/*Доставка*/
+.br-left-nav li + li
+{
+    margin-top: 16px;
+}
+.br-left-nav a
+{
+    display: inline-block;
+    border-bottom: 1px dotted #10b1e8;
+    color: #10b1e8;
+    line-height: 15px;
+}
+.br-left-nav a:hover
+{
+    border-color: transparent;
+}
+.br-left-nav .active a
+{
+    font-weight: 700;
+}
+.br-del-block
+{
+    padding: 20px;
+}
+.br-del-block > .br-shops-head
+{
+    margin-bottom: 15px;
+}
+.br-del-block > .br-shops-head li + li
+{
+    margin: 0;
+}
+.br-del-block .br-dt-abs > ul a
+{
+    padding-right: 1px;
+}
+.br-del-block .br-shops-body > .tab-pane
+{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.br-del-in .br-shops-head
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    margin-bottom: 15px;
+}
+.br-del-in .br-shops-head h3
+{
+    margin: 0;
+    max-width: 45%;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.br-del-in .br-shops-area
+{
+    left: auto;
+    right: 5px;
+}
+.br-del-in .br-shops-area:before
+{
+    left: auto;
+    right: 15px;
+}
+.br-del-in-body
+{
+    position: relative;
+}
+.br-del-block .br-shops-main-block
+{
+    max-height: 400px;
+}
+.br-del-block .br-shops-main-block .br-scroll
+{
+    max-height: 361px;
+}
+.br-del-block .br-shops-map .tab-pane
+{
+    height: auto;
+}
+.br-del-block .br-shops-map iframe
+{
+    height: 440px;
+    width: 100%;
+}
+.br-del-in-body > .tab-pane
+{
+    display: block !important;
+    height: 0;
+    position: relative;
+    overflow-y: hidden;
+}
+.br-del-in-body > .active
+{
+    height: auto;
+}
+.br-del-flex
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.br-del-flex > div
+{
+    position: relative;
+}
+.br-del-flex > div:last-child
+{
+    width: 278px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+.br-del-com
+{
+    width: auto !important;
+    white-space: nowrap;
+}
+.br-del-com-cont li + li
+{
+    margin-top: 12px;
+}
+.br-del-info h3, .br-del-faq h3
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+.br-del-info h4
+{
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+.br-del-info, .br-del-info p
+{
+    font-size: 14px;
+    line-height: 16px;
+}
+.br-del-info ol
+{
+    padding-left: 14px;
+}
+.br-del-info p + p, .br-del-info ul, .br-del-info ol, .br-del-info li + li
+{
+    margin: 8px 0 0;
+}
+.br-del-info strong
+{
+    font-weight: 700;
+}
+.br-del-info-item + .br-del-info-item
+{
+    margin-top: 22px;
+}
+.br-del-np
+{
+    background: url("../images/np.jpg") right 5px no-repeat;
+}
+.br-del-me
+{
+    background: url("../images/me.png") right 5px no-repeat;
+}
+.br-del-np, .br-del-me
+{
+    padding-right: 342px;
+}
+.br-del-faq-item + .br-del-faq-item
+{
+    border-top: 1px solid #e3e3e3;
+}
+.br-del-faq-item > button
+{
+    border: none;
+    padding: 13px 0;
+    font-weight: 700;
+    background: none;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+.br-del-faq-item > button:after
+{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url("../images/ac-r.png") center no-repeat;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 12px);
+}
+.br-del-faq-item > .open:after
+{
+    background-image: url("../images/ac-b.png");
+}
+.br-del-faq-item > div
+{
+    display: none;
+    width: 100% !important;
+    padding-bottom: 10px;
+    padding-left: 82px !important;
+}
+.br-del-faq-item > div.open
+{
+    display: block;
+}
+body:not(.br-page-blog) .br-container-wb .br-sub-form
+{
+    margin: 0;
+}
+/*-----*/
+
+/*Контакты*/
+.br-contacts-block h3
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+.br-contacts-flex
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.br-contacts-flex h4
+{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.br-contacts-flex-f > div
+{
+    width: 30%;
+}
+.br-contacts-flex-f > div:last-child, .br-contacts-flex-f > div:first-child
+{
+    width: 35%;
+}
+.br-contacts-element
+{
+    position: relative;
+}
+.br-contacts-element:before
+{
+    content: '';
+    position: absolute;
+}
+.br-contacts-element div
+{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.br-contacts-element div a
+{
+    display: inline-block;
+}
+.br-contacts-element .email a
+{
+    text-decoration: underline;
+}
+.br-contacts-element div a:hover
+{
+    color: #10b1e8;
+}
+.br-contacts-element span
+{
+    display: block;
+    line-height: 18px;
+    font-size: 14px;
+    color: #777;
+}
+.br-contacts-element span + span
+{
+    margin-top: 6px;
+}
+.br-contacts-element-f
+{
+    padding-left: 64px;
+}
+.br-contacts-element-f:before
+{
+    width: 37px;
+    height: 44px;
+    left: 3px;
+    top: -3px;
+    background: url("../images/contacts1.png") center no-repeat;
+}
+.br-contacts-element-s
+{
+    padding-left: 70px;
+}
+.br-contacts-element-s:before
+{
+    width: 42px;
+    height: 42px;
+    left: 0;
+    top: -3px;
+    background: url("../images/contacts2.png") center no-repeat;
+}
+.br-contacts-element-t
+{
+    padding-left: 64px;
+}
+.br-contacts-element-t:before
+{
+    width: 44px;
+    height: 40px;
+    left: 0;
+    top: -4px;
+    background: url("../images/contacts3.png") center no-repeat;
+}
+.br-contacts-element-fr
+{
+    padding-left: 72px;
+}
+.br-contacts-element-fr:before
+{
+    width: 49px;
+    height: 43px;
+    left: 0;
+    top: -6px;
+    background: url("../images/contacts4.png") center no-repeat;
+}
+.br-contacts-flex-s > div
+{
+    width: 50%;
+}
+.br-contacts-flex-s .br-contacts-element + .br-contacts-element
+{
+    margin-top: 25px;
 }
 /*-----*/
