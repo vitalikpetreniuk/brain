@@ -3175,6 +3175,13 @@
         justify-content: space-between;
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-ci-in .br-ci-price
+    {
+        width: 100% !important;
     }
     .br-ci-in
     {
@@ -3768,10 +3775,6 @@
     {
         padding: 30px 0 0 !important;
         width: 100% !important;
-    }
-    .br-ci-in > div:last-child > div
-    {
-        width: 90px !important;
     }
     .br-ci-in > div:last-child > .br-ci-bu
     {
