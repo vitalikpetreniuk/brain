@@ -71,6 +71,31 @@
 }
 @media(max-width: 1354px)
 {
+    .br-del-np, .br-del-me
+    {
+        padding-right: 320px;
+    }
+    .br-contacts-flex-f > div:first-child
+    {
+        width: 34%;
+    }
+    .br-contacts-flex-f > div:last-child
+    {
+        width: 36%;
+    }
+    .br-left-nav ul
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    }
+    .br-left-nav li + li
+    {
+        margin: 0;
+    }
     .br-gc-sidebar
     {
         padding: 0;
@@ -1172,6 +1197,10 @@
 }
 @media(min-width: 1012px)
 {
+    .br-fx-del, .br-fx-sidebar-del
+    {
+        display: none;
+    }
     .br-prof-fixed, .br-prof-sidebar-fixed
     {
         display: none;
@@ -1215,6 +1244,127 @@
 }
 @media(max-width: 1011px)
 {
+    .br-del-np, .br-del-me
+    {
+        padding-right: 200px;
+        background-size: 172px auto;
+    }
+    .br-contacts-element
+    {
+        padding-left: 58px;
+    }
+    .br-contacts-flex-f
+    {
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-contacts-flex-f > div
+    {
+        width: 49%;
+    }
+    .br-contacts-flex-f > div:first-child
+    {
+        width: 51%;
+    }
+    .br-contacts-flex-f > div:last-child
+    {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-contacts-flex-f > div:last-child div
+    {
+        width: 100%;
+    }
+    .br-contacts-flex-f > div:last-child span
+    {
+        width: 33.33%;
+        margin: 0;
+    }
+    .br-contacts-flex-f > div:last-child span:last-child
+    {
+        text-align: right;
+    }
+    .br-left-nav ul
+    {
+        display: block;
+    }
+    .br-del-block .br-address-radio label
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    .br-del-com-cont li + li, .br-left-nav li + li
+    {
+        margin-top: 15px;
+    }
+    .br-del-block .br-address-radio label span:first-child
+    {
+        width: 290px;
+    }
+    .br-del-flex > div:last-child
+    {
+        width: 268px;
+    }
+    .br-del-block
+    {
+        padding: 15px;
+    }
+    .br-del-block .br-dt-abs > ul
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    .br-del-block .br-dt-abs > ul li
+    {
+        width: 33.333%;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    .br-del-block .br-dt-abs > ul a
+    {
+        display: block;
+        height: auto;
+        padding: 15px 15px 12px;
+    }
+    .br-del-block .br-dt-abs > ul strong
+    {
+        padding-left: 40px;
+        min-height: 32px;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
+    .br-del-block .br-dt-abs > ul strong
+    {
+        padding-left: 40px;
+        min-height: 32px;
+        margin-bottom: 6px;
+    }
+    .br-del-block .br-dt2 a
+    {
+        background-position: 15px 20px;
+    }
+    .br-del-block .br-dt2 a strong
+    {
+        padding-left: 50px;
+    }
+    .br-del-block .br-dt3 a strong
+    {
+        padding-left: 54px;
+    }
     .br-psp-in > div
     {
         width: calc(33% - 3px);
@@ -1369,12 +1519,20 @@
         height: 385px;
         padding: 0 10px 10px
     }
+    .br-del-in .br-shops-map .tab-pane
+    {
+        padding: 0;
+    }
     .br-shops-main-block
     {
         position: static;
         width: 100%;
         padding: 5px 0 25px 10px;
         border: none;
+    }
+    .br-del-block .br-shops-main-block
+    {
+        padding: 5px 0 20px 0;
     }
     .br-shops-main-block-in
     {
@@ -2519,6 +2677,77 @@
 }
 @media(max-width: 766px)
 {
+    .br-contacts-element div
+    {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    .br-contacts-flex-f > div:last-child span, .br-contacts-flex > div
+    {
+        width: 100% !important;
+        text-align: left !important;
+    }
+    .br-contacts-flex-f > div:last-child span + span
+    {
+        margin: 6px 0 0;
+    }
+    .br-contacts-flex, .br-contacts-flex-f > div:last-child
+    {
+        display: block;
+    }
+    .br-contacts-flex > div + div
+    {
+        margin-top: 15px;
+    }
+    .br-del-faq-item > div
+    {
+        padding-left: 0 !important;
+    }
+    .br-del-np
+    {
+        padding: 44px 0 0;
+        background-position: left top;
+    }
+    .br-del-me
+    {
+        padding: 90px 0 0;
+        background-position: left top;
+    }
+    .br-del-np h4, .br-del-me h4
+    {
+        display: none;
+    }
+    .br-del-block
+    {
+        padding: 0 15px !important;
+    }
+    .br-del-block .br-address-radio label
+    {
+        display: block;
+    }
+    .br-del-in .br-shops-area:before
+    {
+        left: 30px;
+        right: auto;
+    }
+    .br-del-in .br-shops-area
+    {
+        left: 0;
+        right: auto;
+    }
+    .br-del-in .br-shops-head, .br-del-flex
+    {
+        display: block;
+    }
+    .br-del-in-drop + .br-del-in-drop
+    {
+        margin: 15px 0 0;
+    }
+    .br-del-flex > div:last-child
+    {
+        width: 100%;
+        display: block;
+    }
     .br-psp-in > div
     {
         width: calc(50% - 4px);

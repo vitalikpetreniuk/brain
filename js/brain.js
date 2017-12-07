@@ -1004,6 +1004,7 @@ $(function(){
 
     $('.br-shops-toggle').on('click', function(){
         $(this).toggleClass('open');
+        $(this).parent('.br-del-in-drop').siblings().children().removeClass('open');
         $(this).siblings('.br-shops-area').toggleClass('open');
     });
 
@@ -1982,6 +1983,54 @@ $(function(){
         {
             var tabId = $(this).attr('data-id');
             $('.panel a[data-id="' + tabId + '"' + ']').trigger('click');
+        }
+    });
+
+    $('.br-ps-block .br-del-in-drop > button').on('click', function () {
+        if($(window).width() < 680)
+        {
+            var dropId = $(this).attr('data-id');
+            $('.br-shops-body .br-del-in-drop > button[data-id="' + dropId + '"' + ']').trigger('click');
+        }
+    });
+
+    $('.br-shops-body .br-del-in-drop > button').on('click', function () {
+        if($(window).width() >= 766)
+        {
+            var dropId = $(this).attr('data-id');
+            $('.br-ps-block .br-del-in-drop > button[data-id="' + dropId + '"' + ']').trigger('click');
+        }
+    });
+
+    $('.br-ps-block .br-del-in-drop a').on('click', function () {
+        if($(window).width() < 680)
+        {
+            var dropId = $(this).attr('data-id');
+            $('.br-shops-body .br-del-in-drop a[data-id="' + dropId + '"' + ']').trigger('click');
+        }
+    });
+
+    $('.br-shops-body .br-del-in-drop a').on('click', function () {
+        if($(window).width() >= 766)
+        {
+            var dropId = $(this).attr('data-id');
+            $('.br-ps-block .br-del-in-drop a[data-id="' + dropId + '"' + ']').trigger('click');
+        }
+    });
+
+    $('.br-ps-block .br-shops-show a').on('click', function () {
+        if($(window).width() < 600)
+        {
+            var dropId = $(this).attr('data-id');
+            $('.br-shops-body .br-shops-show a[data-id="' + dropId + '"' + ']').trigger('click');
+        }
+    });
+
+    $('.br-shops-body .br-shops-show a').on('click', function () {
+        if($(window).width() >= 766)
+        {
+            var dropId = $(this).attr('data-id');
+            $('.br-ps-block .br-shops-show a[data-id="' + dropId + '"' + ']').trigger('click');
         }
     });
 
