@@ -2017,11 +2017,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 /*Стили BRAIN - обертка основного контента*/
 .br-body
 {
-    padding-bottom: 100px;
-}
-.br-main .br-body
-{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 /*-----*/
 
@@ -10200,10 +10196,6 @@ body:not(.br-page-blog) .br-pr-main-block .br-pp-top > *:last-child
 {
     margin-bottom: 40px;
 }
-.br-body-product
-{
-    padding-bottom: 10px !important;
-}
 .br-pr-set h3
 {
     font-size: 18px;
@@ -11784,7 +11776,7 @@ header .br-pt-menu-in
 {
     margin-bottom: 25px;
 }
-.br-slider-product
+#br-md-products .br-slider-product
 {
     margin-bottom: 50px;
 }
@@ -13043,10 +13035,6 @@ div:nth-last-child(-3+n) > .br-action-item
 .mb40
 {
     margin-bottom: 40px;
-}
-.br-btn-wrap
-{
-    height: 42px;
 }
 .br-quick-category-btn
 {
@@ -15023,6 +15011,10 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 .br-body-blog .br-slider-product
 {
     margin-bottom: 30px;
+}
+.br-ssilder .br-p-item
+{
+    margin-bottom: 0;
 }
 .br-ssilder .owl-nav > div
 {
