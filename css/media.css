@@ -2725,12 +2725,12 @@
     {
         display: block;
     }
-    .br-del-in .br-shops-area:before
+    .br-del-in .br-del-com:before, .br-del-in .br-dropdown:before
     {
         left: 30px;
         right: auto;
     }
-    .br-del-in .br-shops-area
+    .br-del-in .br-del-com, .br-del-in .br-dropdown
     {
         left: 0;
         right: auto;

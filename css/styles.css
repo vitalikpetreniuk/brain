@@ -468,7 +468,7 @@ body:not(.br-page-blog) .br-chc .br-dropdown:before
 }
 .br-my-p
 {
-    margin: 20px 18px 0 0;
+    margin: 0 18px 0 0;
     padding: 22px 0 2px 0;
     border-top: 1px solid #e3e3e3;
 }
@@ -605,11 +605,13 @@ body:not(.br-page-blog) .br-dropdown
 body:not(.br-page-blog) .br-dropdown:before
 {
     content: '';
-    width: 19px;
-    height: 14px;
-    background: url("../images/br-at.jpg") center no-repeat;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9.5px 10px 9.5px;
+    border-color: transparent transparent #fff transparent;
     position: absolute;
-    top: -14px;
+    top: -10px;
 }
 body:not(.br-page-blog) .br-dropdown ul
 {
@@ -627,7 +629,7 @@ body:not(.br-page-blog) .br-dropdown li:last-child
 {
     margin-bottom: 0;
 }
-body:not(.br-page-blog) .br-dropdown li.active
+body:not(.br-page-blog) .br-dropdown li.active, body:not(.br-page-blog) .br-dropdown li.active a
 {
     color: #10b1e8;
 }
@@ -1937,7 +1939,7 @@ body:not(.br-page-blog) .br-dropdown-cart .br-c-dtb
 }
 .br-nc-scroll
 {
-    height: 225px;
+    max-height: 225px;
 }
 .br-scroll-wrapper
 {
@@ -13425,7 +13427,7 @@ div:nth-last-child(-3+n) > .br-action-item
     z-index: 3;
     margin-bottom: 25px;
 }
-.br-shops-head button
+.br-shops-head .br-dt-yc button, .br-del-in-drop button
 {
     background: url("../images/br-ab-b.png") right 9px no-repeat;
     padding: 0 16px 0 0;
@@ -13435,14 +13437,26 @@ div:nth-last-child(-3+n) > .br-action-item
     display: -ms-flexbox;
     font-size: 14px;
 }
-.br-shops-head button.open
+.br-shops-head .br-dt-yc button.open, .br-del-in-drop button.open
 {
     background-image: url("../images/br-at-b.png");
 }
-.br-shops-head button span:last-child
+.br-shops-head .br-dt-yc button span:first-child
+{
+    color: #344150;
+}
+.br-shops-head .br-dt-yc button span:last-child, .br-del-in-drop button span:last-child
 {
     margin-left: 4px;
     color: #10b1e8;
+}
+.br-del-in-drop
+{
+    position: relative;
+}
+.br-del-in-drop  .br-scroll
+{
+    height: auto !important;
 }
 .br-shops-head ul
 {
@@ -13460,14 +13474,15 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     color: #10b1e8;
 }
-.br-shops-area
+.br-del-com
 {
-    width: 285px !important;
+    right: 5px;
+    width: auto !important;
+    white-space: nowrap;
     position: absolute;
     z-index: 2;
     top: 33px;
     background: #fff;
-    white-space: nowrap;
     -webkit-box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
     box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
     height: auto !important;
@@ -13477,12 +13492,12 @@ div:nth-last-child(-3+n) > .br-action-item
     opacity: 0;
     visibility: hidden;
 }
-.br-shops-area.open
+.br-del-com.open
 {
     opacity: 1;
     visibility: visible;
 }
-.br-shops-area:before
+.br-del-com:before
 {
     content: '';
     width: 0;
@@ -13491,12 +13506,20 @@ div:nth-last-child(-3+n) > .br-action-item
     border-width: 0 9.5px 10px 9.5px;
     border-color: transparent transparent #fff transparent;
     position: absolute;
-    left: 135px;
+    right: 15px;
     top: -10px;
 }
-.br-shops-area .br-scroll
+.br-del-com .br-scroll
 {
     max-height: 230px;
+}
+.br-del-com li.active a
+{
+    color: #10b1e8;
+}
+.br-del-com-cont li + li
+{
+    margin-top: 12px;
 }
 .br-shops-block .br-scroll .scroll-element.scroll-y
 {
@@ -17980,6 +18003,10 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 {
     color: #999 !important;
 }
+.br-del-in .br-dt-yc
+{
+    margin: 0;
+}
 .br-del-in .br-shops-head
 {
     display: flex;
@@ -18002,12 +18029,12 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     text-transform: uppercase;
     font-weight: 700;
 }
-.br-del-in .br-shops-area
+.br-del-in .br-dropdown
 {
     left: auto;
     right: 5px;
 }
-.br-del-in .br-shops-area:before
+.br-del-in .br-dropdown:before
 {
     left: auto;
     right: 15px;
@@ -18063,15 +18090,6 @@ body:not(.br-page-blog) .br-body-blog .br-pad
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
-}
-.br-del-com
-{
-    width: auto !important;
-    white-space: nowrap;
-}
-.br-del-com-cont li + li
-{
-    margin-top: 12px;
 }
 .br-del-info h3, .br-del-faq h3
 {
@@ -18177,11 +18195,6 @@ body:not(.br-page-blog) .br-body-blog .br-pad
 body:not(.br-page-blog) .br-container-wb .br-sub-form
 {
     margin: 0;
-}
-.br-ps-block .br-del-in-drop  .br-scroll
-{
-    height: auto !important;
-    max-height: 197px;
 }
 /*-----*/
 

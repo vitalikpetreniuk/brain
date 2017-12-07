@@ -997,21 +997,27 @@ $(function(){
         $(this).closest('.br-oc-dropdown').removeClass('open');
     });
 
-    $('.br-shops-head > button').on('click', function(){
+    $('.br-shops-head .br-dt-yc > button').on('click', function(){
         $(this).toggleClass('open');
-        $(this).siblings('.br-shops-area').toggleClass('open');
     });
 
-    $('.br-shops-toggle').on('click', function(){
+    $('.br-del-in-drop > button').on('click', function(){
         $(this).toggleClass('open');
-        $(this).parent('.br-del-in-drop').siblings().children().removeClass('open');
-        $(this).siblings('.br-shops-area').toggleClass('open');
+        $(this).siblings().toggleClass('open');
     });
 
-    $('.br-shops-area a').on('click', function () {
+    $('.br-shops-head .br-dt-yc ul a').on('click', function () {
         var shopArea = $(this).text();
-        $(this).closest('.br-shops-area').siblings('button.open').trigger('click');
-        $(this).closest('.br-shops-area').siblings('button').children('span:last-child').text(shopArea);
+        $(this).closest('.br-dt-yc').children('button.open').trigger('click');
+        $(this).closest('.br-dt-yc').children('button').children('span:last-child').text(shopArea);
+    });
+
+    $('.br-del-in-drop ul a').on('click', function(){
+        $(this).parent().siblings().removeClass('active');
+        $(this).parent().addClass('active');
+        var shopName = $(this).text();
+        $(this).closest('.br-del-in-drop').children('button.open').trigger('click');
+        $(this).closest('.br-del-in-drop').children('button').children('span:last-child').text(shopName);
     });
 
     $('.br-del-faq-item > button').on('click', function(){
