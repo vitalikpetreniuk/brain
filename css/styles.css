@@ -6391,7 +6391,7 @@ body:not(.br-page-blog) .br-sfs h2 span
     text-transform: lowercase;
     font-weight: 400;
 }
-body:not(.br-page-blog) .br-sfs > div
+.br-sub-form-cont
 {
     display: flex;
     display: -ms-flexbox;
@@ -6404,7 +6404,7 @@ body:not(.br-page-blog) .br-sfs > div
     -ms-flex-align: center;
     padding: 25px;
 }
-body:not(.br-page-blog) .br-sfs > div > *
+.br-sub-form-block, .br-sub-form-block + input[type='submit']
 {
     width: 25% !important;
 }
