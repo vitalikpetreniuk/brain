@@ -483,7 +483,7 @@ $(function(){
     }
 
     var x = 0;
-    $('.br-bh-menu-top > ul').on('mouseenter', function(){
+    $('.br-main-menu').on('mouseenter', function(){
         x = 1;
         setTimeout(function(){
             if(x===1)
@@ -573,7 +573,7 @@ $(function(){
         $(this).siblings('h3').css('top', gHeight);
     });
 
-    $('.br-bh-menu-top > ul > li > ul > li:first-child').each(function () {
+    $('.br-main-submenu > li:first-child').each(function () {
         var iSize = $(this).children().size();
 
         if(iSize < 6)

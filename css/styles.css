@@ -343,7 +343,7 @@ header.fixed
 .br-hidden .br-th-login
 {
     right: 15px;
-    top: 22px;
+    top: 12px;
 }
 .br-hidden .br-theader-menu
 {
@@ -500,11 +500,11 @@ header.fixed
     font-size: 14px;
     margin-right: 25px;
 }
-.br-l-menu ul
+.br-l-menu-list
 {
     overflow: hidden;
 }
-.br-l-menu li
+.br-l-menu-list li
 {
     float: left;
     width: 36px;
@@ -512,16 +512,16 @@ header.fixed
     text-align: center;
     color: #10b1e8;
 }
-.br-l-menu .active
+.br-l-menu-list .active
 {
     background: rgba(16,177,232,.5);
     font-weight: 700;
 }
-.br-l-menu a
+.br-l-menu-list a
 {
     color: #adadad;
 }
-.br-hidden .br-l-menu li
+.br-hidden .br-l-menu-list li
 {
     line-height: 24px;
 }
@@ -532,23 +532,23 @@ header.fixed
 {
     margin-right: 52px;
 }
-.br-theader-menu > ul:after
+.br-theader-menu-list:after
 {
     content: '';
     display: block;
     clear: both;
 }
-.br-theader-menu > ul > li
+.br-theader-menu-list > li
 {
     float: left;
     margin-right: 40px;
     position: relative;
 }
-.br-theader-menu > ul > li:last-child
+.br-theader-menu-list > li:last-child
 {
     margin-right: 0;
 }
-.br-theader-menu > ul > li > a, .br-theader-menu > ul > li > button
+.br-theader-menu-list > li > a, .br-theader-menu-list > li > button
 {
     display: block;
     border: none;
@@ -617,13 +617,13 @@ header.fixed
 {
     padding: 20px;
 }
-.br-cabinet ul
-{
-    border-bottom: 1px solid #e3e3e3;
-}
 .br-dropdown li
 {
     margin-bottom: 12px;
+}
+.br-cabinet-list
+{
+    border-bottom: 1px solid #e3e3e3;
 }
 .br-dropdown li:last-child
 {
@@ -1063,15 +1063,15 @@ header.fixed
     opacity: 1;
     visibility: visible;
 }
-.br-oc-dropdown ul, .br-oc-dropdown li
+.br-oc-dropdown-list, .br-oc-dropdown-list li
 {
     margin-bottom: 10px;
 }
-.br-oc-dropdown li:last-child
+.br-oc-dropdown-list li:last-child
 {
     margin: 0;
 }
-.br-oc-dropdown li div:first-child
+.br-oc-dropdown-list li div:first-child
 {
     font-weight: 700;
     font-size: 18px;
@@ -1082,11 +1082,11 @@ header.fixed
     -webkit-align-items: center;
     -ms-flex-align: center;
 }
-.br-oc-dropdown li div:first-child span:first-child
+.br-oc-dropdown-list li div:first-child span:first-child
 {
     margin-right: 6px;
 }
-.br-oc-dropdown li div:last-child
+.br-oc-dropdown-list li div:last-child
 {
     color: #999;
     line-height: 15px;
@@ -1573,7 +1573,7 @@ header.fixed
 {
     display: block !important;
 }
-.br-bh-menu-top > ul
+.br-main-menu
 {
     display: flex;
     display: -webkit-flex;
@@ -1583,18 +1583,18 @@ header.fixed
     -ms-flex-align: center;
     position: relative;
 }
-.br-bh-menu-top > ul > li
+.br-main-menu > li
 {
     flex-grow: 1;
     -webkit-flex-grow: 1;
     flex:1 auto;
     border-bottom: 1px solid #dfdfdf;
 }
-.br-bh-menu-top > ul > li:last-child
+.br-main-menu > li:last-child
 {
     margin-right: -1px;
 }
-.br-bh-menu-top > ul > li > a
+.br-main-menu > li > a
 {
     height: 54px;
     display: flex;
@@ -1610,19 +1610,19 @@ header.fixed
     font-weight: 700;
     text-align: center;
 }
-.br-bh-menu-top > ul > li:hover > a
+.br-main-menu > li:hover > a
 {
     background: #10b1e8;
     color: #fff;
 }
-.br-bh-menu-top > ul > li > a > span
+.br-main-menu > li > a > span
 {
     display: block;
     position: relative;
     max-width: 150px;
     line-height: 1.2;
 }
-.br-bh-menu-top > ul > li.more > a > span:after
+.br-main-menu > li.more > a > span:after
 {
     content: '';
     width: 5px;
@@ -1633,7 +1633,7 @@ header.fixed
     margin-top: -3px;
     background: url("../images/br-ar-b.png") center no-repeat;
 }
-.br-bh-menu-top > ul > li:last-child > a
+.br-main-menu > li:last-child > a
 {
     border: none;
 }
@@ -1798,14 +1798,14 @@ header.fixed
     box-shadow: 0 0 12px 1px rgba(0,0,0,0.2);
     overflow: hidden;
 }
-.br-bh-menu-top > ul > li:hover > ul
+li:hover > .br-main-submenu
 {
     opacity: 1;
     visibility: visible;
     -webkit-transition-delay: .25s;
     transition-delay: .25s;
 }
-.br-bh-menu-top > ul > li > ul > li
+.br-main-submenu > li
 {
     display: flex;
     display: -webkit-flex;
@@ -1816,25 +1816,27 @@ header.fixed
     position: relative;
     z-index: 2;
 }
-.br-bh-menu-top > ul > li > ul > li:first-child
+.br-main-submenu > li:first-child
 {
     padding-bottom: 90px;
 }
-.br-bh-menu-top > ul > li > ul > li.active
+.br-main-submenu > li.active
 {
     padding-bottom: 0;
 }
-.br-bh-menu-top ul ul ul
+.br-main-submenu-list
 {
     width: 20%;
     min-height: 126px;
+    margin-bottom: 20px;
+    padding-left: 40px;
 }
-.br-bh-menu-top ul ul ul li:first-child
+.br-main-submenu-list li:first-child
 {
     margin-bottom: 0;
     position: relative;
 }
-.br-bh-menu-top ul ul ul li:first-child span
+.br-main-submenu-list li:first-child span
 {
     content: '';
     position: absolute;
@@ -1855,39 +1857,19 @@ header.fixed
     -webkit-justify-content: center;
     -ms-flex-pack: center;
 }
-.br-bh-menu-top ul ul ul li
+.br-main-submenu-list li
 {
     margin-bottom: 4px;
 }
-.br-bh-menu-top ul ul ul li:last-child
+.br-main-submenu-list li:last-child
 {
     margin-bottom: 0;
 }
-.br-bh-menu-top ul ul ul li a
-{
-    display: inline-block;
-    color: #555;
-}
-.br-bh-menu-top ul ul ul li a:hover, .br-bh-menu-top ul ul ul li a:focus
-{
-    color: #10b1e8;
-}
-.br-bh-menu-top ul ul ul li:first-child a
-{
-    font-size: 14px;
-    color: #10b1e8;
-    font-weight: 700;
-}
-.br-bh-menu-top ul ul ul
-{
-    margin-bottom: 20px;
-    padding-left: 40px;
-}
-.br-bh-menu-top ul ul ul li.all a
+.br-main-submenu-list li.all a
 {
     position: relative;
 }
-.br-bh-menu-top ul ul ul li.all a:after
+.br-main-submenu-list li.all a:after
 {
     content: '';
     width: 5px;
@@ -1897,6 +1879,21 @@ header.fixed
     top: 50%;
     margin-top: -3px;
     background: url(../images/br-ar-b.png) center no-repeat;
+}
+.br-main-submenu-list li a
+{
+    display: inline-block;
+    color: #555;
+}
+.br-main-submenu-list li a:hover, .br-main-submenu-list li a:focus
+{
+    color: #10b1e8;
+}
+.br-main-submenu-list li:first-child a
+{
+    font-size: 14px;
+    color: #10b1e8;
+    font-weight: 700;
 }
 .br-m-with-i > li:first-child
 {

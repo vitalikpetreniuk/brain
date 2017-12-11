@@ -833,7 +833,7 @@
     {
         padding-left: 10px !important;
     }
-    .br-bh-menu-top > ul > li > ul > li
+    .br-main-submenu > li
     {
         padding-bottom: 0 !important;
     }
@@ -927,7 +927,7 @@
         margin-right: 30px;
         padding-right: 30px;
     }
-    .br-bh-menu-top > ul > li > ul
+    .br-main-submenu
     {
         padding: 20px 15px;
     }
@@ -940,15 +940,15 @@
     {
         background: none;
     }
-    .br-bh-menu-top > ul > li.more > a > span:after
+    .br-main-menu > li.more > a > span:after
     {
         right: -13px;
     }
-    .br-bh-menu-top > ul > li.more a
+    .br-main-menu > ul > li.more a
     {
         padding-right: 15px;
     }
-    .br-bh-menu-top > ul > li > a
+    .br-main-menu > ul > li > a
     {
         font-size: 12px;
         line-height: 16px;
