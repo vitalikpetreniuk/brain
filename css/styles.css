@@ -3935,22 +3935,22 @@ footer a
     padding-top: 15px;
     margin-bottom: 10px;
 }
-.br-breadcrumbs ul
+.br-breadcrumbs-list
 {
     overflow: hidden;
 }
-.br-breadcrumbs li
+.br-breadcrumbs-list li
 {
     float: left;
     line-height: 1;
     position: relative;
     margin: 0 35px 5px 0;
 }
-.br-breadcrumbs li:last-child
+.br-breadcrumbs-list li:last-child
 {
     margin: 0;
 }
-.br-breadcrumbs li:after
+.br-breadcrumbs-list li:after
 {
     content: '';
     position: absolute;
@@ -3960,11 +3960,11 @@ footer a
     top: 2px;
     background: url("../images/br-abr.png") center no-repeat;
 }
-.br-breadcrumbs li:last-child:after
+.br-breadcrumbs-list li:last-child:after
 {
     display: none;
 }
-.br-breadcrumbs a
+.br-breadcrumbs-list a
 {
     display: block;
 }
