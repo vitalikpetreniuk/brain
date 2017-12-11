@@ -47,6 +47,16 @@
             <button type="button" class="br-sme" data-toggle="modal" data-target=".modal-example-4">
                 Ваше замовлення прийнято
             </button>
+            <br>
+            <br>
+            <button type="button" class="br-sme" data-toggle="modal" data-target=".modal-example-5">
+                Быстрое оформление заказа
+            </button>
+            <br>
+            <br>
+            <button type="button" class="br-sme" data-toggle="modal" data-target=".modal-example-6">
+                Оформление предварительного заказа
+            </button>
         </div>
     </div>
 </div>
@@ -75,7 +85,7 @@
                     </p>
                     <form class="br-mform-simple-f">
                         <input type="text" placeholder="Введите номер заказа">
-                        <button type="submit">Отследить</button>
+                        <button type="submit" class="br-popup-button">Отследить</button>
                     </form>
                 </div>
             </div>
@@ -101,7 +111,7 @@
                         На указанный вами адрес E-mail отправлено письмо с подтверждением подписки. Отписаться от рассылки можно в люьой момент, перейдя по ссылке <a href="#">unscribe.brain.com</a>.
                     </p>
                     <div class="text-center">
-                        <button type="button" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="br-popup-button" data-dismiss="modal">Закрыть</button>
                     </div>
                 </div>
             </div>
@@ -136,7 +146,7 @@
                             <textarea></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit">Отследить</button>
+                            <button type="submit" class="br-popup-button">Отследить</button>
                         </div>
                     </form>
                 </div>
@@ -145,7 +155,7 @@
     </div>
 </div>
 
-<div class="modal fade br-modal-simple modal-example-4" tabindex="-1">
+<div class="modal fade br-modal-simple br-modal-360 modal-example-4" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -192,6 +202,626 @@
                                 </li>
                             </ul>
                             <a href="#">Закрити й продовжити покупки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade br-modal-simple modal-example-5" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>
+                    Быстрое оформление заказа
+                </h3>
+                <button type="button" class="close" data-dismiss="modal">
+                    <img src="images/delete_small.svg" alt="img">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="br-modal-simple-in">
+                    <form>
+                        <div class="br-ds-block">
+                            <div class="br-ch-fmob">
+                                <div class="br-fc-check">
+                                    <label>Имя пользователя:</label>
+                                    <input type="text" placeholder="Имя пользователя">
+                                </div>
+                                <div class="br-fc-check">
+                                    <label>Телефон<span>*</span>:</label>
+                                    <input type="tel" placeholder="+380">
+                                </div>
+                                <div class="br-fc-check">
+                                    <label>E-mail:</label>
+                                    <input type="email" placeholder="example@example.com">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="br-addc-o" type="button">
+                            <span>Добавить комментарий к заказу</span>
+                        </button>
+                        <div class="br-ch-comment">
+                            <textarea></textarea>
+                            <button type="submit" class="br-checkout">Отправить</button>
+                        </div>
+                        <button type="submit" class="br-quick-submit">Быстрое оформление</button>
+                    </form>
+                    <div class="br-q-product-wrap">
+                        <h3>
+                            Товары в корзине
+                        </h3>
+                        <div class="br-ch-gtc">
+                            <a href="#">Редагувати замовлення</a>
+                        </div>
+                        <div class="br-ch-products br-ch-products-s">
+                            <div>
+                                <div>Наименование</div>
+                                <div>
+                                    <div>Brain Up</div>
+                                    <div>Количество</div>
+                                    <div>Цена</div>
+                                </div>
+                            </div>
+                            <div class="br-chp-list">
+                                <div class="br-cart-item">
+                                    <div class="br-dropdown br-dropdown-remove">
+                                        <div>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/favourite.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Перенести<br>
+                                                    в избранное
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/delete_small_b.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Удалить без<br>
+                                                    сохранения
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <button>
+                                            Отмена
+                                        </button>
+                                    </div>
+                                    <button type="button" class="br-ci-remove">remove</button>
+                                    <div class="br-ci-in">
+                                        <div>
+                                            <div class="br-ci-img">
+                                                <a href="#">
+                                                    <img src="images/br-ci1.jpg" alt="img">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="br-ci-name">
+                                                    <a href="#">
+                                                        Мышка Vinga MSG-307 black
+                                                    </a>
+                                                </div>
+                                                <div class="br-ci-n">
+                                                    U0192045
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="br-ci-bu">10</div>
+                                            <div class="br-ci-q">
+                                                <button type="button">-</button>
+                                                <input type="text" value="1" disabled>
+                                                <button type="button">+</button>
+                                            </div>
+                                            <div class="br-ci-price">
+                                                <span>209 грн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-cart-item">
+                                    <div class="br-dropdown br-dropdown-remove">
+                                        <div>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/favourite.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Перенести<br>
+                                                    в избранное
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/delete_small_b.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Удалить без<br>
+                                                    сохранения
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <button>
+                                            Отмена
+                                        </button>
+                                    </div>
+                                    <button type="button" class="br-ci-remove">remove</button>
+                                    <div class="br-ci-in">
+                                        <div>
+                                            <div class="br-ci-img">
+                                                <a href="#">
+                                                    <img src="images/br-ci1.jpg" alt="img">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="br-ci-name">
+                                                    <a href="#">
+                                                        Мышка Vinga MSG-307 black
+                                                    </a>
+                                                </div>
+                                                <div class="br-ci-n">
+                                                    U0192045
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="br-ci-bu">10</div>
+                                            <div class="br-ci-q">
+                                                <button type="button">-</button>
+                                                <input type="text" value="1" disabled>
+                                                <button type="button">+</button>
+                                            </div>
+                                            <div class="br-ci-price">
+                                                <span>209 грн</span>
+                                                <div class="br-ci-pm">
+                                                    <span>2</span>шт х <span>550</span> грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-ci-in br-ci-gift">
+                                        <div>
+                                            <div class="br-ci-img">
+                                                <a href="#">
+                                                    <img src="images/br-ci1.jpg" alt="img">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="br-ci-name">
+                                                    <a href="#">
+                                                        Мышка Vinga MSG-307 black
+                                                    </a>
+                                                </div>
+                                                <div class="br-ci-n">
+                                                    U0192045
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="br-ci-q disabled">
+                                                <button type="button">-</button>
+                                                <input type="text" value="1" disabled>
+                                                <button type="button">+</button>
+                                            </div>
+                                            <div class="br-ci-price">
+                                                <span>1 грн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-cart-item br-ci-set">
+                                    <div class="br-dropdown br-dropdown-remove">
+                                        <div>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/favourite.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Перенести<br>
+                                                    в избранное
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/delete_small_b.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Удалить без<br>
+                                                    сохранения
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <button>
+                                            Отмена
+                                        </button>
+                                    </div>
+                                    <button type="button" class="br-ci-remove">remove</button>
+                                    <div class="br-ci-in">
+                                        <div>
+                                            <div class="br-ci-img br-cii-f">
+                                                <img src="images/br-ci1.jpg" alt="img">
+                                                <img src="images/br-ci1.jpg" alt="img">
+                                                <img src="images/br-ci1.jpg" alt="img">
+                                                <img src="images/br-ci1.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="br-ci-name">
+                                                    <button type="button">
+                                                        Комплект товаров
+                                                    </button>
+                                                </div>
+                                                <div class="br-ci-n">
+                                                    U0192045
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="br-ci-bu">10</div>
+                                            <div class="br-ci-q">
+                                                <button type="button">-</button>
+                                                <input type="text" value="1" disabled>
+                                                <button type="button">+</button>
+                                            </div>
+                                            <div class="br-ci-price">
+                                                <span>18 209 грн</span>
+                                                <div class="br-ci-op">
+                                                    19 300 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-ci-set-in">
+                                        <div class="br-cart-item">
+                                            <div class="br-ci-in">
+                                                <div>
+                                                    <div class="br-ci-img">
+                                                        <a href="#">
+                                                            <img src="images/br-ci1.jpg" alt="img">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="br-ci-name">
+                                                            <a href="#">
+                                                                Мышка Vinga MSG-307 black
+                                                            </a>
+                                                        </div>
+                                                        <div class="br-ci-n">
+                                                            U0192045
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="br-ci-q disabled">
+                                                        <button type="button">-</button>
+                                                        <input type="text" value="1" disabled>
+                                                        <button type="button">+</button>
+                                                    </div>
+                                                    <div class="br-ci-price">
+                                                        <span>18 209 грн</span>
+                                                        <div class="br-ci-op">
+                                                            19 300 грн
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="br-cart-item">
+                                            <div class="br-ci-in">
+                                                <div>
+                                                    <div class="br-ci-img">
+                                                        <a href="#">
+                                                            <img src="images/br-ci1.jpg" alt="img">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="br-ci-name">
+                                                            <a href="#">
+                                                                Мышка Vinga MSG-307 black
+                                                            </a>
+                                                        </div>
+                                                        <div class="br-ci-n">
+                                                            U0192045
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="br-ci-q disabled">
+                                                        <button type="button">-</button>
+                                                        <input type="text" value="1" disabled>
+                                                        <button type="button">+</button>
+                                                    </div>
+                                                    <div class="br-ci-price">
+                                                        <span>18 209 грн</span>
+                                                        <div class="br-ci-op">
+                                                            19 300 грн
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="br-cart-item">
+                                            <div class="br-ci-in">
+                                                <div>
+                                                    <div class="br-ci-img">
+                                                        <a href="#">
+                                                            <img src="images/br-ci1.jpg" alt="img">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="br-ci-name">
+                                                            <a href="#">
+                                                                Мышка Vinga MSG-307 black
+                                                            </a>
+                                                        </div>
+                                                        <div class="br-ci-n">
+                                                            U0192045
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="br-ci-q disabled">
+                                                        <button type="button">-</button>
+                                                        <input type="text" value="1" disabled>
+                                                        <button type="button">+</button>
+                                                    </div>
+                                                    <div class="br-ci-price">
+                                                        <span>18 209 грн</span>
+                                                        <div class="br-ci-op">
+                                                            19 300 грн
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="br-cart-item">
+                                            <div class="br-ci-in">
+                                                <div>
+                                                    <div class="br-ci-img">
+                                                        <a href="#">
+                                                            <img src="images/br-ci1.jpg" alt="img">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="br-ci-name">
+                                                            <a href="#">
+                                                                Мышка Vinga MSG-307 black
+                                                            </a>
+                                                        </div>
+                                                        <div class="br-ci-n">
+                                                            U0192045
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="br-ci-q disabled">
+                                                        <button type="button">-</button>
+                                                        <input type="text" value="1" disabled>
+                                                        <button type="button">+</button>
+                                                    </div>
+                                                    <div class="br-ci-price">
+                                                        <span>18 209 грн</span>
+                                                        <div class="br-ci-op">
+                                                            19 300 грн
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-cart-item">
+                                    <div class="br-dropdown br-dropdown-remove">
+                                        <div>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/favourite.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Перенести<br>
+                                                    в избранное
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/delete_small_b.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Удалить без<br>
+                                                    сохранения
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <button>
+                                            Отмена
+                                        </button>
+                                    </div>
+                                    <button type="button" class="br-ci-remove">remove</button>
+                                    <div class="br-ci-in">
+                                        <div>
+                                            <div class="br-ci-img">
+                                                <a href="#">
+                                                    <img src="images/br-ci1.jpg" alt="img">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="br-ci-name">
+                                                    <a href="#">
+                                                        Мышка Vinga MSG-307 black
+                                                    </a>
+                                                </div>
+                                                <div class="br-ci-n">
+                                                    U0192045
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="br-ci-bu">10</div>
+                                            <div class="br-ci-q">
+                                                <button type="button">-</button>
+                                                <input type="text" value="1" disabled>
+                                                <button type="button">+</button>
+                                            </div>
+                                            <div class="br-ci-price">
+                                                <span>209 грн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="br-ch-up">
+                            <div class="br-ch-up-ic">
+                                В корзине <span><span>4</span> товара</span>
+                            </div>
+                            <div class="br-ch-up-bu">
+                                Будет начисленно <span><span>95</span> brain up</span>
+                            </div>
+                            <div class="br-ch-up-pc">
+                                <span class="br-ch-up-op">
+                                    27 827 грн
+                                </span>
+                                <span class="br-ch-up-np">
+                                    24 577 грн
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade br-modal-simple modal-example-6" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>
+                    Оформление предварительного заказа
+                </h3>
+                <button type="button" class="close" data-dismiss="modal">
+                    <img src="images/delete_small.svg" alt="img">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="br-modal-simple-in">
+                    <form>
+                        <div class="br-ds-block">
+                            <div class="br-ch-fmob">
+                                <div class="br-fc-check">
+                                    <label>Имя пользователя:</label>
+                                    <input type="text" placeholder="Имя пользователя">
+                                </div>
+                                <div class="br-fc-check">
+                                    <label>Телефон<span>*</span>:</label>
+                                    <input type="tel" placeholder="+380">
+                                </div>
+                                <div class="br-fc-check">
+                                    <label>E-mail:</label>
+                                    <input type="email" placeholder="example@example.com">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="br-addc-o" type="button">
+                            <span>Добавить комментарий к заказу</span>
+                        </button>
+                    </form>
+                    <div class="br-ch-comment">
+                        <textarea></textarea>
+                        <button type="submit" class="br-checkout">Отправить</button>
+                    </div>
+                    <button type="submit" class="br-quick-submit">Быстрое оформление</button>
+                    <div class="br-q-product-wrap">
+                        <h3>
+                            Товары в корзине
+                        </h3>
+                        <div class="br-ch-gtc">
+                            <a href="#">Редагувати замовлення</a>
+                        </div>
+                        <div class="br-ch-products br-ch-products-s br-ch-products-t">
+                            <div>
+                                <div>Наименование</div>
+                                <div>
+                                    <div>Brain Up</div>
+                                    <div>Количество</div>
+                                    <div>Цена</div>
+                                </div>
+                            </div>
+                            <div class="br-chp-list">
+                                <div class="br-cart-item">
+                                    <div class="br-dropdown br-dropdown-remove">
+                                        <div>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/favourite.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Перенести<br>
+                                                    в избранное
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    <img src="images/delete_small_b.svg" alt="img">
+                                                </span>
+                                                <span>
+                                                    Удалить без<br>
+                                                    сохранения
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <button>
+                                            Отмена
+                                        </button>
+                                    </div>
+                                    <button type="button" class="br-ci-remove">remove</button>
+                                    <div class="br-ci-in">
+                                        <div>
+                                            <div class="br-ci-img">
+                                                <a href="#">
+                                                    <img src="images/iphone.jpg" alt="img">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="br-ci-name">
+                                                    <a href="#">
+                                                        Мобильный телефон Apple iPhone X 64Gb Space Gray (MQAC2FS/A)
+                                                    </a>
+                                                </div>
+                                                <div class="br-ci-n">
+                                                    U0192045
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="br-ci-bu">10</div>
+                                            <div class="br-ci-q">
+                                                <button type="button">-</button>
+                                                <input type="text" value="1" disabled>
+                                                <button type="button">+</button>
+                                            </div>
+                                            <div class="br-ci-price">
+                                                <span>37 999 грн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="br-ch-up">
+                            <div class="br-ch-up-ic">
+                                Вы предзаказали <span><span>1</span> товар</span>
+                            </div>
+                            <div class="br-ch-up-pc">
+                                <span class="br-ch-up-np">
+                                    37 999 грн
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

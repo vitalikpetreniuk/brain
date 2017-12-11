@@ -3335,6 +3335,10 @@
     {
         padding-left: 85px !important;
     }
+    .modal .br-ci-set-in
+    {
+        padding-left: 15px !important;
+    }
     .br-ci-in > div:first-child .br-ci-img
     {
         margin-right: 25px;
@@ -3492,7 +3496,7 @@
     }
     .br-ci-in > div:first-child, .br-ci-in > div:last-child, .br-ch-products-s .br-ci-in > div:first-child, .br-ch-products-s .br-ci-in > div:last-child
     {
-        width: 100%;
+        width: 100% !important;
     }
     .br-ch-gtc, .br-ch-products > div:first-child
     {
@@ -3513,12 +3517,12 @@
     }
     .br-ch-fmob
     {
-        display: block;
+        display: block !important;
     }
     .br-ch-fmob > div
     {
-        width: 100%;
-        margin-bottom: 15px;
+        width: 100% !important;
+        margin-bottom: 15px !important;
     }
     .col-gap-l .br-fc-check
     {
@@ -3942,6 +3946,28 @@
     {
         width: 320px;
     }
+    .br-modal-simple .modal-header
+    {
+        padding: 15px;
+    }
+    .br-modal-simple .modal-body
+    {
+        padding: 0 15px 20px;
+    }
+    .br-modal-simple .modal-header h3
+    {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .br-modal-simple .modal-header h3 + .close
+    {
+        position: relative;
+        top: -3px;
+    }
+    .br-modal-simple-in
+    {
+        padding-top: 15px;
+    }
     .br-pt-bc-item > div:last-child > button, .br-pt-bc-name
     {
         -webkit-box-ordinal-group: 2;
@@ -4015,7 +4041,7 @@
         top: 0;
         left: 0;
     }
-    .br-ch-block .br-checkout, .br-ch-submit .br-checkout
+    .br-ch-block .br-checkout, .br-ch-submit .br-checkout, .br-ch-comment .br-checkout
     {
         position: static;
     }
