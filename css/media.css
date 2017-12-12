@@ -2353,11 +2353,11 @@
     {
         padding-top: 12px;
     }
-    .br-mcr-top > div:first-child
+    .br-mcr-img
     {
         width: 80px;
     }
-    .br-mcr-top > div:last-child
+    .br-mcr-cont
     {
         width: calc(100% - 80px);
         padding-left: 15px;
@@ -2377,15 +2377,15 @@
         display: inline-block;
         margin-bottom: 4px;
     }
-    .br-mcr-price > div:first-child
+    .br-mcr-price-label
     {
         margin-right: 0;
     }
-    .br-mcr-price > div:last-child
+    .br-mcr-value
     {
         font-size: 18px;
     }
-    .br-mcr-price > div:last-child span
+    .br-mcr-value span
     {
         font-size: 8px;
     }
@@ -2401,7 +2401,7 @@
     {
         display: block;
     }
-    .be-mcr-cs-in .be-mcr-cs-in .br-mcr-csm > div:first-child
+    .be-mcr-cs-in .be-mcr-cs-in .br-mcr-csm-title
     {
         width: 100%;
         top: 0;
@@ -2431,28 +2431,28 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
     }
-    .br-mcr-cs .br-cl-pf > span
+    .br-mcr-cs .br-cl-pf-title
     {
         width: 150px;
         margin-bottom: 0;
     }
-    .br-mcr-cs .br-cl-pf > div
+    .br-mcr-cs .br-cl-pf-cont
     {
         width: calc(100% - 150px);
         position: relative;
         top: -1px;
     }
-    .be-mcr-cs-in > div:last-child
+    .br-mcr-bblock
     {
         padding-top: 10px;
         display: block;
     }
-    .be-mcr-cs-in > div:last-child p
+    .br-mcr-bblock p
     {
         width: 100%;
         margin-bottom: 15px;
     }
-    .be-mcr-cs-in > div:last-child button
+    .br-mcr-bblock button
     {
         width: 100%;
     }
@@ -2462,7 +2462,7 @@
         padding: 7px 0;
         margin-bottom: 12px;
     }
-    .br-credit-list .br-mcr-csm > div:first-child
+    .br-credit-list .br-mcr-csm-title
     {
         width: 100%;
         height: auto;
@@ -2490,13 +2490,13 @@
     {
         padding-top: 10px;
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(2)
+    .br-cr-ct
     {
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3;
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(3)
+    .br-cr-fp
     {
         -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -2508,7 +2508,7 @@
         -ms-flex-order: 5;
         order: 5;
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(5)
+    .br-cr-ch
     {
         -webkit-box-ordinal-group: 67;
         -ms-flex-order: 6;
@@ -2553,7 +2553,7 @@
         -ms-flex-align: center;
         margin-bottom: 12px;
     }
-    .br-credit-list .br-cl-fp > span
+    .br-credit-list .br-cl-fp-title
     {
         margin: 0 15px 0 0;
     }
@@ -2595,16 +2595,16 @@
     {
         display: none;
     }
-    .br-credit-hidden-list.scroll-content  > div
+    .br-credit-hidden-item
     {
         padding: 15px 0;
         margin-right: 18px;
     }
-    .br-credit-hidden-list.scroll-content  > div:first-child
+    .br-credit-hidden-item:first-child
     {
         padding-top: 0;
     }
-    .br-credit-hidden-list.scroll-content  > div label
+    .br-credit-hidden-item label
     {
         display: block;
     }
@@ -2632,11 +2632,11 @@
         position: relative;
         top: -3px;
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(2), .br-credit-hidden-list.scroll-content  > div > div:nth-child(3), .br-cm-payments
+    .br-cr-ct, .br-cr-fp, .br-cm-payments
     {
         margin-bottom: 14px;
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(2), .br-credit-hidden-list.scroll-content  > div > div:nth-child(3), .br-cm-payments
+    .br-cr-ct, .br-cr-fp, .br-cm-payments
     {
         width: 100%;
         display: flex;
@@ -2649,11 +2649,11 @@
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(3) span, .br-credit-hidden-list.scroll-content  > div > div:nth-child(3) div, .br-cm-payments .br-cm-in, .br-credit-hidden-list.scroll-content select
+    .br-cr-fp span, .br-cr-fp .br-cm-in, .br-cm-payments .br-cm-in, .br-credit-hidden-item select
     {
         width: calc(100% - 144px);
     }
-    .br-credit-hidden-list.scroll-content  > div > div:nth-child(5)
+    .br-cr-ch
     {
         width: 100%;
         text-align: left;
@@ -3179,13 +3179,13 @@
     {
         margin-top: 15px;
     }
-    .br-modal-t-block .br-cl-pf > div > span > span
+    .br-modal-t-block .br-cl-pf-i-in
     {
         right: auto;
         left: calc(50% + 10px);
         transform: translate(-50%, 0);
     }
-    .br-modal-t-block .br-cl-pf > div > span > span:before
+    .br-modal-t-block .br-cl-pf-i-in:before
     {
         display: none;
     }
