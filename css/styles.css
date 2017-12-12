@@ -18572,6 +18572,11 @@ div:nth-last-child(-3+n) > .br-action-item
     justify-content: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
+    font-size: 16px;
+}
+.br-atd-soc ul a:hover
+{
+    opacity: .5;
 }
 .br-atd-soc ul a i
 {
@@ -18593,19 +18598,16 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     background: #0d47a1;
     color: #0d47a1;
-    font-size: 13px;
 }
 .br-atd-it a
 {
     background: #6a453b;
     color: #6a453b;
-    font-size: 15px;
 }
 .br-atd-gp a
 {
     background: #d50000;
     color: #d50000;
-    font-size: 13px;
 }
 .br-atd-soc > a
 {
