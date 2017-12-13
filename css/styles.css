@@ -11615,6 +11615,12 @@ header .br-pt-menu-in
     border: 1px solid #10b1e8;
     background: #10b1e8;
 }
+.br-popup-hidden
+{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
 .br-popup-button:hover
 {
     background: #fff;
@@ -18636,10 +18642,6 @@ div:nth-last-child(-3+n) > .br-action-item
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-.br-team-nav.is_stuck
-{
-    padding-top: 120px;
-}
 .br-team-block h3
 {
     border-bottom: 1px solid #e3e3e3;
@@ -18663,7 +18665,7 @@ div:nth-last-child(-3+n) > .br-action-item
     width: calc(25% - 30px);
     text-align: center;
 }
-.br-team-item:nth-child(4n + 4)
+.br-team-item:nth-child(4n+4)
 {
     margin-right: 0;
 }
@@ -18683,8 +18685,6 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
 }
 .br-team-name
 {
@@ -18723,11 +18723,13 @@ div:nth-last-child(-3+n) > .br-action-item
     -ms-flex-pack: center;
     margin-bottom: 6px;
 }
-.br-team-send-message a
+.br-team-send-message button
 {
+    padding: 0;
+    border: none;
     display: inline-block;
     padding-left: 28px;
-    background: url("../images/message.png") left bottom no-repeat;
+    background: url("../images/message.png") left center no-repeat;
     color: #10b1e8;
 }
 .br-team-send-message span
@@ -18735,7 +18737,7 @@ div:nth-last-child(-3+n) > .br-action-item
     display: block;
     border-bottom: 1px dotted #10b1e8;
 }
-.br-team-send-message a:hover span
+.br-team-send-message button:hover span
 {
     border-color: transparent;
 }
