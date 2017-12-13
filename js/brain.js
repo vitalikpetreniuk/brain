@@ -106,6 +106,13 @@ $(function(){
         });
     }
 
+    if($('.br-team-nav').length)
+    {
+        $(".br-team-nav").stick_in_parent({
+            parent: '.br-body'
+        });
+    }
+
     if($('.br-pr-slider').length)
     {
         $('.br-prs-f').slick({
@@ -1680,6 +1687,11 @@ $(function(){
         var target = $(this).attr('href');
         $('.br-markdown-hidden').removeClass('br-markdown-hidden');
         $('html, body').animate({scrollTop: $(target).offset().top - 100}, 800);
+        return false;
+    });
+    $('.br-left-nav a').on('click', function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top - 150}, 800);
         return false;
     });
 
