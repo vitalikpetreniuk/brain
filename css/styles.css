@@ -9750,7 +9750,7 @@ footer a
 {
     border-bottom: 1px solid #e3e3e3;
 }
-.br-pt-bc-item > div
+.br-comment-flex
 {
     display: flex;
     display: -webkit-flex;
@@ -9762,7 +9762,7 @@ footer a
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
 }
-.br-pt-bc-item > div:first-child
+.br-comment-top
 {
     line-height: 16px;
     margin-bottom: 12px;
@@ -9794,16 +9794,24 @@ footer a
 {
     margin-left: 2px;
 }
+.br-comment-text
+{
+    overflow: hidden;
+    margin-bottom: 12px;
+    max-height: 48px;
+}
+.br-comment-text.loaded
+{
+    max-height: none;
+}
+.br-comment-text.high
+{
+    height: 48px;
+}
 .br-pt-bc-item p
 {
     line-height: 16px;
-    margin-bottom: 12px;
-    height: 48px;
-    overflow: hidden;
-}
-.br-pt-bc-item p.open
-{
-    height: auto;
+    margin: 0;
 }
 .br-rc-c
 {

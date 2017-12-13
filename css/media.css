@@ -3968,13 +3968,13 @@
     {
         padding-top: 15px;
     }
-    .br-pt-bc-item > div:last-child > button, .br-pt-bc-name
+    .br-comment-bottom > button, .br-pt-bc-name
     {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1;
     }
-    .br-pt-bc-item > div:last-child a, .br-pt-bc-rating
+    .br-comment-bottom a, .br-pt-bc-rating
     {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -3988,7 +3988,7 @@
         width: 100%;
         margin-top: 10px;
     }
-    .br-pt-bc-item > div
+    .br-comment-flex
     {
         flex-wrap: wrap;
         -ms-flex-wrap: wrap;

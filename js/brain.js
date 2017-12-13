@@ -1739,9 +1739,31 @@ $(function(){
         return false;
     });
 
+    $(window).on('load resize', function () {
+        $('.br-comment-text').addClass('loaded');
+        $('.br-pt-bc-item').each(function () {
+            var commentSize = $(this).children('.br-comment-text').children('p').height();
+            if(commentSize <= 48)
+            {
+                $(this).children('.br-comment-bottom').children('.br-rc-button').hide();
+            }
+            else
+            {
+                $(this).children('.br-comment-text').addClass('high');
+            }
+        });
+        $('.br-ri-right').each(function () {
+            var mcommentSize = $(this).children('.br-ri-review').children('div').height();
+            if(mcommentSize <= 80)
+            {
+                $(this).find('.br-ri-read').hide();
+            }
+        });
+    });
+
     $('.br-rc-button').on('click', function(){
         $(this).toggleClass('open');
-        $(this).parent().siblings('p').toggleClass('open', function () {
+        $(this).parent().siblings('.br-comment-text').toggleClass('high', function () {
             var itemHeight = $(this).parents('.br-ct-bc-item-out').outerHeight();
             $(this).parents('.owl-stage-outer').height(itemHeight);
         });
