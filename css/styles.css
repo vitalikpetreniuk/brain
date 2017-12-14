@@ -2614,6 +2614,10 @@ li:hover > .br-main-submenu
     padding: 17px 20px 0;
     position: relative;
 }
+.br-pp:hover
+{
+    z-index: 50;
+}
 .br-pp-nocolor .br-pcv-block
 {
     display: none !important;
@@ -2660,6 +2664,36 @@ li:hover > .br-main-submenu
 {
     z-index: 2;
     position: relative;
+}
+.br-product-sale-label
+{
+    position: absolute;
+    right: -22px;
+    top: -54px;
+    z-index: 2;
+    width: 55px;
+    display: block;
+}
+.br-slider-product .br-product-sale-label
+{
+    top: auto;
+    right: 0;
+    bottom: 0;
+}
+.br-slider-product .br-pp:hover .br-product-sale-label
+{
+    bottom: 20px;
+}
+.br-product-sale-label img
+{
+    width: 100%;
+}
+.br-pr-main-block .br-product-sale-label
+{
+    top: auto;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 .br-pp-top
 {
@@ -3479,6 +3513,7 @@ li:hover > .br-main-submenu
 {
     display: block;
     width: 100%;
+    position: relative;
 }
 .br-ppl-center
 {
@@ -8532,6 +8567,7 @@ footer a
 .br-pr-bblock > div:last-child
 {
     position: absolute;
+    z-index: 2;
     top: 112px;
     right: -185px;
     width: 280px;
@@ -11866,6 +11902,10 @@ header .br-pt-menu-in
 {
     height: 96px;
     overflow: hidden;
+}
+.br-slider-product .br-pp-top span img
+{
+    width: auto;
 }
 .br-container-gt
 {
