@@ -11636,6 +11636,11 @@ header .br-pt-menu-in
     border-top: 1px solid #e3e3e3;
     padding-top: 20px;
 }
+.br-modal-login .br-modal-simple-in
+{
+    padding-top: 18px;
+    border: none;
+}
 .br-modal-simple-in p
 {
     line-height: 15px;
@@ -15498,6 +15503,11 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     padding: 15px 0 20px;
     border-bottom:  1px solid #e3e3e3;
+}
+.br-modal-login .br-modal-simple-in form
+{
+    padding: 0;
+    border: none;
 }
 .br-modal-login .form-group
 {
