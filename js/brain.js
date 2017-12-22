@@ -1543,12 +1543,22 @@ $(function(){
         $(this).siblings('.br-prof-table-hidden').toggle('fast');
     });
 
+    $('.prof-set-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).closest('.br-prof-th-set').find('.br-prof-set-in').toggle();
+    });
+
     $('.br-prof-red').on('click', function () {
         $(this).closest('.br-prof-form-address').find('.br-prof-fa-hidden').toggle('fast');
     });
 
     $('.br-prof-delete').on('click', function () {
         $(this).closest('.br-prof-form-address').remove();
+    });
+
+    $('.br-order-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $('.br-order-hidden').toggleClass('hidden');
     });
 
     $('.br-dropdown-s > button').on('click', function () {

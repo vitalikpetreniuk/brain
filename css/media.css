@@ -4456,7 +4456,10 @@
 }
 @media(max-width: 620px)
 {
-
+    .br-prof-th-item .br-prof-th-item
+    {
+        margin: 0 0 0 30px !important;
+    }
     .br-partner-item, .br-partner-item:nth-child(7n+7), .br-partner-item:nth-child(6n+6), .br-partner-item:nth-child(4n+4)
     {
         margin-right: calc(100% / 2 - 360px / 2);
