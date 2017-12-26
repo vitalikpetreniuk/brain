@@ -88,6 +88,26 @@
     {
         width: 682px;
     }
+    .br-prof-preorder-date
+    {
+        width: 110px;
+    }
+    .br-prof-preorder-price
+    {
+        width: 100px;
+    }
+    .br-prof-preorder-status
+    {
+        width: 130px;
+    }
+    .br-prof-preorder-product
+    {
+        width: calc(100% - 340px);
+    }
+    .br-prof-preorder-product .prof-th-cont
+    {
+        padding-left: 10px;
+    }
     .br-comp-slider
     {
         padding-top: 5px;
@@ -4009,6 +4029,17 @@
 }
 @media(max-width: 680px)
 {
+    .br-prof-preoder-item .br-prof-preorder-product
+    {
+        padding-bottom: 22px;
+        width: calc(100% - 240px);
+    }
+    .br-prof-preoder-item .br-prof-preorder-price
+    {
+        position: absolute;
+        left: 204px;
+        bottom: 10px;
+    }
     .br-prof-bu-qty
     {
         width: 96px;
@@ -4798,6 +4829,54 @@
 }
 @media(max-width: 550px)
 {
+    .br-prof-preoder-item
+    {
+        padding-left: 0;
+    }
+    .br-prof-preorder-date > div
+    {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .br-prof-preorder-date
+    {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .br-prof-preorder-price
+    {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        position: static !important;
+        width: 130px;
+        text-align:  right;
+    }
+    .br-prof-preorder-product
+    {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    .br-prof-preorder-status
+    {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+        text-align:  right;
+    }
+    .br-prof-preorder-product, .br-prof-preorder-date
+    {
+        width: calc(100% - 130px) !important;
+    }
+    .br-prof-preoder-item
+    {
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
     .br-reg-flex .form-group
     {
         width: 100%;
@@ -5624,6 +5703,33 @@
 }
 @media(max-width: 359px)
 {
+    .br-prof-preorder-date
+    {
+
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    }
+    .br-prof-preorder-date > div
+    {
+        margin: 0;
+    }
+    .br-prof-preorder-product
+    {
+        padding: 0 !important;
+        margin-bottom: 10px;
+    }
+    .br-prof-preoder-item
+    {
+        display: block;
+    }
+    .br-prof-preoder-item > div
+    {
+        width: 100% !important;
+    }
     .br-product-sale-label
     {
         right: -22px;
