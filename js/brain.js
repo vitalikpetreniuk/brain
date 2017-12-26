@@ -15,10 +15,23 @@ $(function(){
     });
 
     var compScroll = $('.br-comp-scroll').owlCarousel({
-        items: 4,
         nav: true,
         mouseDrag: false,
-        mtouchDrag: false
+        mtouchDrag: false,
+        responsive:{
+        0:{
+            items: 1
+        },
+        480:{
+            items: 2
+        },
+        768:{
+            items: 3
+        },
+        1355:{
+            items: 4
+        }
+    }
     });
 
     $('.br-comp-items-top .owl-next').on('click', function () {
@@ -45,22 +58,6 @@ $(function(){
             offset_top: 300
         });
     }
-
-    var wrapIndex;
-    var wrapPosition;
-    var compIndex;
-    var compPosition;
-    var compHeight;
-    $('.br-comp-ch-item .br-comp-section').each(function () {
-        wrapIndex= $(this).index();
-        wrapPosition = wrapIndex + 1;
-        $(this).find('li').each(function () {
-            compIndex = $(this).index();
-            compPosition = compIndex + 1;
-            compHeight = $(this).outerHeight();
-            $(this).closest('.br-comparison').find('.br-comp-sidebar .br-comp-section:nth-child(' + wrapPosition + ')' + ' li:nth-child(' + compPosition + ')').outerHeight(compHeight);
-        });
-    });
 
     if($('.br-pt-lc').length){
         $('.br-pt-lc select').barrating({
@@ -522,7 +519,50 @@ $(function(){
         $(this).siblings('.br-search-click').slideDown('fast');
     });
 
+    var wrapIndex;
+    var wrapPosition;
+    var compIndex;
+    var compPosition;
+    var compHeight;
+    var compHeights = [];
+    var isCount = false;
     $(window).on("load resize", function () {
+        // $('.br-comp-ch-item .br-comp-section').each(function () {
+        //     wrapIndex= $(this).index();
+        //     wrapPosition = wrapIndex + 1;
+        //     $(this).find('li').each(function () {
+        //         compIndex = $(this).index();
+        //         compPosition = compIndex + 1;
+        //         compHeight = $(this).outerHeight();
+        //         $(this).closest('.br-comparison').find('.br-comp-sidebar .br-comp-section:nth-child(' + wrapPosition + ')' + ' li:nth-child(' + compPosition + ')').outerHeight(compHeight);
+        //     });
+        // });
+        compHeight = [];
+        isCount = true;
+
+       setTimeout(function(){
+           $('.br-comp-ch-item').find('li').css('height','');
+           $('.br-comp-sidebar .br-comp-list').find('li').css('height','');
+           $('.br-comp-ch-item').each(function(){
+               for(var i = 0; i < $(this).find('li').length; i++) {
+                   if(isCount) {
+                       compHeights[i] = $(this).find('li').eq(i).outerHeight();
+                   } else {
+                       if($(this).find('li').eq(i).outerHeight() > compHeights[i]) {
+                           compHeights[i] = $(this).find('li').eq(i).outerHeight();
+                       }
+                   }
+               }
+               isCount = false;
+           });
+
+           $('.br-comp-ch-item').each(function(){
+               for(var i = 0; i < $(this).find('li').length; i++) {
+                   $(this).find('li').eq(i).css('height',compHeights[i]);
+                   $('.br-comp-sidebar .br-comp-list').find('li').eq(i).css('height',compHeights[i]);
+               }
+           });
+       },200);
 
         $('.br-comparison').addClass('active');
 
@@ -1265,6 +1305,37 @@ $(function(){
 
     });
 
+    if($('.br-change-email').length)
+    {
+        $(".br-change-email").validate({
+            rules:
+                {
+                    email:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    password:
+                        {
+                            required: true
+
+                        }
+                },
+            messages:
+                {
+                    email:
+                        {
+                            required: "Поле «Новый e-mail» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    password:
+                        {
+                            required: "Поле «Пароль» обов’язкове до заповнення"
+                        }
+                }
+        });
+    }
+
     if($('.br-login-form-first').length)
     {
         $(".br-login-form-first").validate({
@@ -1351,6 +1422,71 @@ $(function(){
                     password:
                         {
                             required: "Поле «Пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів"
+                        },
+                    confirm_password:
+                        {
+                            required: "Поле «Повторити пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів",
+                            equalTo: "Паролі не співпадають"
+                        }
+                }
+        });
+    }
+
+    if($('.br-change-password').length)
+    {
+
+        jQuery.validator.addMethod("password_check",
+            function(value, element, param) {
+                if (this.optional(element)) {
+                    return true;
+                } else if (!/[A-Z]/.test(value)) {
+                    return false;
+                } else if (!/[a-z]/.test(value)) {
+                    return false;
+                } else if (!/[0-9]/.test(value)) {
+                    return false;
+                }
+
+                return true;
+            },
+            "Пароль має містити мінімум одну заголовну літеру, цифри 0-9 та літери латинської абетки");
+
+        jQuery.validator.addMethod("alphanumeric", function(value, element) {
+            return this.optional(element) || /^\w+$/i.test(value);
+        }, "Заборонено використання спеціальнихсимволів (!@#$^&-+=;:,.?|`~<>', а також пробілів");
+
+
+        $(".br-change-password").validate({
+            rules:
+                {
+                    old_password:
+                        {
+                            required: true
+                        },
+                    password:
+                        {
+                            required: true,
+                            minlength: 6,
+                            password_check: true,
+                            alphanumeric: true
+
+                        },
+                    confirm_password:
+                        {
+                            equalTo: '#ch-pass'
+                        }
+                },
+            messages:
+                {
+                    old_password:
+                        {
+                            required: "Поле «Старий пароль» обов’язкове до заповнення"
+                        },
+                    password:
+                        {
+                            required: "Поле «Новий пароль» обов’язкове до заповнення",
                             minlength: "Пароль не може бути коротшим за 6 символів"
                         },
                     confirm_password:
@@ -1543,12 +1679,22 @@ $(function(){
         $(this).siblings('.br-prof-table-hidden').toggle('fast');
     });
 
+    $('.prof-set-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).closest('.br-prof-th-set').find('.br-prof-set-in').toggle()
+    });
+
     $('.br-prof-red').on('click', function () {
         $(this).closest('.br-prof-form-address').find('.br-prof-fa-hidden').toggle('fast');
     });
 
     $('.br-prof-delete').on('click', function () {
         $(this).closest('.br-prof-form-address').remove();
+    });
+
+    $('.br-order-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $('.br-order-hidden').toggleClass('hidden');
     });
 
     $('.br-dropdown-s > button').on('click', function () {
