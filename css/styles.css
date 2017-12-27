@@ -6502,7 +6502,7 @@ footer a
 .br-up
 {
     position: fixed;
-    z-index: 102;
+    z-index: 101;
     right: 30px;
     bottom: 50px;
 }
@@ -17618,6 +17618,71 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 /*-----*/
 
+/*Предзаказ в личном кабинете*/
+.br-prof-preorder .br-prof-order-top h3:before
+{
+    height: 26px;
+    width: 29px;
+    background: url(../images/prof-po.png) center no-repeat;
+    background-size: auto 100%;
+}
+.br-prof-preorder .br-prof-order-titles
+{
+    padding-left: 24px;
+}
+.br-prof-preorder-date, .br-prof-preorder-price, .br-prof-preorder-status
+{
+    width: 200px;
+}
+.br-prof-preorder-product
+{
+    width: calc(100% - 600px);
+}
+.br-prof-preoder-item
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    position: relative;
+    padding: 10px 0 10px 24px;
+}
+.br-preorder-di, .br-prof-preorder-status
+{
+    color: #999;
+}
+.br-prof-preoder-item .br-prof-preorder-product
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    padding-right: 10px;
+}
+.br-prof-preorder-product .prof-th-cont
+{
+    width: calc(100% - 60px) !important;
+}
+.br-prof-preoder-item .br-prof-preorder-price
+{
+    font-weight: 700;
+    font-size: 16px;
+}
+.br-prof-preoder-item .br-prof-preorder-price span
+{
+    position: relative;
+    top: -5px;
+    font-size: 12px
+}
+/*-----*/
+
 /*Игровой портал*/
 .br-gc-sidebar
 {
@@ -19203,7 +19268,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-comp-sidebar-bottom
 {
-    padding-bottom: 99px;
+    padding-bottom: 168px;
 }
 .br-comp-cont
 {
@@ -19223,6 +19288,16 @@ div:nth-last-child(-3+n) > .br-action-item
     margin-bottom: 30px;
     position: relative;
     z-index: 2;
+}
+.br-comp-items-top:after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff;
 }
 .br-comp-items-top .owl-nav
 {
@@ -19322,9 +19397,14 @@ div:nth-last-child(-3+n) > .br-action-item
     border-top: 1px solid #dfdfdf;
     margin: 20px 15px 0;
 }
+.br-comp-item-bottom .br-pp-bu
+{
+    margin-bottom: 13px !important;
+}
 .br-comp-item-bottom .br-bb-b
 {
     position: relative !important;
+    z-index: 6;
     bottom: 0;
 }
 .br-comp-cont .br-bb-b .br-bb-buy, .br-comp-cont .br-bb-bf
