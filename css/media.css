@@ -4698,6 +4698,10 @@
 }
 @media(max-width: 550px)
 {
+    .br-reg-flex .form-group
+    {
+        width: 100%;
+    }
     .br-gc-blocks > div, .br-psp-in > div
     {
         width: 100% !important;
