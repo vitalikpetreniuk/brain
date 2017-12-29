@@ -18808,3 +18808,68 @@ div:nth-last-child(-3+n) > .br-action-item
     margin-bottom: 15px;
 }
 /*-----*/
+
+/*Партнеры*/
+.br-partners-list
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding-top: 5px;
+}
+.br-partner-item
+{
+    text-align: center;
+    width: 120px;
+    margin: 0 calc(100% / 6 - 840px / 6) 45px 0;
+}
+.br-partner-item:nth-child(7n+7)
+{
+    margin-right: 0;
+}
+.br-partner-item:nth-last-child(-n+7)
+{
+    margin-bottom: 0;
+}
+.br-partner-logo
+{
+    margin-bottom: 9px;
+}
+.br-partner-logo a
+{
+    display: inline-block;
+}
+.br-partner-logo img
+{
+    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.br-partner-logo:hover img
+{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.br-partner-info
+{
+    position: relative;
+    padding-top: 5px;
+    color: #777;
+}
+.br-partner-info:before
+{
+    content: '';
+    position: absolute;
+    left: calc(50% - 36px);
+    top: 0;
+    width: 72px;
+    height: 1px;
+    background: #10b1e8;
+    line-height: 16px;
+}
+/*-----*/
