@@ -18782,3 +18782,29 @@ div:nth-last-child(-3+n) > .br-action-item
     border-color: transparent;
 }
 /*-----*/
+
+/*Logistic*/
+.br-be-first h3
+{
+    font-size: 18px;
+    line-height: normal;
+    margin: 0 0 16px;
+}
+.br-be-first p
+{
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 19px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 18px;
+}
+.br-be-first .br-pr-countdown-block
+{
+    display: block !important;
+}
+.br-be-first .br-pr-countdown-block > div:first-child
+{
+    margin-bottom: 15px;
+}
+/*-----*/
