@@ -16230,6 +16230,25 @@ div:nth-last-child(-3+n) > .br-action-item
     -ms-flex-pack: justify;
     margin-bottom: 20px;
 }
+.br-product-more
+{
+    text-align:  center;
+    margin-bottom: 30px;
+}
+.br-product-more button
+{
+    border: none;
+    color: #fff;
+    background: #10b1e8;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 11px 30px;
+}
+.br-product-more button:hover
+{
+    background: rgba(16,177,232,.5);
+}
 .br-prof-order-block:last-child .br-prof-table-body > div:last-child
 {
     border: none;
