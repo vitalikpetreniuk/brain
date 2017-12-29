@@ -1265,6 +1265,37 @@ $(function(){
 
     });
 
+    if($('.br-change-email').length)
+    {
+        $(".br-change-email").validate({
+            rules:
+                {
+                    email:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    password:
+                        {
+                            required: true
+
+                        }
+                },
+            messages:
+                {
+                    email:
+                        {
+                            required: "Поле «Новый e-mail» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    password:
+                        {
+                            required: "Поле «Пароль» обов’язкове до заповнення"
+                        }
+                }
+        });
+    }
+
     if($('.br-login-form-first').length)
     {
         $(".br-login-form-first").validate({
@@ -1351,6 +1382,71 @@ $(function(){
                     password:
                         {
                             required: "Поле «Пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів"
+                        },
+                    confirm_password:
+                        {
+                            required: "Поле «Повторити пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів",
+                            equalTo: "Паролі не співпадають"
+                        }
+                }
+        });
+    }
+
+    if($('.br-change-password').length)
+    {
+
+        jQuery.validator.addMethod("password_check",
+            function(value, element, param) {
+                if (this.optional(element)) {
+                    return true;
+                } else if (!/[A-Z]/.test(value)) {
+                    return false;
+                } else if (!/[a-z]/.test(value)) {
+                    return false;
+                } else if (!/[0-9]/.test(value)) {
+                    return false;
+                }
+
+                return true;
+            },
+            "Пароль має містити мінімум одну заголовну літеру, цифри 0-9 та літери латинської абетки");
+
+        jQuery.validator.addMethod("alphanumeric", function(value, element) {
+            return this.optional(element) || /^\w+$/i.test(value);
+        }, "Заборонено використання спеціальнихсимволів (!@#$^&-+=;:,.?|`~<>', а також пробілів");
+
+
+        $(".br-change-password").validate({
+            rules:
+                {
+                    old_password:
+                        {
+                            required: true
+                        },
+                    password:
+                        {
+                            required: true,
+                            minlength: 6,
+                            password_check: true,
+                            alphanumeric: true
+
+                        },
+                    confirm_password:
+                        {
+                            equalTo: '#ch-pass'
+                        }
+                },
+            messages:
+                {
+                    old_password:
+                        {
+                            required: "Поле «Старий пароль» обов’язкове до заповнення"
+                        },
+                    password:
+                        {
+                            required: "Поле «Новий пароль» обов’язкове до заповнення",
                             minlength: "Пароль не може бути коротшим за 6 символів"
                         },
                     confirm_password:
@@ -1545,7 +1641,7 @@ $(function(){
 
     $('.prof-set-toggle').on('click', function () {
         $(this).toggleClass('active');
-        $(this).closest('.br-prof-th-set').find('.br-prof-set-in').toggle();
+        $(this).closest('.br-prof-th-set').find('.br-prof-set-in').toggle()
     });
 
     $('.br-prof-red').on('click', function () {

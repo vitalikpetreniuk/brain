@@ -3676,10 +3676,10 @@
                                     <a href="#">Редагувати профіль</a>
                                 </li>
                                 <li>
-                                    <a href="#">Змінити e-mail</a>
+                                    <button type="button" data-toggle="modal" data-target=".br-modal-chm">Змінити e-mail</button>
                                 </li>
                                 <li>
-                                    <a href="#">Змінити пароль</a>
+                                    <button type="button" data-toggle="modal" data-target=".br-modal-chp">Змінити пароль</button>
                                 </li>
                             </ul>
                             <ul class="br-prof-nav-second">
@@ -7096,10 +7096,10 @@
                                     <a href="#">Редагувати профіль</a>
                                 </li>
                                 <li>
-                                    <a href="#">Змінити e-mail</a>
+                                    <button type="button" data-toggle="modal" data-target=".br-modal-chm">Змінити e-mail</button>
                                 </li>
                                 <li>
-                                    <a href="#">Змінити пароль</a>
+                                    <button type="button" data-toggle="modal" data-target=".br-modal-chp">Змінити пароль</button>
                                 </li>
                             </ul>
                             <ul class="br-prof-nav-second">
@@ -10758,6 +10758,74 @@
                                 <button type="button">
                                     <img src="images/delete_small.svg" alt="img">
                                 </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade br-modal-simple br-modal-360 br-modal-chm br-modal-login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>
+                        Змінити e-mail
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="images/delete_small.svg" alt="img">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="br-modal-simple-in">
+                        <form class="br-change-email">
+                            <div class="form-group">
+                                <label class="required">Новый e-mail:</label>
+                                <input type="email" name="email" class="success">
+                            </div>
+                            <div class="form-group">
+                                <label class="required">Пароль:</label>
+                                <input type="password" name="password">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="br-popup-button">Зберегти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade br-modal-simple br-modal-360 br-modal-chp br-modal-login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>
+                        Змінити пароль
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="images/delete_small.svg" alt="img">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="br-modal-simple-in">
+                        <form class="br-change-password">
+                            <div class="form-group">
+                                <label class="required">Старий пароль:</label>
+                                <input type="password" name="old_password">
+                            </div>
+                            <div class="form-group">
+                                <label class="required">Новий пароль:</label>
+                                <input type="password" name="password" id="ch-pass">
+                            </div>
+                            <div class="form-group">
+                                <label class="required">Повторіть пароль:</label>
+                                <input type="password" name="confirm_password">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="br-popup-button">Зберегти</button>
                             </div>
                         </form>
                     </div>
