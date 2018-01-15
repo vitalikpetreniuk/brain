@@ -960,6 +960,29 @@ $(function(){
         }
     });
 
+    $('.br-login-button-switch').on('click', function () {
+        $('.br-lt-reg').hide();
+        $('.br-lt-pass').show();
+    });
+
+    $('.br-lt-switch-back').on('click', function () {
+        $('.br-lt-pass').hide();
+        $('.br-lt-reg').show();
+    });
+
+    $('.br-lt-th-item a').on('click', function () {
+        $(this).addClass('active');
+        $(this).parent().siblings().children().removeClass('active');
+    });
+
+    $('.br-loyalty-slider').owlCarousel({
+        items: 1,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        loop: true
+    });
+
     $('.br-banner-slider').owlCarousel({
         items: 1,
         nav: true,
