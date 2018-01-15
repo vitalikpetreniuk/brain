@@ -81,9 +81,120 @@
     {
          padding: 0 6px 0 32px;
     }
+    .br-login-social strong
+    {
+        display: none;
+    }
 }
 @media(max-width: 1354px)
 {
+    .br-smart-block h2
+    {
+        max-width: 560px;
+        line-height: 32px;
+        margin: 0 auto 30px;
+    }
+    .br-smart-item + .br-smart-item:before
+    {
+        width: 75px;
+        left: -38px;
+    }
+    .br-lt-th-item a
+    {
+        text-align: center;
+        line-height: 15px;
+        padding: 14px 10px;
+    }
+    .br-lt-flex
+    {
+        display: block;
+    }
+    .br-lt-flex-item
+    {
+        width: 100%;
+        padding: 0 !important;
+    }
+    .br-lt-tab-img
+    {
+        margin-top: 16px;
+    }
+    .br-lt-tab-img img
+    {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .br-lt-form .br-logit-top-text, .br-lt-form .br-login-form-third
+    {
+        width: 100%;
+    }
+    .br-lt-form .br-login-social > *
+    {
+        width: 140px;
+    }
+    .br-login-social strong
+    {
+        color: #fff;
+        font-size: 14px;
+        margin-left: 12px;
+    }
+    .br-lt-reg .br-login-form-first, .br-lt-form .br-modal-login
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    }
+    .br-lt-reg .br-login-form-first .form-group, .br-lt-form .br-login-social, .br-lt-form .br-login-agreement, .br-lt-form .br-login-form-third .form-group
+    {
+        width: calc(50% - 15px);
+    }
+    .br-lt-reg .br-login-form-first .form-flex, .br-lt-reg .br-login-form-first .text-center
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .br-lt-form .br-login-tabs, .br-lt-form .br-login-form-third
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .br-lt-form .br-login-form-third .form-group
+    {
+        margin: 0 auto 15px;
+    }
+    .br-lt-form .br-login-social
+    {
+        margin: 0;
+    }
+    .br-lt-form .br-login-agreement
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-lt-form .br-login-agreement a
+    {
+        margin: 0 4px;
+    }
+    .br-loyalty-slider
+    {
+        margin-bottom: 30px;
+    }
+    .br-col-b-lt, .br-col-s-lt
+    {
+        width: 100%;
+    }
     .br-comp-title span
     {
         width: 682px;
@@ -1361,9 +1472,88 @@
     {
         display: block !important;
     }
+    .br-lt-tabs-head.owl-carousel
+    {
+        display: none !important;
+    }
 }
 @media(max-width: 1011px)
 {
+    .br-lt-tabs-head-desk
+    {
+        display: none !important;
+    }
+    .br-lt-th-item
+    {
+        width: 100%;
+    }
+    .br-lt-tabs-head .owl-stage, .br-lt-tabs-head .owl-item, .br-lt-tabs-head .br-lt-th-item
+    {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    .br-lt-th-item a
+    {
+        width: 100%;
+        padding: 14px 40px;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        min-height: 65px;
+    }
+    .br-img-tab
+    {
+        display: block;
+    }
+    .br-img-desk
+    {
+        display: none;
+    }
+    .br-smart-item + .br-smart-item:before
+    {
+        width: 45px;
+        left: -23px;
+        top: 66px;
+    }
+    .br-smart-img
+    {
+        margin-bottom: 12px;
+    }
+    .br-smart-img img
+    {
+        height: 134px;
+    }
+    .br-smart-title
+    {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .br-lt-form .br-login-agreement
+    {
+        width: 440px;
+    }
+    .br-lt-form .br-login-social
+    {
+        width: auto;
+    }
+    .br-lt-form .br-login-social > *
+    {
+        width: 48px;
+    }
+    .br-login-social strong
+    {
+        display: none;
+    }
     .br-comp-ch-item .br-comp-section
     {
         padding-top: 0;
@@ -2852,7 +3042,7 @@
 }
 @media(min-width: 767px)
 {
-    .br-ch-fixed, .br-pr-fixed, .br-quick-category-btn, .br-quick-category-menu, .br-btn-fixed, .br-quick-cetegory-btn
+    .br-ch-fixed, .br-pr-fixed, .br-quick-category-btn, .br-quick-category-menu, .br-btn-fixed, .br-quick-cetegory-btn, .br-lt-button
     {
         display: none;
     }
@@ -2896,6 +3086,64 @@
 }
 @media(max-width: 766px)
 {
+    .br-smart-block h2
+    {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .br-img-tab
+    {
+        display: none;
+    }
+    .br-img-mob
+    {
+        display: block;
+    }
+    .br-smart-item + .br-smart-item:before
+    {
+        width: 60px;
+        left: calc(50% - 113px);
+        top: -36px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+    .br-smart-title
+    {
+        width: 50%;
+        text-align: left;
+    }
+    .br-smart-img
+    {
+        width: 50%;
+        margin: 0;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .br-smart-list
+    {
+        display: block;
+    }
+    .br-smart-item
+    {
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    }
+    .br-smart-item + .br-smart-item
+    {
+        margin-top: 65px;
+    }
+    .br-col-s-lt
+    {
+        display: none;
+    }
     .br-comp-list li:after
     {
         height: 30px;

@@ -960,19 +960,34 @@ $(function(){
         }
     });
 
+    var tabCarousel = $('.br-lt-tabs-head.owl-carousel').owlCarousel({
+        nav:true,
+        mouseDrag: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            766:
+            {
+                items:2
+            }
+        }
+    });
+
     $('.br-login-button-switch').on('click', function () {
-        $('.br-lt-reg').hide();
-        $('.br-lt-pass').show();
+        $('.br-mod-f').hide();
+        $('.br-mod-s').show();
     });
 
     $('.br-lt-switch-back').on('click', function () {
-        $('.br-lt-pass').hide();
-        $('.br-lt-reg').show();
+        $('.br-mod-s').hide();
+        $('.br-mod-f').show();
     });
 
     $('.br-lt-th-item a').on('click', function () {
         $(this).addClass('active');
         $(this).parent().siblings().children().removeClass('active');
+        $(this).closest('.owl-item').siblings().find('a').removeClass('active');
     });
 
     $('.br-loyalty-slider').owlCarousel({
@@ -1919,6 +1934,11 @@ $(function(){
         $('.br-fx-sidebar').addClass('active');
     });
 
+    $('.br-lt-button button').on('click', function(){
+        $('.br-lt-button').addClass('active');
+        $('.br-fx-sidebar').addClass('active');
+    });
+
     $('.br-quick-category-btn').on('click', function () {
         $(this).addClass('active');
         $('.br-quick-category-menu').addClass('active');
@@ -2008,6 +2028,18 @@ $(function(){
     });
 
     $(window).on('load resize', function () {
+
+
+        tabCarousel.on('changed.owl.carousel', function(event) {
+            if($(window).width() < 766)
+            {
+                setTimeout(function(){
+                    // console.log('test!');
+                    $('.br-lt-tabs-head .owl-item.active a').trigger('click');
+                }, 100);
+            }
+        });
+
         $('.br-comment-text').addClass('loaded');
         $('.br-pt-bc-item').each(function () {
             var commentSize = $(this).children('.br-comment-text').children('p').height();
@@ -2419,6 +2451,7 @@ $(function(){
     $('.br-fx-in > button').on('click', function () {
         $('.br-fx-sidebar').removeClass('active');
         $('.br-fx-open').removeClass('active');
+        $('.br-lt-button').removeClass('active');
     });
 
     $('.br-fx-sidebar-links ul a').on('click', function () {

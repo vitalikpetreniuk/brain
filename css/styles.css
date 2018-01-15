@@ -2918,7 +2918,6 @@ li:hover > .br-main-submenu
     -webkit-align-items: center;
     -ms-flex-align: center;
 
-
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -19536,6 +19535,9 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-lt-pass
 {
     padding: 15px 20px;
+}
+.br-mod-s
+{
     display: none;
 }
 .br-lt-form .br-login-q div
@@ -19546,7 +19548,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     left: 55px;
 }
-.br-lt-pass .br-modal-login .form-flex
+.br-mod-s .form-flex
 {
     margin: 15px 0 0;
     justify-content: center;
@@ -19588,7 +19590,7 @@ div:nth-last-child(-3+n) > .br-action-item
     position: absolute;
     width: 164px;
     height: 12px;
-    background: url("../images/smart.png") center no-repeat;
+    background: url("../images/smart.png") right center no-repeat;
     top: 83px;
     left: -82px;
 }
@@ -19616,6 +19618,25 @@ div:nth-last-child(-3+n) > .br-action-item
     -ms-flex-pack: justify;
     border-bottom: 1px solid #10b1e8;
 }
+.br-lt-tabs-head .owl-nav > div
+{
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 17px);
+    width: 34px;
+    height: 34px;
+}
+.br-lt-tabs-head .owl-prev
+{
+    background: url("../images/br-pr-al.png") center no-repeat;
+    left: 0;
+}
+.br-lt-tabs-head .owl-next
+{
+    background: url("../images/br-pr-ar.png") center no-repeat;
+    right: 0;
+}
+.br-lt-tabs-head
 .br-lt-th-item a
 {
     display: block;
@@ -19657,5 +19678,67 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     font-weight: 700;
     color: #10b1e8;
+}
+.br-lt-flex
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.br-lt-flex-item
+{
+    width: 50%;
+}
+.br-lt-flex-item:first-child
+{
+    padding-right: 30px;
+}
+.br-lt-tab-img
+{
+    overflow: hidden;
+}
+.br-lt-tab-img a, .br-img-desk
+{
+    display: block;
+}
+.br-img-tab, .br-img-mob
+{
+    display: none;
+}
+.br-lt-button
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    opacity: 1;
+    visibility: visible;
+}
+.br-lt-button.active
+{
+    opacity: 0;
+    visibility: hidden;
+}
+.br-lt-button button
+{
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: #10b1e8;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    padding: 0;
+}
+.br-fx-sidebar .br-login-q div
+{
+    left: 0;
+}
+.br-fx-sidebar .br-login-q div:before
+{
+    left: 55px;
 }
 /*-----*/
