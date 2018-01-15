@@ -6502,7 +6502,7 @@ footer a
 .br-up
 {
     position: fixed;
-    z-index: 102;
+    z-index: 101;
     right: 30px;
     bottom: 50px;
 }
@@ -19287,7 +19287,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-comp-sidebar-bottom
 {
-    padding-bottom: 99px;
+    padding-bottom: 168px;
 }
 .br-comp-cont
 {
@@ -19307,6 +19307,16 @@ div:nth-last-child(-3+n) > .br-action-item
     margin-bottom: 30px;
     position: relative;
     z-index: 2;
+}
+.br-comp-items-top:after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff;
 }
 .br-comp-items-top .owl-nav
 {
@@ -19406,9 +19416,14 @@ div:nth-last-child(-3+n) > .br-action-item
     border-top: 1px solid #dfdfdf;
     margin: 20px 15px 0;
 }
+.br-comp-item-bottom .br-pp-bu
+{
+    margin-bottom: 13px !important;
+}
 .br-comp-item-bottom .br-bb-b
 {
     position: relative !important;
+    z-index: 6;
     bottom: 0;
 }
 .br-comp-cont .br-bb-b .br-bb-buy, .br-comp-cont .br-bb-bf
