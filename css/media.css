@@ -612,6 +612,15 @@
         left: 19px;
         top: 19px;
         width: 80px;
+        padding: 0;
+    }
+    .br-cb-nocat
+    {
+        padding-bottom: 0 !important;
+    }
+    .br-cb-nocat .br-category-block-left
+    {
+        top: calc(50% - 40px);
     }
     .br-category-block-right
     {
