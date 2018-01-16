@@ -12983,6 +12983,7 @@ div:nth-last-child(-3+n) > .br-action-item
     justify-content: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
+    padding: 15px;
 }
 .br-category-block-left img, .br-category-list-product .br-category-block .br-category-block-top img
 {
@@ -13020,6 +13021,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-category-list-product .br-category-block .br-category-block .br-category-block-top div
 {
     width: 116px;
+    padding: 10px;
 }
 .br-category-list-product .br-category-block .br-category-block .br-category-block-top span
 {
