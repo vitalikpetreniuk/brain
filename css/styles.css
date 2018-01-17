@@ -13006,14 +13006,40 @@ div:nth-last-child(-3+n) > .br-action-item
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
-    align-items: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
+    align-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding-bottom: 0;
+}
+.br-category-block-link
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.br-category-block-link a
+{
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    color: #10b1e8;
+    font-size: 14px;
+    font-weight: 700;
+}
+.br-category-block-link a:hover
+{
+    text-decoration: underline;
+}
+.br-category-block-link i
+{
+    position: relative;
+    margin-left: 3px;
 }
 .br-cb-nocat .br-category-block-right .br-category-block-top
 {
     margin-bottom: 0;
-    border-bottom: none;
 }
 .br-category-list-product .br-category-block-top
 {
