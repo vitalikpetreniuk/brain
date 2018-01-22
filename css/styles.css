@@ -13293,7 +13293,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-fixed-ct-buttons button
 {
-    width: 50%;
+    width: 100%;
     height: 42px;
     background: #10b1e8;
     color: #fff;
