@@ -13390,7 +13390,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     border-bottom: 1px solid #e3e3e3;
 }
-.br-fixed-ct-menu-in > ul > li > button
+.br-fixed-ct-menu-in > ul > li > button, .br-fixed-ct-menu-in > ul > li > a
 {
     display: flex;
     display: -webkit-flex;
