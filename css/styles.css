@@ -16991,7 +16991,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-prof-progress > div:first-child span
 {
-    width: 23px;
+    width: 21px;
     height: 8px;
     background: rgba(16,177,232,.5);
 }
@@ -17076,6 +17076,15 @@ div:nth-last-child(-3+n) > .br-action-item
     background-image: -webkit-linear-gradient(left, #02BB4C 0%, #029f41 100%);
     background-image: linear-gradient(to right, #02BB4C 0%, #029f41 100%);
 }
+.br-prof-progress > div:first-child span.active:nth-child(10)
+{
+    background-image: -ms-linear-gradient(left, #028335 0%, #01672a 100%);
+    background-image: -moz-linear-gradient(left, #028335 0%, #01672a 100%);
+    background-image: -o-linear-gradient(left, #028335 0%, #01672a 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #028335), color-stop(100, #01672a));
+    background-image: -webkit-linear-gradient(left, #028335 0%, #01672a 100%);
+    background-image: linear-gradient(to right, #028335 0%, #01672a 100%);
+}
 .br-prof-progress > div:first-child span + span
 {
     margin-left: 1px;
@@ -17092,7 +17101,15 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-prof-progress-green > div:last-child span
 {
-    color: #03c952;
+    color: #029f41;
+}
+.br-prof-progress-yellow > div:last-child span
+{
+    color: #F9FF02;
+}
+.br-prof-progress-red > div:last-child span
+{
+    color: #cc4c14;
 }
 .br-prof-form-flex
 {
