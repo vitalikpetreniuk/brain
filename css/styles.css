@@ -16993,7 +16993,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     width: 21px;
     height: 8px;
-    background: rgba(16,177,232,.5);
+    background: #f6f6f6;
 }
 .br-prof-progress > div:first-child span.active:first-child
 {
