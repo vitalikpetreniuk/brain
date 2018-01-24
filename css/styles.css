@@ -9778,6 +9778,10 @@ footer a
 {
     border-top: none;
 }
+.br-pt-bc-list-visible
+{
+    display: block !important;
+}
 .br-pt-bc-list-in
 {
     display: block !important;
@@ -15022,6 +15026,43 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     display: block;
     height: 24px;
+}
+
+.br-fb-blog
+{
+    margin-bottom: 30px;
+}
+.br-fb-blog .br-pt-lc form
+{
+    display: block !important;
+}
+.br-fb-blog .br-pt-lc form > div, .br-fb-blog .br-pt-lc form > div:first-child, .br-fb-blog .br-pt-lc form > div:last-child {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 15px !important;
+}
+.br-fb-blog .br-psm
+{
+    margin: 20px 0 30px;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+}
+.br-fb-blog .br-psm .br-smore
+{
+    position: static;
+    transform: none;
+    -webkit-transform: none;
+}
+.br-fb-blog .br-pt-bc-name
+{
+    width: 50%;
+}
+.br-fb-blog .br-pt-bc-date
+{
+    width: 50%;
+    text-align: right;
+    margin-top: 0 !important;
 }
 
 /*Стили BRAIN GID - Слайдер "Товары из статьи"*/
