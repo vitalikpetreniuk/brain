@@ -16377,7 +16377,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-prof-table-qty
 {
-    width: 470px;
+    width: 355px;
 }
 .br-prof-table-date
 {
@@ -16389,7 +16389,8 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-prof-table-status
 {
-    width: calc(100% - 805px);
+    width: calc(100% - 690px);
+    text-align: right;
 }
 .br-prof-table-body > div
 {
@@ -16510,10 +16511,11 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-prof-table-status span
 {
     display: inline-block;
-    line-height: 20px;
+    line-height: 14px;
     border-radius: 20px;
+    text-align: center;
     color: #fff;
-    padding: 0 10px;
+    padding: 3px 10px;
     font-size: 13px;
 }
 .br-prof-status-new
