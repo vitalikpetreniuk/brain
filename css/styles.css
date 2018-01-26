@@ -14269,6 +14269,16 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     width: 110px;
 }
+.br-dg-more .br-dropdown
+{
+    left: 0;
+    transform: none;
+    -webkit-transform: none;
+}
+.br-dg-more .br-dropdown:before
+{
+    left: 30px;
+}
 .br-dg-more .br-dropdown ul
 {
     padding: 0 20px 0 0 !important;
