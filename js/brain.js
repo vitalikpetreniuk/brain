@@ -1660,13 +1660,13 @@ $(function(){
 
     $('.br-search-open').on('click', function () {
         $(this).hide();
-        $('.br-bcc-desk').addClass('invisible');
+        $('.br-bcc-desk').addClass('sopen');
         $('.br-search-wide').addClass('open');
     });
 
     $('.br-search-wide > button').on('click', function () {
         $('.br-search-wide').removeClass('open');
-        $('.br-bcc-desk').removeClass('invisible');
+        $('.br-bcc-desk').removeClass('sopen');
         $('.br-search-open').show();
     });
 

@@ -568,6 +568,10 @@
     .br-blog-categories-c {
         width: calc(100% - 271px);
     }
+    .br-blog-categories-c.sopen
+    {
+        display: none;
+    }
     /*-----*/
     .br-category-list > div:nth-child(3n+1) .br-category-block .br-category-block
     {
