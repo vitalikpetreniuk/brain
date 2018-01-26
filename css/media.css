@@ -469,8 +469,9 @@
     }
     .br-prof-table-status span
     {
-        padding: 0 8px;
+        padding: 3px 8px;
         font-size: 11px;
+        line-height: 11px;
     }
     .br-prof-qty-list, .br-prof-qty-last
     {
@@ -482,7 +483,7 @@
     }
     .br-prof-table-qty
     {
-        width: 180px;
+        width: 130px;
     }
     .br-prof-table-date
     {
@@ -494,7 +495,7 @@
     }
     .br-prof-table-status
     {
-        width: calc(100% - 490px);
+        width: calc(100% - 440px);
     }
     .br-prof-top-block h3, .br-prof-order-top h3, .br-prof-order-titles, .br-prof-table-line
     {
@@ -1829,7 +1830,7 @@
     }
     .br-prof-table-qty
     {
-        width: 184px;
+        width: 144px;
     }
     .br-prof-table-date
     {
@@ -1841,7 +1842,7 @@
     }
     .br-prof-table-status
     {
-        width: calc(100% - 521px);
+        width: calc(100% - 481px);
     }
     .br-profile-sidebar
     {
@@ -6082,7 +6083,7 @@
     }
     .br-prof-table-status span
     {
-        padding: 0 5px;
+        padding: 3px 5px;
     }
     .br-rc-c
     {
