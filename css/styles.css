@@ -16651,6 +16651,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     width: calc(100% - 160px);
     padding-left: 32px;
+    word-wrap: break-word;
 }
 .prof-th-cont
 {
