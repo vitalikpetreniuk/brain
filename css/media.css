@@ -537,7 +537,7 @@
     }
     .br-search-wide
     {
-        width: calc(100% - 245px);
+        width: 100%;
     }
     .col-bgr
     {
@@ -3476,7 +3476,6 @@
     }
     .br-search-wide
     {
-        width: 100%;
         position: absolute;
         z-index: 5;
         left: 0;
