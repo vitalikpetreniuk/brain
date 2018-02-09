@@ -1115,6 +1115,15 @@ $(function(){
         });
     }
 
+    $('.br-bl-left').css('width', 'auto');
+    $('.br-bl-right').css('width', 'auto');
+    var bfHeight = $('.br-bl-left > div:first-child .br-p-item').height();
+    var bsHeight = $('.br-bl-left > div:nth-child(4) .br-p-item').height();
+    $('.br-bl-right .br-sub-form').height(bfHeight);
+    $('.br-bl-right .br-fb-widget').height(bsHeight);
+
+    console.log(bfHeight);
+
     $('.br-ab-cr').on('click', function () {
         $(this).closest('.br-modal-t-block').find('h3').toggleClass('active');
         $(this).toggleClass('active');
