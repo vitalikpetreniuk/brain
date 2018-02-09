@@ -1115,8 +1115,8 @@ $(function(){
         });
     }
 
-    $('.br-bl-left').css('width', 'auto');
-    $('.br-bl-right').css('width', 'auto');
+    $('.br-bl-left').css('width', 'calc(100% + 30px)');
+    $('.br-bl-right').css('width', 'calc(100% + 30px)');
     var bfHeight = $('.br-bl-left > div:first-child .br-p-item').height();
     var bsHeight = $('.br-bl-left > div:nth-child(4) .br-p-item').height();
     $('.br-bl-right .br-sub-form').height(bfHeight);
