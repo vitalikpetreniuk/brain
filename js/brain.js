@@ -1704,6 +1704,10 @@ $(function(){
         $('.br-alert').slideUp('fast');
     });
 
+    $('.br-nofound button').on('click', function(){
+        $('.br-nofound').hide();
+    });
+
     $('.br-prof-same-change > button').on('click', function(){
         $(this).toggleClass('open')
         $(this).siblings('form').toggleClass('open');
