@@ -164,6 +164,12 @@ header .row > div, .br-body .row > div
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
+.br-flex-start
+{
+    align-items: flex-start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+}
 .br-flex:after, .br-flex:before
 {
     display: none !important;
@@ -14656,6 +14662,7 @@ div:nth-last-child(-3+n) > .br-action-item
     -ms-flex-align: center;
     width: 100%;
     margin-bottom: 30px;
+    min-height: 350px;
 }
 .br-body-blog .br-fb-widget div
 {

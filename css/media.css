@@ -1,5 +1,9 @@
 @media(min-width: 1355px)
 {
+    .br-bl-left > div:first-child .br-p-item
+    {
+        min-height: 500px;
+    }
     .br-team-list-fw .br-team-item
     {
         width: calc(20% - 40px);
