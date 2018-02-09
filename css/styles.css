@@ -14454,6 +14454,10 @@ div:nth-last-child(-3+n) > .br-action-item
     border: none;
     padding: 0;
 }
+.br-bl-left, .br-bl-right
+{
+    width: calc(100% + 30px) !important;
+}
 .br-body-blog .br-p-item
 {
     background: #fff;
