@@ -19870,6 +19870,36 @@ div:nth-last-child(-3+n) > .br-action-item
     font-weight: 700;
     color: #10b1e8;
 }
+.br-lt-tabs-body .tab-pane .scroll-content
+{
+    padding-right: 15px !important;
+}
+.br-lt-tabs-body .tab-pane .br-nscroll
+{
+    max-height: 545px;
+}
+.br-lt-tabs-body .tab-pane .br-nscroll .scroll-element.scroll-y
+{
+    width: 5px;
+}
+.br-lt-tabs-body .tab-pane .br-nscroll .scroll-element.scroll-y
+{
+    right: 0;
+}
+.br-lt-tabs-body .tab-pane .br-nscroll .scroll-element .scroll-element_track
+{
+    display: none;
+}
+.br-lt-tabs-body .tab-pane .br-nscroll .scroll-element .scroll-bar
+{
+    border-radius: 0;
+    background: #cecece;
+    opacity: 1;
+}
+.br-lt-tabs-body .tab-pane .br-nscroll .scroll-element .scroll-element_outer
+{
+    border-radius: 0;
+}
 .br-lt-flex
 {
     display: flex;
