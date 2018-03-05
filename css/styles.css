@@ -10035,7 +10035,9 @@ footer a
 }
 .br-theme-fontawesome-stars .br-widget
 {
-    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     text-indent: -999999px;
 }
 .br-theme-fontawesome-stars .br-widget a
