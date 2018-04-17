@@ -20076,6 +20076,9 @@ div:nth-last-child(-3+n) > .br-action-item
 .ch-accept{
     padding-left: 30px;
 }
+.ch-accept-credit{
+    display: none;
+}
 .ch-accept-credit, .br-ch-alast{
     margin-bottom: 30px;
 }
