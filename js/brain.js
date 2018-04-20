@@ -432,7 +432,8 @@ $(function(){
         nav: true,
         loop: true,
         margin: 5,
-        items: 1
+        items: 1,
+        video: true
     });
 
     $('.br-rslider').owlCarousel({
