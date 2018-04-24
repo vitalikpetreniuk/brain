@@ -92,6 +92,12 @@
 }
 @media(max-width: 1354px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 30%;
+        font-size: 45px;
+    }
+    /*new banner end*/
     .br-modal-category .modal-dialog
     {
         width: 987px;
@@ -1519,6 +1525,12 @@
 }
 @media(max-width: 1011px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 25%;
+        font-size: 35px;
+    }
+    /*new banner end*/
     .br-modal-category .modal-dialog
     {
         width: 723px;
@@ -3136,6 +3148,12 @@
 }
 @media(max-width: 766px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 35%;
+        font-size: 25px;
+    }
+    /*new banner end*/
     .br-pc-how img
     {
         height: auto;
@@ -5330,6 +5348,12 @@
 }
 @media(max-width: 480px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 40%;
+        font-size: 20px;
+    }
+    /*new banner end*/
     .owl-item.active + .owl-item.active .br-comp-list li span, .owl-item.active + .owl-item.active .br-comp-hidden
     {
         opacity: 0;

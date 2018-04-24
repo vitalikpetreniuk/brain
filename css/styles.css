@@ -2043,6 +2043,33 @@ li:hover > .br-main-submenu
     font-weight: 700;
     margin: 0;
 }
+/*new banner*/
+.br-pc-banner-new{
+    padding-top: 0;
+    height: auto !important;
+    background: none;
+    position: relative;
+}
+.br-pc-banner-new img{
+    width: 100%;
+}
+.br-pc-banner h1
+{
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    right: 15px;
+    top: 35%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    text-align: center;
+    font-size: 60px;
+    color: #49a1ba;
+    font-weight: 700;
+    margin: 0;
+}
+/*new banner end*/
 /*-----*/
 
 
