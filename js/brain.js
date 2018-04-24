@@ -1065,6 +1065,58 @@ $(function(){
         });
     }
 
+    /*credits scripts*/
+    if($('.br-slider-range-cs').length)
+    {
+        $('.br-slider-range-credit').slider({
+            range: true,
+            min: 0,
+            max: 24,
+            values: [ 1, 12 ],
+            slide: function( event, ui ) {
+                $('.br-pf-f-cr').val(ui.values[ 0 ]);
+                $('.br-pf-l-cr').val(ui.values[ 1 ]);
+            }
+        });
+        $('.br-slider-range-credit').each(function () {
+            $(this).find('.br-pf-f-cr').val('от');
+            $(this).find('.br-pf-l-cr').val('до');
+            $(this).find('.br-pf-f-cr').on('focus', function(){
+                $(this).val('');
+            });
+            $(this).find('.br-pf-l-cr').on('focus', function(){
+                $(this).val('');
+            });
+        });
+
+        $('.br-slider-range-pay').slider({
+            range: true,
+            min: 0,
+            max: 10000,
+            values: [ 500, 5000 ],
+            slide: function( event, ui ) {
+                $('.br-pf-f-p').val(ui.values[ 0 ]);
+                $('.br-pf-l-p').val(ui.values[ 1 ]);
+            }
+        });
+        $('.br-slider-range-pay').each(function () {
+            $(this).find('.br-pf-f-p').val('от');
+            $(this).find('.br-pf-l-p').val('до');
+            $(this).find('.br-pf-f-p').on('focus', function(){
+                $(this).val('');
+            });
+            $(this).find('.br-pf-l-p').on('focus', function(){
+                $(this).val('');
+            });
+        });
+    }
+
+    $('.br-filter-bank-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).next('.br-filter-bank-drop').toggleClass('open');
+    });
+    /*credits scripts end*/
+
     if($('.br-credit-length').length)
     {
         $('.br-credit-length').each(function () {
