@@ -1110,11 +1110,6 @@ $(function(){
             });
         });
     }
-
-    $('.br-filter-bank-toggle').on('click', function () {
-        $(this).toggleClass('active');
-        $(this).next('.br-filter-bank-drop').toggleClass('open');
-    });
     /*credits scripts end*/
 
     if($('.br-credit-length').length)
