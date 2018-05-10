@@ -3148,6 +3148,9 @@
 }
 @media(max-width: 766px)
 {
+    .br-up-cat{
+        display: none;
+    }
     /*new banner*/
     .br-pc-banner h1{
         top: 35%;
