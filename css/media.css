@@ -92,6 +92,16 @@
 }
 @media(max-width: 1354px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 30%;
+        font-size: 45px;
+    }
+    /*new banner end*/
+    .br-modal-category .modal-dialog
+    {
+        width: 987px;
+    }
     .br-smart-block h2
     {
         max-width: 560px;
@@ -614,6 +624,18 @@
     {
         padding: 0 20px 16px
     }
+    .br-cat-new .br-category-block
+    {
+        padding: 0 !important;
+    }
+    .br-cat-new .br-category-block-right
+    {
+        padding: 12px 12px 12px 0 !important;
+    }
+    .br-cat-new .br-category-block-top
+    {
+        padding-left: 0 !important;
+    }
     .br-category-block-left
     {
         position: absolute;
@@ -622,6 +644,10 @@
         top: 19px;
         width: 80px;
         padding: 0;
+    }
+    .br-cat-new .br-category-block-left
+    {
+        position: static;
     }
     .br-cb-nocat .br-category-block-left
     {
@@ -1325,6 +1351,12 @@
         -webkit-justify-content: center;
         -ms-flex-pack: center;
     }
+    .br-pc-how
+    {
+        width: 100% !important;
+        position: static;
+        margin: 10px 0 0 !important;
+    }
     .br-pc-ct
     {
         margin: 0 0 10px;
@@ -1505,6 +1537,16 @@
 }
 @media(max-width: 1011px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 25%;
+        font-size: 35px;
+    }
+    /*new banner end*/
+    .br-modal-category .modal-dialog
+    {
+        width: 723px;
+    }
     .br-blog-categories-c
     {
         max-width: 100%;
@@ -3118,6 +3160,36 @@
 }
 @media(max-width: 766px)
 {
+    .br-up-cat{
+        display: none;
+    }
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 35%;
+        font-size: 25px;
+    }
+    /*new banner end*/
+    .br-pc-how img
+    {
+        height: auto;
+        width: 100%;
+    }
+    .br-pc-how
+    {
+        margin-top: 0 !important;
+    }
+    .br-pc-block-new
+    {
+        text-align: center;
+    }
+    .br-pc-block-new .br-pcode
+    {
+        margin: 0 auto 10px;
+    }
+    .br-modal-category .modal-dialog
+    {
+        width: calc(100% - 5px) !important;
+    }
     .br-smart-block h2
     {
         font-size: 24px;
@@ -5291,6 +5363,12 @@
 }
 @media(max-width: 480px)
 {
+    /*new banner*/
+    .br-pc-banner h1{
+        top: 40%;
+        font-size: 20px;
+    }
+    /*new banner end*/
     .owl-item.active + .owl-item.active .br-comp-list li span, .owl-item.active + .owl-item.active .br-comp-hidden
     {
         opacity: 0;
@@ -5623,6 +5701,18 @@
 }
 @media(min-width: 360px) and (max-width: 766px)
 {
+    .br-pr-price
+    {
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-pr-np
+    {
+        margin-top: 0 !important;
+        padding-left: 30px;
+        position: relative;
+    }
     .br-bbb-s
     {
         background-image: none !important;
@@ -5739,11 +5829,31 @@
         top: 17px;
         width: calc(45% - 40px);
     }
+    .br-pp-promo .br-pp-top
+    {
+        top: 13px;
+    }
+    .br-pp-promocode img
+    {
+        position: absolute;
+        right: 0;
+        top: -1px;
+    }
+    .br-pr-main-block .br-pp-promocode img
+    {
+        position: static;
+        display: block !important;
+    }
     .br-comp-slider .br-pp-top
     {
         width: 100%;
         right: auto;
         top: auto;
+    }
+    .br-pp-promo-in span:last-child
+    {
+        right: auto;
+        left: -7px;
     }
     .br-pp-img, .br-prof-p-img
     {
@@ -5751,6 +5861,11 @@
         padding: 30px 20px 0 0;
         height: auto;
         margin-bottom: 0 !important;
+    }
+    .br-pp-promo-in span:last-child:before
+    {
+        left: 54px;
+        right: auto;
     }
     .br-comp-slider .br-pp-img
     {
@@ -5808,6 +5923,13 @@
     .br-comp-slider .br-pp-bu
     {
         margin-bottom: 0;
+    }
+}
+@media(min-width: 360px) and (max-width: 550px)
+{
+    .br-pp-promocode img
+    {
+        display: none;
     }
 }
 @media(min-width: 360px) and (max-width: 460px)
@@ -5981,6 +6103,7 @@
 }
 @media(max-width: 359px)
 {
+<<<<<<< HEAD
     /*credit styles*/
     .br-category-small .br-category-block-left{
         width: 90px;
@@ -5994,6 +6117,8 @@
         padding-top: 0;
     }
     /*credit styles end*/
+=======
+>>>>>>> new_promocode
     .br-modal-category .modal-dialog
     {
         width: 290px !important;

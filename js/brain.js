@@ -675,6 +675,13 @@ $(function(){
         });
     }
 
+    if($('.category-scroll').length)
+    {
+        $(".category-scroll").scrollbar({
+            disableBodyScroll: true
+        });
+    }
+
     if($('.br-scroll').length)
     {
         $(".br-scroll").scrollbar({
@@ -1332,6 +1339,15 @@ $(function(){
 
     $('.br-o-sort').on('click', function(){
         $('.br-sort-menu-fixed').toggleClass('active');
+        $('.br-sidebar').slideUp();
+    });
+
+    $('.br-up-cat').on('click', function(){
+        $('.br-sidebar').slideUp();
+    });
+
+    $('.br-all').on('click', function(){
+        $('.br-sidebar').slideUp();
     });
 
     $('.br-sort-menu-fixed button').on('click', function(){
