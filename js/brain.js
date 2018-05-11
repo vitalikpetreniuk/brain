@@ -1299,6 +1299,10 @@ $(function(){
         $('.br-sidebar').slideUp();
     });
 
+    $('.br-all').on('click', function(){
+        $('.br-sidebar').slideUp();
+    });
+
     $('.br-sort-menu-fixed button').on('click', function(){
         $('.br-sort-menu-fixed').toggleClass('active');
     });
