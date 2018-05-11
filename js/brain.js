@@ -1295,6 +1295,10 @@ $(function(){
         $('.br-sidebar').slideUp();
     });
 
+    $('.br-up-cat').on('click', function(){
+        $('.br-sidebar').slideUp();
+    });
+
     $('.br-sort-menu-fixed button').on('click', function(){
         $('.br-sort-menu-fixed').toggleClass('active');
     });
