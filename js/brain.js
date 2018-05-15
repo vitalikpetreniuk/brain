@@ -2028,6 +2028,13 @@ $(function(){
         $('input' + "." + radioName).trigger('click');
     });
 
+    if($('.br-slist label').length){
+        $('.br-slist label').on('click', function () {
+            var chName = $(this).attr('class');
+            $('input' + "." + chName + " + ins").trigger('click');
+        });
+    }
+
     $('.br-category-block-sa button').on('click', function () {
         $(this).closest('.br-category-block-bottom').siblings('.br-category-block').addClass('active');
     });
