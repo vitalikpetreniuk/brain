@@ -19,19 +19,19 @@ $(function(){
         mouseDrag: false,
         mtouchDrag: false,
         responsive:{
-        0:{
-            items: 1
-        },
-        480:{
-            items: 2
-        },
-        768:{
-            items: 3
-        },
-        1355:{
-            items: 4
+            0:{
+                items: 1
+            },
+            480:{
+                items: 2
+            },
+            768:{
+                items: 3
+            },
+            1355:{
+                items: 4
+            }
         }
-    }
     });
 
     $('.br-comp-items-top .owl-next').on('click', function () {
@@ -303,7 +303,7 @@ $(function(){
     $(window).on('resize', function () {
         if($(window).width() < 680)
         {
-           $('.br-modal-p .close').trigger('click');
+            $('.br-modal-p .close').trigger('click');
         }
     });
 
@@ -422,10 +422,18 @@ $(function(){
                 items:1
             },
             1354:
-            {
-                items:2
-            }
+                {
+                    items:2
+                }
         }
+    });
+
+    $('.br-slider-video').owlCarousel({
+        nav: true,
+        loop: true,
+        margin: 5,
+        items: 1,
+        video: true
     });
 
     $('.br-rslider').owlCarousel({
@@ -540,29 +548,29 @@ $(function(){
         compHeight = [];
         isCount = true;
 
-       setTimeout(function(){
-           $('.br-comp-ch-item').find('li').css('height','');
-           $('.br-comp-sidebar .br-comp-list').find('li').css('height','');
-           $('.br-comp-ch-item').each(function(){
-               for(var i = 0; i < $(this).find('li').length; i++) {
-                   if(isCount) {
-                       compHeights[i] = $(this).find('li').eq(i).outerHeight();
-                   } else {
-                       if($(this).find('li').eq(i).outerHeight() > compHeights[i]) {
-                           compHeights[i] = $(this).find('li').eq(i).outerHeight();
-                       }
-                   }
-               }
-               isCount = false;
-           });
+        setTimeout(function(){
+            $('.br-comp-ch-item').find('li').css('height','');
+            $('.br-comp-sidebar .br-comp-list').find('li').css('height','');
+            $('.br-comp-ch-item').each(function(){
+                for(var i = 0; i < $(this).find('li').length; i++) {
+                    if(isCount) {
+                        compHeights[i] = $(this).find('li').eq(i).outerHeight();
+                    } else {
+                        if($(this).find('li').eq(i).outerHeight() > compHeights[i]) {
+                            compHeights[i] = $(this).find('li').eq(i).outerHeight();
+                        }
+                    }
+                }
+                isCount = false;
+            });
 
-           $('.br-comp-ch-item').each(function(){
-               for(var i = 0; i < $(this).find('li').length; i++) {
-                   $(this).find('li').eq(i).css('height',compHeights[i]);
-                   $('.br-comp-sidebar .br-comp-list').find('li').eq(i).css('height',compHeights[i]);
-               }
-           });
-       },200);
+            $('.br-comp-ch-item').each(function(){
+                for(var i = 0; i < $(this).find('li').length; i++) {
+                    $(this).find('li').eq(i).css('height',compHeights[i]);
+                    $('.br-comp-sidebar .br-comp-list').find('li').eq(i).css('height',compHeights[i]);
+                }
+            });
+        },200);
 
         $('.br-comparison').addClass('active');
 
@@ -953,17 +961,17 @@ $(function(){
                 items:1
             },
             766:
-            {
-                items:2
-            },
+                {
+                    items:2
+                },
             1011:
-            {
-                items:3
-            },
+                {
+                    items:3
+                },
             1354:
-            {
-                items:4
-            }
+                {
+                    items:4
+                }
         }
     });
 
@@ -975,9 +983,9 @@ $(function(){
                 items:1
             },
             766:
-            {
-                items:2
-            }
+                {
+                    items:2
+                }
         }
     });
 
@@ -1674,8 +1682,8 @@ $(function(){
             container2 = $(".br-theader-menu .folder"),
             container3 = $(".br-th-login"),
             container4 = $(".br-order-call");
-            container5 = $(".br-fback-dropdown");
-            container6 = $(".br-shops-head");
+        container5 = $(".br-fback-dropdown");
+        container6 = $(".br-shops-head");
 
         if (container1.has(e.target).length === 0){
             $(".br-chc button.active").trigger('click');
