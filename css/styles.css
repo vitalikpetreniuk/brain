@@ -7699,6 +7699,41 @@ footer a
     line-height: 16px;
     margin-bottom: 30px;
 }
+.br-ch-credit .br-ch-dot{
+    margin-bottom: 45px;
+}
+.br-ch-credit .br-ch-do{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+.br-ch-credit .br-ch-do > div{
+    position: relative;
+}
+.br-ch-credit .br-ch-do > div:first-child .br-ch-oblock{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+}
+.br-ch-credit .br-ch-oblock .br-fsquare{
+    margin-bottom: 0 !important;
+}
+.br-ch-credit .br-ch-oblock .br-fsquare + .br-fsquare{
+    margin-left: 100px;
+}
+.br-ch-credit .br-ch-do > div:last-child .br-ch-oblock{
+    left: 30px;
+}
+.br-ch-credit .br-ch-do > div:first-child{
+    border-right: none;
+}
+.br-ch-credit .br-ch-ot{
+    margin-bottom: 25px;
+}
 .br-ch-do > div:first-child .br-checkout
 {
     padding: 0 30px;
@@ -8304,6 +8339,9 @@ footer a
 #br-ch-6.active + .br-ch-alast, #br-ch-5.super-active, #br-ch-6.super-active
 {
     display: block !important;
+}
+#br-ch-7{
+    display: none;
 }
 /*-----*/
 
@@ -20313,4 +20351,85 @@ div:nth-last-child(-3+n) > .br-action-item
     width: 100%;
     border-right: none;
 }
->>>>>>> new_promocode
+
+/*checkout form*/
+.ch-credit-form{
+    display: none;
+}
+.ch-credit-form-flex
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.ch-credit-form-flex-f > div:first-child{
+    width: 335px;
+}
+.ch-credit-form-flex-f > div:last-child{
+    width: calc(100% - 355px);
+}
+.ch-credit-form-flex-f > div:last-child label{
+    width: 82px;
+}
+.ch-credit-form-flex-f > div:last-child label + *{
+    width: calc(100% - 82px);
+}
+.ch-credit-form .br-fc-check
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    margin-bottom: 15px;
+}
+.ch-credit-form .br-fc-check label{
+    width: 150px;
+    padding-right: 10px;
+    margin: 0;
+    line-height: 17px;
+}
+.ch-credit-form .br-fc-check label + *{
+    width: calc(100% - 150px);
+}
+.ch-credit-form-flex-double input{
+    width: 100px !important;
+}
+.ch-credit-form-flex-double input:last-child{
+    width: calc(100% - 280px) !important;
+    margin-left: 30px;
+}
+.ch-credit-form-flex-date{
+    justify-content: flex-start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+}
+.ch-credit-form-flex-date select{
+    width: 96px !important;
+}
+.ch-credit-form-flex-date select option:first-child{
+    display: none;
+}
+.ch-credit-form-flex-date select + select{
+    margin-left: 30px;
+}
+.ch-credit-form > .br-fc-check:last-child{
+    margin-bottom: 0;
+}
+.ch-accept{
+    padding-left: 30px;
+}
+.ch-accept-credit{
+    display: none;
+}
+.ch-accept-credit, .br-ch-alast{
+    margin-bottom: 30px;
+}
+/*checkout form end*/

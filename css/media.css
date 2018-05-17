@@ -92,15 +92,51 @@
 }
 @media(max-width: 1354px)
 {
+
     /*new banner*/
     .br-pc-banner h1{
         top: 30%;
         font-size: 45px;
     }
     /*new banner end*/
-    .br-modal-category .modal-dialog
-    {
+    .br-modal-category .modal-dialog {
         width: 987px;
+    }
+    .br-ch-credit .br-ch-do > div:first-child .br-ch-oblock{
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    }
+    .br-ch-credit .br-ch-oblock .br-fsquare + .br-fsquare{
+        margin-left: 0;
+    }
+    .ch-credit-form-flex-date select{
+        width: calc(33.333% - 56.666px) !important;
+    }
+    .ch-credit-form-flex-date select + select{
+        margin-left: 10px;
+    }
+    .ch-credit-form-flex-double input{
+        width: 88px !important;
+    }
+    .ch-credit-form-flex-double input:last-child{
+        width: calc(100% - 248px) !important;
+        margin-left: 10.5px;
+    }
+    .ch-credit-form-flex-f{
+        display: block !important;
+    }
+    .ch-credit-form-flex-f div{
+        width: 100% !important;
+    }
+    .ch-credit-form-flex-f label{
+        width: 150px !important;
+    }
+    .ch-credit-form-flex-f label + *{
+        width: calc(100% - 150px) !important;
     }
     .br-smart-block h2
     {
@@ -1546,6 +1582,37 @@
     .br-modal-category .modal-dialog
     {
         width: 723px;
+    }
+    .br-ch-credit .br-ch-dot{
+        margin-bottom: 15px;
+    }
+    .br-ch-credit .br-ch-do > div:first-child .br-ch-oblock{
+        position: static;
+        margin-bottom: 15px;
+    }
+    .br-ch-credit .br-ch-do{
+        display: block;
+    }
+    .br-ch-dc > div:nth-child(2)
+    {
+        justify-content: space-between !important;
+        -webkit-justify-content: space-between !important;
+        -ms-flex-pack: justify !important;
+    }
+    .br-ch-dc > div:nth-child(2) button:first-child
+    {
+        margin-bottom: 0 !important;
+    }
+    .br-ch-do > div{
+        float: none;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .br-ch-cr-main .br-ch-do > div:first-child{
+        border-right: none;
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 20px !important;
+        margin-bottom: 20px;
     }
     .br-blog-categories-c
     {
@@ -3189,9 +3256,41 @@
     {
         margin: 0 auto 10px;
     }
-    .br-modal-category .modal-dialog
-    {
+    .br-modal-category .modal-dialog {
         width: calc(100% - 5px) !important;
+    }
+    .ch-credit-form .br-fc-check
+    {
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .ch-credit-form .br-fc-check label
+    {
+        display: block;
+        padding: 0;
+        margin: 0 0 6px;
+        width: 100% !important;
+    }
+    .ch-credit-form .br-fc-check input{
+        width: 100% !important;
+    }
+    .ch-credit-form .ch-credit-form-flex-double input{
+        width: 85px !important;
+    }
+    .ch-credit-form .ch-credit-form-flex-double input:last-child{
+        width: calc(100% - 95px) !important;
+        margin-left: 10px !important;
+    }
+    .ch-credit-form-flex-date select
+    {
+        width: calc(33.333% - 6.666px) !important;
+        padding: 0 5px;
+    }
+    .br-ch-dc > div:nth-child(2){
+        justify-content: center !important;
+        -webkit-justify-content: center !important;
+        -ms-flex-pack: center !important;
     }
     .br-smart-block h2
     {
@@ -4289,7 +4388,7 @@
         display: -webkit-flex !important;
         display: -ms-flexbox !important;
     }
-    .br-ch-alast.active
+    .br-ch-alast.active, .br-body-checkout .br-ch-credit.ch-accept-credit.super-active
     {
         display: block !important;
     }
@@ -5369,12 +5468,21 @@
 }
 @media(max-width: 480px)
 {
+
     /*new banner*/
     .br-pc-banner h1{
         top: 40%;
         font-size: 20px;
     }
     /*new banner end*/
+    .br-ch-credit .br-ch-do > div:first-child .br-ch-oblock{
+        display: block;
+        padding-left: 12px;
+    }
+    .br-ch-credit .br-ch-oblock .br-fsquare + .br-fsquare
+    {
+        margin-top: 15px;
+    }
     .owl-item.active + .owl-item.active .br-comp-list li span, .owl-item.active + .owl-item.active .br-comp-hidden
     {
         opacity: 0;
@@ -6109,7 +6217,6 @@
 }
 @media(max-width: 359px)
 {
-<<<<<<< HEAD
     /*credit styles*/
     .br-category-small .br-category-block-left{
         width: 90px;
@@ -6123,8 +6230,6 @@
         padding-top: 0;
     }
     /*credit styles end*/
-=======
->>>>>>> new_promocode
     .br-modal-category .modal-dialog
     {
         width: 290px !important;

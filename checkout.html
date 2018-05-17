@@ -5312,36 +5312,6 @@
                                                 использование бонусов при оплате заказа
                                             </div>
                                         </li>
-                                        <li class="br-pm5">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm" id="br-pm5" class="br-ch-radio">
-                                                <label for="br-pm5">Webmoney</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm6">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm" id="br-pm6" class="br-ch-radio">
-                                                <label for="br-pm6">Оплата Bitcoin</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm7">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm" id="br-pm7" class="br-ch-radio">
-                                                <label for="br-pm7">Сервис Liqpay</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm8">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm" id="br-pm8" class="br-ch-radio">
-                                                <label for="br-pm8">Приват24</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm9">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm" id="br-pm9" class="br-ch-radio">
-                                                <label for="br-pm9">Предусмотрено для будущих пунктов</label>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -5382,43 +5352,13 @@
                                                 <label for="br-pm14">Безналичный расчет (для юридических лиц)</label>
                                             </div>
                                         </li>
-                                        <li class="br-pm5">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm2" id="br-pm15" class="br-ch-radio">
-                                                <label for="br-pm15">Webmoney</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm6">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm2" id="br-pm16" class="br-ch-radio">
-                                                <label for="br-pm16">Оплата Bitcoin</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm7">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm2" id="br-pm17" class="br-ch-radio">
-                                                <label for="br-pm17">Сервис Liqpay</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm8">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm2" id="br-pm18" class="br-ch-radio">
-                                                <label for="br-pm18">Приват24</label>
-                                            </div>
-                                        </li>
-                                        <li class="br-pm9">
-                                            <div class="br-fsquare">
-                                                <input type="radio" name="br-pm2" id="br-pm19" class="br-ch-radio">
-                                                <label for="br-pm19">Предусмотрено для будущих пунктов</label>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 br-ch-anchor" id="br-ch-5">
+                <div class="col-xs-12 br-ch-anchor br-ch-cr-main" id="br-ch-5">
                     <div class="br-ch-block">
                         <div class="br-ch-do">
                             <div class="ch-hidden-block">
@@ -5588,7 +5528,7 @@
                                         <div class="br-chpd-f">
                                             <div>Банк кредитор:</div>
                                             <div class="br-ch-selectmenu">
-                                                <select class="br-ch-select">
+                                                <select class="br-ch-select ch-bank-selection">
                                                     <option>
                                                         ПриватБанк - Мгновенная рассрочка от ПриватБанк на 12
                                                     </option>
@@ -5597,6 +5537,9 @@
                                                     </option>
                                                     <option>
                                                         ПриватБанк - Мгновенная рассрочка от ПриватБанк на 14
+                                                    </option>
+                                                    <option class="ch-option-form">
+                                                        АльфаБанк - Мгновенная рассрочка от ПриватБанк на 14
                                                     </option>
                                                 </select>
                                             </div>
@@ -5640,7 +5583,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="hidden-xs">
+                            <div class="hidden-xs ch-accept">
                                 <h3>
                                     Подтверждение заказа:
                                 </h3>
@@ -5666,6 +5609,67 @@
                                 <div class="br-ch-comment">
                                     <textarea></textarea>
                                     <button type="submit" class="br-checkout">Отправить</button>
+                                </div>
+                            </div>
+                            <div class="ch-credit-form">
+                                <h3>Данные для оформления:</h3>
+                                <div>
+                                    <div class="ch-credit-form-flex ch-credit-form-flex-f">
+                                        <div class="br-fc-check">
+                                            <label>Имя:</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="br-fc-check">
+                                            <label>Отчество:</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="br-fc-check">
+                                        <label>Фамилия:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="br-fc-check">
+                                        <label>Адрес регистрации:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="br-fc-check">
+                                        <label>Адрес проживания:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="br-fc-check ch-credit-form-flex-double">
+                                        <label>Серия и номер пасторта:</label>
+                                        <input type="text">
+                                        <input type="text">
+                                    </div>
+                                    <div class="br-fc-check">
+                                        <label>Кем выдан:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="br-fc-check ch-credit-form-flex-date">
+                                        <label>Дата выдачи:</label>
+                                        <select>
+                                            <option>Число</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                        <select>
+                                            <option>Месяц</option>
+                                            <option>01</option>
+                                            <option>02</option>
+                                            <option>03</option>
+                                        </select>
+                                        <select>
+                                            <option>Год</option>
+                                            <option>1993</option>
+                                            <option>1994</option>
+                                            <option>1995</option>
+                                        </select>
+                                    </div>
+                                    <div class="br-fc-check">
+                                        <label>Код ИНН:</label>
+                                        <input type="text">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -5705,6 +5709,47 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xs-12 br-ch-anchor br-ch-changed br-ch-credit ch-accept-credit" id="br-ch-7">
+                    <div class="br-ch-block">
+                        <h3>Подтверждение заказа:</h3>
+                        <div class="br-ch-do">
+                            <div>
+                                <div class="br-ch-dot">
+                                    Обязательно проверьте указанные личные данные, они будут использованы
+                                    для отправки товара. Ошибки в личных данных могут повлечь за собой проблемы
+                                    с получением товара.
+                                </div>
+                                <div class="br-ch-oblock">
+                                    <div class="br-fsquare">
+                                        <input type="checkbox" id="br-dontc4" class="br-ch-checkbox">
+                                        <label for="br-dontc4">Не перезванивать мне</label>
+                                    </div>
+                                    <div class="br-fsquare">
+                                        <input type="checkbox" id="br-dontc5" class="br-ch-checkbox">
+                                        <label for="br-dontc5">Это для подарка</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="br-ch-ot">
+                                    Способ доставки: Курьером на дом; Крюковщина; в понедельник 19.03, после 08:00;<br>
+                                    Стоимость доставки: бесплатно<br>
+                                    Оплата: Кредит; Банк кредитор: ПриватБанк; Срок кредита: 3 мес;<br>
+                                    Первый взнос: Не обязателен; Ежемесячный платеж: 12530.94 грн
+                                </div>
+                                <div class="br-ch-oblock">
+                                    <button class="br-addc-o" type="button">
+                                        <span>Добавить комментарий к заказу</span>
+                                    </button>
+                                </div>
+                                <div class="br-ch-comment">
+                                    <textarea></textarea>
+                                    <button type="submit" class="br-checkout">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-xs-12 br-ch-alast">
                     <div class="br-ch-last">
                         <div class="br-ch-agr">
@@ -5726,6 +5771,7 @@
             <div>
                 <button type="button" class="ch-next-f">Далее</button>
                 <button type="button" class="ch-next-s hidden">Далее</button>
+                <button type="button" class="ch-next-t hidden">Далее</button>
             </div>
         </div>
         <div class="br-ch-menu">
