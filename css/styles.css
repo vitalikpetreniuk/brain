@@ -370,7 +370,7 @@ header .br-chc button
     text-align: left;
     font-weight: 700;
     background-image: url("../images/br-adb.png");
-    background-position: right 8px;
+    background-position: right calc(50% + 1px);
 }
 header .br-chc button.active
 {
