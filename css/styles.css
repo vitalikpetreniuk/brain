@@ -353,25 +353,26 @@ header.fixed
 }
 .br-hidden .br-theader-menu
 {
-    margin-right: 55px;
-}
-.br-header-main .br-hidden .br-chc
-{
-    margin-right: 90px;
+    margin-right: 30px;
 }
 /*-----*/
 
 /*Выпадающее меню выбора города, форма поиска города*/
-.br-header-main .br-chc
+header .br-chc
 {
-    margin-right: 100px;
+    margin-right: 0;
+    padding-right: 15px;
+    width: 147px;
 }
-.br-header-main .br-chc button
+header .br-chc button
 {
+    line-height: normal;
+    text-align: left;
     font-weight: 700;
     background-image: url("../images/br-adb.png");
+    background-position: right 8px;
 }
-.br-header-main .br-chc button.active
+header .br-chc button.active
 {
     background-image: url("../images/br-adt.png");
 }

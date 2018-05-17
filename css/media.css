@@ -1121,14 +1121,6 @@
     {
         margin-right: 15px;
     }
-    .br-header-main .br-hidden .br-chc
-    {
-        margin-right: 60px;
-    }
-    .br-hidden .br-theader-menu
-    {
-        margin-right: 70px;
-    }
     .br-sf-fw h2,  .br-sf-fw input[type='submit']
     {
         width: 25%;
@@ -1251,11 +1243,7 @@
     }
     .br-theader-menu
     {
-        margin-right: 120px;
-    }
-    .br-header-main .br-chc
-    {
-        margin-right: 60px;
+        margin-right: 70px;
     }
     .br-sf-block .br-fv
     {
