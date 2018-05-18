@@ -676,17 +676,24 @@ header .br-chc button.active
     background: url("../images/enter_accaunt.svg") left center no-repeat;
     -webkit-transition: none;
     transition: none;
+    max-width: 135px;
+    word-wrap: break-word;
+    min-height: 18px;
 }
 .br-th-login button.active
 {
     background: url("../images/customer.svg") left center no-repeat,
-    url("../images/br-adb.png") right 7px no-repeat;
+    url("../images/br-adb.png") right calc(50% + 1px) no-repeat;
     padding-right: 15px;
 }
 .br-th-login button.active.open
 {
     background: url("../images/customer.svg") left center no-repeat,
     url("../images/br-adt.png") right 7px no-repeat;
+}
+.br-th-login button span{
+    display: block;
+    line-height: 16px;
 }
 /*-----*/
 
@@ -20273,6 +20280,11 @@ div:nth-last-child(-3+n) > .br-action-item
     border-radius: 0;
     background: #cecece;
     opacity: 1;
+    display: none;
+}
+.category-scroll .scroll-scrolly_visible .scroll-bar
+{
+    display: block;
 }
 .category-scroll .scroll-element .scroll-element_outer
 {
