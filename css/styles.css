@@ -19661,6 +19661,10 @@ div:nth-last-child(-3+n) > .br-action-item
     float: right;
     background: url("../images/br-pr-ar.png") center no-repeat;
 }
+.br-comp-items-top .br-product-sale-label
+{
+    right: -12px;
+}
 .br-comp-item-top
 {
     position: relative;
@@ -19673,20 +19677,41 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .br-comp-delete
 {
-    position: absolute;
+    position: relative;
     z-index: 5;
-    right: 10px;
-    top: 0;
+    margin-bottom: 15px;
 }
 .br-comp-delete button
 {
-    display: block;
-    width: 18px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    width: 100%;
     height: 18px;
     padding: 0;
     border: none;
     background: none;
     opacity: .8;
+    color: #10b1e8;
+    font-size: 12px;
+}
+.br-comp-delete button span
+{
+    border-bottom: 1px dashed #10b1e8;
+}
+.br-comp-delete button:hover span
+{
+    border-color: transparent;
+}
+.br-comp-delete button img
+{
+    margin-right: 8px;
 }
 .br-comp-item-top .br-pp-top
 {
