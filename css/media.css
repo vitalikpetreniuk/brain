@@ -838,7 +838,8 @@
     {
         width: 66.66666%;
     }
-    .br-pt-lc.br-fback-block form > div:nth-child(1), .br-pt-lc.br-fback-block form > div:nth-child(2)
+
+    .br-pt-lc.br-fback-block .br-fback-block-i
     {
         width: calc(50% - 7.5px) !important;
     }
@@ -5159,7 +5160,7 @@
     {
         display: block !important;
     }
-    .br-pt-lc.br-fback-block form > div:first-child, .br-pt-lc.br-fback-block form > div:nth-child(2)
+    .br-pt-lc.br-fback-block form .br-fback-block-i
     {
         width: 100% !important;
     }

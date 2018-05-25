@@ -12764,6 +12764,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 
 /*Стили BRAIN - отзыв*/
+
 .br-fback-block form
 {
     display: flex;
@@ -12776,11 +12777,11 @@ div:nth-last-child(-3+n) > .br-action-item
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
 }
-.br-fback-block form > div:first-child, .br-fback-block form > div:nth-child(2)
+.br-fback-block form .br-fback-block-i
 {
     width: calc(50% - 7.5px);
 }
-.br-fback-block form > div:last-child
+.br-fback-block-button
 {
     text-align: center;
     margin-bottom: 0 !important;
@@ -12789,7 +12790,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     width: 100%;
 }
-.br-fback-block form > div > div + div
+.br-fback-block-i > div + div
 {
     margin-top: 15px;
 }
