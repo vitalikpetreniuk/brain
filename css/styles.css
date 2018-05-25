@@ -5719,7 +5719,7 @@ footer a
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
-.br-modal-slider-item > div:first-child
+.br-modal-slider-item-img
 {
     width: 100px;
 }
@@ -5732,7 +5732,7 @@ footer a
 {
     width: 100%;
 }
-.br-modal-slider-item > div:nth-child(2)
+.br-modal-slider-item-cont
 {
     width: calc(100% - 112px);
 }
