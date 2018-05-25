@@ -1581,13 +1581,13 @@
     .br-ch-credit .br-ch-do{
         display: block;
     }
-    .br-ch-dc > div:nth-child(2)
+    .br-entity-nav
     {
         justify-content: space-between !important;
         -webkit-justify-content: space-between !important;
         -ms-flex-pack: justify !important;
     }
-    .br-ch-dc > div:nth-child(2) button:first-child
+    .br-entity-nav button:first-child
     {
         margin-bottom: 0 !important;
     }
@@ -2443,17 +2443,17 @@
     {
         display: block;
     }
-    .br-ch-dc > div:nth-child(2)
+    .br-entity-nav
     {
         justify-content: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
     }
-    .br-ch-dc > div:nth-child(2) button:first-child
+    .br-entity-nav button:first-child
     {
         margin-bottom: 10px;
     }
-    .br-ch-addjs-flex, .br-ch-dcb, .br-ch-dc > div:nth-child(2)
+    .br-ch-addjs-flex, .br-ch-dcb, .br-entity-nav
     {
         flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3275,7 +3275,8 @@
         width: calc(33.333% - 6.666px) !important;
         padding: 0 5px;
     }
-    .br-ch-dc > div:nth-child(2){
+    .br-entity-nav
+    {
         justify-content: center !important;
         -webkit-justify-content: center !important;
         -ms-flex-pack: center !important;
@@ -4003,7 +4004,7 @@
     {
         margin-bottom: 25px;
     }
-    .br-ch-dc > div:nth-child(2) button:first-child
+    .br-entity-nav button:first-child
     {
         margin: 0 50px 10px;
     }
