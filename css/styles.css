@@ -2380,10 +2380,6 @@ li:hover > .br-main-submenu
     margin-bottom: 14px;
     position: relative;
 }
-.br-slist li:last-child
-{
-    margin-bottom: 0;
-}
 .br-slist li.active a, .br-slist li.active span:last-child
 {
     font-weight: 600;
@@ -2410,6 +2406,58 @@ li:hover > .br-main-submenu
 .br-slist li:hover > label, .br-slist li:hover > label span
 {
     color: #10b1e8;
+}
+.br-slist-toggle
+{
+    display: none;
+    background: none;
+    padding: 0;
+    border: none;
+    border-bottom: 1px dashed #333;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.br-slist-toggle:hover
+{
+    border-color: transparent;
+}
+.br-slist-toggle span:last-child, .br-slist-toggle.active span:first-child
+{
+    display: none;
+}
+.br-slist-toggle.active span:last-child
+{
+    display: block;
+}
+.br-slist-city
+{
+    position: relative;
+    margin-top: 15px;
+}
+.br-slist-city > button
+{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3 !important;
+    text-align: left;
+    padding: 7px 0 !important;
+    background-position: right 15px !important;
+}
+.br-slist-city .br-dropdown
+{
+    left: 5px !important;
+    min-width: 1px !important;
+    width: calc(100% + 8px) !important;
+}
+.br-slist-city ul.br-n-scroll
+{
+    display: block !important;
+    padding: 8px 0 !important;
+}
+.br-slist-city .br-myp-b
+{
+    position: relative;
+    left: -15px;
 }
 
 /*Показать выбранные категории в сайдбаре*/
