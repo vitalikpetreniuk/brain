@@ -7910,7 +7910,7 @@ footer a
 {
     margin-bottom: 10px;
 }
-.br-entity-info > div
+.br-entity-info > div:last-child
 {
     margin-bottom: 0;
 }
