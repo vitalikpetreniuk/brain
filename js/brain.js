@@ -1269,6 +1269,11 @@ $(function(){
         $('.br-ssend').toggleClass('active');
     });
 
+    $('.br-sf-results-sm a').on('click', function(){
+        $('.br-sidebar').toggle('fast');
+        $('.br-ssend').toggleClass('active');
+    });
+
     $('.br-sb-toggle').on('click', function(){
         $('.br-sidebar').toggleClass('br-sb-hidden').addClass('br-abs');
         setTimeout(function () {

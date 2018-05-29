@@ -2715,12 +2715,16 @@ li:hover > .br-main-submenu
     -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
 }
+.br-sf-results span
+{
+    margin-right: 3px;
+    display: inline-block;
+}
 .br-sf-results a
 {
     display: inline-block;
     color: #10b1e8 !important;
     border-bottom: 1px dashed #10b1e8;
-    margin-left: 3px;
 }
 .br-sf-results a:hover
 {
