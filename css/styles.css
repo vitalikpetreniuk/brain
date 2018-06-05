@@ -20225,6 +20225,42 @@ div:nth-last-child(-3+n) > .br-action-item
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
+.sidebar-scroll
+{
+    height: calc(100vh - 130px);
+}
+.sidebar-scroll .scroll-element.scroll-y
+{
+    width: 5px;
+    display: block !important;
+}
+.sidebar-scroll .scroll-element.scroll-y
+{
+    right: 8px;
+}
+.sidebar-scroll .scroll-element .scroll-element_track
+{
+    display: none;
+}
+.sidebar-scroll .scroll-element .scroll-bar
+{
+    border-radius: 0;
+    background: #cecece;
+    opacity: 1;
+    display: none;
+}
+.sidebar-scroll .scroll-scrolly_visible .scroll-bar
+{
+    display: block;
+}
+.sidebar-scroll .scroll-element .scroll-element_outer
+{
+    border-radius: 0;
+}
+.sidebar-scroll .br-slist:last-child, .sidebar-scroll .br-slist li:last-child
+{
+    margin-bottom: 0;
+}
 /*credits styles end*/
 /*Новая страница промокода*/
 .br-cat-new

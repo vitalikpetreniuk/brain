@@ -720,6 +720,13 @@ $(function(){
         });
     }
 
+    if($('.sidebar-scroll').length)
+    {
+        $(".sidebar-scroll").scrollbar({
+            disableBodyScroll: true
+        });
+    }
+
     if($('.br-scroll').length)
     {
         $(".br-scroll").scrollbar({
