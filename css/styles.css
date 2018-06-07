@@ -4137,6 +4137,59 @@ footer a
 
 
 /*Стили BRAIN - кастомные стили радиокнопок*/
+.br-checkbox-link
+{
+    display: block;
+    width: 100%;
+    padding: 0 40px 0 30px;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+}
+.br-checkbox-link span
+{
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.br-checkbox-link:hover
+{
+    color: #10b1e8;
+}
+.br-checkbox-link:before, .br-checkbox-link:after
+{
+    content: '';
+    position: absolute;
+}
+.br-checkbox-link:before
+{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bbb;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.br-checkbox-link.active:before
+{
+    border-color: #10b1e8;
+}
+.br-checkbox-link:after
+{
+    width: 8px;
+    height: 8px;
+    background: #10b1e8;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: none;
+}
+.br-checkbox-link.active:after
+{
+    display: block;
+}
 .br-icheck
 {
     width: 18px;
@@ -20197,10 +20250,14 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-slist-title h3{
     margin-bottom: 0;
 }
-.br-filter-bank-item .br-icheck{
+.br-filter-bank-item .br-icheck, .br-filter-bank-item .br-checkbox-link:before{
     top: 3px;
 }
-.br-filter-bank-item label{
+.br-filter-bank-item .br-checkbox-link:after
+{
+    top: 8px;
+}
+.br-filter-bank-item label, .br-filter-bank-item .br-checkbox-link{
     padding: 3px 75px 3px 62px;
     text-transform: uppercase;
     background-position: 28px center;
@@ -20208,16 +20265,16 @@ div:nth-last-child(-3+n) > .br-action-item
     background-repeat: no-repeat;
     font-size: 13px;
 }
-.br-filter-bank-alfa label{
+.br-filter-bank-alfa label, .br-filter-bank-alfa .br-checkbox-link{
     background-image: url("../images/bank-3.jpg");
 }
-.br-filter-bank-urksib label{
+.br-filter-bank-urksib label, .br-filter-bank-urksib .br-checkbox-link{
     background-image: url("../images/bank-1.jpg");
 }
-.br-filter-bank-forward label{
+.br-filter-bank-forward label, .br-filter-bank-forward .br-checkbox-link{
     background-image: url("../images/bank-2.jpg");
 }
-.br-filter-bank-privat label{
+.br-filter-bank-privat label, .br-filter-bank-privat .br-checkbox-link{
     background-image: url("../images/bank-4.jpg");
 }
 .flex-wrap-block{
@@ -20367,15 +20424,18 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     padding-right: 15px;
 }
-.br-cat-promo .br-category-block > a
+.br-cat-promo .br-cb-nocat
 {
-    text-indent: -999999px;
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+}
+.br-cat-promo .br-category-block-link span
+{
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    color: #10b1e8;
+    font-size: 14px;
+    font-weight: 700;
 }
 .br-title-rel
 {
