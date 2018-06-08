@@ -2313,14 +2313,19 @@ li:hover > .br-main-submenu
 {
     height: 100%;
 }
-.br-sidebar h3, .br-accordion > ul > li > a, .br-accordion > ul > li > a:hover, .br-sidebar-search .br-slist > ul > li > a
+.br-sidebar h3, .br-accordion > ul > li > a, .br-accordion > ul > li > a:hover, .br-sidebar-search .br-slist > ul > li > a, .br-accordion-button
 {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 19px;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: left;
 }
-.br-accordion > ul > li > a
+.br-accordion > ul > li > a, .br-accordion-button
 {
     -ms-flex: 0 1 auto;
     position: relative;
@@ -2336,11 +2341,11 @@ li:hover > .br-main-submenu
     -ms-flex-align: center;
     width: 100%;
 }
-.br-sidebar-search .br-accordion > ul > li > a
+.br-sidebar-search .br-accordion > ul > li > a, .br-sidebar-search .br-accordion-button
 {
     padding-right: 0;
 }
-.br-accordion > ul > li > a:after
+.br-accordion > ul > li > a:after, .br-accordion-button:after
 {
     content: '';
     position: absolute;
@@ -2354,21 +2359,39 @@ li:hover > .br-main-submenu
 {
     display: none;
 }
-.br-slist > ul > li > a:hover:after
+.br-slist > ul > li > a:hover:after, .br-accordion-button:hover:after
 {
     background-position: center -18px;
 }
-.br-slist > ul > li > a.active:after
+.br-slist > ul > li > a.active:after, .br-accordion-button.active:after
 {
     background-position: center -36px;
 }
-.br-slist > ul > li > a.active:hover:after
+.br-slist > ul > li > a.active:hover:after, .br-accordion-button.active:hover:after
 {
     background-position: center bottom;
 }
-.br-slist > ul > li > ul
+.br-slist > ul > li > ul, .br-accordion-button + .br-accordion-list, .br-fback-dropdown + .br-accordion-list
 {
     padding-top: 20px;
+}
+.br-accordion-list
+{
+    display: none;
+    width: 100% !important;
+}
+.br-accordion-list.open
+{
+    display: block;
+}
+.br-accordion-list  .br-sf-results
+{
+    right: 2px;
+}
+.br-accordion-list li:last-child .br-sf-results
+{
+    top: auto;
+    bottom: calc(100% + 2px);
 }
 .br-slist
 {
@@ -2379,6 +2402,10 @@ li:hover > .br-main-submenu
 {
     margin-bottom: 14px;
     position: relative;
+}
+.br-slist li:last-child
+{
+    margin-bottom: 0;
 }
 .br-slist li.active a, .br-slist li.active span:last-child
 {
@@ -2424,6 +2451,10 @@ li:hover > .br-main-submenu
 .br-slist-toggle span:last-child, .br-slist-toggle.active span:first-child
 {
     display: none;
+}
+.br-slist-toggle.active
+{
+    margin-top: 15px;
 }
 .br-slist-toggle.active span:last-child
 {

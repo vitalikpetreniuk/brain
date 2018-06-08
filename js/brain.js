@@ -846,6 +846,16 @@ $(function(){
         });
     }
 
+    $('.br-accordion-button').on('click', function () {
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $(this).siblings('.br-accordion-list').slideUp('fast');
+        }else{
+            $(this).addClass('active');
+            $(this).siblings('.br-accordion-list').slideDown('fast');
+        }
+    });
+
     if($('.br-cl-check').length)
     {
         $('.br-cl-check input').iCheck();
@@ -2290,7 +2300,7 @@ $(function(){
     });
 
     $('.br-slist').each(function () {
-        var liLength = $(this).find('ul > li > ul > li').length;
+        var liLength = $(this).find('ul > li').length;
         if(liLength > 5)
         {
             $(this).find('.br-slist-toggle').show();
