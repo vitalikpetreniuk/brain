@@ -20294,6 +20294,15 @@ div:nth-last-child(-3+n) > .br-action-item
     z-index: 10;
     white-space: nowrap;
 }
+.br-pp-promo-in span:first-child
+{
+    background-color: #35bfeb;
+    color: #fff;
+    border-bottom: 1px solid #0090d7;
+    padding: 2px 4px;
+    border-radius: 0 6px 0 6px;
+    text-shadow: 0 1px #0090d7;
+}
 .br-pp-promo-in span:hover + span
 {
     display: block;
@@ -20301,7 +20310,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-pp-promo-in span:last-child
 {
     position: absolute;
-    top: 27px;
+    top: 32px;
     right: -7px;
     display: none;
     background: #b7e6fe;
