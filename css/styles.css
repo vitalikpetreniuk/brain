@@ -2309,10 +2309,6 @@ li:hover > .br-main-submenu
 
 
 /*Стили BRAIN - категории товаров в сайдбаре*/
-.br-sidebar
-{
-    height: 100%;
-}
 .br-sidebar h3, .br-accordion > ul > li > a, .br-accordion > ul > li > a:hover, .br-sidebar-search .br-slist > ul > li > a
 {
     font-size: 16px;
