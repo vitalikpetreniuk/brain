@@ -67,6 +67,15 @@ $(function(){
         });
     }
 
+    $(window).on('scroll resize load ready', function () {
+        if($('.br-sfixed').hasClass('is_stuck')){
+            console.log('test');
+            $('.br-sfixed').addClass('on-bottom');
+        }else{
+            $('.br-sfixed').removeClass('on-bottom');
+        }
+    });
+
     if($('.br-pt-lc').length){
         $('.br-pt-lc select').barrating({
             theme: 'fontawesome-stars'

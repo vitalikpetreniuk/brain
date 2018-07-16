@@ -2168,6 +2168,14 @@ li:hover > .br-main-submenu
     -webkit-transition: padding .2s ease;
     transition: padding .2s ease;
 }
+.br-sfixed
+{
+    padding-bottom: 85px;
+}
+.br-sfixed .sidebar-scroll
+{
+    max-height: calc(100vh - 215px);
+}
 /*-----*/
 
 
@@ -20221,6 +20229,10 @@ div:nth-last-child(-3+n) > .br-action-item
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
+.sidebar-scroll
+{
+    max-height: calc(100vh - 130px);
+}
 /*credits styles end*/
 /*Новая страница промокода*/
 .br-cat-new
@@ -20329,7 +20341,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .category-scroll
 {
-    height: calc(100vh - 190px);
+    max-height: calc(100vh - 270px);
 }
 .category-scroll .scroll-element.scroll-y
 {
@@ -20362,6 +20374,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .category-scroll .br-slist
 {
     padding-right: 15px;
+    padding-bottom: 1px;
 }
 .br-cat-promo .br-category-block > a
 {
