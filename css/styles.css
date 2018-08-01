@@ -15510,6 +15510,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .br-markdown .br-pr-code
 {
     position: absolute;
+    z-index: 3;
     left: 0;
     top: 10px;
     margin: 0;
