@@ -1823,9 +1823,12 @@ $(function(){
         $(this).closest('.modal').find('.br-c-checkouts').toggleClass('active');
     });
 
+    // alert fixes
     $('.br-alert button').on('click', function(){
         $('.br-alert').slideUp('fast');
+        $('header').css('top', '0');
     });
+    // alert fixes end
 
     $('.br-nofound button').on('click', function(){
         $('.br-nofound').hide();
@@ -2298,11 +2301,20 @@ $(function(){
         hsHeight = $('header').height();
     });
 
+    // alert fixes
     $(window).on('scroll resize', function(){
 
         var wHeight = $(window).height();
         var aHeight = $('.br-alert').height();
         var hHeight = $('header').height();
+
+        if ($(window).scrollTop() > 0){
+            $('.br-alert').addClass('fixed');
+            $('body').removeClass('pillar');
+        }else{
+            $('.br-alert').removeClass('fixed');
+            $('body').addClass('pillar');
+        }
 
         if($('.br-pt-menu .br-pt-menu-in').hasClass('is_stuck'))
         {
@@ -2334,7 +2346,7 @@ $(function(){
         {
             if ($(window).width() > 1011)
             {
-                if ($(window).scrollTop() >= hsHeight + aHeight - 55)
+                if ($(window).scrollTop() >= hsHeight - 55)
                 {
                     $('.br-theader').hide();
                     $('.br-bh-menu-top').addClass('hiddenm').removeClass('showd');
@@ -2345,7 +2357,7 @@ $(function(){
                     $('.br-alert').addClass('invisible');
                     $('body').css('padding-top', hsHeight + 65 + aHeight);
                     $('.br-body-p').css('padding-top', hsHeight + aHeight);
-                    $('header').addClass('fixed')
+                    $('header').addClass('fixed').css('top', aHeight);
                 }
                 else
                 {
@@ -2356,13 +2368,13 @@ $(function(){
                     $('.br-bheader-in').removeClass('active');
                     $('.br-ceader-in').removeClass('active');
                     $('.br-alert').removeClass('invisible');
-                    $('body').css('padding-top', '0');
-                    $('header').removeClass('fixed');
+                    $('body').css('padding-top', aHeight);
+                    $('header').removeClass('fixed').css('top', '0');
                 }
             }
             else
             {
-                if ($(window).scrollTop() >= aHeight)
+                if ($(window).scrollTop() > 0)
                 {
                     $('.br-theader').hide();
                     $('.br-bh-menu-top').addClass('hiddenm').removeClass('showd');
@@ -2378,7 +2390,7 @@ $(function(){
                     {
                         $('body').css('padding-top', aHeight + 91);
                     }
-                    $('header').addClass('fixed');
+                    $('header').addClass('fixed').css('top', aHeight);
                 }
                 else
                 {
@@ -2389,8 +2401,9 @@ $(function(){
                     $('.br-bheader-in').removeClass('active');
                     $('.br-ceader-in').removeClass('active');
                     $('.br-alert').removeClass('invisible');
-                    $('body').css('padding-top', '0');
-                    $('header').removeClass('fixed');
+                    $('body').css('padding-top', aHeight);
+                    // alert end
+                    $('header').removeClass('fixed').css('top', '0');
                 }
             }
         }
@@ -2409,7 +2422,7 @@ $(function(){
                     $('.br-alert').addClass('invisible');
                     $('body').css('padding-top', hsHeight + 65);
                     $('.br-body-p').css('padding-top', hsHeight);
-                    $('header').addClass('fixed')
+                    $('header').addClass('fixed').css('top', '0');
                 }
                 else
                 {
@@ -2421,7 +2434,7 @@ $(function(){
                     $('.br-ceader-in').removeClass('active');
                     $('.br-alert').removeClass('invisible');
                     $('body').css('padding-top', '0');
-                    $('header').removeClass('fixed');
+                    $('header').removeClass('fixed').css('top', '0');
                 }
             }
             else
@@ -2460,11 +2473,7 @@ $(function(){
         }
 
     });
-
-
-
-
-
+    // alert fixes end
 
     $('.panel a').on('click', function () {
         if($(window).width() < 680)
