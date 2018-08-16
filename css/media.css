@@ -1561,6 +1561,25 @@
 }
 @media(max-width: 1011px)
 {
+    /*feedback page*/
+    .br-ri-rating{
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .br-ri-rating .br-ri-rating-item{
+        width: 50%;
+    }
+    .callcenter-rating{
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .callcenter-rating div{
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+    }
+    /*feedback page end*/
     /*new banner*/
     .br-pc-banner h1{
         top: 25%;
@@ -4392,6 +4411,19 @@
     {
         margin-bottom: 10px;
     }
+    /*feedback page*/
+    .br-ri-rating .br-ri-rating-item{
+        width: 100%;
+    }
+    .callcenter-rating{
+        text-align: left;
+    }
+    .callcenter-rating div{
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+    }
+    /*feedback page end*/
     .br-hsearch form
     {
         width: 260px;
