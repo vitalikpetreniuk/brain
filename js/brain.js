@@ -1113,6 +1113,30 @@ $(function(){
         $(this).closest('.br-pr-set').find('.br-pr-set-price strong').text(productValue + setValue);
     });
 
+    /*new product page*/
+    owl.on('resized.owl.carousel', function(event) {
+        var $this = $(this);
+        $this.find('.owl-height').css('height', $this.find('.owl-item.active').height());
+    });
+    $(window).on('load resize', function () {
+        if($(window).width() < 1010){
+            $('.product-tabs a').on('click', function () {
+                setTimeout(function () {
+                    $(this).prependTo('.product-tabs ul');
+                },300);
+                if($(this).parent().hasClass('active')){
+                    $('.product-tabs li').show();
+                }else{
+                    $('.product-tabs li').hide();
+                }
+            });
+        }
+    });
+    if($('.product-select').length){
+        $('.product-select').selectmenu();
+    }
+    /*new product page end*/
+
     if($('.br-slider-range').length)
     {
         $('.br-slider-range').slider({
