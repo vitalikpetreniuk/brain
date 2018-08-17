@@ -6717,11 +6717,18 @@
         -webkit-justify-content: center;
         -ms-flex-pack: center;
     }
-    .br-mc-item
-    {
-        width: 100%;
-        text-align: center;
+    /*colors modal fix*/
+    .br-mc-item{
+        padding: 0 25px;
     }
+    .br-mc-price{
+        font-size: 14px;
+    }
+    .br-mc-price span:last-child{
+        font-size: 12px;
+        margin: -2px 0 0 4px;
+    }
+    /*colors modal fix end*/
     #br-morder-c .form-group label
     {
         line-height: normal;
