@@ -2130,13 +2130,14 @@ $(function(){
         $(this).parent('div').parent('.br-category-block').parent('.br-category-block').children('.br-category-block').removeClass('active');
     });
 
+    /*new product page*/
     $('.br-pr-menu a').on('click', function(){
         $('.br-pr-fixed').removeClass('active');
         $('.br-pr-menu').removeClass('active');
-        var target = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(target).offset().top - 80}, 800);
-        return false;
+        prodTab = $(this).attr('href');
+        $('.product-tabs a[href="' + prodTab +'"]').trigger('click');
     });
+    /*new product page end*/
 
     $('.br-pr-lpp a').on('click', function(){
         var target = $(this).attr('href');

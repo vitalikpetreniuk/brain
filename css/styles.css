@@ -20602,7 +20602,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .product-wrap .br-pr-code{
     padding: 0;
     line-height: normal;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .product-code-num{
     line-height: 24px;
@@ -20630,7 +20630,7 @@ div:nth-last-child(-3+n) > .br-action-item
     justify-content: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .product-wrap .br-prm-abs button{
     height: 24px;
@@ -20869,6 +20869,19 @@ div:nth-last-child(-3+n) > .br-action-item
     -webkit-box-shadow: 0 5px 0 0 rgba(209,236,244,1);
     box-shadow: 0 5px 0 0 rgba(209,236,244,1);
     overflow: hidden;
+    position: relative;
+}
+.product-tabs ul:after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
 }
 .product-tabs li{
     flex-grow: 1;
