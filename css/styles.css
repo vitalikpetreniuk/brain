@@ -20532,3 +20532,122 @@ div:nth-last-child(-3+n) > .br-action-item
     margin-bottom: 30px;
 }
 /*checkout form end*/
+
+
+/*cart styles*/
+.br-cart-panel
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.br-cart-panel + .br-cart-products, .br-cart-products + .br-cart-panel
+{
+    margin-top: 25px;
+}
+.br-cart-products + .br-cart-panel
+{
+    margin-bottom: 55px;
+}
+.br-cart-panel-left
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.br-cart-qt
+{
+    color: #777;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+.br-cart-qt span
+{
+    font-weight: 700;
+    color: #344150;
+}
+.br-cart-links
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.br-cart-links *
+{
+    background: none;
+    border: none;
+    color: #10b1e8;
+    padding: 0;
+    border-bottom: 1px dotted #10b1e8;
+}
+.br-cart-links *:hover
+{
+    border-color: transparent;
+    color: #10b1e8;
+}
+.br-cart-links *:focus
+{
+    color: #10b1e8;
+}
+.br-cart-links * + *
+{
+    margin-left: 60px;
+}
+.br-cart-panel-right
+{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.br-cart-panel-right *
+{
+    border: 1px solid #10b1e8;
+    height: 53px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 30px;
+}
+.br-cart-fast
+{
+    margin-right: 10px;
+    background: transparent;
+}
+.br-cart-checkout
+{
+    background: #10b1e8;
+    color: #fff;
+}
+.br-cart-products .br-chp-list
+{
+    margin-bottom: 0;
+}
+.br-cart-products .br-cart-item:last-child
+{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.br-cart-empty
+{
+    margin-bottom: 55px;
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 18px;
+}
+/*cart styles end*/

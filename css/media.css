@@ -1561,6 +1561,25 @@
 }
 @media(max-width: 1011px)
 {
+    /*cart styles*/
+    .br-cart-panel
+    {
+        display: block;
+    }
+    .br-cart-panel-left
+    {
+        margin-bottom: 25px;
+    }
+    .br-cart-qt
+    {
+        margin-bottom: 10px;
+    }
+    .br-cart-links * + *
+    {
+        margin-left: 0;
+    }
+    /*cart styles end*/
+
     /*new banner*/
     .br-pc-banner h1{
         top: 25%;
@@ -5569,6 +5588,21 @@
 }
 @media(max-width: 450px)
 {
+    /*cart styles*/
+    .br-cart-panel-right
+    {
+        display: block;
+    }
+    .br-cart-panel-right *
+    {
+        width: 100%;
+    }
+    .br-cart-fast
+    {
+        margin: 0 0 10px;
+    }
+    /*cart styles end*/
+
     .br-prof-sidebar-fixed, .br-fx-sidebar
     {
         width: calc(100% - 30px);
