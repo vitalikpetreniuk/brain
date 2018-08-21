@@ -2259,7 +2259,7 @@ $(function(){
 
     $('.visible-lg .br-checkbox-link').on('click', function () {
         var boxChain = $(this).attr('data-id');
-        if($(window).width() >= 1354){
+        if($(window).width() >= 1355){
             $('.br-sidebar-in a[data-id="' + boxChain + '"' + ']').trigger('click');
         }
         if($(this).hasClass('active')){
@@ -2271,7 +2271,7 @@ $(function(){
 
     $('.br-sidebar-in .br-checkbox-link').on('click', function () {
         var boxChain = $(this).attr('data-id');
-        if($(window).width() < 1353){
+        if($(window).width() < 1355){
             $('.visible-lg a[data-id="' + boxChain + '"' + ']').trigger('click');
         }
         if($(this).hasClass('active')){
