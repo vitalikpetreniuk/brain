@@ -2451,7 +2451,6 @@ $(function(){
                     $('.br-ceader-in').removeClass('active');
                     $('.br-alert').removeClass('invisible');
                     $('body').css('padding-top', aHeight);
-                    // alert end
                     $('header').removeClass('fixed').css('top', '0');
                 }
             }

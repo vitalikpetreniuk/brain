@@ -19,6 +19,11 @@ body
     font-size: 13px;
     color: #344150;
 }
+/*alert fixes*/
+body.pillar{
+    padding-top: 0 !important;
+}
+/*alert fixes end*/
 a, button
 {
     color: #344150;
@@ -5919,6 +5924,15 @@ footer a
     left: 0;
     top: 0;
     width: 100%;
+}
+.br-alert.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 105;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 .br-alert-in
 {
