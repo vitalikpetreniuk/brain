@@ -2168,6 +2168,14 @@ li:hover > .br-main-submenu
     -webkit-transition: padding .2s ease;
     transition: padding .2s ease;
 }
+.br-sfixed
+{
+    padding-bottom: 85px;
+}
+.br-sfixed .sidebar-scroll
+{
+    max-height: calc(100vh - 215px);
+}
 /*-----*/
 
 
@@ -2309,10 +2317,6 @@ li:hover > .br-main-submenu
 
 
 /*Стили BRAIN - категории товаров в сайдбаре*/
-.br-sidebar
-{
-    height: 100%;
-}
 .br-sidebar h3, .br-accordion > ul > li > a, .br-accordion > ul > li > a:hover, .br-sidebar-search .br-slist > ul > li > a, .br-accordion-button
 {
     font-size: 16px;
@@ -20322,6 +20326,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .sidebar-scroll
 {
+<<<<<<< HEAD
     height: calc(100vh - 130px);
 }
 .sidebar-scroll .scroll-element.scroll-y
@@ -20355,6 +20360,9 @@ div:nth-last-child(-3+n) > .br-action-item
 .sidebar-scroll .br-slist:last-child, .sidebar-scroll .br-slist li:last-child
 {
     margin-bottom: 0;
+=======
+    max-height: calc(100vh - 130px);
+>>>>>>> origin/sfix
 }
 /*credits styles end*/
 /*Новая страница промокода*/
@@ -20473,7 +20481,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 .category-scroll
 {
-    height: calc(100vh - 190px);
+    max-height: calc(100vh - 270px);
 }
 .category-scroll .scroll-element.scroll-y
 {
@@ -20506,6 +20514,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .category-scroll .br-slist
 {
     padding-right: 15px;
+    padding-bottom: 1px;
 }
 .br-cat-promo .br-cb-nocat
 {
