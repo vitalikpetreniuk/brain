@@ -20419,15 +20419,18 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     padding-right: 15px;
 }
-.br-cat-promo .br-category-block > a
+.br-cat-promo .br-cb-nocat
 {
-    text-indent: -999999px;
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+}
+.br-cat-promo .br-category-block-link span
+{
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    color: #10b1e8;
+    font-size: 14px;
+    font-weight: 700;
 }
 .br-title-rel
 {
