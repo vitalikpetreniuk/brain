@@ -273,10 +273,6 @@
     {
         padding-top: 5px;
     }
-    .br-tlink
-    {
-        display: none;
-    }
     .br-comp-item-bottom
     {
         margin: 20px 5px 0;
@@ -3256,6 +3252,10 @@
 }
 @media(max-width: 766px)
 {
+    .br-tlink
+    {
+        top: -25px;
+    }
     .br-up-cat{
         display: none;
     }
