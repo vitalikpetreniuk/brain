@@ -23,6 +23,10 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,900&amp;subset=cyrillic" rel="stylesheet">
     <!-- fonts end -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN3VMvFl17uDFD2kulJsVnI_C24oBAfzs"></script>
+    <script src="js/gmap3.min.js"></script>
+
 </head>
 <body>
     <header class="br-header-main">
@@ -3725,10 +3729,10 @@
                                                             <div class="br-scroll-wrapper">
                                                                 <ul class="br-n-scroll br-nc-scroll">
                                                                     <li>
-                                                                        <a href="#shop31" data-toggle="tab" data-id="drop-item-1">Вся Украина</a>
+                                                                        <a href="#">Вся Украина</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#shop32" data-toggle="tab" data-id="drop-item-2">Киев</a>
+                                                                        <a href="#">Киев</a>
                                                                     </li>
                                                                 </ul>
                                                                 <div class="br-my-p">
@@ -3741,253 +3745,172 @@
                                                     </div>
                                                 </div>
                                                 <div class="br-del-in-body">
-                                                    <div class="tab-pane active" id="shop31">
-                                                        <div class="br-shops-main-block">
-                                                            <div class="br-scroll">
-                                                                <div class="br-shops-main-block-in">
-                                                                    <div>
-                                                                        <h4>Вся Украина</h4>
-                                                                        <div class="br-shops-list">
-                                                                            <div class="br-shops-item">
-                                                                                <div class="br-shop-address">
-                                                                                    ул. Киевская, 14-б, в магазине BRAIN,<br>
-                                                                                    В районе центрального автовокзала
+                                                    <div class="br-shops-main-block">
+                                                        <div class="br-scroll">
+                                                            <div class="br-shops-main-block-in">
+                                                                <div>
+                                                                    <h4>Киев</h4>
+                                                                    <div class="br-shops-list">
+                                                                        <div class="br-shops-item">
+                                                                            <div class="br-shop-address">
+                                                                                ул. Киевская, 14-б, в магазине BRAIN,<br>
+                                                                                В районе центрального автовокзала
+                                                                            </div>
+                                                                            <div class="br-shop-info">
+                                                                                <div>
+                                                                                    <a href="tel:380432554040">+380 (432) 55-40-40</a>
+                                                                                    <a href="tel:380935125298">+380 (93) 512-52-98</a>
                                                                                 </div>
-                                                                                <div class="br-shop-info">
-                                                                                    <div>
-                                                                                        <a href="tel:380432554040">+380 (432) 55-40-40</a>
-                                                                                        <a href="tel:380935125298">+380 (93) 512-52-98</a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <span>Пн.-Чт. з 9:00 до 18:00</span>
-                                                                                        <span>Пт. с 9:00 до 17:00</span>
-                                                                                        <span>Сб. с 10:00 до 14:00</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shops-show">
-                                                                                    <a href="#smap31" data-toggle="tab" data-id="change-map-1">Показать магазин на карте</a>
-                                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                                <div>
+                                                                                    <span>Пн.-Чт. з 9:00 до 18:00</span>
+                                                                                    <span>Пт. с 9:00 до 17:00</span>
+                                                                                    <span>Сб. с 10:00 до 14:00</span>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="br-shops-item">
-                                                                                <div class="br-shop-address">
-                                                                                    просп. Юности, 43а, в магазине BRAIN,<br>
-                                                                                    Микрорайон Вишенка,<br>
-                                                                                    остановка Проспект Юности
+                                                                            <div class="br-shop-gallery br-shops-imgs br-loading">
+                                                                                <div>
+                                                                                    <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
                                                                                 </div>
-                                                                                <div class="br-shop-info">
-                                                                                    <div>
-                                                                                        <a href="tel:380432555511">+380 (432) 55-55-11</a>
-                                                                                        <a href="tel:380935125294">+380 (93) 512-52-94</a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <span>Пн.-Вс: с 10:00 до 21:00</span>
-                                                                                    </div>
+                                                                                <div>
+                                                                                    <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
                                                                                 </div>
-                                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                                    </div>
+                                                                                <div>
+                                                                                    <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
                                                                                 </div>
-                                                                                <div class="br-shops-show">
-                                                                                    <a href="#smap32" data-toggle="tab" data-id="change-map-2">Показать магазин на карте</a>
-                                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                                <div>
+                                                                                    <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
                                                                                 </div>
+                                                                            </div>
+                                                                            <div class="br-shops-show">
+                                                                                <a href="#" data-address="Киев, ул. Киевская, 14-б">Показать магазин на карте</a>
+                                                                                <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <div>
-                                                                        <h4>Днепр</h4>
-                                                                        <div class="br-shops-list">
-                                                                            <div class="br-shops-item">
-                                                                                <div class="br-shop-address">
-                                                                                    пр-т А. Поля (Кирова), 59, в магазине BRAIN;<br>
-                                                                                    перекресток А. Поля (Кирова)<br>
-                                                                                    и улицы М. Драгоманова (Димитрова),<br>
-                                                                                    рядом с магазином "Winetime"
+                                                                        <div class="br-shops-item">
+                                                                            <div class="br-shop-address">
+                                                                                просп. Юности, 43а, в магазине BRAIN,<br>
+                                                                                Микрорайон Вишенка,<br>
+                                                                                остановка Проспект Юности
+                                                                            </div>
+                                                                            <div class="br-shop-info">
+                                                                                <div>
+                                                                                    <a href="tel:380432555511">+380 (432) 55-55-11</a>
+                                                                                    <a href="tel:380935125294">+380 (93) 512-52-94</a>
                                                                                 </div>
-                                                                                <div class="br-shop-info">
-                                                                                    <div>
-                                                                                        <a href="tel:380432554040">+380 (432) 55-40-40</a>
-                                                                                        <a href="tel:380935125298">+380 (93) 512-52-98</a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <span>Пн.-Чт. з 9:00 до 18:00</span>
-                                                                                        <span>Пт. с 9:00 до 17:00</span>
-                                                                                        <span>Сб. с 10:00 до 14:00</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shops-show">
-                                                                                    <a href="#smap33" data-toggle="tab" data-id="change-map-3">Показать магазин на карте</a>
-                                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                                <div>
+                                                                                    <span>Пн.-Вс: с 10:00 до 21:00</span>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="br-shops-item">
-                                                                                <div class="br-shop-address">
-                                                                                    просп. Юности, 43а, в магазине BRAIN,<br>
-                                                                                    Микрорайон Вишенка,<br>
-                                                                                    остановка Проспект Юности
+                                                                            <div class="br-shop-gallery br-shops-imgs br-loading">
+                                                                                <div>
+                                                                                    <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
                                                                                 </div>
-                                                                                <div class="br-shop-info">
-                                                                                    <div>
-                                                                                        <a href="tel:380432555511">+380 (432) 55-55-11</a>
-                                                                                        <a href="tel:380935125294">+380 (93) 512-52-94</a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <span>Пн.-Вс: с 10:00 до 21:00</span>
-                                                                                    </div>
+                                                                                <div>
+                                                                                    <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
                                                                                 </div>
-                                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shops-show">
-                                                                                    <a href="#smap34" data-toggle="tab" data-id="change-map-4">Показать магазин на карте</a>
-                                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
-                                                                                </div>
+                                                                            </div>
+                                                                            <div class="br-shops-show">
+                                                                                <a href="#" data-address="Киев, просп. Юности, 43а">Показать магазин на карте</a>
+                                                                                <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="br-shops-map tab-content">
-                                                            <div class="tab-pane active" id="smap31">
-                                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                                            </div>
-                                                            <div class="tab-pane" id="smap32">
-                                                                <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                            </div>
-                                                            <div class="tab-pane" id="smap33">
-                                                                <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                            </div>
-                                                            <div class="tab-pane" id="smap34">
-                                                                <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                            </div>
-                                                        </div>
                                                     </div>
-                                                    <div class="tab-pane" id="shop32">
-                                                        <div class="br-shops-main-block">
-                                                            <div class="br-scroll">
-                                                                <div class="br-shops-main-block-in">
-                                                                    <div>
-                                                                        <h4>Киев</h4>
-                                                                        <div class="br-shops-list">
-                                                                            <div class="br-shops-item">
-                                                                                <div class="br-shop-address">
-                                                                                    ул. Киевская, 14-б, в магазине BRAIN,<br>
-                                                                                    В районе центрального автовокзала
-                                                                                </div>
-                                                                                <div class="br-shop-info">
-                                                                                    <div>
-                                                                                        <a href="tel:380432554040">+380 (432) 55-40-40</a>
-                                                                                        <a href="tel:380935125298">+380 (93) 512-52-98</a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <span>Пн.-Чт. з 9:00 до 18:00</span>
-                                                                                        <span>Пт. с 9:00 до 17:00</span>
-                                                                                        <span>Сб. с 10:00 до 14:00</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shops-show">
-                                                                                    <a href="#smap41" data-toggle="tab" data-id="change-map-5">Показать магазин на карте</a>
-                                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="br-shops-item">
-                                                                                <div class="br-shop-address">
-                                                                                    просп. Юности, 43а, в магазине BRAIN,<br>
-                                                                                    Микрорайон Вишенка,<br>
-                                                                                    остановка Проспект Юности
-                                                                                </div>
-                                                                                <div class="br-shop-info">
-                                                                                    <div>
-                                                                                        <a href="tel:380432555511">+380 (432) 55-55-11</a>
-                                                                                        <a href="tel:380935125294">+380 (93) 512-52-94</a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <span>Пн.-Вс: с 10:00 до 21:00</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                                    <div>
-                                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="br-shops-show">
-                                                                                    <a href="#smap42" data-toggle="tab" data-id="change-map-6">Показать магазин на карте</a>
-                                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="br-shops-map tab-content">
-                                                            <div class="tab-pane active" id="smap41">
-                                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                                            </div>
-                                                            <div class="tab-pane" id="smap42">
-                                                                <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                            </div>
-                                                        </div>
+                                                    <div class="br-shops-map tab-content">
+                                                        <div id="first_acc__map" style="height: 440px;"></div>
                                                     </div>
+
+                                                    <script>
+                                                        $(function(){
+                                                            $('#first_acc__map')
+                                                                .gmap3({
+                                                                    address: "Украина",
+                                                                    zoom: 6,
+                                                                    mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                });
+
+                                                            $("#headingOnes a").on('click', function(){
+                                                                $('#first_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container1 = $('#first_acc__map').parent();
+                                                                $('#first_acc__map').remove();
+                                                                container1.append('<div id="first_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#second_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container2 = $('#second_acc__map').parent();
+                                                                $('#second_acc__map').remove();
+                                                                container2.append('<div id="second_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#first_acc__map')
+                                                                    .gmap3({
+                                                                        address: "Украина",
+                                                                        zoom: 6,
+                                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                    });
+                                                            });
+
+                                                            $("#collapseOnes .br-cities-ms .br-scroll-wrapper a").on('click', function (e) {
+                                                                e.preventDefault();
+                                                                var city = $(this).text(),
+                                                                    zoom = 8;
+
+                                                                if(city == 'Вся Украина'){
+                                                                    city = "Украина";
+                                                                    zoom = 6
+                                                                }
+
+                                                                $('#first_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container = $('#first_acc__map').parent();
+                                                                $('#first_acc__map').remove();
+                                                                container.append('<div id="first_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#first_acc__map')
+                                                                    .gmap3({
+                                                                        address: city,
+                                                                        zoom: zoom,
+                                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                    });
+                                                            });
+
+                                                            $("#collapseOnes .br-shops-list .br-shops-show a").on('click', function (e) {
+                                                                e.preventDefault();
+                                                                var city = $(this).data('address'),
+                                                                    zoom = 14;
+
+                                                                $('#first_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container = $('#first_acc__map').parent();
+                                                                $('#first_acc__map').remove();
+                                                                container.append('<div id="first_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#first_acc__map')
+                                                                    .gmap3({
+                                                                        address: city,
+                                                                        zoom: zoom,
+                                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                    })
+                                                                    .marker(function (map) {
+                                                                        return {
+                                                                            position: map.getCenter(),
+                                                                            icon: 'http://maps.google.com/mapfiles/marker_green.png'
+                                                                        };
+                                                                    });
+                                                            });
+                                                        });
+                                                    </script>
                                                 </div>
                                             </div>
                                         </div>
@@ -4020,10 +3943,10 @@
                                                                 <div class="br-scroll-wrapper">
                                                                     <ul class="br-n-scroll br-nc-scroll">
                                                                         <li>
-                                                                            <a href="#shop41" data-toggle="tab" data-id="drop-item-3">Вся Украина</a>
+                                                                            <a href="#">Вся Украина</a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="#shop42" data-toggle="tab" data-id="drop-item-4">Киев</a>
+                                                                            <a href="#">Киев</a>
                                                                         </li>
                                                                     </ul>
                                                                     <div class="br-my-p">
@@ -4263,16 +4186,91 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane active" id="shop41">
-                                                        <div class="br-shops-map">
-                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                                        </div>
+                                                    <div class="br-shops-map">
+                                                        <div id="second_acc__map" style="height: 440px;"></div>
                                                     </div>
-                                                    <div class="tab-pane" id="shop42">
-                                                        <div class="br-shops-map">
-                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                                        </div>
-                                                    </div>
+
+                                                    <script>
+                                                        $(function(){
+                                                            $("#headingTwos a").on('click', function(){
+                                                                $('#first_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container1 = $('#first_acc__map').parent();
+                                                                $('#first_acc__map').remove();
+                                                                container1.append('<div id="first_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#second_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container2 = $('#second_acc__map').parent();
+                                                                $('#second_acc__map').remove();
+                                                                container2.append('<div id="second_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#second_acc__map')
+                                                                    .gmap3({
+                                                                        address: "Украина",
+                                                                        zoom: 6,
+                                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                    });
+                                                            });
+
+                                                            $("#collapseTwos .br-cities-ms .br-scroll-wrapper a").on('click', function (e) {
+                                                                e.preventDefault();
+                                                                var city = $(this).text(),
+                                                                    zoom = 8;
+
+                                                                if(city == 'Вся Украина'){
+                                                                    city = "Украина";
+                                                                    zoom = 6
+                                                                }
+
+                                                                $('#second_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container = $('#second_acc__map').parent();
+                                                                $('#second_acc__map').remove();
+                                                                container.append('<div id="second_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#second_acc__map')
+                                                                    .gmap3({
+                                                                        address: city,
+                                                                        zoom: zoom,
+                                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                    });
+                                                            });
+
+                                                            $("#collapseTwos .br-shops-list .br-shops-show a").on('click', function (e) {
+                                                                e.preventDefault();
+                                                                var city = $(this).data('address'),
+                                                                    zoom = 14;
+
+                                                                $('#second_acc__map').gmap3({
+                                                                    action: 'destroy'
+                                                                });
+
+                                                                var container = $('#second_acc__map').parent();
+                                                                $('#second_acc__map').remove();
+                                                                container.append('<div id="second_acc__map" style="height: 440px;"></div>');
+
+                                                                $('#second_acc__map')
+                                                                    .gmap3({
+                                                                        address: city,
+                                                                        zoom: zoom,
+                                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                                    })
+                                                                    .marker(function (map) {
+                                                                        return {
+                                                                            position: map.getCenter(),
+                                                                            icon: 'http://maps.google.com/mapfiles/marker_green.png'
+                                                                        };
+                                                                    });
+                                                            });
+                                                        });
+                                                    </script>
                                                 </div>
                                             </div>
                                         </div>
@@ -4352,10 +4350,10 @@
                                                 <div class="br-scroll-wrapper">
                                                     <ul class="br-n-scroll br-nc-scroll">
                                                         <li>
-                                                            <a href="#shop1" data-toggle="tab" data-id="drop-item-1">Вся Украина</a>
+                                                            <a href="#">Вся Украина</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#shop2" data-toggle="tab" data-id="drop-item-2">Киев</a>
+                                                            <a href="#">Киев</a>
                                                         </li>
                                                     </ul>
                                                     <div class="br-my-p">
@@ -4368,253 +4366,245 @@
                                         </div>
                                     </div>
                                     <div class="br-del-in-body">
-                                        <div class="tab-pane active" id="shop1">
-                                            <div class="br-shops-main-block">
-                                                <div class="br-scroll">
-                                                    <div class="br-shops-main-block-in">
-                                                        <div>
-                                                            <h4>Вся Украина</h4>
-                                                            <div class="br-shops-list">
-                                                                <div class="br-shops-item">
-                                                                    <div class="br-shop-address">
-                                                                        ул. Киевская, 14-б, в магазине BRAIN,<br>
-                                                                        В районе центрального автовокзала
+                                        <div class="br-shops-main-block">
+                                            <div class="br-scroll">
+                                                <div class="br-shops-main-block-in">
+                                                    <div>
+                                                        <h4>Вся Украина</h4>
+                                                        <div class="br-shops-list">
+                                                            <div class="br-shops-item">
+                                                                <div class="br-shop-address">
+                                                                    ул. Киевская, 14-б, в магазине BRAIN,<br>
+                                                                    В районе центрального автовокзала
+                                                                </div>
+                                                                <div class="br-shop-info">
+                                                                    <div>
+                                                                        <a href="tel:380432554040">+380 (432) 55-40-40</a>
+                                                                        <a href="tel:380935125298">+380 (93) 512-52-98</a>
                                                                     </div>
-                                                                    <div class="br-shop-info">
-                                                                        <div>
-                                                                            <a href="tel:380432554040">+380 (432) 55-40-40</a>
-                                                                            <a href="tel:380935125298">+380 (93) 512-52-98</a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <span>Пн.-Чт. з 9:00 до 18:00</span>
-                                                                            <span>Пт. с 9:00 до 17:00</span>
-                                                                            <span>Сб. с 10:00 до 14:00</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shops-show">
-                                                                        <a href="#smap1" data-toggle="tab" data-id="change-map-1">Показать магазин на карте</a>
-                                                                        <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                    <div>
+                                                                        <span>Пн.-Чт. з 9:00 до 18:00</span>
+                                                                        <span>Пт. с 9:00 до 17:00</span>
+                                                                        <span>Сб. с 10:00 до 14:00</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="br-shops-item">
-                                                                    <div class="br-shop-address">
-                                                                        просп. Юности, 43а, в магазине BRAIN,<br>
-                                                                        Микрорайон Вишенка,<br>
-                                                                        остановка Проспект Юности
+                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
+                                                                    <div>
+                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
                                                                     </div>
-                                                                    <div class="br-shop-info">
-                                                                        <div>
-                                                                            <a href="tel:380432555511">+380 (432) 55-55-11</a>
-                                                                            <a href="tel:380935125294">+380 (93) 512-52-94</a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <span>Пн.-Вс: с 10:00 до 21:00</span>
-                                                                        </div>
+                                                                    <div>
+                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
                                                                     </div>
-                                                                    <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                        </div>
+                                                                    <div>
+                                                                        <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
                                                                     </div>
-                                                                    <div class="br-shops-show">
-                                                                        <a href="#smap2" data-toggle="tab" data-id="change-map-2">Показать магазин на карте</a>
-                                                                        <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                    <div>
+                                                                        <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
                                                                     </div>
+                                                                </div>
+                                                                <div class="br-shops-show">
+                                                                    <a href="#" data-address="Украина, ул. Киевская, 14-б">Показать магазин на карте</a>
+                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="br-shops-item">
+                                                                <div class="br-shop-address">
+                                                                    просп. Юности, 43а, в магазине BRAIN,<br>
+                                                                    Микрорайон Вишенка,<br>
+                                                                    остановка Проспект Юности
+                                                                </div>
+                                                                <div class="br-shop-info">
+                                                                    <div>
+                                                                        <a href="tel:380432555511">+380 (432) 55-55-11</a>
+                                                                        <a href="tel:380935125294">+380 (93) 512-52-94</a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <span>Пн.-Вс: с 10:00 до 21:00</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
+                                                                    <div>
+                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="br-shops-show">
+                                                                    <a href="#" data-address="Украина, просп. Юности, 43а">Показать магазин на карте</a>
+                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div>
-                                                            <h4>Днепр</h4>
-                                                            <div class="br-shops-list">
-                                                                <div class="br-shops-item">
-                                                                    <div class="br-shop-address">
-                                                                        пр-т А. Поля (Кирова), 59, в магазине BRAIN;<br>
-                                                                        перекресток А. Поля (Кирова)<br>
-                                                                        и улицы М. Драгоманова (Димитрова),<br>
-                                                                        рядом с магазином "Winetime"
+                                                    </div>
+                                                    <div>
+                                                        <h4>Днепр</h4>
+                                                        <div class="br-shops-list">
+                                                            <div class="br-shops-item">
+                                                                <div class="br-shop-address">
+                                                                    пр-т А. Поля (Кирова), 59, в магазине BRAIN;<br>
+                                                                    перекресток А. Поля (Кирова)<br>
+                                                                    и улицы М. Драгоманова (Димитрова),<br>
+                                                                    рядом с магазином "Winetime"
+                                                                </div>
+                                                                <div class="br-shop-info">
+                                                                    <div>
+                                                                        <a href="tel:380432554040">+380 (432) 55-40-40</a>
+                                                                        <a href="tel:380935125298">+380 (93) 512-52-98</a>
                                                                     </div>
-                                                                    <div class="br-shop-info">
-                                                                        <div>
-                                                                            <a href="tel:380432554040">+380 (432) 55-40-40</a>
-                                                                            <a href="tel:380935125298">+380 (93) 512-52-98</a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <span>Пн.-Чт. з 9:00 до 18:00</span>
-                                                                            <span>Пт. с 9:00 до 17:00</span>
-                                                                            <span>Сб. с 10:00 до 14:00</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shops-show">
-                                                                        <a href="#smap3" data-toggle="tab" data-id="change-map-3">Показать магазин на карте</a>
-                                                                        <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                    <div>
+                                                                        <span>Пн.-Чт. з 9:00 до 18:00</span>
+                                                                        <span>Пт. с 9:00 до 17:00</span>
+                                                                        <span>Сб. с 10:00 до 14:00</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="br-shops-item">
-                                                                    <div class="br-shop-address">
-                                                                        просп. Юности, 43а, в магазине BRAIN,<br>
-                                                                        Микрорайон Вишенка,<br>
-                                                                        остановка Проспект Юности
+                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
+                                                                    <div>
+                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
                                                                     </div>
-                                                                    <div class="br-shop-info">
-                                                                        <div>
-                                                                            <a href="tel:380432555511">+380 (432) 55-55-11</a>
-                                                                            <a href="tel:380935125294">+380 (93) 512-52-94</a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <span>Пн.-Вс: с 10:00 до 21:00</span>
-                                                                        </div>
+                                                                    <div>
+                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
                                                                     </div>
-                                                                    <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                        </div>
+                                                                    <div>
+                                                                        <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
                                                                     </div>
-                                                                    <div class="br-shops-show">
-                                                                        <a href="#smap4" data-toggle="tab" data-id="change-map-4">Показать магазин на карте</a>
-                                                                        <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                    <div>
+                                                                        <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
                                                                     </div>
+                                                                    <div>
+                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="br-shops-show">
+                                                                    <a href="#" data-address="Днепр, пр-т А. Поля (Кирова), 59">Показать магазин на карте</a>
+                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="br-shops-item">
+                                                                <div class="br-shop-address">
+                                                                    просп. Юности, 43а, в магазине BRAIN,<br>
+                                                                    Микрорайон Вишенка,<br>
+                                                                    остановка Проспект Юности
+                                                                </div>
+                                                                <div class="br-shop-info">
+                                                                    <div>
+                                                                        <a href="tel:380432555511">+380 (432) 55-55-11</a>
+                                                                        <a href="tel:380935125294">+380 (93) 512-52-94</a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <span>Пн.-Вс: с 10:00 до 21:00</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="br-shop-gallery br-shops-imgs br-loading">
+                                                                    <div>
+                                                                        <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="br-shops-show">
+                                                                    <a href="#" data-address="Украина, просп. Юности, 43а">Показать магазин на карте</a>
+                                                                    <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="br-shops-map tab-content">
-                                                <div class="tab-pane active" id="smap1">
-                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                                </div>
-                                                <div class="tab-pane" id="smap2">
-                                                    <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                </div>
-                                                <div class="tab-pane" id="smap3">
-                                                    <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                </div>
-                                                <div class="tab-pane" id="smap4">
-                                                    <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
                                         </div>
-                                        <div class="tab-pane" id="shop2">
-                                            <div class="br-shops-main-block">
-                                                <div class="br-scroll">
-                                                    <div class="br-shops-main-block-in">
-                                                        <div>
-                                                            <h4>Киев</h4>
-                                                            <div class="br-shops-list">
-                                                                <div class="br-shops-item">
-                                                                    <div class="br-shop-address">
-                                                                        ул. Киевская, 14-б, в магазине BRAIN,<br>
-                                                                        В районе центрального автовокзала
-                                                                    </div>
-                                                                    <div class="br-shop-info">
-                                                                        <div>
-                                                                            <a href="tel:380432554040">+380 (432) 55-40-40</a>
-                                                                            <a href="tel:380935125298">+380 (93) 512-52-98</a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <span>Пн.-Чт. з 9:00 до 18:00</span>
-                                                                            <span>Пт. с 9:00 до 17:00</span>
-                                                                            <span>Сб. с 10:00 до 14:00</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop3.jpg"><img src="images/preview3.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop4.png"><img src="images/preview4.jpg" alt="img"></a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shops-show">
-                                                                        <a href="#smap11" data-toggle="tab" data-id="change-map-5">Показать магазин на карте</a>
-                                                                        <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="br-shops-item">
-                                                                    <div class="br-shop-address">
-                                                                        просп. Юности, 43а, в магазине BRAIN,<br>
-                                                                        Микрорайон Вишенка,<br>
-                                                                        остановка Проспект Юности
-                                                                    </div>
-                                                                    <div class="br-shop-info">
-                                                                        <div>
-                                                                            <a href="tel:380432555511">+380 (432) 55-55-11</a>
-                                                                            <a href="tel:380935125294">+380 (93) 512-52-94</a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <span>Пн.-Вс: с 10:00 до 21:00</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shop-gallery br-shops-imgs br-loading">
-                                                                        <div>
-                                                                            <a href="images/shop1.jpg"><img src="images/preview1.jpg" alt="img"></a>
-                                                                        </div>
-                                                                        <div>
-                                                                            <a href="images/shop2.jpg"><img src="images/preview2.jpg" alt="img"></a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="br-shops-show">
-                                                                        <a href="#smap12" data-toggle="tab" data-id="change-map-6">Показать магазин на карте</a>
-                                                                        <button type="button" data-toggle="modal" data-target=".br-modal-p">Показать фото магазина</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="br-shops-map tab-content">
-                                                <div class="tab-pane active" id="smap11">
-                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                                </div>
-                                                <div class="tab-pane" id="smap12">
-                                                    <iframe class="active" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355189!2d25.3894656!3d50.7396096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1510050083726" style="border:0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
+                                        <div class="br-shops-map">
+                                            <div id="first_tab__map" style="height: 440px;"></div>
                                         </div>
+
+                                        <script>
+                                            $(function(){
+                                                $('#first_tab__map')
+                                                    .gmap3({
+                                                        address: "Украина",
+                                                        zoom: 6,
+                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                    });
+
+                                                $(".br-shops-head a[href='#shops1']").on('click', function(){
+                                                    $('#first_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container1 = $('#first_tab__map').parent();
+                                                    $('#first_tab__map').remove();
+                                                    container1.append('<div id="first_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#second_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container2 = $('#second_tab__map').parent();
+                                                    $('#second_tab__map').remove();
+                                                    container2.append('<div id="second_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#first_tab__map')
+                                                        .gmap3({
+                                                            address: "Украина",
+                                                            zoom: 6,
+                                                            mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                        });
+                                                });
+
+                                                $("#shops1 .br-cities-ms .br-scroll-wrapper a").on('click', function (e) {
+                                                    e.preventDefault();
+                                                    var city = $(this).text(),
+                                                        zoom = 8;
+
+                                                    if(city == 'Вся Украина'){
+                                                        city = "Украина";
+                                                        zoom = 6
+                                                    }
+
+                                                    $('#first_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container = $('#first_tab__map').parent();
+                                                    $('#first_tab__map').remove();
+                                                    container.append('<div id="first_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#first_tab__map')
+                                                        .gmap3({
+                                                        address: city,
+                                                        zoom: zoom,
+                                                        mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                    });
+                                                });
+
+                                                $("#shops1 .br-shops-list .br-shops-show a").on('click', function (e) {
+                                                    e.preventDefault();
+                                                    var city = $(this).data('address'),
+                                                        zoom = 14;
+
+                                                    $('#first_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container = $('#first_tab__map').parent();
+                                                    $('#first_tab__map').remove();
+                                                    container.append('<div id="first_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#first_tab__map')
+                                                        .gmap3({
+                                                            address: city,
+                                                            zoom: zoom,
+                                                            mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                        })
+                                                        .marker(function (map) {
+                                                            return {
+                                                                position: map.getCenter(),
+                                                                icon: 'http://maps.google.com/mapfiles/marker_green.png'
+                                                            };
+                                                        });
+                                                });
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -4636,10 +4626,10 @@
                                                     <div class="br-scroll-wrapper">
                                                         <ul class="br-n-scroll br-nc-scroll">
                                                             <li>
-                                                                <a href="#shop21" data-toggle="tab" data-id="drop-item-3">Вся Украина</a>
+                                                                <a href="#">Вся Украина</a>
                                                             </li>
                                                             <li>
-                                                                <a href="#shop22" data-toggle="tab" data-id="drop-item-4">Киев</a>
+                                                                <a href="#">Киев</a>
                                                             </li>
                                                         </ul>
                                                         <div class="br-my-p">
@@ -4879,16 +4869,65 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane active" id="shop21">
-                                            <div class="br-shops-map">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                            </div>
+                                        <div class="br-shops-map">
+                                            <div id="second_tab__map" style="height: 440px;"></div>
                                         </div>
-                                        <div class="tab-pane" id="shop22">
-                                            <div class="br-shops-map">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.018066280055!2d28.479204566075236!3d49.23814667932659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b67adc09f05%3A0x9bec46d31dca81a0!2zQlJBSU4gLSDQvNCw0LPQsNC30LjQvSDRgNC-0LfRg9C80L3QuNGFINC_0L7QutGD0L_QvtC6!5e0!3m2!1suk!2sua!4v1510063591979" style="border:0" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
+
+                                        <script>
+                                            $(function(){
+                                                $(".br-shops-head a[href='#shops2']").on('click', function(){
+                                                    $('#first_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container1 = $('#first_tab__map').parent();
+                                                    $('#first_tab__map').remove();
+                                                    container1.append('<div id="first_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#second_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container = $('#second_tab__map').parent();
+                                                    $('#second_tab__map').remove();
+                                                    container.append('<div id="second_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#second_tab__map')
+                                                        .gmap3({
+                                                            address: "Украина",
+                                                            zoom: 6,
+                                                            mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                        });
+                                                });
+
+
+                                                $("#shops2 .br-cities-ms .br-scroll-wrapper a").on('click', function (e) {
+                                                    e.preventDefault();
+                                                    var city = $(this).text(),
+                                                        zoom = 8;
+
+                                                    if(city == 'Вся Украина'){
+                                                        city = "Украина";
+                                                        zoom = 6
+                                                    }
+
+                                                    $('#second_tab__map').gmap3({
+                                                        action: 'destroy'
+                                                    });
+
+                                                    var container = $('#second_tab__map').parent();
+                                                    $('#second_tab__map').remove();
+                                                    container.append('<div id="second_tab__map" style="height: 440px;"></div>');
+
+                                                    $('#second_tab__map')
+                                                        .gmap3({
+                                                            address: city,
+                                                            zoom: zoom,
+                                                            mapTypeId : google.maps.MapTypeId.ROADMAP
+                                                        });
+                                                });
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -6433,7 +6472,6 @@
 
 
     <!--scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
