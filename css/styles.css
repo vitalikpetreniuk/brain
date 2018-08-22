@@ -12229,10 +12229,6 @@ header .br-pt-menu-in
 {
     overflow: hidden !important;
 }
-.br-sidebar .br-scroll
-{
-    min-height: 100% !important;
-}
 .br-row-gt, .br-row-gt .row
 {
     padding-top: 0;
