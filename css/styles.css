@@ -5719,7 +5719,7 @@ footer a
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
-.br-modal-slider-item > div:first-child
+.br-modal-slider-item-img
 {
     width: 100px;
 }
@@ -5732,7 +5732,7 @@ footer a
 {
     width: 100%;
 }
-.br-modal-slider-item > div:nth-child(2)
+.br-modal-slider-item-cont
 {
     width: calc(100% - 112px);
 }
@@ -6859,7 +6859,7 @@ footer a
     font-size: 14px;
     color: #10b1e8;
 }
-.br-ch-products > div:first-child
+.br-products-header
 {
     display: flex;
     display: -ms-flexbox;
@@ -6870,13 +6870,10 @@ footer a
     border-bottom: 1px solid #e3e3e3;
     padding-bottom: 4px;
     margin-bottom: 25px;
-}
-.br-ch-products > div:first-child
-{
     font-size: 14px;
     color: #999
 }
-.br-ch-products > div:first-child > div:last-child
+.br-products-header-right
 {
     width: calc(100% - 555px);
     display: flex;
@@ -6886,25 +6883,25 @@ footer a
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
 }
-.br-ch-products > div:first-child > div:last-child > div
+.br-products-header-right div
 {
     width: 90px;
     text-align: center;
 }
-.br-ch-products > div:first-child > div:last-child > div:last-child
+.br-products-price
 {
     margin-left: 40px;
 }
-.br-ch-products > div:first-child > div:last-child > div:nth-child(2)
+.br-products-qt
 {
     margin-left: 75px;
 }
-.br-ch-products > div:first-child > div:first-child
+.br-products-name
 {
     width: 555px;
     text-align: left;
 }
-.br-ch-products > div:first-child > div:last-child > div:first-child
+.br-products-bu
 {
     padding-left: 31px;
     background: url("../images/brain-up-new.svg") left center no-repeat;
@@ -7909,11 +7906,11 @@ footer a
 {
     padding-left: 15px;
 }
-.br-ch-dc > div > div
+.br-entity-info > div
 {
     margin-bottom: 10px;
 }
-.br-ch-dc > div > div:last-child
+.br-entity-info > div:last-child
 {
     margin-bottom: 0;
 }
@@ -7927,13 +7924,13 @@ footer a
 {
     color: #999;
 }
-.br-ch-dc > div:first-child
+.br-entity-info
 {
     padding-bottom: 25px;
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 25px;
 }
-.br-ch-dc > div:nth-child(2)
+.br-entity-nav
 {
     display: flex;
     display: -ms-flexbox;
@@ -7942,7 +7939,7 @@ footer a
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
 }
-.br-ch-dc > div:nth-child(2) button
+.br-entity-nav button
 {
     background: none;
     border: none;
@@ -7951,7 +7948,7 @@ footer a
     border-bottom: 1px dotted #10b1e8;
     color: #10b1e8;
 }
-.br-ch-dc > div:nth-child(2) button:hover
+.br-entity-nav button:hover
 {
     border-color: transparent;
 }
@@ -10510,28 +10507,28 @@ footer a
     -webkit-align-items: center;
     -ms-flex-align: center;
 }
-.br-pr-set-product > div:first-child
+.br-pr-set-product-img
 {
     width: 130px;
 }
-.br-pr-set-slider .br-pr-set-product > div:first-child
+.br-pr-set-slider .br-pr-set-product-img
 {
     width: 160px;
     margin-right: 20px;
 }
-.br-pr-set-product > div:first-child img
+.br-pr-set-product-img img
 {
     max-width: 110px;
 }
-.br-pr-set-slider .br-pr-set-product > div:first-child img
+.br-pr-set-slider .br-pr-set-product-img img
 {
     max-width: 100%;
 }
-.br-pr-set-product > div:last-child
+.br-pr-set-product-cont
 {
     width: 260px;
 }
-.br-pr-set-slider .br-pr-set-product > div:last-child
+.br-pr-set-slider .br-pr-set-product-cont
 {
     width: calc(100% - 180px);
 }
@@ -10552,7 +10549,7 @@ footer a
     font-weight: 400;
     margin-bottom: 10px;
 }
-.br-pr-set-product > div:last-child > div, .br-pr-set-two .br-pr-si-op, .br-pr-set-two .br-pr-si-np
+.br-pr-set-product-cont > div, .br-pr-set-two .br-pr-si-op, .br-pr-set-two .br-pr-si-np
 {
     display: flex;
     display: -webkit-flex;
@@ -10562,11 +10559,11 @@ footer a
     -ms-flex-align: center;
     margin-bottom: 0;
 }
-.br-pr-set-product > div:last-child > div:nth-child(2)
+.br-pr-set-product-price
 {
     color: #999;
 }
-.br-pr-set-product > div:last-child > div > span, .br-pr-set-two .br-pr-si-op > span, .br-pr-set-two .br-pr-si-np > span
+.br-pr-set-product-cont > div > span, .br-pr-set-two .br-pr-si-op > span, .br-pr-set-two .br-pr-si-np > span
 {
     font-size: 11px;
     color: #999;
@@ -10575,12 +10572,12 @@ footer a
     text-transform: none;
     font-weight: 400;
 }
-.br-pr-set-product > div:last-child > div > div, .br-pr-set-two .br-pr-si-op > div
+.br-pr-set-product-cont div div, .br-pr-set-two .br-pr-si-op > div
 {
     font-size: 18px;
     position: relative;
 }
-.br-pr-set-product > div:last-child > div > div:after, .br-pr-set-two .br-pr-si-op > div:after
+.br-pr-set-product-cont div div:after, .br-pr-set-two .br-pr-si-op > div:after
 {
     content: '';
     position: absolute;
@@ -10590,26 +10587,26 @@ footer a
     height: 1px;
     background: #10b1e8;
 }
-.br-pr-set-product > div:last-child > div > div span, .br-pr-set-two .br-pr-si-op > div span
+.br-pr-set-product-cont div div span, .br-pr-set-two .br-pr-si-op > div span
 {
     font-size: 11px;
     position: relative;
     top: -4px;
     text-transform: uppercase;
 }
-.br-pr-set-product > div:last-child > div > div:first-child
+.br-pr-set-product-cont div div:first-child
 {
     color: #777;
 }
-.br-pr-set-product > div:last-child > div:last-child
+.br-pr-set-product-cprice
 {
     margin-top: 8px;
 }
-.br-pr-set-product > div:last-child > div:last-child > div
+.br-pr-set-product-cprice div
 {
     font-weight: 700;
 }
-.br-pr-set-product > div:last-child > div:last-child > div:after
+.br-pr-set-product-cprice div:after
 {
     display: none;
 }
@@ -12771,6 +12768,7 @@ div:nth-last-child(-3+n) > .br-action-item
 }
 
 /*Стили BRAIN - отзыв*/
+
 .br-fback-block form
 {
     display: flex;
@@ -12783,11 +12781,11 @@ div:nth-last-child(-3+n) > .br-action-item
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
 }
-.br-fback-block form > div:first-child, .br-fback-block form > div:nth-child(2)
+.br-fback-block form .br-fback-block-i
 {
     width: calc(50% - 7.5px);
 }
-.br-fback-block form > div:last-child
+.br-fback-block-button
 {
     text-align: center;
     margin-bottom: 0 !important;
@@ -12796,7 +12794,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     width: 100%;
 }
-.br-fback-block form > div > div + div
+.br-fback-block-i > div + div
 {
     margin-top: 15px;
 }
@@ -18902,27 +18900,27 @@ div:nth-last-child(-3+n) > .br-action-item
 /*-----*/
 
 /*Быстрое оформление товара*/
-.br-ch-products > div:first-child > div:first-child, .br-ch-products-s .br-ci-in > div:first-child
+.br-ch-products-s .br-products-name, .br-ch-products-s .br-ci-in > div:first-child
 {
     width: calc(100% - 350px);
 }
-.br-ch-products-s > div:first-child > div:last-child, .br-ch-products-s .br-ci-in > div:last-child
+.br-ch-products-s .br-products-header-right, .br-ch-products-s .br-ci-in > div:last-child
 {
     width: 350px;
 }
-.br-ch-products-s > div:first-child > div:last-child > div:last-child
+.br-ch-products-s .br-products-price
 {
     width: 125px;
     padding-right: 26px;
     margin: 0;
     text-align: right;
 }
-.br-ch-products-s > div:first-child > div:last-child > div:nth-child(2)
+.br-ch-products-s .br-products-qt
 {
     width: 78px;
     margin: 0 !important;
 }
-.br-ch-products-s > div:first-child > div:last-child > div:first-child
+.br-ch-products-s .br-products-bu
 {
     width: calc(100% - 203px);
     text-align: left;
