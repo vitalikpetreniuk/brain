@@ -1294,6 +1294,14 @@ $(function(){
         $('.br-cont').toggleClass('br-fwidth');
     });
 
+    // short toggle
+    $('.br-prs-button').each(function () {
+        if($(this).siblings('.br-pr-scroll').find('.scroll-content > div').height() <= 170){
+            $(this).hide();
+        }
+    });
+    // short toggle end
+
     $('.br-prs-button').on('click', function(){
         $(this).toggleClass('open');
         $(this).siblings('.br-pr-scroll').toggleClass('open');
