@@ -5216,6 +5216,12 @@
         font-weight: 700;
         font-size: 16px;
     }
+    /*city drop*/
+    .br-cities-ms
+    {
+        left: 17px;
+    }
+    /*city drop end*/
     .br-cities-ms
     {
         left: 17px;
@@ -7255,6 +7261,14 @@
 }
 @media(max-width: 380px)
 {
+    /*city drop*/
+    .br-pr-delivery .br-dt-yc{
+        position: static;
+    }
+    .br-pr-delivery .br-cities-ms{
+        right: -9px;
+    }
+    /*city drop end*/
     .br-privilege
     {
         width: 100% !important;

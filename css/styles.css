@@ -9208,21 +9208,35 @@ footer a
     background: #10b1e8;
     color: #fff;
 }
+/*city drop*/
 .br-pr-delivery > div:first-child
 {
     position: relative;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: flex-start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
 }
 .br-pr-delivery > div:first-child h3
 {
     font-size: 20px;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: -3px;
 }
 .br-pr-delivery .br-dt-yc
 {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
+/*city drop end*/
 .br-pr-delivery .br-dt-yc > button
 {
     padding-right: 14px;
