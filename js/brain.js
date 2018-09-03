@@ -1066,6 +1066,25 @@ $(function(){
         loop: true
     });
 
+    /*banner sliders fixes*/
+    $(window).on('load resize', function () {
+        $('.br-slider-fa').each(function () {
+            $(this).height(0);
+        });
+        $('.br-row-top .br-slider-outer .br-banner-slider').height(0);
+        $('.br-bsliders-s').height(0);
+        $('.br-bsliders-s .br-banner-slider').height(0);
+        setTimeout(function () {
+            $('.br-slider-fa').each(function () {
+                $(this).height($(this).parent().height());
+            });
+            $('.br-row-top .br-slider-outer .br-banner-slider').height($('.br-row-top .br-slider-outer').height());
+            $('.br-bsliders-s').height($('.br-bsliders-s').parent().height());
+            $('.br-bsliders-s .br-banner-slider').height($('.br-bsliders-s .br-banner-slider').parent().height());
+        },500);
+    });
+    /*banner sliders fixes*/
+
     $('.br-act-block .owl-carousel').owlCarousel({
         items: 1,
         nav: true,

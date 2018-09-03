@@ -4466,10 +4466,12 @@
         min-height: 1px;
         min-width: 1px;
     }
+    /*banner sliders fixes*/
     .br-row-top .owl-carousel .item a, .br-slider-fa .owl-stage-outer, .br-slider-fa .owl-stage-outer div, .br-slider-fa a, .br-slider-fa, .br-row-top .owl-carousel, .br-row-top .owl-stage-outer, .br-row-top .owl-stage-outer div
     {
-        height: auto;
+        height: auto !important;
     }
+    /*banner sliders fixes end*/
     .br-row-top .owl-carousel .item a
     {
         height: auto;
