@@ -244,9 +244,30 @@ $(function(){
     }
 
     // markdown slider fixes
+    if($('.br-slider-md').length){
+        var nSlider = $('.br-slider-md-nav').slick({
+            asNavFor: '.br-slider-md-current',
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            verticalSwiping: true,
+            centerPadding:100,
+            centerMode: true,
+            focusOnSelect: true
+        });
+        var mSlider = $('.br-slider-md-current').slick({
+            asNavFor: '.br-slider-md-nav',
+            arrows: false,
+            fade: true,
+            focusOnSelect: true
+        });
+        mSlider.find('.slick-slide').on('click', function(){
+            mSlider.slick('slickNext');
+        });
+    }
+
     if($('.popup-modal').length)
     {
-
         $('.popup-modal').magnificPopup({
             type: 'inline',
             closeOnBgClick: true,
@@ -254,32 +275,12 @@ $(function(){
             modal: false,
             callbacks: {
                 open: function() {
-                    $('.br-slider-md-nav').slick({
-                        asNavFor: '.br-slider-md-current',
-                        vertical: true,
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        verticalSwiping: true,
-                        centerPadding:100,
-                        centerMode: true,
-                        focusOnSelect: true
-                    });
-                    var mSlider = $('.br-slider-md-current').slick({
-                        asNavFor: '.br-slider-md-nav',
-                        arrows: false,
-                        fade: true,
-                        focusOnSelect: true
-                    });
-                    mSlider.resize();
+                    nSlider.slick('reinit');
+                    mSlider.slick('reinit');
                     setTimeout(function(){
                         $('.slick-slider').removeClass('br-loading-modal');
                     }, 500);
                     $('.br-modal-md').parent('.mfp-content').addClass('br-slider-outer');
-
-                    mSlider.find('.slick-slide').on('click', function(){
-                        mSlider.slick('slickNext');
-                    });
-
                 }
             }
         });
