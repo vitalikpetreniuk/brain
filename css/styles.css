@@ -21326,6 +21326,7 @@ div:nth-last-child(-3+n) > .br-action-item
 .product-modal-info.half-width .product-modal-left{
     width: 100%;
     padding-right: 0;
+    margin-bottom: 0;
 }
 .product-modal-lright{
     width: 45%;

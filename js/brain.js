@@ -313,10 +313,8 @@ $(function(){
                         }
                     }else{
                         $('.product-modal-info').addClass('half-width');
+                        $('.product-modal-right').remove();
                     }
-                },
-                close: function() {
-                    $('.product-modal-right .br-pr-chr').remove();
                 }
             }
         });
