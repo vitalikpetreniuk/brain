@@ -20412,6 +20412,9 @@ div:nth-last-child(-3+n) > .br-action-item
     left: 0;
     top: 0 !important;
 }
+.br-pp-promo .br-pp-top{
+    z-index: 6 !important;
+}
 .br-pp-promocode
 {
     width: 100%;
