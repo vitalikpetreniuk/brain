@@ -8657,10 +8657,11 @@ footer a
 {
     margin-top: 20px;
 }
-.br-pr-lpp > *
+/*markdown reason*/
+.br-pr-lpp > *, .markdown-reason > *
 {
     width: 100%;
-    background: #10b1e8 url("../images/pd.svg") 17px center no-repeat;
+    background: #10b1e8 url("../images/pd.svg") 12px center no-repeat;
     background-size: 24px auto;
     border: none;
     height: 34px;
@@ -8669,19 +8670,23 @@ footer a
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    padding: 0 15px 0 50px;
+    padding: 0 10px 0 45px;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     align-items: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
 }
-.br-pr-lpp > *:hover, .br-pr-lpp > *:focus
+.br-pr-lpp > *:hover, .br-pr-lpp > *:focus, .markdown-reason > *:hover, .markdown-reason > *:focus
 {
     color: #fff;
     opacity: .7;
 }
+/*markdown reason end*/
 .br-pr-lpp-out
 {
     display: flex;
@@ -20924,9 +20929,11 @@ div:nth-last-child(-3+n) > .br-action-item
     padding-left: 33px;
     background: url("../images/product-video.png") left center no-repeat;
 }
-.product-wrap .br-pr-lpp{
-    margin: 0 0 10px;
+/*markdown reason*/
+.product-wrap .br-pr-lpp, .product-wrap .markdown-reason{
+    margin: 0 0 15px;
 }
+/*markdown reason end*/
 .product-wrap .br-pr-us{
     display: block;
 }
