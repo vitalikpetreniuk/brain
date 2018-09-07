@@ -3704,22 +3704,22 @@
                                         <div class="br-pr-slider br-fheight">
                                             <div class="br-prs-s br-image-links">
                                                 <div>
-                                                    <a href="images/test1.jpg">
+                                                    <a class="product-modal-button" href="#br-product-modal">
                                                         <img src="images/test1.jpg" alt="img">
                                                     </a>
                                                 </div>
                                                 <div>
-                                                    <a href="images/test2.jpg">
+                                                    <a class="product-modal-button" href="#br-product-modal">
                                                         <img src="images/test2.jpg" alt="img">
                                                     </a>
                                                 </div>
                                                 <div>
-                                                    <a href="images/test3.jpg">
+                                                    <a class="product-modal-button" href="#br-product-modal">
                                                         <img src="images/test3.jpg" alt="img">
                                                     </a>
                                                 </div>
                                                 <div>
-                                                    <a href="images/test4.jpg">
+                                                    <a class="product-modal-button" href="#br-product-modal">
                                                         <img src="images/test4.jpg" alt="img">
                                                     </a>
                                                 </div>
@@ -8286,6 +8286,47 @@
 
     <div class="br-up">
         <button type="button">top</button>
+    </div>
+
+    <div id="br-product-modal" class="white-popup-block mfp-hide br-modal br-modal-md product-modal-info">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="popup-modal-dismiss close">
+                        <img src="images/delete_small.svg" alt="img">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-modal-left">
+                        <div class="product-modal-slider owl-carousel">
+                            <div class="item"><img src="images/test1.jpg" alt="img"></div>
+                            <div class="item"><img src="images/test2.jpg" alt="img"></div>
+                            <div class="item"><img src="images/test3.jpg" alt="img"></div>
+                            <div class="item"><img src="images/test4.jpg" alt="img"></div>
+                        </div>
+                        <div class="product-modal-block">
+                            <div class="br-pr-price">
+                                <div class="br-pr-op">
+                                    <span>Старая цена:</span>
+                                    <div><span>42 354</span> <strong>грн</strong></div>
+                                </div>
+                                <div class="br-pr-np">
+                                    <span>Новая цена:</span>
+                                    <div><span>39 824</span> <strong>грн</strong></div>
+                                </div>
+                            </div>
+                            <button type="button" class="br-modal-md-buy"><span>Купить</span></button>
+                        </div>
+                    </div>
+                    <div class="product-modal-right">
+                        <div class="br-pr-tblock br-pr-chr-wrap">
+                            <h3>Характеристики</h3>
+                            <div class="br-pr-scroll br-loading"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="br-modal-md" class="white-popup-block mfp-hide br-modal br-modal-md">

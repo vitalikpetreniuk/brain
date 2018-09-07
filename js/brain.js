@@ -286,6 +286,42 @@ $(function(){
         });
     }
 
+    // product new modal
+    if($('.product-modal-button').length)
+    {
+
+        var pSlider = $('.product-modal-slider').owlCarousel({
+            nav:true,
+            loop: true,
+            items: 1
+        });
+
+        $('.product-modal-button').magnificPopup({
+            type: 'inline',
+            closeOnBgClick: true,
+            preloader: false,
+            modal: false,
+            callbacks: {
+                open: function() {
+                    pSlider.trigger('refresh.owl.carousel');
+
+                    var modChar = $('.br-body .br-pr-chr');
+
+                    if(modChar.length){
+                        if(!$('.product-modal-right .br-pr-chr').length){
+                            modChar.clone().appendTo('.product-modal-right .br-pr-scroll');
+                        }
+                    }else{
+                        $('.product-modal-info').addClass('half-width');
+                    }
+                },
+                close: function() {
+                    $('.product-modal-right .br-pr-chr').remove();
+                }
+            }
+        });
+    }
+    // product new modal end
 
     if($('.br-shop-gallery').length)
     {
