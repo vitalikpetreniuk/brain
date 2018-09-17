@@ -21352,9 +21352,11 @@ div:nth-last-child(-3+n) > .br-action-item
     height: auto !important;
 }
 /*stock about end*/
+/*product card fixes*/
 .stock-reason{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
+/*product card fixes end*/
 .stock-reason a{
     height: 23px;
     display: block;
