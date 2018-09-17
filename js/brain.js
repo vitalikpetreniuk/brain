@@ -511,17 +511,22 @@ $(function(){
         });
     }
 
+    // delivery accordion
     $('.br-pr-dt-1').on('click', function () {
         $('.br-dt-modal-m .br-dt1 a').trigger('click');
+        $('.br-dt-modal-mm .br-dc1 .panel-heading a').trigger('click');
     });
 
     $('.br-pr-dt-2').on('click', function () {
         $('.br-dt-modal-m .br-dt2 a').trigger('click');
+        $('.br-dt-modal-mm .br-dc2 .panel-heading a').trigger('click');
     });
 
     $('.br-pr-dt-3').on('click', function () {
         $('.br-dt-modal-m .br-dt3 a').trigger('click');
+        $('.br-dt-modal-mm .br-dc3 .panel-heading a').trigger('click');
     });
+    // delivery accordion end
 
     $('.br-sbutton').on('click', function(){
         $('.br-sform').addClass('open');
