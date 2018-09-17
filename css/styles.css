@@ -8946,6 +8946,7 @@ footer a
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
 }
+/*product card fixes*/
 .br-pr-us button
 {
     height: 33px;
@@ -8955,10 +8956,10 @@ footer a
     color: #10b1e8;
     padding: 0;
     border: none;
+    padding-left: 45px;
 }
 .br-pr-us button:first-child
 {
-    padding-left: 43px;
     background-image: url("../images/favourite.svg");
     background-size: 28px auto;
 }
@@ -8968,10 +8969,10 @@ footer a
 }
 .br-pr-us button:last-child
 {
-    padding-left: 48px;
     background-image: url("../images/compare.svg");
     background-size: 33px auto;
 }
+/*product card fixes end*/
 .br-pr-us span
 {
     display: inline-block;
@@ -15750,11 +15751,13 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     border-color: transparent;
 }
+/*product card fixes*/
 .br-pr-wmd
 {
-    padding-left: 40px;
+    padding-left: 45px;
     background-image: url("../images/markdown.png");
 }
+/*product card fixes end*/
 .br-pr-cp
 {
     padding-left: 43px;
@@ -20897,13 +20900,15 @@ div:nth-last-child(-3+n) > .br-action-item
 .product-wrap .br-pr-slider img{
     max-height: 330px;
 }
+/*product card fixes*/
 .product-wrap .br-pr-main-block .br-pp-top{
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+/*product card fixes end*/
 .product-wrap .br-pr-main-block .br-pp-top > *{
     margin: 0 11px 5px 0;
 }
@@ -20985,9 +20990,11 @@ div:nth-last-child(-3+n) > .br-action-item
 .product-wrap .br-pr-us button{
     height: 24px;
 }
+/*product card fixes*/
 .product-wrap .br-pr-us button + button{
-    margin-top: 10px;
+    margin-top: 15px;
 }
+/*product card fixes end*/
 .product-wrap .br-prt-f{
     width: 39%;
 }
