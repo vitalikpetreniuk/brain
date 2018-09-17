@@ -21334,3 +21334,100 @@ div:nth-last-child(-3+n) > .br-action-item
     color: #10b1e8;
 }
 /*new product page end*/
+
+/*product new modal*/
+.product-modal-info > div{
+    width: 1000px;
+}
+.product-modal-info.half-width > div{
+    width: 600px;
+}
+.product-modal-info .modal-dialog{
+    display: block !important;
+    height: auto !important;
+}
+.product-modal-info .modal-body{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.product-modal-left{
+    width: 55%;
+    padding-right: 20px;
+}
+.product-modal-info.half-width .product-modal-left{
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+.product-modal-lright{
+    width: 45%;
+}
+.product-modal-block{
+    padding-top: 30px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+.product-modal-block .br-pr-price{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    margin-bottom: 0;
+}
+.product-modal-block .br-pr-price > div + div{
+    margin: 0 0 0 30px;
+}
+.product-modal-block .br-pr-op > div{
+    font-size: 15px;
+}
+.product-modal-block .br-pr-op > div span {
+    font-size: 25px;
+}
+.product-modal-block .br-pr-op > div strong{
+    top: -7px;
+}
+.product-modal-block .br-pr-np > div {
+    font-size: 20px;
+}
+.product-modal-block .br-pr-np > div span {
+    font-size: 35px;
+}
+.product-modal-block .br-pr-np > div strong {
+    top: -10px;
+}
+.product-modal-slider .owl-nav > div{
+    position: absolute;
+    top: calc(50% - 17px);
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-modal-slider .owl-prev{
+    left: 0;
+    background: url("../images/br-pr-al.png");
+}
+.product-modal-slider .owl-next{
+    right: 0;
+    background: url("../images/br-pr-ar.png");
+}
+.product-modal-right{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.product-modal-right .br-pr-scroll{
+    max-height: 560px !important;
+    margin-bottom: 0;
+}
+/*product new modal end*/
