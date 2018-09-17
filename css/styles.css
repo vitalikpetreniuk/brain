@@ -21337,6 +21337,21 @@ div:nth-last-child(-3+n) > .br-action-item
 .stock-center button:hover{
     border-color: transparent;
 }
+/*stock about*/
+.stock-about{
+    display: none;
+    padding-top: 15px;
+    width: 100% !important;
+    text-align: left;
+}
+.stock-about-button.open i{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.br-pr-stock-slider .owl-height{
+    height: auto !important;
+}
+/*stock about end*/
 .stock-reason{
     margin-bottom: 10px;
 }

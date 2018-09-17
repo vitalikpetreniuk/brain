@@ -502,11 +502,21 @@ $(function(){
         items: 1
     });
 
+    // stock about
     $('.br-pr-stock-slider').owlCarousel({
         margin:10,
         nav:true,
         items: 1
     });
+    $('.br-pr-stock-slider').on('changed.owl.carousel', function(event) {
+        $(this).find('.stock-about-button').removeClass('open');
+        $(this).find('.stock-about').slideUp('fast');
+    });
+    $('.stock-about-button').on('click', function () {
+        $(this).toggleClass('open');
+        $(this).next('.stock-about').toggle(600);
+    });
+    // stock about end
 
     if($('.br-image-links').length)
     {
