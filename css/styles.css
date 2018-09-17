@@ -20892,6 +20892,15 @@ div:nth-last-child(-3+n) > .br-action-item
     width: 160px;
     left: -67px;
 }
+/*product labels*/
+.product-wrap .br-pp-top > *:first-child > span:last-child{
+    left: 0;
+}
+.product-wrap .br-pp-stock{
+    position: relative;
+    z-index: 4;
+}
+/*product labels end*/
 .product-wrap .br-pr-code{
     padding: 0;
     line-height: normal;
