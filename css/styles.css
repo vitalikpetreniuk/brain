@@ -20862,12 +20862,20 @@ div:nth-last-child(-3+n) > .br-action-item
 .product-wrap .br-pr-main-block .product-block-right{
     width: 160px;
 }
+/*product columns*/
 .product-wrap .br-pr-slider{
-    margin-bottom: 0;
+    margin-bottom: 13px;
     align-items: flex-start;
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
 }
+.product-wrap .br-pr-price{
+    margin-bottom: 19px;
+}
+.product-wrap .br-pr-del-type {
+    padding: 21px 0 20px;
+}
+/*product columns end*/
 .product-wrap .br-pr-slider img{
     max-height: 330px;
 }
