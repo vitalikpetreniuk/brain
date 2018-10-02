@@ -16140,6 +16140,11 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     opacity: 1;
 }
+.form-flex.text-center{
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+}
 .br-modal-login .form-flex
 {
     margin-bottom: 20px;
