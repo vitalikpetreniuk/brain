@@ -1771,6 +1771,94 @@ $(function(){
         });
     }
 
+    if($('.br-login-form-fourth').length)
+    {
+
+        jQuery.validator.addMethod("password_check",
+            function(value, element, param) {
+                if (this.optional(element)) {
+                    return true;
+                } else if (!/[A-Z]/.test(value)) {
+                    return false;
+                } else if (!/[a-z]/.test(value)) {
+                    return false;
+                } else if (!/[0-9]/.test(value)) {
+                    return false;
+                }
+
+                return true;
+            },
+            "Пароль має містити мінімум одну заголовну літеру, цифри 0-9 та літери латинської абетки");
+
+        jQuery.validator.addMethod("alphanumeric", function(value, element) {
+            return this.optional(element) || /^\w+$/i.test(value);
+        }, "Заборонено використання спеціальнихсимволів (!@#$^&-+=;:,.?|`~<>', а також пробілів");
+
+
+        $(".br-login-form-fourth").validate({
+            rules:
+                {
+                    name:
+                        {
+                            required: true,
+                            minlength: 1
+                        },
+                    email:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    phone:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    password:
+                        {
+                            required: true,
+                            minlength: 6,
+                            password_check: true,
+                            alphanumeric: true
+
+                        },
+                    confirm_password:
+                        {
+                            equalTo: '#reg-pass'
+                        }
+                },
+            messages:
+                {
+                    name:
+                        {
+                            required: "Поле «Ім'я» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    email:
+                        {
+                            required: "Поле «E-mail» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    phone:
+                        {
+                            required: "Поле «Телефон» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    password:
+                        {
+                            required: "Поле «Пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів"
+                        },
+                    confirm_password:
+                        {
+                            required: "Поле «Повторити пароль» обов’язкове до заповнення",
+                            minlength: "Пароль не може бути коротшим за 6 символів",
+                            equalTo: "Паролі не співпадають"
+                        }
+                }
+        });
+
+    }
+
     $('.br-ch-ajp button').on('click', function(){
         $('.br-chdo-s1').hide();
         $('.br-chdo-s2').show();
