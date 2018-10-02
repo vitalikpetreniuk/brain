@@ -16144,7 +16144,7 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     margin-bottom: 20px;
 }
-.br-modal-login .form-flex button, .br-login-link span
+.br-modal-login .form-flex button, .br-modal-login .form-flex a, .br-login-link span
 {
     padding: 0;
     background: none;
@@ -16152,7 +16152,7 @@ div:nth-last-child(-3+n) > .br-action-item
     color: #00b1eb;
     border-bottom: 1px dotted #00b1eb;
 }
-.br-modal-login .form-flex button:hover, .br-login-link:hover span
+.br-modal-login .form-flex button:hover, .br-modal-login .form-flex a:hover, .br-login-link:hover span
 {
     border-color: transparent;
 }
