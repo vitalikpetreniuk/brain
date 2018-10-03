@@ -16156,6 +16156,10 @@ div:nth-last-child(-3+n) > .br-action-item
 {
     border-color: transparent;
 }
+.br-login-form-email{
+    padding: 20px 0 !important;
+    border-bottom: none !important;
+}
 .br-login-link
 {
     display: block;

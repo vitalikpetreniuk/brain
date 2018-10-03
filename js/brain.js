@@ -1683,6 +1683,40 @@ $(function(){
         });
     }
 
+    if($('.br-login-form-email').length)
+    {
+
+        $(".br-login-form-email").validate({
+            rules:
+                {
+                    email_old:
+                        {
+                            required: true,
+                            minlength: 8
+                        },
+                    email_new:
+                        {
+                            required: true,
+                            minlength: 8
+                        }
+                },
+            messages:
+                {
+                    email_old:
+                        {
+                            required: "Поле «Старий e-mail» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        },
+                    email_new:
+                        {
+                            required: "Поле «Новий e-mail» обов’язкове до заповнення",
+                            minlength: "Дані не відповідають умовам"
+                        }
+                }
+        });
+
+    }
+
     if($('.br-change-password').length)
     {
 
