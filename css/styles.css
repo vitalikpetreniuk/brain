@@ -15788,6 +15788,7 @@ div:nth-last-child(-3+n) > .br-action-item
     width: 100%;
     height: 100%;
     z-index: 1;
+    cursor: default;
 }
 .br-modal-md .modal-content
 {
