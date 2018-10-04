@@ -308,6 +308,9 @@ $(function(){
             modal: false,
             callbacks: {
                 open: function() {
+
+                    $('.mfp-close').attr('title', '');
+
                     pSlider.trigger('refresh.owl.carousel');
 
                     var modChar = $('.br-body .br-pr-chr');
