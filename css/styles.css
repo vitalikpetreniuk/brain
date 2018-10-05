@@ -9852,6 +9852,9 @@ footer a
 {
     border-color: transparent;
 }
+.br-pr-chr-item{
+    word-wrap: break-word;
+}
 .br-pr-chr-item h4
 {
     background: #cceffb;
