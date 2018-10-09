@@ -82,12 +82,11 @@ $(function(){
 
     if($('.br-pr-countdown').length){
         // countdown 1
-        clock = $('.br-pr-countdown').FlipClock({
+        clock = $('.br-pr-countdown').FlipClock(9220880, {
             clockFace: 'DailyCounter',
             autoStart: false,
             language:'ru-ru'
         });
-        clock.setTime(220880);
         clock.setCountdown(true);
         clock.start();
         // countdown 1 end

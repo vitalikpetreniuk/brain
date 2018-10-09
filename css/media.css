@@ -150,10 +150,15 @@
         font-size: 22px;
         padding: 0 64px;
     }
+    /*countdown*/
     .product-wrap .br-pr-countdown-block{
-        width: 266px;
         margin: 0 auto;
+        text-align: center;
     }
+    .product-wrap .br-pr-countdown-block .flip-clock-wrapper{
+        display: inline-block;
+    }
+    /*countdown end*/
     .product-wrap .br-pr-stock-slider .item{
         padding: 0;
     }
