@@ -125,6 +125,22 @@
         display: none !important;
     }
     /*new product page end*/
+
+    /*one price*/
+    .one-price .br-pr-price{
+        margin-bottom: 28px;
+    }
+    .one-price .br-pr-cb form div{
+        margin-bottom: 24px;
+    }
+    .one-price .br-pr-cb form div *{
+        float: none;
+        width: 100%;
+    }
+    .one-price .br-pr-cb input{
+        margin-bottom: 15px;
+    }
+    /*one price end*/
 }
 @media(max-width: 1354px)
 {
@@ -6319,12 +6335,14 @@
         -ms-flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
     }
-    .br-pr-np
+    /*one price*/
+    .br-pr-op + .br-pr-np
     {
         margin-top: 0 !important;
         padding-left: 30px;
         position: relative;
     }
+    /*one price end*/
     .br-bbb-s
     {
         background-image: none !important;
