@@ -21346,18 +21346,20 @@ div:nth-last-child(-3+n) > .br-action-item
 .product-wrap .br-pr-stock-slider .owl-next{
     right: 20px;
 }
+/*countdown*/
 .product-wrap .br-pr-countdown-block{
     display: block;
-    width: 270px;
+    width: 302px;
 }
 .product-wrap .br-pr-countdown-block > div:first-child{
     margin-bottom: 5px;
 }
 .stock-center{
-    width: calc(100% - 570px);
+    width: calc(100% - 602px);
     padding: 0 45px 0 15px;
     text-align: center;
 }
+/*countdown end*/
 .stock-center h2{
     font-size: 24px;
     font-weight: 300;
