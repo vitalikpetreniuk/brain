@@ -516,7 +516,7 @@ $(function(){
     });
     $('.stock-about-button').on('click', function () {
         $(this).toggleClass('open');
-        $(this).next('.stock-about').toggle(600);
+        $(this).next('.stock-about').toggle(200);
     });
     // stock about end
 
