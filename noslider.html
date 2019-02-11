@@ -39,7 +39,7 @@
                         <input type="submit" value="">
                     </form>
                 </div>
-                <div class="dropdown-wrap visible-lg visible-md">
+                <div class="dropdown-wrap dropdown-location visible-lg visible-md">
                     <button class="dropdown-button dropdown-button-bold"><span>Ивано-Франковск</span></button>
                     <div class="dropdown-cont-search br-dropdown dropdown-cont">
                         <form class="br-search-form">
@@ -288,8 +288,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown-wrap top-menu-list-item">
-                            <button type="button" class="dropdown-button">Акции</button>
+                        <li class="dropdown-wrap top-menu-list-item new">
+                            <button type="button" class="dropdown-button"><span>Акции</span></button>
                             <div class="br-dropdown dropdown-cont">
                                 <ul class="br-n-scroll br-nc-scroll">
                                     <li>
@@ -316,8 +316,20 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="top-menu-drop-wrap hidden-lg">
+                        <li class="top-menu-drop-wrap hidden-lg dropdown-wrap">
                             <button class="top-menu-drop-button"><span></span></button>
+                            <div class="br-dropdown dropdown-cont">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Клиентам</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Сервис</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -2114,7 +2126,7 @@
     </div>
     <ul class="side-menu">
         <li class="new">
-            <button type="button" class="side-menu-button">Акции</button>
+            <button type="button" class="side-menu-button"><span>Акции</span></button>
             <ul>
                 <li>
                     <a href="#">Інформаційні</a>
@@ -2333,7 +2345,7 @@
             <div class="col-xs-12 hidden-lg hidden-md">
                 <ul class="block-wrap block-links">
                     <li>
-                        <button type="button" class="catalog-button">
+                        <button type="button" class="catalog-button active">
                                 <span class="block-link-icon">
                                     <img class="icon-first" src="images/new/sandwich.svg" alt="">
                                     <img class="icon-second" src="images/new/sandwich_white.svg" alt="">
@@ -2495,7 +2507,7 @@
                         <div id="smartphones" class="tabs-item active">
                             <div class="row product-cards products-list">
                                 <div class="col-lg-2-5 col-md-8 hidden-sm hidden-xs">
-                                    <div class="br-banner-slider owl-carousel br-slider-fa">
+                                    <div class="br-banner-slider owl-carousel br-slider-fa slider-nav">
                                         <div class="item">
                                             <a href="#">
                                                 <img src="images/slide4.jpg" alt="img">
@@ -2517,6 +2529,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -2568,12 +2581,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2639,6 +2654,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -2690,12 +2706,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2761,6 +2779,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -2812,12 +2831,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2883,6 +2904,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -2934,12 +2956,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3005,6 +3029,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3056,12 +3081,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3127,6 +3154,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3178,12 +3206,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3249,6 +3279,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3300,12 +3331,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3385,6 +3418,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3436,12 +3470,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3507,6 +3543,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3558,12 +3595,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3629,6 +3668,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3680,12 +3720,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3783,6 +3825,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3834,12 +3877,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -3905,6 +3950,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -3956,12 +4002,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -4027,6 +4075,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -4078,12 +4127,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -4149,6 +4200,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -4200,12 +4252,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -4271,6 +4325,7 @@
                                                 <button class="card-colors-item" type="button" style="background-color: #B7B7B7;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #F2D7E4;"></button>
                                                 <button class="card-colors-item" type="button" style="background-color: #ACA981;"></button>
+                                                <button class="card-colors-more" type="button" data-toggle="modal" data-target=".modal-colors">Еще<br> цвета</button>
                                             </div>
                                         </div>
                                         <div class="product-card-labels">
@@ -4322,12 +4377,14 @@
                                                         <img src="images/new/pieces.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">8 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                                 <div class="buy-terms-label">
                                                     <div class="buy-terms-label-icon">
                                                         <img src="images/new/credit.svg" alt="">
                                                     </div>
                                                     <div class="buy-terms-label-text">24 мес</div>
+                                                    <div class="term-label-popup">При покупке данной моделив подарок флешка на 64 Гб</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -4889,7 +4946,7 @@
     <button type="button">top</button>
 </div>
 
-<div class="modal fade" id="br-mcolors" tabindex="-1">
+<div class="modal modal-colors fade" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
