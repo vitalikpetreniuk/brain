@@ -1179,6 +1179,10 @@
     display: none !important;
 }
 
+.product-cards.list > div {
+    width: 100% !important;
+}
+
 .products-slider .owl-stage, .products-slider .owl-item, .products-slider .owl-item > div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1253,6 +1257,66 @@
 .product-card-img img {
     display: block;
     width: 100%;
+}
+
+.product-card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.card-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.card-rating-stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.card-rating-stars img {
+    display: block;
+    width: 10px;
+}
+
+.card-rating-stars img + img {
+    margin-left: 1px;
+}
+
+.card-rating-num {
+    font-size: 12px;
+}
+
+.card-comments a {
+    display: block;
+    padding-left: 20px;
+    background: url(../images/bubble.svg) left center no-repeat;
+}
+
+.card-comments span {
+    display: block;
+    text-decoration: underline;
+    color: #999;
+}
+
+.card-comments a:hover span {
+    text-decoration: none;
 }
 
 .card-stock-icon {
@@ -2997,6 +3061,10 @@
         transform: rotate(180deg);
     }
 
+    .product-card-info {
+        display: none;
+    }
+
     .product-card-bottom.open {
         display: block !important;
     }
@@ -3056,7 +3124,7 @@
         align-content: flex-start;
     }
 
-    .with-top.horizontal{
+    .with-top.horizontal {
         -webkit-box-align: stretch;
         -ms-flex-align: stretch;
         -ms-grid-row-align: stretch;
@@ -3281,7 +3349,7 @@
         margin-left: 15px;
     }
 
-    .buy-terms-labels{
+    .buy-terms-labels {
         position: relative;
     }
 
@@ -3581,11 +3649,11 @@
         bottom: 8px;
     }
 
-    .product-card:not(.horizontal) .product-card-actions{
+    .product-card:not(.horizontal) .product-card-actions {
         top: 3px;
     }
 
-    .product-card:not(.horizontal) .product-card-action.compare{
+    .product-card:not(.horizontal) .product-card-action.compare {
         margin-left: 6px;
     }
 
@@ -3615,6 +3683,7 @@
     .product-card-right .product-card-labels {
         padding-right: 42px;
     }
+
     .product-card-left .term-label-popup {
         width: calc(100% - 12px);
         right: 12px;

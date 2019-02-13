@@ -36,6 +36,7 @@ $(function () {
     var buttonMenuDrop = $('.top-menu-drop-button');
     var buttonFiltersAll = $('.filters-all button');
     var buttonFilterToggle = $('.filter-toggle-button button');
+    var buttonView = $('.view-button-lg');
     var buttonMenuMore = $('.top-menu-more button');
     var sidePanelButton = $('.side-panel-button');
     var sideMenuButton = $('.side-menu-button');
@@ -185,6 +186,8 @@ $(function () {
                     $(this).find('.product-card-actions').appendTo($(this));
                 }
             });
+
+            $('.view-button-lg.tile').trigger('click');
         } else {
             cardsList.removeClass('owl-carousel').owlCarousel('destroy');
             if (cardsList.hasClass('owl-carousel')) {
@@ -193,6 +196,14 @@ $(function () {
             productCard.each(function () {
                 if(!$(this).hasClass('horizontal')){
                     $(this).find('.product-card-actions').appendTo($(this).find('.product-card-bottom'));
+                }
+            });
+            buttonView.on('click', function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                if($(this).hasClass('tile')){
+                    $('.product-cards').removeClass('list');
+                }else{
+                    $('.product-cards').addClass('list');
                 }
             });
         }
@@ -319,15 +330,33 @@ $(function () {
         }
     });
 
+    buttonView.on('click', function () {
+        var productCard = $('.product-cards .product-card');
+        if ($(this).hasClass('list')){
+            productCard.each(function () {
+                if (!$(this).find('.card-center-lg').length || !$(this).find('.card-right-lg').length){
+                    $(this).addClass('horizontal-lg');
+                    $(this).append('<div class="card-center-lg"></div>');
+                    $(this).append('<div class="card-right-lg"></div>');
+                    var productCenter = $(this).find('.card-center-lg');
+                    var productRight = $(this).find('.card-right-lg');
+                    $('.product-card-title').each(function () {
+                        $(this).appendTo($(this).closest('.product-card').find('.card-center-lg'));
+                    });
+                    $('.product-card-top').each(function () {
+                        $(this).appendTo($(this).closest('.product-card').find('.card-center-lg'));
+                    });
+                }
+            });
+        }
+    });
 
     buttonChoose.on('click', function () {
         var productCard = $('.products-list .product-card');
         if ($(this).parent().hasClass('list')) {
             productCard.each(function () {
                 if (!$(this).find('.product-card-left').length || !$(this).find('.product-card-right').length) {
-                    productCard.addClass('horizontal');
-                    productCard.prepend('<div class="product-card-right"></div>');
-                    productCard.prepend('<div class="product-card-left"></div>');
+                    $(this).addClass('horizontal');
                     $('.product-card-top').each(function () {
                         $(this).appendTo($(this).siblings('.product-card-left'));
                     });
@@ -366,7 +395,7 @@ $(function () {
         } else if ($(this).parent().hasClass('tile')) {
             productCard.each(function () {
                 if ($(this).find('.product-card-left').length || $(this).find('.product-card-right').length) {
-                    productCard.removeClass('horizontal');
+                    $(this).removeClass('horizontal');
                     $('.product-card-actions').each(function () {
                         $(this).appendTo($(this).closest('.product-card'));
                     });
