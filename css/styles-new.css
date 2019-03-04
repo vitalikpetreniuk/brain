@@ -318,17 +318,6 @@
     color: #E64A19;
 }
 
-.top-menu-list-item.new > a span:before, .top-menu-list-item.new > button span:before {
-    content: '';
-    position: absolute;
-    left: calc(100% + 2px);
-    left: -webkit-calc(100% + 2px);
-    top: -3px;
-    width: 22px;
-    height: 8px;
-    background: url("../images/new/new_red.svg") center no-repeat / 100%;
-}
-
 .lang-menu ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2433,17 +2422,6 @@
     color: #E64A19;
 }
 
-.side-menu .new > a span:after, .side-menu .new .side-menu-button span:after {
-    content: '';
-    position: absolute;
-    left: calc(100% + 4px);
-    left: -webkit-calc(100% + 4px);
-    top: -2px;
-    width: 32px;
-    height: 12px;
-    background: url("../images/new/new_red.svg") center no-repeat / 100%;
-}
-
 .side-menu-button:after {
     position: absolute;
     transition: all .2s ease;
@@ -3574,14 +3552,14 @@
     padding-bottom: 53px;
 }
 .with-catalog-back{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .with-catalog-back .side-panel-top {
     margin-bottom: 8px;
 }
 
 .with-catalog-back .callback-wrap {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .with-catalog-back .side-catalog-button {
@@ -3591,6 +3569,9 @@
 .with-catalog-back .side-menu {
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
+.with-catalog-back .block-link-text{
+    padding: 13px 16px;
 }
 
 .with-catalog-back .side-menu > li > a, .with-catalog-back .side-menu-button {
