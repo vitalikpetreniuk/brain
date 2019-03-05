@@ -1833,7 +1833,7 @@
 }
 
 @media (min-width: 1012px) {
-    .header-top-in .search-form, .menu-inner-wrap-single, .side-panel-button, .side-panel {
+    .header-top-in .search-form, .menu-inner-wrap-single, .side-panel-button, .side-panel, .shadow {
         display: none !important;
     }
 }
