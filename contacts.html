@@ -333,12 +333,64 @@
                                 <button class="top-menu-drop-button"><span></span></button>
                                 <div class="br-dropdown dropdown-cont">
                                     <div>
-                                        <ul>
+                                        <ul class="top-menu-more">
                                             <li>
-                                                <a href="#">Клиентам</a>
+                                                <button type="button">Клиентам</button>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Підібрати товар в кредит</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Про кредити</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Brain Pro / Brain Service</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Уцінені товари</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Доставка та оплата</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Юридичним організації та Безготівка</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Brain Блог</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Про компанію</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Публічна оферта</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Відгуки про компанію</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Команда Brain. Комп’ютери та гаджети</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Контакти</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="#">Сервис</a>
+                                                <button type="button">Сервис</button>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Сервісні центри</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Сервіс та гарантія</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Обмін та повернення</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Статус звернення по гарантії</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </div>
@@ -1452,13 +1504,13 @@
                                     <span class="menu-outer-text">Побутова техніка</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="all">
                                 <a href="#">
                                     <span class="menu-outer-icon">
-                                        <img class="icon-first" src="images/new/instruments.svg" alt="">
-                                        <img class="icon-second" src="images/new/instruments_white.svg" alt="">
+                                        <img class="icon-first" src="images/new/book.svg" alt="">
+                                        <img class="icon-second" src="images/new/book_white.svg" alt="">
                                     </span>
-                                    <span class="menu-outer-text">Інструменти</span>
+                                    <span class="menu-outer-text">Всі категорії</span>
                                 </a>
                             </li>
                         </ul>
@@ -1488,7 +1540,7 @@
                         </div>
                     </div>
                     <div class="track-order-wrap">
-                        <button class="track-order-button">Отследить заказ</button>
+                        <button type="button" class="track-order-button" data-toggle="modal" data-target=".modal-tracker">Отследить заказ</button>
                     </div>
                     <div class="actions-list">
                         <div class="actions-item actions-wish">
@@ -1939,10 +1991,10 @@
             </div>
         </div>
         <button class="side-catalog-button catalog-button" type="button">
-            <span class="block-link-icon">
-                <img class="icon-first" src="images/new/sandwich_white.svg" alt="">
-                <img class="icon-second" src="images/new/sandwich.svg" alt="">
-            </span>
+        <span class="block-link-icon">
+            <img class="icon-first" src="images/new/sandwich_white.svg" alt="">
+            <img class="icon-second" src="images/new/sandwich.svg" alt="">
+        </span>
             <span class="block-link-text">Каталог</span>
         </button>
         <div class="side-catalog-cont">
@@ -1958,10 +2010,387 @@
                             </div>
                             <ul class="br-main-menu-mob">
                                 <li>
-                                    <button>
-                                        Ноутбуки, Планшеты<br>
-                                        Электронные книги
-                                    </button>
+                                    <button>Смартфони та планшети</button>
+                                    <div class="br-nm-in">
+                                        <div class="br-n-scroll br-nm-scroll">
+                                            <div class="br-nmc-in">
+                                                <ul>
+                                                    <li>
+                                                        <div>
+                                                            <button type="button" class="br-nm-back">Смартфони та планшети</button>
+                                                            <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                        </div>
+                                                        <ul class="br-main-submenu-mob">
+                                                            <li>
+                                                                <button>Смартфоны и мобильные телефоны</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Смартфоны и мобильные телефоны</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Смартфоны</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Мобильные телефоны</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Doogee+подарок</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Смартфоны</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Смартфоны</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Doogee</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Apple</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Samsung</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Xiaomi</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Связь и стационарная телефония</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Связь и стационарная телефония</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">IP телефоны</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Телефоны</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Телефоны DECT</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Факсы</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Аксессуары для телефонов</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Аксессуары для телефонов</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Карты памяти</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Защитное стекло</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Чехлы для телефонов</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Дата кабели</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Носимые устройства</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Носимые устройства</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Смарт часы</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Фитнес браслеты</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Наушники</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Наушники</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Bluetooth-гарнитуры</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Беспроводные</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Проводные</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Спортивные</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Универсальные мобильные батареи (Power Bank)</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Универсальные мобильные батареи (Power Bank)</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">до 5000 мАч</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">8001 - 12000 мАч</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">более 15000 мАч</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Для ноутбуков</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Мобильный интернет</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Мобильный интернет</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">3G роутер</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">GSM-модем</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Набор для мобильного интернета</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Стартовые пакеты/Карты пополнения</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Стартовые пакеты/Карты пополнения</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Стартовый пакет</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Карточка пополнения счета</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Защита</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Защита</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Защита мобильной техники</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Дополнительная гарантия</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Защита личных вещей</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Услуги</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Услуги</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Комплексные услуги настройки смартфонов</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Дополнительные услуги</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Поддержка 24/7</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Подписки</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <button>Зарядные устройства</button>
+                                                                <div class="br-nm-in">
+                                                                    <div class="br-n-scroll br-nm-scroll">
+                                                                        <div class="br-nmc-in">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <div>
+                                                                                        <button type="button" class="br-nm-back">Зарядные устройства</button>
+                                                                                        <button type="button" class="br-nm-ca catalog-close">close</button>
+                                                                                    </div>
+                                                                                    <ul class="br-main-submenu-list-mob">
+                                                                                        <li>
+                                                                                            <a href="">Сетевые</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Автомобильные</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">до 2А</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">более 2А</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <span type="button" class="catalog-back-save">Свернуть меню и сохранить позицию просмотра</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <button>
@@ -2066,6 +2495,7 @@
                                                                                             </button>
                                                                                         </li>
                                                                                     </ul>
+                                                                                    <span type="button" class="catalog-back-save catalog-close">Свернуть меню и сохранить позицию просмотра</span>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -2098,6 +2528,7 @@
                                                                 </button>
                                                             </li>
                                                         </ul>
+                                                        <span type="button" class="catalog-back-save">Свернуть меню и сохранить позицию просмотра</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -2267,7 +2698,14 @@
             </div>
         </div>
         <div class="track-order-wrap">
-            <button class="track-order-button">Отследить заказ</button>
+            <button type="button" class="track-order-button" data-toggle="modal" data-target=".modal-tracker">Отследить заказ</button>
+        </div>
+        <div class="catalog-back">
+            <div class="catalog-back-title">Вы смотрели:</div>
+            <div class="catalog-back-name">test</div>
+            <button type="button" class="catalog-back-button">
+                <span>Вернуться в категорию</span>
+            </button>
         </div>
     </div>
     <div class="top-edge"></div>
