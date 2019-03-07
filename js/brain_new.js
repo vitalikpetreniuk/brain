@@ -66,7 +66,7 @@ $(function () {
                     menuWrap.on('mouseenter', function () {
                         body.addClass('with-shadow');
                         $('.dropdown-button.active').trigger('click');
-                        $('.callback-button.in').trigger('click');
+                        $('.callback-in').removeClass('open');
 
                     }).on('mouseleave', function () {
                         body.removeClass('with-shadow');
