@@ -1793,6 +1793,13 @@
     }
 }
 
+
+@media (max-width: 1011px) and (min-width: 767px){
+    .side-panel{
+        width: 50vw;
+    }
+}
+
 @media (max-width: 766px) {
     .slider-nav .owl-nav > div {
         width: 17px;
